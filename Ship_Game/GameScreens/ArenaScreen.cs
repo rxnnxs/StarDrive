@@ -35,12 +35,16 @@ namespace Ship_Game
             string playerPreference = "United";
             int numOpponents = 1;
             Universe = DeveloperUniverse.Create(playerPreference, numOpponents);
+            Universe.UState.Paused = true; // force it back to paused
             Player = Universe.UState.Player;
         }
 
         public override void LoadContent()
         {
             ScreenManager.ClearScene();
+
+            // load everything needed for the universe UI
+            Universe.LoadContent();
 
             Fight = Add(new UIButton(new ButtonStyle(), new Vector2((ScreenArea.X / 5 * 2) - 85, 0), "Fight!!!"));
             Reset = Add(new UIButton(new ButtonStyle(), new Vector2((ScreenArea.X / 5 * 3) - 85, 0), "Reset"));
@@ -87,24 +91,37 @@ namespace Ship_Game
 
         public override bool HandleInput(InputState input)
         {
-            return base.HandleInput(input);
+            // first this screens input
+            if (base.HandleInput(input))
+                return true;
+            // and finally the background universe input
+            return Universe.HandleInput(input);
         }
 
         public override void Update(float fixedDeltaTime)
         {
+            // this updates everything in the universe UI
+            // the actual simulation is done in the universe sim background thread
+            // it can be paused via Universe.UState.Paused = true
+            Universe.Update(fixedDeltaTime);
+
+            // update our UI after universe UI
             base.Update(fixedDeltaTime);
         }
 
         public override void Draw(SpriteBatch batch, DrawTimes elapsed)
         {
-            ScreenManager.BeginFrameRendering(elapsed, ref View, ref Projection);
-            ScreenManager.ClearScreen(Color.Black);
+            // draw the universe behind everything
+            // universe manages its own sprite batching
+            // it also clears the screen and draws 3D objects for us
+            Universe.Draw(batch, elapsed);
+
             batch.SafeBegin();
             {
-                base.Draw(batch, elapsed); // draw automatic elements on top of everything else
+                // draw our UIElementV2 elements ontop of everything
+                base.Draw(batch, elapsed);
             }
             batch.SafeEnd();
-            ScreenManager.EndFrameRendering();
         }
 
         void RefreshDesignsList()
