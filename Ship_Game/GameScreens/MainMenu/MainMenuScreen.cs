@@ -74,10 +74,11 @@ namespace Ship_Game.GameScreens.MainMenu
             if (list.Find("tutorials", out UIButton tutorials)) tutorials.OnClick = Tutorials_Clicked;
             if (list.Find("load_game", out UIButton loadGame))  loadGame.OnClick  = LoadGame_Clicked;
             if (list.Find("options",   out UIButton options))   options.OnClick   = Options_Clicked;
-            if (list.Find("mods",      out UIButton mods))      mods.OnClick    = Mods_Clicked;
-            if (list.Find("sandbox",   out UIButton sandbox))   sandbox.OnClick = DevSandbox_Clicked;
-            if (list.Find("info",      out UIButton info))      info.OnClick    = Info_Clicked;
-            if (list.Find("exit",      out UIButton exit))      exit.OnClick    = Exit_Clicked;
+            if (list.Find("mods",      out UIButton mods))      mods.OnClick      = Mods_Clicked;
+            if (list.Find("arena",     out UIButton arena))     arena.OnClick     = Arena_Clicked;
+            if (list.Find("sandbox",   out UIButton sandbox))   sandbox.OnClick   = DevSandbox_Clicked;
+            if (list.Find("info",      out UIButton info))      info.OnClick      = Info_Clicked;
+            if (list.Find("exit",      out UIButton exit))      exit.OnClick      = Exit_Clicked;
             list.PerformLayout();
 
             // Animate the buttons in and out
@@ -152,7 +153,7 @@ namespace Ship_Game.GameScreens.MainMenu
 
             ScreenManager.AddScreen(new RaceDesignScreen(this)); 
         }
-        void Tutorials_Clicked(UIButton button) => ScreenManager.AddScreen(new TutorialScreen(this));
+        void Tutorials_Clicked(UIButton button)  => ScreenManager.AddScreen(new TutorialScreen(this));
         void LoadGame_Clicked(UIButton button)
         {
             if (GlobalStats.HasMod && !GlobalStats.Defaults.Mod.ModFormatSupported)
@@ -164,11 +165,15 @@ namespace Ship_Game.GameScreens.MainMenu
 
             ScreenManager.AddScreen(new LoadSaveScreen(this));
         }
-        void Options_Clicked(UIButton button)   => ScreenManager.AddScreen(new OptionsScreen(this));
-        void Mods_Clicked(UIButton button)      => ScreenManager.AddScreen(new ModManager(this));
-        void Info_Clicked(UIButton button)      => ScreenManager.AddScreen(new InGameWiki(this));
-        void DevSandbox_Clicked(UIButton button)=> ScreenManager.GoToScreen(new ArenaScreen(), clear3DObjects: true);
-        void Exit_Clicked(UIButton button)      => ExitScreen();
+        void Options_Clicked(UIButton button)    => ScreenManager.AddScreen(new OptionsScreen(this));
+        void Mods_Clicked(UIButton button)       => ScreenManager.AddScreen(new ModManager(this));
+        void Arena_Clicked(UIButton button)
+        {
+            ScreenManager.GoToScreen(new LoadArenaScreen(), clear3DObjects:true);
+        }
+        void Info_Clicked(UIButton button)       => ScreenManager.AddScreen(new InGameWiki(this));
+        void DevSandbox_Clicked(UIButton button) => ScreenManager.GoToScreen(new DeveloperSandbox(), clear3DObjects: true);
+        void Exit_Clicked(UIButton button)       => ExitScreen();
 
 
         public override bool HandleInput(InputState input)

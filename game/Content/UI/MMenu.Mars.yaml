@@ -277,6 +277,11 @@ Elements:
           AbsSize: [200, 0] # aspect fill width
           ClickSfx: sd_ui_tactical_pause
       - Button:
+          Name: arena
+          Title: "Arena"
+          AbsSize: [200, 0] # aspect fill width
+          ClickSfx: sd_ui_tactical_pause
+      - Button:
           Name: sandbox
           Title: "Dev Sandbox"
           AbsSize: [200, 0] # aspect fill width
