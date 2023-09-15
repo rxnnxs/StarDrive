@@ -167,7 +167,7 @@ namespace Ship_Game.GameScreens.MainMenu
         void Options_Clicked(UIButton button)   => ScreenManager.AddScreen(new OptionsScreen(this));
         void Mods_Clicked(UIButton button)      => ScreenManager.AddScreen(new ModManager(this));
         void Info_Clicked(UIButton button)      => ScreenManager.AddScreen(new InGameWiki(this));
-        void DevSandbox_Clicked(UIButton button)=> ScreenManager.GoToScreen(new DeveloperSandbox(), clear3DObjects: true);
+        void DevSandbox_Clicked(UIButton button)=> ScreenManager.GoToScreen(new ArenaScreen(), clear3DObjects: true);
         void Exit_Clicked(UIButton button)      => ExitScreen();
 
 

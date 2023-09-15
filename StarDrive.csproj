@@ -239,6 +239,7 @@
     <Compile Include="Ship_Game\Gameplay\WeaponTemplate.cs" />
     <Compile Include="Ship_Game\Gameplay\WeaponTemplateWrapper.cs" />
     <Compile Include="Ship_Game\Gameplay\WeaponTestWrapper.cs" />
+    <Compile Include="Ship_Game\GameScreens\ArenaScreen.cs" />
     <Compile Include="Ship_Game\GameScreens\DiplomacyScreen\RelationshipsDiagramScreen.cs" />
     <Compile Include="Ship_Game\GameScreens\FleetDesign\FleetButton.cs" />
     <Compile Include="Ship_Game\GameScreens\FleetDesign\FleetButtonsList.cs" />
