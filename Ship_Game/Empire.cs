@@ -43,6 +43,7 @@ namespace Ship_Game
         [StarData] readonly Array<Troop> UnlockedTroops;
         [StarData] public Array<Ship> Inhibitors;
 
+        public bool IsEconomyEnabled = true;
         public const float StartingMoney = 1000f;
         float MoneyValue = StartingMoney;
         [StarData] public float Money
@@ -1253,7 +1254,6 @@ namespace Ship_Game
             debug.HeaderColor = EmpireColor;
             return debug;
         }
-
         public void DoMoney()
         {
             MoneyLastTurn = Money;
@@ -1263,7 +1263,10 @@ namespace Ship_Game
             UpdateNetPlanetIncomes();
             UpdateShipMaintenance();
             UpdateAveragePlanetStorage();
-            AddMoney(NetIncome);
+            if (IsEconomyEnabled)
+            {
+                AddMoney(NetIncome);
+            }
         }
 
         void ResetMoneySpentOnProduction()

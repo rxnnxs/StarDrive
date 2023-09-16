@@ -40,7 +40,7 @@ public class DeveloperUniverse : UniverseScreen
     }
         
     public static DeveloperUniverse Create(string playerPreference = "United",
-        int numOpponents = 1)
+        int numOpponents = 1, bool isSystemsReq = true)
     {
         var s = Stopwatch.StartNew();
         ScreenManager.Instance.ClearScene();
@@ -59,23 +59,26 @@ public class DeveloperUniverse : UniverseScreen
         races.Insert(0, player);
 
         var random = new SeededRandom();
+
         foreach (IEmpireData data in races)
         {
             Empire e = us.CreateEmpire(data, isPlayer: (data == player), difficulty: GameDifficulty.Hard);
-            e.data.CurrentAutoScout     = e.data.ScoutShip;
-            e.data.CurrentAutoColony    = e.data.ColonyShip;
+            e.data.CurrentAutoScout = e.data.ScoutShip;
+            e.data.CurrentAutoColony = e.data.ColonyShip;
             e.data.CurrentAutoFreighter = e.data.FreighterShip;
-            e.data.CurrentConstructor   = e.data.ConstructorShip;
+            e.data.CurrentConstructor = e.data.ConstructorShip;
             e.data.CurrentResearchStation = e.data.ResearchStation;
 
-            // Now, generate system for our empire:
-            var system = new SolarSystem(us, GenerateRandomSysPos(us, random));
-            system.GenerateRandomSystem(us, random, e.data.Traits.HomeSystemName, e);
-            system.OwnerList.Add(e);
-
-            us.AddSolarSystem(system);
+            if (isSystemsReq)
+            {
+                // Now, generate system for our empire:
+                var system = new SolarSystem(us, GenerateRandomSysPos(us, random));
+                system.GenerateRandomSystem(us, random, e.data.Traits.HomeSystemName, e);
+                system.OwnerList.Add(e);
+                us.AddSolarSystem(system);
+            }
         }
-
+        
         foreach (IEmpireData data in ResourceManager.MinorRaces) // init minor races
         {
             us.CreateEmpire(data, isPlayer: false, difficulty: GameDifficulty.Hard);

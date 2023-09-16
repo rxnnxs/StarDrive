@@ -231,7 +231,7 @@ namespace Ship_Game
             device.Clear(Color.White); // clear the lights RT to White
             batch.SafeBegin(SpriteBlendMode.AlphaBlend);
 
-            if (!Debug) // draw fog of war if we're not in debug
+            if (IsFogVisible && !Debug) // draw fog of war if we're not in debug
             {
                 // fill screen with transparent black and draw FogMap darker light on top of it
                 Rectangle fogRect = ProjectToScreenCoords(new Vector2(-UState.Size), UState.Size*2f);

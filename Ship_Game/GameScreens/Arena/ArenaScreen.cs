@@ -35,7 +35,7 @@ namespace Ship_Game
             // create a miniature dummy universe
             string playerPreference = "United";
             int numOpponents = 1;
-            Universe = DeveloperUniverse.Create(playerPreference, numOpponents);
+            Universe = DeveloperUniverse.Create(playerPreference, numOpponents, false);
             Universe.UState.Paused = true; // force it back to paused
             Player = Universe.UState.Player;
         }
@@ -43,9 +43,13 @@ namespace Ship_Game
         public override void LoadContent()
         {
             ScreenManager.ClearScene();
-
             // load everything needed for the universe UI
             Universe.LoadContent();
+
+            Universe.EmpireUI.IsActive = false;
+            Universe.UState.IsFogVisible = false;
+            Universe.Player.Research.SetNoResearchLeft(true);
+            Universe.Player.IsEconomyEnabled = false;
 
             Fight = Add(new UIButton(new ButtonStyle(), new Vector2((ScreenArea.X / 5 * 2) - 85, 0), "Fight!!!"));
             Reset = Add(new UIButton(new ButtonStyle(), new Vector2((ScreenArea.X / 5 * 3) - 85, 0), "Reset"));
@@ -58,17 +62,16 @@ namespace Ship_Game
             RectF shipRect = new(ScreenWidth - 282, 140, 280, 80);
             RectF shipDesignsRect = new(ScreenWidth - shipRect.W - 2, shipRect.Bottom + 5, shipRect.W, 500);
 
-            Vector2 hullSelSize = new(SelectSize(260, 280, 320), SelectSize(250, 400, 500));
-            var hullSelectPos = new LocalPos(ScreenWidth - hullSelSize.X, 100);
+            Vector2 designSelSize = new(SelectSize(260, 280, 320), SelectSize(250, 400, 500));
+            var hullSelectPos = new LocalPos(ScreenWidth - designSelSize.X, 100);
 
-            ShipDesignsSubMenu = Add(new SubmenuScrollList<ArenaDesignShipListItem>(hullSelectPos, hullSelSize, GameText.AvailableDesigns));
+            ShipDesignsSubMenu = Add(new SubmenuScrollList<ArenaDesignShipListItem>(hullSelectPos, designSelSize, GameText.AvailableDesigns));
             ShipDesignsSubMenu.SetBackground(Colors.TransparentBlackFill);
 
             ShipDesignsScrollList = ShipDesignsSubMenu.List;
             ShipDesignsScrollList.EnableItemHighlight = true;
 
             RefreshDesignsList();
-            //ShipDesignsScrollList.Update(0);
 
             Log.Info("Loaded Content");
             base.LoadContent();
@@ -131,7 +134,8 @@ namespace Ship_Game
 
             var categories = new Array<string>();
             // collect the role category titles, e.g. "Carrier"
-            foreach (IShipDesign design in Player.ShipsWeCanBuild)
+            //I want add this screan to menu, cause i want to have ability to compare all ships with each other, not only PlayerCanBuid
+            foreach (IShipDesign design in ResourceManager.Ships.Designs)
             {
                 categories.AddUnique(design.Role.ToString());
             }
@@ -144,7 +148,7 @@ namespace Ship_Game
                 var categoryItem = new ArenaDesignShipListItem(cat);
                 ShipDesignsScrollList.AddItem(categoryItem);
 
-                foreach (IShipDesign design in Player.ShipsWeCanBuild)
+                foreach (IShipDesign design in ResourceManager.Ships.Designs)
                 {
                     if (cat == design.Role.ToString())
                     {

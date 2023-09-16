@@ -49,6 +49,7 @@ namespace Ship_Game
 
         public bool ShowTacticalCloseup { get; private set; }
         public bool Debug => UState.Debug;
+        public bool IsFogVisible => UState.IsFogVisible;
         public DebugModes DebugMode => UState.DebugMode;
 
         public PieMenu pieMenu;
@@ -307,8 +308,15 @@ namespace Ship_Game
             if (MaxCamHeight > CAM_MAX)
                 MaxCamHeight = CAM_MAX;
 
-            if (!loading)
-                CamPos = new Vector3d(Player.GetPlanets()[0].Position, 2750);
+            if (Player.GetPlanets().Count != 0)
+            {
+                if (!loading)
+                    CamPos = new Vector3d(Player.GetPlanets()[0].Position, 2750);
+            }
+            else
+            {
+                CamPos = new Vector3d(new Vector2(0, 0), 2750);
+            }
 
             CamDestination = CamPos;
         }

@@ -61,6 +61,7 @@ namespace Ship_Game.Universe
         public bool CanShowDiplomacyScreen = true;
         public bool Paused = true; // always start paused
         public bool Debug;
+        public bool IsFogVisible = true;
         public DebugModes DebugMode;
         DebugModes PrevDebugMode;
 

@@ -21,11 +21,14 @@ namespace Ship_Game
         Array<Button> Buttons = new Array<Button>();
         bool LowRes;
         UniverseScreen Universe;
+        public bool IsActive;
 
         public EmpireUIOverlay(Empire playerEmpire, GraphicsDevice device, UniverseScreen universe)
         {
             Player = playerEmpire;
             Universe = universe;
+             
+            IsActive = true;
 
             var iRes1 = ResourceManager.Texture("EmpireTopBar/empiretopbar_res1");
             var iRes2 = ResourceManager.Texture("EmpireTopBar/empiretopbar_res2");
@@ -186,7 +189,7 @@ namespace Ship_Game
 
         public void Draw(SpriteBatch batch)
         {
-            if (Universe.IsExiting || Universe.IsDisposed)
+            if (Universe.IsExiting || Universe.IsDisposed || !IsActive)
                 return;
 
             Vector2 textCursor = new Vector2();
@@ -280,6 +283,9 @@ namespace Ship_Game
         // @return true if input was captured
         public bool HandleInput(InputState input)
         {
+            if (!IsActive)
+                return false;
+
             if (!GlobalStats.TakingInput)
             {
                 if (input.KeyPressed(Keys.R))
@@ -486,6 +492,9 @@ namespace Ship_Game
         // TODO: This is utterly retarded, needs a complete rewrite
         public bool HandleInput(InputState input, GameScreen caller)
         {
+            if (!IsActive)
+                return false;
+
             foreach (Button b in Buttons)
             {
                 if (!b.Rect.HitTest(input.CursorPosition))
