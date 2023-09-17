@@ -43,10 +43,20 @@ namespace Ship_Game
         {
             // create a miniature dummy universe
             string playerPreference = "United";
-            int numOpponents = 2;
+            int numOpponents = 1;
             Universe = DeveloperUniverse.Create(playerPreference, numOpponents);
             Universe.UState.Paused = true; // force it back to paused
             Player = Universe.UState.Player;
+            foreach (var Opponent1 in Universe.UState.Empires)
+            {
+                foreach (var Opponent2 in Universe.UState.Empires)
+                {
+                    if (Opponent2 != Opponent1)
+                    {
+                        Opponent1.AI.DeclareWarOn(Opponent2, WarType.GenocidalWar);//Genocide? i love genocide)))
+                    }
+                }
+            }
         }
 
         public override void LoadContent()
