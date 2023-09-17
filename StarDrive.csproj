@@ -242,6 +242,7 @@
     <Compile Include="Ship_Game\GameScreens\Arena\ArenaDesignShipListItem.cs" />
     <Compile Include="Ship_Game\GameScreens\Arena\ArenaScreen.cs" />
     <Compile Include="Ship_Game\GameScreens\Arena\LoadArenaScreen.cs" />
+    <Compile Include="Ship_Game\GameScreens\Arena\TeamDropDown.cs" />
     <Compile Include="Ship_Game\GameScreens\DiplomacyScreen\RelationshipsDiagramScreen.cs" />
     <Compile Include="Ship_Game\GameScreens\FleetDesign\FleetButton.cs" />
     <Compile Include="Ship_Game\GameScreens\FleetDesign\FleetButtonsList.cs" />

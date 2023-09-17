@@ -1,8 +1,10 @@
 ﻿using Microsoft.Xna.Framework.Graphics;
 using SDGraphics;
 using SDUtils;
+using Ship_Game.AI;
 using Ship_Game.GameScreens.MainMenu;
 using Ship_Game.GameScreens.NewGame;
+using Ship_Game.GameScreens.ShipDesign;
 using Ship_Game.Ships;
 using Ship_Game.UI;
 using Ship_Game.Universe;
@@ -29,13 +31,20 @@ namespace Ship_Game
 
         SubmenuScrollList<ArenaDesignShipListItem> ShipDesignsSubMenu;
         ScrollList<ArenaDesignShipListItem> ShipDesignsScrollList;
+        ShipInfoOverlayComponent ShipInfoOverlay;
+
+        TeamDropDown ArenaTeamDropDown;
+
+        IShipDesign ActiveShipDesign;
+
+        TeamOptions teamOption;
 
         public ArenaScreen() : base(null, toPause: null)
         {
             // create a miniature dummy universe
             string playerPreference = "United";
-            int numOpponents = 1;
-            Universe = DeveloperUniverse.Create(playerPreference, numOpponents, false);
+            int numOpponents = 2;
+            Universe = DeveloperUniverse.Create(playerPreference, numOpponents);
             Universe.UState.Paused = true; // force it back to paused
             Player = Universe.UState.Player;
         }
@@ -46,10 +55,20 @@ namespace Ship_Game
             // load everything needed for the universe UI
             Universe.LoadContent();
 
+            //disable all unnesesery
             Universe.EmpireUI.IsActive = false;
             Universe.UState.IsFogVisible = false;
             Universe.Player.Research.SetNoResearchLeft(true);
             Universe.Player.IsEconomyEnabled = false;
+
+            ArenaTeamDropDown = Add(new TeamDropDown(new Rectangle((int)ScreenArea.X / 4 - 50, 0, 100,  20)));
+
+            foreach (TeamOptions item in Enum.GetValues(typeof(TeamOptions)).Cast<TeamOptions>())
+                ArenaTeamDropDown.AddOption(item.ToString(), item);
+
+            ArenaTeamDropDown.PropertyBinding = () => teamOption;
+
+            ShipInfoOverlay = Add(new ShipInfoOverlayComponent(this, Universe.UState));
 
             Fight = Add(new UIButton(new ButtonStyle(), new Vector2((ScreenArea.X / 5 * 2) - 85, 0), "Fight!!!"));
             Reset = Add(new UIButton(new ButtonStyle(), new Vector2((ScreenArea.X / 5 * 3) - 85, 0), "Reset"));
@@ -63,15 +82,34 @@ namespace Ship_Game
             RectF shipDesignsRect = new(ScreenWidth - shipRect.W - 2, shipRect.Bottom + 5, shipRect.W, 500);
 
             Vector2 designSelSize = new(SelectSize(260, 280, 320), SelectSize(250, 400, 500));
-            var hullSelectPos = new LocalPos(ScreenWidth - designSelSize.X, 100);
+            var hullSelectPos = new Vector2(ScreenWidth - designSelSize.X, 100);
+            RectF rect = new RectF(hullSelectPos, designSelSize);
 
-            ShipDesignsSubMenu = Add(new SubmenuScrollList<ArenaDesignShipListItem>(hullSelectPos, designSelSize, GameText.AvailableDesigns));
+            ShipDesignsSubMenu = Add(new SubmenuScrollList<ArenaDesignShipListItem>(rect, GameText.AvailableDesigns));
             ShipDesignsSubMenu.SetBackground(Colors.TransparentBlackFill);
+            //ShipDesignsSubMenu.Color = new(0, 0, 0, 130);
+            ShipDesignsSubMenu.SelectedIndex = 0;
 
             ShipDesignsScrollList = ShipDesignsSubMenu.List;
             ShipDesignsScrollList.EnableItemHighlight = true;
+            ShipDesignsScrollList.OnClick = OnDesignShipItemClicked;
+            
+            ShipDesignsScrollList.OnHovered = (item) =>
+            {
+                if (item.Design == null) // deselected?
+                {
+                    ToolTip.Clear();
+                    ShipInfoOverlay.ShowToLeftOf(Vector2.Zero, null); // hide it
+                    return;
+                }
+                string tooltip = "Drag and drop this Ship into the Arena";
+                ToolTip.CreateTooltip(tooltip, "", item.BotLeft, minShowTime: 2f);
+                ShipInfoOverlay.ShowToLeftOf(item.Pos, item.Design);
+            };
 
-            RefreshDesignsList();
+            AddAllDesignsToList();
+
+            ShipDesignsSubMenu.PerformLayout();
 
             Log.Info("Loaded Content");
             base.LoadContent();
@@ -99,7 +137,18 @@ namespace Ship_Game
             if (base.HandleInput(input))
                 return true;
             // and finally the background universe input
-            return Universe.HandleInput(input);
+            if (Universe.HandleInput(input))
+                return true;
+            if (input.LeftMouseClick && ActiveShipDesign != null)
+            {
+
+                //Ship.CreateShipAtPoint(Universe.UState, Ship.CreateShipAtPoint(Universe.UState, ActiveShipDesign.Name,
+                //    Universe.UState.ActiveEmpires[(int)teamOption], Universe.CursorWorldPosition.ToVec2()), Universe.UState.ActiveEmpires[(int)teamOption], Universe.CursorWorldPosition.ToVec2());
+                Ship.CreateShipAtPoint(Universe.UState, ActiveShipDesign.Name,
+                    Universe.UState.ActiveEmpires[(int)teamOption], Universe.CursorWorldPosition.ToVec2());
+                return true;
+            }
+            return false;
         }
 
         public override void Update(float fixedDeltaTime)
@@ -127,8 +176,13 @@ namespace Ship_Game
             }
             batch.SafeEnd();
         }
-
-        void RefreshDesignsList()
+        void OnDesignShipItemClicked(ArenaDesignShipListItem item)
+        {
+            // set the design as active so it can be placed
+            if (item.Design != null)
+                ActiveShipDesign = item.Design;
+        }
+        void AddAllDesignsToList()
         {
             ShipDesignsScrollList.Reset();
 
