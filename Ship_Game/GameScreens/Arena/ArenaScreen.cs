@@ -2,6 +2,7 @@
 using SDGraphics;
 using SDUtils;
 using Ship_Game.AI;
+using Ship_Game;
 using Ship_Game.GameScreens.MainMenu;
 using Ship_Game.GameScreens.NewGame;
 using Ship_Game.GameScreens.ShipDesign;
@@ -11,10 +12,17 @@ using Ship_Game.Universe;
 using Ship_Game.Utils;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Runtime.Remoting.Metadata.W3cXsd2001;
+using Ship_Game.Fleets;
+using static Ship_Game.FleetDesignScreen;
+using Ship_Game.Audio;
+using static Ship_Game.Fleets.Fleet;
+using System.Diagnostics.Contracts;
 
 namespace Ship_Game
 {
@@ -28,16 +36,51 @@ namespace Ship_Game
         UIButton Fight;
         UIButton Reset;
         UIButton MainMenu;
+        TeamDropDown ArenaTeamDropDown;
 
         SubmenuScrollList<ArenaDesignShipListItem> ShipDesignsSubMenu;
         ScrollList<ArenaDesignShipListItem> ShipDesignsScrollList;
         ShipInfoOverlayComponent ShipInfoOverlay;
 
-        TeamDropDown ArenaTeamDropDown;
+        List<TeamToSpawn> TeamsToSpawnList = new();
 
         IShipDesign ActiveShipDesign;
 
         TeamOptions teamOption;
+
+        readonly Array<ShipToSpawn> SelectedNodeList = new();
+        readonly Array<ShipToSpawn> HoveredNodeList = new();
+        readonly Array<ClickableNode> ClickableNodes = new();
+
+        bool _isInFight = true;
+        bool IsInFight
+        {
+            get
+            {
+                return _isInFight;
+            }
+            set
+            {
+                if (value == true) 
+                {
+                    Universe.UState.Paused = false;
+                    ShipDesignsSubMenu.Visible = false;
+                }
+                else
+                {
+                    ResetShips();
+                    Universe.UState.Paused = true;
+                    ShipDesignsSubMenu.Visible = true;
+                }
+                _isInFight = value;
+            }
+        }
+        public struct ClickableNode
+        {
+            public ShipToSpawn NodeToClick;
+            public Vector2 ScreenPos;
+            public float Radius;
+        }
 
         public ArenaScreen() : base(null, toPause: null)
         {
@@ -45,8 +88,8 @@ namespace Ship_Game
             string playerPreference = "United";
             int numOpponents = 1;
             Universe = DeveloperUniverse.Create(playerPreference, numOpponents);
-            Universe.UState.Paused = true; // force it back to paused
             Player = Universe.UState.Player;
+
             foreach (var Opponent1 in Universe.UState.Empires)
             {
                 foreach (var Opponent2 in Universe.UState.Empires)
@@ -56,6 +99,11 @@ namespace Ship_Game
                         Opponent1.AI.DeclareWarOn(Opponent2, WarType.GenocidalWar);//Genocide? i love genocide)))
                     }
                 }
+            }
+
+            foreach (TeamOptions item in Enum.GetValues(typeof(TeamOptions)).Cast<TeamOptions>())
+            {
+                TeamsToSpawnList.Add(new TeamToSpawn(item));
             }
         }
 
@@ -70,7 +118,6 @@ namespace Ship_Game
             Universe.UState.IsFogVisible = false;
             Universe.Player.Research.SetNoResearchLeft(true);
             Universe.Player.IsEconomyEnabled = false;
-
             ArenaTeamDropDown = Add(new TeamDropDown(new Rectangle((int)ScreenArea.X / 4 - 50, 0, 100,  20)));
 
             foreach (TeamOptions item in Enum.GetValues(typeof(TeamOptions)).Cast<TeamOptions>())
@@ -86,7 +133,7 @@ namespace Ship_Game
 
             MainMenu.OnClick = (b) => ScreenManager.GoToScreen(new MainMenuScreen(), clear3DObjects: true);
             Fight.OnClick = StartFight;
-            Reset.OnClick = ResetShips;
+            Reset.OnClick = ResetS;
 
             RectF shipRect = new(ScreenWidth - 282, 140, 280, 80);
             RectF shipDesignsRect = new(ScreenWidth - shipRect.W - 2, shipRect.Bottom + 5, shipRect.W, 500);
@@ -97,7 +144,6 @@ namespace Ship_Game
 
             ShipDesignsSubMenu = Add(new SubmenuScrollList<ArenaDesignShipListItem>(rect, GameText.AvailableDesigns));
             ShipDesignsSubMenu.SetBackground(Colors.TransparentBlackFill);
-            //ShipDesignsSubMenu.Color = new(0, 0, 0, 130);
             ShipDesignsSubMenu.SelectedIndex = 0;
 
             ShipDesignsScrollList = ShipDesignsSubMenu.List;
@@ -122,7 +168,11 @@ namespace Ship_Game
             ShipDesignsSubMenu.PerformLayout();
 
             Log.Info("Loaded Content");
+
             base.LoadContent();
+
+            ResetShips();
+            IsInFight = false;
         }
 
         public override void ExitScreen()
@@ -130,15 +180,28 @@ namespace Ship_Game
             Universe.ExitScreen(); // cleanup Universe
             base.ExitScreen();
         }
-
         void StartFight(UIButton uIButton)
         {
-
+            foreach(var team in TeamsToSpawnList)
+            {
+                foreach(var ship in team.SpawnList)
+                {
+                    Ship.CreateShipAtPoint(Universe.UState, ship.Design.Name, Universe.UState.ActiveEmpires[(int)team.Team], ship.Pos);
+                }
+            }
+            IsInFight = true;
         }
 
-        void ResetShips(UIButton uIButton)
+        void ResetS(UIButton uIButton)
         {
-
+            IsInFight = false;
+        }
+        void ResetShips()
+        {
+            foreach (var ship in Universe.UState.Ships)
+            {
+                ship.DebugDamage(100000000);
+            }
         }
 
         public override bool HandleInput(InputState input)
@@ -149,16 +212,61 @@ namespace Ship_Game
             // and finally the background universe input
             if (Universe.HandleInput(input))
                 return true;
-            if (input.LeftMouseClick && ActiveShipDesign != null)
+            if (SelectedNodeList.Count > 0 && Input.RightMouseClick)
             {
+                SelectedNodeList.Clear();
+            }
 
-                //Ship.CreateShipAtPoint(Universe.UState, Ship.CreateShipAtPoint(Universe.UState, ActiveShipDesign.Name,
-                //    Universe.UState.ActiveEmpires[(int)teamOption], Universe.CursorWorldPosition.ToVec2()), Universe.UState.ActiveEmpires[(int)teamOption], Universe.CursorWorldPosition.ToVec2());
-                Ship.CreateShipAtPoint(Universe.UState, ActiveShipDesign.Name,
-                    Universe.UState.ActiveEmpires[(int)teamOption], Universe.CursorWorldPosition.ToVec2());
+            if (ActiveShipDesign != null && HandleActiveShipDesignInput(input))
+                return true;
+
+            return false;
+        }
+        bool HandleActiveShipDesignInput(InputState input)
+        {
+            Contract.Requires(ActiveShipDesign != null, "ActiveShipDesign cannot be null here");
+
+            // we're dragging an active ship design,
+            // assign it to the fleet on Left click
+            if (input.LeftMouseClick && !ShipDesignsScrollList.HitTest(input.CursorPosition))
+            {
+                var Team = TeamsToSpawnList.First((t) =>
+                {
+                    return t.Team == teamOption;
+                });
+                Team.SpawnList.Add(new ShipToSpawn(ActiveShipDesign, Universe.CursorWorldPosition2D));
+
+                // if we're holding shift key down, allow placing multiple designs
+                if (!input.IsShiftKeyDown)
+                    ActiveShipDesign = null;
+            }
+
+            if (input.RightMouseClick)
+            {
+                ActiveShipDesign = null;
                 return true;
             }
             return false;
+        }
+
+
+        void UpdateClickableNodes()
+        {
+            ClickableNodes.Clear();
+            if (TeamsToSpawnList.First((i)=> i.Team == teamOption ) == null)
+                return;
+            foreach (var team in TeamsToSpawnList)
+            {
+                foreach (var spawn in team.SpawnList)
+                {
+                    ClickableNodes.Add(new()
+                    {
+                        Radius = ResourceManager.GetShipTemplate(spawn.Design.Name).Radius,
+                        ScreenPos = spawn.Pos,
+                        NodeToClick = spawn,
+                    });
+                }
+            }
         }
 
         public override void Update(float fixedDeltaTime)
@@ -167,7 +275,7 @@ namespace Ship_Game
             // the actual simulation is done in the universe sim background thread
             // it can be paused via Universe.UState.Paused = true
             Universe.Update(fixedDeltaTime);
-
+            UpdateClickableNodes();
             // update our UI after universe UI
             base.Update(fixedDeltaTime);
         }
@@ -182,9 +290,81 @@ namespace Ship_Game
             batch.SafeBegin();
             {
                 // draw our UIElementV2 elements ontop of everything
+                if (!IsInFight)
+                {
+                    if (ActiveShipDesign != null)
+                        DrawActiveShipDesign(batch);
+
+                    if (TeamsToSpawnList != null)
+                    {
+                        foreach (var team in TeamsToSpawnList)
+                        {
+                            DrawTeam(batch, team);
+                        }
+                    }
+                }
+
                 base.Draw(batch, elapsed);
             }
             batch.SafeEnd();
+        }
+        void DrawTeam(SpriteBatch batch, TeamToSpawn team)
+        {
+            foreach (var spawn in team.SpawnList)
+            {
+                Ship ship = ResourceManager.GetShipTemplate(spawn.Design.Name);
+                // if ship doesn't exist, grab a template instead
+                float screenR = GetPosAndRadiusOnScreen(spawn.Pos, ship.Radius);
+                Vector2 screenPos = Universe.ProjectToScreenPosition(spawn.Pos).ToVec2f();
+                if (screenR < 10f) screenR = 10f;
+                RectF r = RectF.FromPointRadius(screenPos, screenR * 0.5f);
+
+                Color color = GetTacticalIconColor(team, spawn);
+                DrawIcon(batch, ship, r, color);
+            }
+        }
+        float GetPosAndRadiusOnScreen(Vector2 fleetOffset, float radius)
+        {
+            Vector2 pos1 = ProjectToScreenPos(new Vector3(fleetOffset, 0f));
+            Vector2 pos2 = ProjectToScreenPos(new Vector3(fleetOffset.PointFromAngle(90f, radius), 0f));
+            float radiusOnScreen = pos1.Distance(pos2) + 10f;
+            return radiusOnScreen;
+        }
+        Vector2 ProjectToScreenPos(in Vector3 worldPos)
+        {
+            var p = new Vector3(Universe.Viewport.Project(worldPos, Universe.Projection, Universe.View, Matrix.Identity));
+            return new Vector2(p.X, p.Y);
+        }
+        void DrawIcon(SpriteBatch batch, Ship ship, in RectF r, Color color)
+        {
+            TacticalIcon icon = ship.TacticalIcon();
+            icon.Draw(batch, r, color);
+        }
+        void DrawActiveShipDesign(SpriteBatch batch)
+        {
+            float radius = (float)Universe.ProjectToScreenSize(ResourceManager.GetShipTemplate(ActiveShipDesign.Name).Radius);
+            RectF screenR = RectF.FromPointRadius(Input.CursorPosition, radius);
+
+            TacticalIcon icon = ActiveShipDesign.GetTacticalIcon();
+            icon.Draw(batch, screenR, Player.EmpireColor);
+
+            float boundingR = Math.Max(radius * 1.5f, 16);
+            DrawCircle(Input.CursorPosition, boundingR, Player.EmpireColor);
+        }
+        Color GetTacticalIconColor(TeamToSpawn node, ShipToSpawn ship)
+        {
+            if (HoveredNodeList.Contains(ship) || SelectedNodeList.Contains(ship))
+                return Color.White;
+            switch(node.Team)
+            {
+                case TeamOptions.Team1:
+                    return Color.Green;
+                    break;
+                case TeamOptions.Team2:
+                    return Color.Red;
+                    break;
+            }
+            return Color.Black;
         }
         void OnDesignShipItemClicked(ArenaDesignShipListItem item)
         {
