@@ -52,29 +52,7 @@ namespace Ship_Game
         readonly Array<ShipToSpawn> HoveredNodeList = new();
         readonly Array<ClickableNode> ClickableNodes = new();
 
-        bool _isInFight = true;
-        bool IsInFight
-        {
-            get
-            {
-                return _isInFight;
-            }
-            set
-            {
-                if (value == true) 
-                {
-                    Universe.UState.Paused = false;
-                    ShipDesignsSubMenu.Visible = false;
-                }
-                else
-                {
-                    ResetShips();
-                    Universe.UState.Paused = true;
-                    ShipDesignsSubMenu.Visible = true;
-                }
-                _isInFight = value;
-            }
-        }
+        bool IsInFight = false;
         public struct ClickableNode
         {
             public ShipToSpawn NodeToClick;
@@ -118,11 +96,10 @@ namespace Ship_Game
             Universe.UState.IsFogVisible = false;
             Universe.Player.Research.SetNoResearchLeft(true);
             Universe.Player.IsEconomyEnabled = false;
-            ArenaTeamDropDown = Add(new TeamDropDown(new Rectangle((int)ScreenArea.X / 4 - 50, 0, 100,  20)));
 
+            ArenaTeamDropDown = Add(new TeamDropDown(new Rectangle((int)ScreenArea.X / 4 - 50, 0, 100,  20)));
             foreach (TeamOptions item in Enum.GetValues(typeof(TeamOptions)).Cast<TeamOptions>())
                 ArenaTeamDropDown.AddOption(item.ToString(), item);
-
             ArenaTeamDropDown.PropertyBinding = () => teamOption;
 
             ShipInfoOverlay = Add(new ShipInfoOverlayComponent(this, Universe.UState));
@@ -133,7 +110,7 @@ namespace Ship_Game
 
             MainMenu.OnClick = (b) => ScreenManager.GoToScreen(new MainMenuScreen(), clear3DObjects: true);
             Fight.OnClick = StartFight;
-            Reset.OnClick = ResetS;
+            Reset.OnClick = ResetArena;
 
             RectF shipRect = new(ScreenWidth - 282, 140, 280, 80);
             RectF shipDesignsRect = new(ScreenWidth - shipRect.W - 2, shipRect.Bottom + 5, shipRect.W, 500);
@@ -142,6 +119,8 @@ namespace Ship_Game
             var hullSelectPos = new Vector2(ScreenWidth - designSelSize.X, 100);
             RectF rect = new RectF(hullSelectPos, designSelSize);
 
+            
+             
             ShipDesignsSubMenu = Add(new SubmenuScrollList<ArenaDesignShipListItem>(rect, GameText.AvailableDesigns));
             ShipDesignsSubMenu.SetBackground(Colors.TransparentBlackFill);
             ShipDesignsSubMenu.SelectedIndex = 0;
@@ -149,10 +128,9 @@ namespace Ship_Game
             ShipDesignsScrollList = ShipDesignsSubMenu.List;
             ShipDesignsScrollList.EnableItemHighlight = true;
             ShipDesignsScrollList.OnClick = OnDesignShipItemClicked;
-            
             ShipDesignsScrollList.OnHovered = (item) =>
             {
-                if (item.Design == null) // deselected?
+                if (item == null) // deselected?
                 {
                     ToolTip.Clear();
                     ShipInfoOverlay.ShowToLeftOf(Vector2.Zero, null); // hide it
@@ -164,15 +142,14 @@ namespace Ship_Game
             };
 
             AddAllDesignsToList();
+            
+            
+            ResetShips();
 
-            ShipDesignsSubMenu.PerformLayout();
 
-            Log.Info("Loaded Content");
+
 
             base.LoadContent();
-
-            ResetShips();
-            IsInFight = false;
         }
 
         public override void ExitScreen()
@@ -189,12 +166,18 @@ namespace Ship_Game
                     Ship.CreateShipAtPoint(Universe.UState, ship.Design.Name, Universe.UState.ActiveEmpires[(int)team.Team], ship.Pos);
                 }
             }
+            Universe.UState.Paused = false;
+            ShipDesignsSubMenu.Hidden = false;
+            //ShipDesignsScrollList.Hidden = false;
             IsInFight = true;
         }
-
-        void ResetS(UIButton uIButton)
+        void ResetArena(UIButton uIButton)
         {
             IsInFight = false;
+            ResetShips();
+            Universe.UState.Paused = true;
+            ShipDesignsSubMenu.Hidden = true;
+            //ShipDesignsScrollList.Hidden = true;
         }
         void ResetShips()
         {
@@ -206,16 +189,17 @@ namespace Ship_Game
 
         public override bool HandleInput(InputState input)
         {
-            // first this screens input
+            if (!IsInFight && input.PauseGame)
+                return true;
+
             if (base.HandleInput(input))
                 return true;
-            // and finally the background universe input
+
             if (Universe.HandleInput(input))
                 return true;
+
             if (SelectedNodeList.Count > 0 && Input.RightMouseClick)
-            {
                 SelectedNodeList.Clear();
-            }
 
             if (ActiveShipDesign != null && HandleActiveShipDesignInput(input))
                 return true;
@@ -224,10 +208,6 @@ namespace Ship_Game
         }
         bool HandleActiveShipDesignInput(InputState input)
         {
-            Contract.Requires(ActiveShipDesign != null, "ActiveShipDesign cannot be null here");
-
-            // we're dragging an active ship design,
-            // assign it to the fleet on Left click
             if (input.LeftMouseClick && !ShipDesignsScrollList.HitTest(input.CursorPosition))
             {
                 var Team = TeamsToSpawnList.First((t) =>
@@ -248,34 +228,13 @@ namespace Ship_Game
             }
             return false;
         }
-
-
-        void UpdateClickableNodes()
-        {
-            ClickableNodes.Clear();
-            if (TeamsToSpawnList.First((i)=> i.Team == teamOption ) == null)
-                return;
-            foreach (var team in TeamsToSpawnList)
-            {
-                foreach (var spawn in team.SpawnList)
-                {
-                    ClickableNodes.Add(new()
-                    {
-                        Radius = ResourceManager.GetShipTemplate(spawn.Design.Name).Radius,
-                        ScreenPos = spawn.Pos,
-                        NodeToClick = spawn,
-                    });
-                }
-            }
-        }
-
         public override void Update(float fixedDeltaTime)
         {
             // this updates everything in the universe UI
             // the actual simulation is done in the universe sim background thread
             // it can be paused via Universe.UState.Paused = true
             Universe.Update(fixedDeltaTime);
-            UpdateClickableNodes();
+            //UpdateClickableNodes();
             // update our UI after universe UI
             base.Update(fixedDeltaTime);
         }
@@ -287,8 +246,10 @@ namespace Ship_Game
             // it also clears the screen and draws 3D objects for us
             Universe.Draw(batch, elapsed);
 
+
             batch.SafeBegin();
             {
+                base.Draw(batch, elapsed);
                 // draw our UIElementV2 elements ontop of everything
                 if (!IsInFight)
                 {
@@ -303,10 +264,9 @@ namespace Ship_Game
                         }
                     }
                 }
-
-                base.Draw(batch, elapsed);
             }
             batch.SafeEnd();
+
         }
         void DrawTeam(SpriteBatch batch, TeamToSpawn team)
         {
@@ -396,7 +356,7 @@ namespace Ship_Game
                 {
                     if (cat == design.Role.ToString())
                     {
-                        categoryItem.AddSubItem(new ArenaDesignShipListItem(design, cat));
+                        categoryItem.AddSubItem(new ArenaDesignShipListItem(design));
                     }
                 }
             }

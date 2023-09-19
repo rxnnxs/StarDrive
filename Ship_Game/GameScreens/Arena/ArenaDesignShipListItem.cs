@@ -16,7 +16,7 @@ namespace Ship_Game
         }
 
         // draw ship design
-        public ArenaDesignShipListItem(IShipDesign design, string headerText) : base(headerText)
+        public ArenaDesignShipListItem(IShipDesign design)
         {
             Design = design;
         }
