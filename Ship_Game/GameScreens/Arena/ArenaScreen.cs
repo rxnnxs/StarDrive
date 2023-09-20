@@ -97,6 +97,7 @@ namespace Ship_Game
             Universe.UState.IsFogVisible = false;
             Universe.Player.Research.SetNoResearchLeft(true);
             Universe.Player.IsEconomyEnabled = false;
+            Universe.UState.CanShowDiplomacyScreen = false;
 
             ArenaTeamDropDown = Add(new TeamDropDown(new Rectangle((int)ScreenArea.X / 4 - 50, 0, 100,  20)));
             foreach (TeamOptions item in Enum.GetValues(typeof(TeamOptions)).Cast<TeamOptions>())
@@ -262,37 +263,45 @@ namespace Ship_Game
                 if (!IsInFight)
                 {
                     if (ActiveShipDesign != null)
-                        DrawActiveShipDesign(batch);
+                        DrawActiveShipDesign();
 
                     if (TeamsToSpawnList != null)
-                    {
-                        foreach (var team in TeamsToSpawnList)
-                        {
-                            DrawTeam(batch, team);
-                        }
-                    }
+                        DrawShipsIcons();
                 }
                 base.Draw(batch, elapsed);
             }
             batch.SafeEnd();
 
         }
-        void DrawTeam(SpriteBatch batch, TeamToSpawn team)
+        void DrawShipsIcons()
         {
-            foreach (var spawn in team.SpawnList)
+            foreach (var team in TeamsToSpawnList)
             {
-                Color color = GetTacticalIconColor(team, spawn);
-                DrawShipIcon(batch, team.Team, spawn, color);
+                foreach (var spawn in team.SpawnList)
+                {
+                    Color color = GetTacticalIconColor(team, spawn);
+                    DrawShipIcon(team.Team, spawn, color);
+                }
             }
         }
-        void DrawShipIcon(SpriteBatch batch, TeamOptions team, ShipToSpawn spawn, Color color)
+        void DrawShipIcon(TeamOptions team, ShipToSpawn spawn, Color color)
         {
-            IShipDesign ship = spawn.Design;
-            TacticalIcon icon = ship.GetTacticalIcon();
-            double num = ship.SurfaceArea / (30.0 + icon.Primary.Width);
+            DrawIcon(team, spawn.Design, color, Universe.ProjectToScreenPosition(spawn.Pos).ToVec2f());
+        }
+        void DrawActiveShipDesign()
+        {
+            DrawIcon(teamOption, ActiveShipDesign, Color.Blue, Input.CursorPosition);
+            float radius = (float)Universe.ProjectToScreenSize(ResourceManager.GetShipTemplate(ActiveShipDesign.Name).Radius);
+            float boundingR = Math.Max(radius * 1.5f, 16);
+            DrawCircle(Input.CursorPosition, boundingR, Player.EmpireColor);
+        }
+        void DrawIcon(TeamOptions team, IShipDesign design, Color color, Vector2 screenPos)
+        {
+            TacticalIcon icon = design.GetTacticalIcon();
+            double num = design.SurfaceArea / (30.0 + icon.Primary.Width);
             double scale = (num * 4000.0 / Universe.CamPos.Z).UpperBound(1);
             if (scale <= 0.1)
-                scale = ship.Role != RoleName.platform || Universe.viewState < UnivScreenState.SectorView ? 0.15 : 0.08;
+                scale = design.Role != RoleName.platform || Universe.viewState < UnivScreenState.SectorView ? 0.15 : 0.08;
             Vector2 rotation;
             switch (team)
             {
@@ -306,40 +315,9 @@ namespace Ship_Game
                     rotation = Vector2.Zero;
                     break;
             }
-            Universe.DrawTextureProjected(icon.Primary, spawn.Pos, (float)scale * 4, rotation.ToRadians(), color);
+            DrawTexture(icon.Primary, screenPos, (float)scale * 4, rotation.ToRadians(), color);
             if (icon.Secondary != null)
-                Universe.DrawTextureProjected(icon.Secondary, spawn.Pos, (float)scale * 4, rotation.ToRadians(), color);
-        }
-        void DrawActiveShipDesign(SpriteBatch batch)
-        {
-            float radius = (float)Universe.ProjectToScreenSize(ResourceManager.GetShipTemplate(ActiveShipDesign.Name).Radius);
-            RectF screenR = RectF.FromPointRadius(Input.CursorPosition, radius);
-
-            TacticalIcon icon = ActiveShipDesign.GetTacticalIcon();
-            //icon.Draw(batch, screenR, Player.EmpireColor);
-            double num = ActiveShipDesign.SurfaceArea / (30.0 + icon.Primary.Width);
-            double scale = (num * 4000.0 / Universe.CamPos.Z).UpperBound(1);
-            if (scale <= 0.1)
-                scale = ActiveShipDesign.Role != RoleName.platform || Universe.viewState < UnivScreenState.SectorView ? 0.15 : 0.08;
-            Vector2 rotation;
-            switch (teamOption)
-            {
-                case TeamOptions.Team1:
-                    rotation = Vector2.Right;
-                    break;
-                case TeamOptions.Team2:
-                    rotation = Vector2.Left;
-                    break;
-                default:
-                    rotation = Vector2.Zero;
-                    break;
-            }
-            DrawTexture(icon.Primary, Input.CursorPosition, (float)scale * 4, rotation.ToRadians(), Color.Blue);
-            if (icon.Secondary != null)
-                DrawTexture(icon.Secondary, Input.CursorPosition, (float)scale * 4, rotation.ToRadians(), Color.Blue);
-
-            float boundingR = Math.Max(radius * 1.5f, 16);
-            DrawCircle(Input.CursorPosition, boundingR, Player.EmpireColor);
+                DrawTexture(icon.Secondary, screenPos, (float)scale * 4, rotation.ToRadians(), color);
         }
         Color GetTacticalIconColor(TeamToSpawn node, ShipToSpawn ship)
         {
