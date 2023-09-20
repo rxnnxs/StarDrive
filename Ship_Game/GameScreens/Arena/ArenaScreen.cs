@@ -23,6 +23,7 @@ using static Ship_Game.FleetDesignScreen;
 using Ship_Game.Audio;
 using static Ship_Game.Fleets.Fleet;
 using System.Diagnostics.Contracts;
+using static Ship_Game.UniverseScreen;
 
 namespace Ship_Game
 {
@@ -48,9 +49,9 @@ namespace Ship_Game
 
         TeamOptions teamOption;
 
-        readonly Array<ShipToSpawn> SelectedNodeList = new();
-        readonly Array<ShipToSpawn> HoveredNodeList = new();
-        readonly Array<ClickableNode> ClickableNodes = new();
+        //readonly Array<ShipToSpawn> SelectedNodeList = new();
+        //readonly Array<ShipToSpawn> HoveredNodeList = new();
+        //readonly Array<ClickableNode> ClickableNodes = new();
 
         bool IsInFight = false;
         public struct ClickableNode
@@ -119,8 +120,6 @@ namespace Ship_Game
             var hullSelectPos = new Vector2(ScreenWidth - designSelSize.X, 100);
             RectF rect = new RectF(hullSelectPos, designSelSize);
 
-            
-             
             ShipDesignsSubMenu = Add(new SubmenuScrollList<ArenaDesignShipListItem>(rect, GameText.AvailableDesigns));
             ShipDesignsSubMenu.SetBackground(Colors.TransparentBlackFill);
             ShipDesignsSubMenu.SelectedIndex = 0;
@@ -132,22 +131,19 @@ namespace Ship_Game
             {
                 if (item == null) // deselected?
                 {
-                    ToolTip.Clear();
-                    ShipInfoOverlay.ShowToLeftOf(Vector2.Zero, null); // hide it
+                    //ToolTip.Clear();
+                    //ShipInfoOverlay.ShowToLeftOf(Vector2.Zero, null); // hide it
                     return;
                 }
-                string tooltip = "Drag and drop this Ship into the Arena";
-                ToolTip.CreateTooltip(tooltip, "", item.BotLeft, minShowTime: 2f);
-                ShipInfoOverlay.ShowToLeftOf(item.Pos, item.Design);
+                //string tooltip = "Drag and drop this Ship into the Arena";
+                //ToolTip.CreateTooltip(tooltip, "", item.BotLeft, minShowTime: 2f);
+                //ShipInfoOverlay.ShowToLeftOf(item.Pos, item.Design);
             };
+
 
             AddAllDesignsToList();
             
-            
             ResetShips();
-
-
-
 
             base.LoadContent();
         }
@@ -163,11 +159,25 @@ namespace Ship_Game
             {
                 foreach(var ship in team.SpawnList)
                 {
-                    Ship.CreateShipAtPoint(Universe.UState, ship.Design.Name, Universe.UState.ActiveEmpires[(int)team.Team], ship.Pos);
+                    Vector2 rotation;
+                    switch (team.Team)
+                    {
+                        case TeamOptions.Team1:
+                            rotation = Vector2.Right;
+                            break;
+                        case TeamOptions.Team2:
+                            rotation = Vector2.Left;
+                            break;
+                        default:
+                            rotation = Vector2.Zero;
+                            break;
+                    }
+
+                    Ship.CreateShipAtPoint(Universe.UState, ship.Design.Name, Universe.UState.ActiveEmpires[(int)team.Team], ship.Pos).Rotation = rotation.ToRadians();
+                    
                 }
             }
             Universe.UState.Paused = false;
-            ShipDesignsSubMenu.Hidden = false;
             //ShipDesignsScrollList.Hidden = false;
             IsInFight = true;
         }
@@ -176,7 +186,6 @@ namespace Ship_Game
             IsInFight = false;
             ResetShips();
             Universe.UState.Paused = true;
-            ShipDesignsSubMenu.Hidden = true;
             //ShipDesignsScrollList.Hidden = true;
         }
         void ResetShips()
@@ -198,8 +207,8 @@ namespace Ship_Game
             if (Universe.HandleInput(input))
                 return true;
 
-            if (SelectedNodeList.Count > 0 && Input.RightMouseClick)
-                SelectedNodeList.Clear();
+            //if (SelectedNodeList.Count > 0 && Input.RightMouseClick)
+            //    SelectedNodeList.Clear();
 
             if (ActiveShipDesign != null && HandleActiveShipDesignInput(input))
                 return true;
@@ -249,7 +258,6 @@ namespace Ship_Game
 
             batch.SafeBegin();
             {
-                base.Draw(batch, elapsed);
                 // draw our UIElementV2 elements ontop of everything
                 if (!IsInFight)
                 {
@@ -264,6 +272,7 @@ namespace Ship_Game
                         }
                     }
                 }
+                base.Draw(batch, elapsed);
             }
             batch.SafeEnd();
 
@@ -272,33 +281,34 @@ namespace Ship_Game
         {
             foreach (var spawn in team.SpawnList)
             {
-                Ship ship = ResourceManager.GetShipTemplate(spawn.Design.Name);
-                // if ship doesn't exist, grab a template instead
-                float screenR = GetPosAndRadiusOnScreen(spawn.Pos, ship.Radius);
-                Vector2 screenPos = Universe.ProjectToScreenPosition(spawn.Pos).ToVec2f();
-                if (screenR < 10f) screenR = 10f;
-                RectF r = RectF.FromPointRadius(screenPos, screenR * 0.5f);
-
                 Color color = GetTacticalIconColor(team, spawn);
-                DrawIcon(batch, ship, r, color);
+                DrawShipIcon(batch, team.Team, spawn, color);
             }
         }
-        float GetPosAndRadiusOnScreen(Vector2 fleetOffset, float radius)
+        void DrawShipIcon(SpriteBatch batch, TeamOptions team, ShipToSpawn spawn, Color color)
         {
-            Vector2 pos1 = ProjectToScreenPos(new Vector3(fleetOffset, 0f));
-            Vector2 pos2 = ProjectToScreenPos(new Vector3(fleetOffset.PointFromAngle(90f, radius), 0f));
-            float radiusOnScreen = pos1.Distance(pos2) + 10f;
-            return radiusOnScreen;
-        }
-        Vector2 ProjectToScreenPos(in Vector3 worldPos)
-        {
-            var p = new Vector3(Universe.Viewport.Project(worldPos, Universe.Projection, Universe.View, Matrix.Identity));
-            return new Vector2(p.X, p.Y);
-        }
-        void DrawIcon(SpriteBatch batch, Ship ship, in RectF r, Color color)
-        {
-            TacticalIcon icon = ship.TacticalIcon();
-            icon.Draw(batch, r, color);
+            IShipDesign ship = spawn.Design;
+            TacticalIcon icon = ship.GetTacticalIcon();
+            double num = ship.SurfaceArea / (30.0 + icon.Primary.Width);
+            double scale = (num * 4000.0 / Universe.CamPos.Z).UpperBound(1);
+            if (scale <= 0.1)
+                scale = ship.Role != RoleName.platform || Universe.viewState < UnivScreenState.SectorView ? 0.15 : 0.08;
+            Vector2 rotation;
+            switch (team)
+            {
+                case TeamOptions.Team1:
+                    rotation = Vector2.Right;
+                    break;
+                case TeamOptions.Team2:
+                    rotation = Vector2.Left;
+                    break;
+                default:
+                    rotation = Vector2.Zero;
+                    break;
+            }
+            Universe.DrawTextureProjected(icon.Primary, spawn.Pos, (float)scale * 4, rotation.ToRadians(), color);
+            if (icon.Secondary != null)
+                Universe.DrawTextureProjected(icon.Secondary, spawn.Pos, (float)scale * 4, rotation.ToRadians(), color);
         }
         void DrawActiveShipDesign(SpriteBatch batch)
         {
@@ -306,23 +316,41 @@ namespace Ship_Game
             RectF screenR = RectF.FromPointRadius(Input.CursorPosition, radius);
 
             TacticalIcon icon = ActiveShipDesign.GetTacticalIcon();
-            icon.Draw(batch, screenR, Player.EmpireColor);
+            //icon.Draw(batch, screenR, Player.EmpireColor);
+            double num = ActiveShipDesign.SurfaceArea / (30.0 + icon.Primary.Width);
+            double scale = (num * 4000.0 / Universe.CamPos.Z).UpperBound(1);
+            if (scale <= 0.1)
+                scale = ActiveShipDesign.Role != RoleName.platform || Universe.viewState < UnivScreenState.SectorView ? 0.15 : 0.08;
+            Vector2 rotation;
+            switch (teamOption)
+            {
+                case TeamOptions.Team1:
+                    rotation = Vector2.Right;
+                    break;
+                case TeamOptions.Team2:
+                    rotation = Vector2.Left;
+                    break;
+                default:
+                    rotation = Vector2.Zero;
+                    break;
+            }
+            DrawTexture(icon.Primary, Input.CursorPosition, (float)scale * 4, rotation.ToRadians(), Color.Blue);
+            if (icon.Secondary != null)
+                DrawTexture(icon.Secondary, Input.CursorPosition, (float)scale * 4, rotation.ToRadians(), Color.Blue);
 
             float boundingR = Math.Max(radius * 1.5f, 16);
             DrawCircle(Input.CursorPosition, boundingR, Player.EmpireColor);
         }
         Color GetTacticalIconColor(TeamToSpawn node, ShipToSpawn ship)
         {
-            if (HoveredNodeList.Contains(ship) || SelectedNodeList.Contains(ship))
-                return Color.White;
+            //if (HoveredNodeList.Contains(ship) || SelectedNodeList.Contains(ship))
+            //    return Color.White;
             switch(node.Team)
             {
                 case TeamOptions.Team1:
                     return Color.Green;
-                    break;
                 case TeamOptions.Team2:
                     return Color.Red;
-                    break;
             }
             return Color.Black;
         }
