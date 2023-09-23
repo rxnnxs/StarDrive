@@ -22,13 +22,15 @@ namespace Ship_Game
 {
     public class ShipToSpawn
     {
-        public ShipToSpawn(IShipDesign shipDesign, Vector2 pos) 
+        public ShipToSpawn(IShipDesign shipDesign, Vector2 pos, Vector2 rotation) 
         {
             Design = shipDesign;
             Pos = pos;
+            Rotation = rotation;
         }
         public IShipDesign Design;
         public Vector2 Pos;
+        public Vector2 Rotation;
     }
     internal class TeamToSpawn
     {

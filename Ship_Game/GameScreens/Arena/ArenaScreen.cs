@@ -47,6 +47,8 @@ namespace Ship_Game
         List<TeamToSpawn> TeamsToSpawnList = new();
 
         IShipDesign ActiveShipDesign;
+        Vector2 ActiveShipRotation;
+        Vector2 ActiveShipPos;
 
         TeamOptions teamOption;
 
@@ -119,10 +121,12 @@ namespace Ship_Game
             Vector2 designSelSize = new(SelectSize(260, 280, 320), SelectSize(250, 400, 500));
             var hullSelectPos = new Vector2(ScreenWidth - designSelSize.X, 100);
             RectF rect = new RectF(hullSelectPos, designSelSize);
-
-            ShipDesignsSubMenu = Add(new SubmenuScrollList<ArenaDesignShipListItem>(rect, GameText.AvailableDesigns));
+            
+            LocalizedText[] subShipsTabs = { "Yours", "In game" };
+            ShipDesignsSubMenu = Add(new SubmenuScrollList<ArenaDesignShipListItem>(rect, subShipsTabs));
             ShipDesignsSubMenu.SetBackground(Colors.TransparentBlackFill);
             ShipDesignsSubMenu.SelectedIndex = 0;
+            ShipDesignsSubMenu.OnTabChange = OnSubShipsTabChanged;
 
             ShipDesignsScrollList = ShipDesignsSubMenu.List;
             ShipDesignsScrollList.EnableItemHighlight = true;
@@ -141,12 +145,13 @@ namespace Ship_Game
             };
 
 
-            AddAllDesignsToList();
+            AddAllDesignsToList(0);
             
             base.LoadContent();
 
             ResetShips();
         }
+
 
         public override void ExitScreen()
         {
@@ -159,19 +164,7 @@ namespace Ship_Game
             {
                 foreach(var ship in team.SpawnList)
                 {
-                    Vector2 rotation;
-                    switch (team.Team)
-                    {
-                        case TeamOptions.Team1:
-                            rotation = Vector2.Right;
-                            break;
-                        case TeamOptions.Team2:
-                            rotation = Vector2.Left;
-                            break;
-                        default:
-                            rotation = Vector2.Zero;
-                            break;
-                    }
+                    Vector2 rotation = ship.Rotation;
 
                     Ship.CreateShipAtPoint(Universe.UState, ship.Design.Name, Universe.UState.ActiveEmpires[(int)team.Team], ship.Pos).Rotation = rotation.ToRadians();
                     
@@ -204,56 +197,133 @@ namespace Ship_Game
             if (base.HandleInput(input))
                 return true;
 
-            if (Universe.HandleInput(input))
-                return true;
-
-            if (input.LeftMouseClick && HandleNodeSelection(input))
-                return true;
-
             if (ActiveShipDesign != null && HandleActiveShipDesignInput(input))
                 return true;
 
-            if (input.KeysCurr.GetPressedKeys().Contains(Keys.Delete) && HandleSelectShipDesignsDelete())
+            if (HandleNodeSelection(input))
+                return true;
+
+            if (HandleSelectShipDesignsDelete(input))
+                return true;
+
+            if (Universe.HandleInput(input))
                 return true;
 
             return false;
         }
 
-        private bool HandleSelectShipDesignsDelete()
+        private bool HandleSelectShipDesignsDelete(InputState input)
         {
-            foreach (var spawnToDelete in SelectedNodeList)
+            if (input.KeysCurr.GetPressedKeys().Contains(Keys.Delete))
             {
-                foreach(var team in TeamsToSpawnList)
+                foreach (var spawnToDelete in SelectedNodeList)
                 {
-                    team.SpawnList.Remove(spawnToDelete.NodeToClick);
+                    foreach (var team in TeamsToSpawnList)
+                    {
+                        team.SpawnList.Remove(spawnToDelete.NodeToClick);
+                    }
                 }
+                return true;
             }
-            return true;
+            return false;
         }
 
         private bool HandleNodeSelection(InputState input)
         {
-            foreach(var node in ClickableNodes)
+            if (input.LeftMouseClick)
             {
-                if (input.CursorPosition.InRadius(node.ScreenPos, node.Radius))
+                foreach (var node in ClickableNodes)
                 {
-                    SelectedNodeList.Add(node);
-                    return true;
+                    if (input.CursorPosition.InRadius(node.ScreenPos, node.Radius))
+                    {
+                        if (!SelectedNodeList.Contains(node))
+                            SelectedNodeList.Add(node);
+                        else
+                            SelectedNodeList.Remove(node);
+
+                        return true;
+                    }
                 }
+                SelectedNodeList.Clear();
             }
-            SelectedNodeList.Clear();
             return false;
         }
-
         bool HandleActiveShipDesignInput(InputState input)
         {
-            if (input.LeftMouseClick && !ShipDesignsScrollList.HitTest(input.CursorPosition))
+            if (ShipDesignsScrollList.HitTest(input.CursorPosition)
+                || ArenaTeamDropDown.HitTest(input.CursorPosition)
+                || Fight.HitTest(input.CursorPosition)
+                || Reset.HitTest(input.CursorPosition))
+            {
+                if(ArenaTeamDropDown.HitTest(input.CursorPosition)
+                || Fight.HitTest(input.CursorPosition)
+                || Reset.HitTest(input.CursorPosition))
+                {
+                    ActiveShipDesign = null;
+                }
+                ActiveShipPos = Universe.CursorWorldPosition2D;
+                switch (teamOption)
+                {
+                    case TeamOptions.Team1:
+                        ActiveShipRotation = Vector2.Right;
+                        break;
+                    case TeamOptions.Team2:
+                        ActiveShipRotation = Vector2.Left;
+                        break;
+                    default:
+                        ActiveShipRotation = Vector2.Zero;
+                        break;
+                }
+                return false;
+            }
+
+            if (!input.LeftMouseHeldDown && input.LeftMouseHoldTimeSinceEnd > 0)
+            {
+                ActiveShipPos = Universe.CursorWorldPosition2D; 
+                switch (teamOption)
+                {
+                    case TeamOptions.Team1:
+                        ActiveShipRotation = Vector2.Right;
+                        break;
+                    case TeamOptions.Team2:
+                        ActiveShipRotation = Vector2.Left;
+                        break;
+                    default:
+                        ActiveShipRotation = Vector2.Zero;
+                        break;
+                }
+            }
+            else
+            {
+                if (input.LeftMouseHoldTimeSinceStart < 0.2)
+                {
+                    //Log.DebugInfo(ConsoleColor.White, input.LeftMouseHoldTimeSinceStart.ToString());
+                    switch (teamOption)
+                    {
+                        case TeamOptions.Team1:
+                            ActiveShipRotation = Vector2.Right;
+                            break;
+                        case TeamOptions.Team2:
+                            ActiveShipRotation = Vector2.Left;
+                            break;
+                        default:
+                            ActiveShipRotation = Vector2.Zero;
+                            break;
+                    }
+                }
+                else
+                {
+                    ActiveShipRotation = (ActiveShipPos - Universe.CursorWorldPosition2D).Normalized();
+                }
+            }
+
+            if (input.LeftMouseUp && input.MousePrev.LeftButton == ButtonState.Pressed && !ShipDesignsScrollList.HitTest(input.CursorPosition))
             {
                 var Team = TeamsToSpawnList.First((t) =>
                 {
                     return t.Team == teamOption;
                 });
-                Team.SpawnList.Add(new ShipToSpawn(ActiveShipDesign, Universe.CursorWorldPosition2D));
+                Team.SpawnList.Add(new ShipToSpawn(ActiveShipDesign, ActiveShipPos, ActiveShipRotation));
 
                 // if we're holding shift key down, allow placing multiple designs
                 if (!input.IsShiftKeyDown)
@@ -301,8 +371,7 @@ namespace Ship_Game
             // universe manages its own sprite batching
             // it also clears the screen and draws 3D objects for us
             Universe.Draw(batch, elapsed);
-
-
+            
             batch.SafeBegin();
             {
                 // draw our UIElementV2 elements ontop of everything
@@ -334,37 +403,26 @@ namespace Ship_Game
         }
         void DrawShipIcon(TeamOptions team, ShipToSpawn spawn, Color color)
         {
-            DrawIcon(team, spawn.Design, color, Universe.ProjectToScreenPosition(spawn.Pos).ToVec2f());
+            DrawIcon(team, spawn.Design, color, Universe.ProjectToScreenPosition(spawn.Pos).ToVec2f(), spawn.Rotation);
         }
         void DrawActiveShipDesign()
         {
-            DrawIcon(teamOption, ActiveShipDesign, Color.Blue, Input.CursorPosition);
+            DrawIcon(teamOption, ActiveShipDesign, Color.Blue, Universe.ProjectToScreenPosition(ActiveShipPos).ToVec2f(), ActiveShipRotation);
             float radius = (float)Universe.ProjectToScreenSize(ResourceManager.GetShipTemplate(ActiveShipDesign.Name).Radius);
             float boundingR = Math.Max(radius * 1.5f, 16);
-            DrawCircle(Input.CursorPosition, boundingR, Player.EmpireColor);
+            DrawCircle(Universe.ProjectToScreenPosition(ActiveShipPos).ToVec2f(), boundingR, Player.EmpireColor);
         }
-        void DrawIcon(TeamOptions team, IShipDesign design, Color color, Vector2 screenPos)
+        void DrawIcon(TeamOptions team, IShipDesign design, Color color, Vector2 screenPos, Vector2 rotation)
         {
             TacticalIcon icon = design.GetTacticalIcon();
 
             float scale = (float)Universe.ProjectToScreenSize(ResourceManager.GetShipTemplate(design.Name).Radius) / 20;
-            
-            Vector2 rotation;
-            switch (team)
-            {
-                case TeamOptions.Team1:
-                    rotation = Vector2.Right;
-                    break;
-                case TeamOptions.Team2:
-                    rotation = Vector2.Left;
-                    break;
-                default:
-                    rotation = Vector2.Zero;
-                    break;
-            }
-            DrawTexture(icon.Primary, screenPos, scale, rotation.ToRadians(), color);
+
+            Vector2 Rotation = rotation;
+
+            DrawTexture(icon.Primary, screenPos, scale, Rotation.ToRadians(), color);
             if (icon.Secondary != null)
-                DrawTexture(icon.Secondary, screenPos, scale, rotation.ToRadians(), color);
+                DrawTexture(icon.Secondary, screenPos, scale, Rotation.ToRadians(), color);
         }
         Color GetTacticalIconColor(TeamToSpawn node, ShipToSpawn ship)
         {
@@ -391,8 +449,25 @@ namespace Ship_Game
             // set the design as active so it can be placed
             if (item.Design != null)
                 ActiveShipDesign = item.Design;
+            ActiveShipPos = Universe.CursorWorldPosition2D;
+            switch (teamOption)
+            {
+                case TeamOptions.Team1:
+                    ActiveShipRotation = Vector2.Right;
+                    break;
+                case TeamOptions.Team2:
+                    ActiveShipRotation = Vector2.Left;
+                    break;
+                default:
+                    ActiveShipRotation = Vector2.Zero;
+                    break;
+            }
         }
-        void AddAllDesignsToList()
+        private void OnSubShipsTabChanged(int type)
+        {
+            AddAllDesignsToList(type);
+        }
+        void AddAllDesignsToList(int type)
         {
             ShipDesignsScrollList.Reset();
 
@@ -401,7 +476,17 @@ namespace Ship_Game
             //I want add this screan to menu, cause i want to have ability to compare all ships with each other, not only PlayerCanBuid
             foreach (IShipDesign design in ResourceManager.Ships.Designs)
             {
-                categories.AddUnique(design.Role.ToString());
+                if(design.Weapons.Length > 0)
+                {
+                    if (type == 0 && design.IsPlayerDesign)
+                    {
+                        categories.AddUnique(design.Role.ToString());
+                    }
+                    else if(type == 1 && !design.IsPlayerDesign)
+                    {
+                        categories.AddUnique(design.Role.ToString());
+                    }
+                }
             }
 
             categories.Sort();
@@ -414,9 +499,16 @@ namespace Ship_Game
 
                 foreach (IShipDesign design in ResourceManager.Ships.Designs)
                 {
-                    if (cat == design.Role.ToString())
+                    if (design.Weapons.Length > 0)
                     {
-                        categoryItem.AddSubItem(new ArenaDesignShipListItem(design));
+                        if (type == 0 && design.IsPlayerDesign)
+                        {
+                            categoryItem.AddSubItem(new ArenaDesignShipListItem(design));
+                        }
+                        else if (type == 1 && !design.IsPlayerDesign)
+                        {
+                            categoryItem.AddSubItem(new ArenaDesignShipListItem(design));
+                        }
                     }
                 }
             }
