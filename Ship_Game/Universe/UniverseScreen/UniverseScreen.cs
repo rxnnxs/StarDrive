@@ -50,6 +50,7 @@ namespace Ship_Game
         public bool ShowTacticalCloseup { get; private set; }
         public bool Debug => UState.Debug;
         public bool IsFogVisible => UState.IsFogVisible;
+        private bool IsAutoSaveEnabled => UState.IsAutoSaveEnabled; 
         public DebugModes DebugMode => UState.DebugMode;
 
         public PieMenu pieMenu;

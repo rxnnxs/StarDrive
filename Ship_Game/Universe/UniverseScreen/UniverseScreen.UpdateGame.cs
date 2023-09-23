@@ -25,7 +25,6 @@ namespace Ship_Game
 
         // Modifier to increase or reduce simulation fidelity
         int SimFPSModifier;
-
         readonly PerfTimer TimeSinceLastAutoFPS = new PerfTimer();
 
         public int CurrentSimFPS => GlobalStats.SimulationFramesPerSecond + SimFPSModifier;
@@ -104,7 +103,8 @@ namespace Ship_Game
         void ProcessSimulationTurns()
         {
             // process pending saves before entering the main loop 
-            CheckForPendingSaves();
+            if(IsAutoSaveEnabled)
+                CheckForPendingSaves();
 
             if (UState.Paused || IsSaving)
             {

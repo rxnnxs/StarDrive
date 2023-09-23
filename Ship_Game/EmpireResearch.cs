@@ -10,6 +10,7 @@ namespace Ship_Game
     {
         [StarData] readonly Empire Empire;
         [StarData] public bool NoResearchLeft { get; private set; }
+        public bool IsResearchEnabled = true;
 
         // The FIRST item (0) is always the Current research topic
         Array<string> Queue => Empire.data.ResearchQueue;
@@ -73,7 +74,8 @@ namespace Ship_Game
         public void Update()
         {
             UpdateNetResearch();
-            ApplyResearchPoints();
+            if(IsResearchEnabled)
+                ApplyResearchPoints();
             ResearchStationResearchPerturn = 0;
         }
         
@@ -123,6 +125,10 @@ namespace Ship_Game
         public void SetNoResearchLeft(bool value)
         {
             NoResearchLeft = value;
+        }
+        public void SetResearchEnabled(bool value)
+        {
+            IsResearchEnabled = value;
         }
 
         // Inserts to the front of ResearchQueue, OR moves existing tech to the front

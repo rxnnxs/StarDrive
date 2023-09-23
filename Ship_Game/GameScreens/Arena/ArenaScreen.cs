@@ -97,11 +97,18 @@ namespace Ship_Game
             Universe.LoadContent();
 
             //disable all unnesesery
+            
             Universe.EmpireUI.IsActive = false;
             Universe.UState.IsFogVisible = false;
-            Universe.Player.Research.SetNoResearchLeft(true);
+
+            foreach(var p in Universe.UState.Empires)
+            {
+                p.Research.SetResearchEnabled(false);
+            }
+
             Universe.Player.IsEconomyEnabled = false;
             Universe.UState.CanShowDiplomacyScreen = false;
+            Universe.UState.IsAutoSaveEnabled = false;
 
             ArenaTeamDropDown = Add(new TeamDropDown(new Rectangle((int)ScreenArea.X / 4 - 50, 0, 100,  20)));
             foreach (TeamOptions item in Enum.GetValues(typeof(TeamOptions)).Cast<TeamOptions>())
