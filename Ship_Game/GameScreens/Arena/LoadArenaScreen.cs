@@ -58,8 +58,8 @@ namespace Ship_Game
         {
             if (ArenaLoadTask.IsComplete && input.InGameSelect)
             {
-                ScreenManager.GoToScreen(ArenaScreen, clear3DObjects: true);
-                ExitScreen();
+                ScreenManager.ExitAll(clear3DObjects: true);
+                ScreenManager.AddScreenNoLoad(ArenaScreen);
                 return true;
             }
             return false;
