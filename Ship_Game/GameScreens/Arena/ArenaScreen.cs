@@ -8,22 +8,10 @@ using Ship_Game.GameScreens.NewGame;
 using Ship_Game.GameScreens.ShipDesign;
 using Ship_Game.Ships;
 using Ship_Game.UI;
-using Ship_Game.Universe;
 using Ship_Game.Utils;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using System.Runtime.Remoting.Metadata.W3cXsd2001;
-using Ship_Game.Fleets;
-using static Ship_Game.FleetDesignScreen;
-using Ship_Game.Audio;
-using static Ship_Game.Fleets.Fleet;
-using System.Diagnostics.Contracts;
-using static Ship_Game.UniverseScreen;
 using Microsoft.Xna.Framework.Input;
 
 namespace Ship_Game
@@ -38,11 +26,13 @@ namespace Ship_Game
         UIButton Fight;
         UIButton Reset;
         UIButton MainMenu;
+        UIButton LoadSave;
         TeamDropDown ArenaTeamDropDown;
 
         SubmenuScrollList<ArenaDesignShipListItem> ShipDesignsSubMenu;
         ScrollList<ArenaDesignShipListItem> ShipDesignsScrollList;
         ShipInfoOverlayComponent ShipInfoOverlay;
+        LoadSaveScreen saveScreen;
 
         List<TeamToSpawn> TeamsToSpawnList = new();
 
@@ -79,7 +69,7 @@ namespace Ship_Game
                 {
                     if (Opponent2 != Opponent1)
                     {
-                        Opponent1.AI.DeclareWarOn(Opponent2, WarType.GenocidalWar);//Genocide? i love genocide)))
+                        Opponent1.AI.DeclareWarOn(Opponent2, WarType.GenocidalWar);//Genocide? I love genocide)))
                     }
                 }
             }
@@ -120,8 +110,10 @@ namespace Ship_Game
             Fight = Add(new UIButton(new ButtonStyle(), new Vector2((ScreenArea.X / 5 * 2) - 85, 0), "Fight!!!"));
             Reset = Add(new UIButton(new ButtonStyle(), new Vector2((ScreenArea.X / 5 * 3) - 85, 0), "Reset"));
             MainMenu = Add(new UIButton(new ButtonStyle(), new Vector2((ScreenArea.X) - 170, 0), "Main menu"));
+            LoadSave = Add(new UIButton(new ButtonStyle(), new Vector2((ScreenArea.X / 5 * 2) - 85, 0), "Load Save"));
 
             MainMenu.OnClick = (b) => ScreenManager.GoToScreen(new MainMenuScreen(), clear3DObjects: true);
+            LoadSave.OnClick = (b) => ScreenManager.AddScreen(new LoadSaveScreen(Universe));
             Fight.OnClick = StartFight;
             Reset.OnClick = ResetArena;
 
@@ -129,11 +121,12 @@ namespace Ship_Game
             var hullSelectPos = new Vector2(ScreenWidth - designSelSize.X, 100);
             RectF rect = new RectF(hullSelectPos, designSelSize);
             
-            LocalizedText[] subShipsTabs = { "Yours", "In game" };
+            LocalizedText[] subShipsTabs = { "Yours", "In game", "State" };
             ShipDesignsSubMenu = Add(new SubmenuScrollList<ArenaDesignShipListItem>(rect, subShipsTabs));
             ShipDesignsSubMenu.SetBackground(Colors.TransparentBlackFill);
             ShipDesignsSubMenu.SelectedIndex = 0;
             ShipDesignsSubMenu.OnTabChange = OnSubShipsTabChanged;
+
 
             ShipDesignsScrollList = ShipDesignsSubMenu.List;
             ShipDesignsScrollList.EnableItemHighlight = true;
@@ -151,9 +144,15 @@ namespace Ship_Game
                 ShipInfoOverlay.ShowToLeftOf(item.Pos, item.Design);
             };
 
+            addDesignsToListWhere((ship) =>
+            {
+                if (ship.IsPlayerDesign)
+                {
+                    return true;
+                }
+                return false;
+            });
 
-            AddAllDesignsToList(0);
-            
             base.LoadContent();
 
             ResetShips();
@@ -472,51 +471,96 @@ namespace Ship_Game
         }
         private void OnSubShipsTabChanged(int type)
         {
-            AddAllDesignsToList(type);
-        }
-        void AddAllDesignsToList(int type)
-        {
             ShipDesignsScrollList.Reset();
 
-            var categories = new Array<string>();
-            // collect the role category titles, e.g. "Carrier"
-            //I want add this screan to menu, cause i want to have ability to compare all ships with each other, not only PlayerCanBuid
-            foreach (IShipDesign design in ResourceManager.Ships.Designs)
+            switch (type)
             {
-                if(design.Weapons.Length > 0)
-                {
-                    if (type == 0 && design.IsPlayerDesign)
+                case 0:
+                    addDesignsToListWhere((ship)=>
                     {
-                        categories.AddUnique(design.Role.ToString());
-                    }
-                    else if(type == 1 && !design.IsPlayerDesign)
+                        if (ship.IsPlayerDesign)
+                        {
+                            return true;
+                        }
+                        return false;
+                    });
+                    break;
+                case 1:
+                    addDesignsToListWhere((ship) =>
                     {
-                        categories.AddUnique(design.Role.ToString());
-                    }
-                }
+                        if (!ship.IsPlayerDesign)
+                        {
+                            return true;
+                        }
+                        return false;
+                    });
+                    break;
+                case 2:
+
+                    break;
+                default:
+                    throw new IndexOutOfRangeException();
+            }
+        }
+        private void addDesignsToListWhere(Func<IShipDesign, bool> func)
+        {
+            // collect the role category titles, e.g. "Carrier"
+            //I want add this screan to menu, cause i want to have ability to compare in combat all ships, not only PlayerCanBuid
+
+            List<IShipDesign> Designs = new (ResourceManager.Ships.Designs.Where(func));
+
+            var raceCategories = new Array<string>();
+            var typeCategories = new Array<string>();
+
+
+            foreach (IShipDesign design in Designs)
+            {
+                typeCategories.AddUnique(design.Role.ToString());
             }
 
-            categories.Sort();
 
-            // then create list of ships by category
-            foreach (string cat in categories)
+            foreach (IShipDesign design in Designs)
             {
-                var categoryItem = new ArenaDesignShipListItem(cat);
-                ShipDesignsScrollList.AddItem(categoryItem);
+                raceCategories.AddUnique(design.ShipStyle.ToString());
+            }
 
-                foreach (IShipDesign design in ResourceManager.Ships.Designs)
+            raceCategories.Sort();
+            typeCategories.Sort();
+            
+
+            foreach (string raceCat in raceCategories)
+            {
+                var raceCategoryItem = new ArenaDesignShipListItem(raceCat);
+                ShipDesignsScrollList.AddItem(raceCategoryItem);
+
+                foreach (string typeCat in typeCategories)
                 {
-                    if (design.Weapons.Length > 0)
+                    var typeCategoryItem = new ArenaDesignShipListItem(typeCat, 1);
+                    raceCategoryItem.AddSubItem(typeCategoryItem);
+
+                    foreach (IShipDesign design in Designs)
                     {
-                        if (type == 0 && design.IsPlayerDesign)
+                        if (design.Role.ToString() != typeCat)
                         {
-                            categoryItem.AddSubItem(new ArenaDesignShipListItem(design));
+                            continue;
                         }
-                        else if (type == 1 && !design.IsPlayerDesign)
+                        if (design.ShipStyle.ToString() != raceCat)
                         {
-                            categoryItem.AddSubItem(new ArenaDesignShipListItem(design));
+                            continue;
                         }
+                        var desItem = new ArenaDesignShipListItem(design);
+                        typeCategoryItem.AddSubItem(desItem);
                     }
+
+                    if (typeCategoryItem.NumSubItems == 0)
+                    {
+                        raceCategoryItem.RemoveSub(typeCategoryItem);
+                    }
+                }
+
+                if (raceCategoryItem.NumSubItems == 0)
+                {
+                    ShipDesignsScrollList.Remove(raceCategoryItem);
                 }
             }
         }
