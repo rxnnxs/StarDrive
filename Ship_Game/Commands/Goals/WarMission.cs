@@ -12,8 +12,7 @@ namespace Ship_Game.Commands.Goals
     {
         [StarData] public sealed override Empire TargetEmpire { get; set; }
         [StarData] public sealed override Planet TargetPlanet { get; set; }
-        public bool IsCoordinatedAttack {get; set;}
-        public float StarDateCoordinatedAttack {get; set;}
+        public bool IsCoordinatedAttack {get; private set;}
 
         [StarDataConstructor]
         public WarMission(Empire owner) : base(GoalType.WarMission, owner)
@@ -25,26 +24,26 @@ namespace Ship_Game.Commands.Goals
             };
         }
 
-        public WarMission(Empire owner, Empire enemy, Planet targetPlanet, bool coordinatedAttack=false, float coordinatedDate=0.0f) : this(owner)
+        public WarMission(Empire owner, Empire enemy, Planet targetPlanet, bool coordinatedAttack=false) : this(owner)
         {
             TargetEmpire = enemy;
             TargetPlanet = targetPlanet;
             IsCoordinatedAttack = coordinatedAttack;
-            // default coordinated attack in 200 turns TODO:test and adjust accordingly
-            StarDateCoordinatedAttack = coordinatedDate == 0.0f ? owner.Universe.StarDate + 20 : coordinatedDate;
-            Log.Info(ConsoleColor.Green, $"---- WarMission: New {Owner.Name} Vs.: {TargetEmpire.Name} ----");
+            Log.Info(ConsoleColor.Green, $"---- WarMission: New {Owner.Name} Vs.: {TargetEmpire.Name} ; coordinated: {coordinatedAttack} ----");
         }
 
-        public WarMission(Empire owner, Empire enemy, Planet targetPlanet, MilitaryTask task, bool coordinatedAttack=false, float coordinatedDate=0.0f) : this(owner)
+        public WarMission(Empire owner, Empire enemy, Planet targetPlanet, MilitaryTask task, bool coordinatedAttack=false) : this(owner)
         {
             TargetEmpire  = enemy;
             TargetPlanet  = targetPlanet;
             IsCoordinatedAttack = coordinatedAttack;
-            // default coordinated attack in 200 turns TODO:test and adjust accordingly
-            StarDateCoordinatedAttack = coordinatedDate == 0.0f ? owner.Universe.StarDate + 20 : coordinatedDate;
             ChangeToStep(Process);
+            if(coordinatedAttack)
+            {
+                task.Type = MilitaryTask.TaskType.CoordinatedAttack;
+            }
             Fleet.CreateStrikeFromCurrentTask(task.Fleet, task, Owner, this);
-            Log.Info(ConsoleColor.Green, $"---- WarMission: New Strike Force from stage fleet, {Owner.Name} Vs. {TargetEmpire.Name} ----");
+            Log.Info(ConsoleColor.Green, $"---- WarMission: New Strike Force from stage fleet, {Owner.Name} Vs. {TargetEmpire.Name} ; coordinated: {coordinatedAttack} ----");
         }
 
         public override bool IsWarMissionTarget(Planet planet) => TargetPlanet == planet;
