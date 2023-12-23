@@ -241,37 +241,89 @@ namespace Ship_Game
             return AI.GetTasks().Any(t => t.IsWarTask && (t.TargetPlanet?.System == system || t.TargetSystem == system));
         }
         
+        public bool HasWarTaskTargetingPlanet(Planet planet)
+        {
+            return AI.GetTasks().Any(t => t.IsWarTask && t.TargetPlanet == planet);
+        }
+        
+        public bool HasWarTaskTargetingEmpire(Empire empire)
+        {
+            return AI.GetTasks().Any(t => t.IsWarTask && t.TargetEmpire == empire);
+        }
         
         /// <summary>
-        /// This Empire asks ally empire for coordinated attack on target planet at specified starDate.
+        /// If this Empire has a WarTask against the specified Empire, change the target planet of the task.
+        /// </summary>
+        /// <param name="newTarget">New planet to be targeted</param>
+        /// <param name="goal">Goal that has the WarTask</param>
+        /// <returns>TRUE if the new target is the current target of a goal</returns>
+        bool ChangeTargetPlanet(Planet newTarget, out Goal goal)
+        {
+            if (!HasWarTaskTargetingEmpire(newTarget.Owner))
+            {
+                goal = null;
+                return false;
+            }
+            
+            if (HasWarTaskTargetingPlanet(newTarget))
+            {
+                goal = AI.FindGoal(g => g.IsWarMissionTarget(newTarget));
+                return true;
+            }
+            
+            // find a goal that targets the empire and change the target planet
+            goal = AI.FindGoal(g => g.IsWarMissionTarget(newTarget.Owner));
+            if (goal == null)
+                return false;
+            
+            goal.TargetPlanet = newTarget;
+            return true;
+        }
+        
+        public Empire TargetPlanetOwner(Planet targetPlanet) => targetPlanet.Owner;
+        
+        public Planet TargetForCoordinatedAttack  {get; set;}
+        public bool PreparingForCoordinatedAttack => TargetForCoordinatedAttack != null;
+        
+        /// <summary>
+        /// This Empire asks ally empire to prepare for coordinated attack on target planet at specified starDate.
         /// </summary>
         /// <param name="ally">Allied Empire</param>
         /// <param name="target">Planet to be attacked</param>
-        /// <param name="starDate">Time of coordinated attack</param>
         /// <returns>True if ally agreed to attack the planet at the specified date</returns>
-        public bool AskAllyForCoordinatedAttack(Empire ally, Planet target, float starDate)
+        public bool AskAllyToPrepareForCoordinatedAttack(Empire ally, Planet target)
         {
-            return false;
+            if (ally == this || ally.isPlayer)
+                return false;
+            
+            // if ally is already preparing for coordinated attack, do nothing
+            if (ally.TargetForCoordinatedAttack == target)
+                return true;
+            
+            // is ally in war with the target owner?
+            if (!ally.IsAtWarWith(target.Owner))
+                return false;
+            
+            TargetForCoordinatedAttack = target;
+            return true;
         }
         
         /// <summary>
-        /// This Empire asks all allied empires for coordinated attack on target planet at specified starDate.
+        /// This Empire asks all allied empires to prepare for coordinated attack on target planet at specified starDate.
         /// </summary>
         /// <param name="target">Planet to be attacked</param>
-        /// <param name="starDate">Time of coordinated attack</param>
         /// <returns>List of Empires that agreed to the attack</returns>
-        public IReadOnlyList<Empire> AskAlliesForCoordinatedAttack(Planet target, float starDate)
+        public IReadOnlyList<Empire> AskAlliesToPrepareForCoordinatedAttack(Planet target)
         {
-            return null;
+            IReadOnlyList<Empire> allies = Universe.GetAllies(this);
+            List<Empire> alliesAgreed = allies.Where(ally => AskAllyToPrepareForCoordinatedAttack(ally, target)).ToList();
+            return alliesAgreed;
         }
         
-        /// <summary>
-        /// Based on the amount of allied fleets attacking the planet, this Empire adjusts the strength of its own fleet.
-        /// </summary>
-        void AdjustAttackFleetStrength(Fleet fleet, int alliedFleets)
+        public IReadOnlyList<Empire> Allies()
         {
+            return Universe.GetAllies(this);
         }
-        
     }
 
     public enum WarMissionType
