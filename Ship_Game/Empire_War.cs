@@ -1,9 +1,11 @@
-﻿using Ship_Game.AI;
+﻿using System.Collections.Generic;
+using Ship_Game.AI;
 using Ship_Game.Commands.Goals;
 using System.Linq;
 using SDGraphics;
 using SDUtils;
 using Ship_Game.AI.Tasks;
+using Ship_Game.Fleets;
 using Ship_Game.Gameplay;
 
 namespace Ship_Game
@@ -238,6 +240,38 @@ namespace Ship_Game
         {
             return AI.GetTasks().Any(t => t.IsWarTask && (t.TargetPlanet?.System == system || t.TargetSystem == system));
         }
+        
+        
+        /// <summary>
+        /// This Empire asks ally empire for coordinated attack on target planet at specified starDate.
+        /// </summary>
+        /// <param name="ally">Allied Empire</param>
+        /// <param name="target">Planet to be attacked</param>
+        /// <param name="starDate">Time of coordinated attack</param>
+        /// <returns>True if ally agreed to attack the planet at the specified date</returns>
+        public bool AskAllyForCoordinatedAttack(Empire ally, Planet target, float starDate)
+        {
+            return false;
+        }
+        
+        /// <summary>
+        /// This Empire asks all allied empires for coordinated attack on target planet at specified starDate.
+        /// </summary>
+        /// <param name="target">Planet to be attacked</param>
+        /// <param name="starDate">Time of coordinated attack</param>
+        /// <returns>List of Empires that agreed to the attack</returns>
+        public IReadOnlyList<Empire> AskAlliesForCoordinatedAttack(Planet target, float starDate)
+        {
+            return null;
+        }
+        
+        /// <summary>
+        /// Based on the amount of allied fleets attacking the planet, this Empire adjusts the strength of its own fleet.
+        /// </summary>
+        void AdjustAttackFleetStrength(Fleet fleet, int alliedFleets)
+        {
+        }
+        
     }
 
     public enum WarMissionType
