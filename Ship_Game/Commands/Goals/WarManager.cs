@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Ship_Game.AI;
 using Ship_Game.AI.StrategyAI.WarGoals;
 using Ship_Game.Data.Serialization;
@@ -24,7 +25,7 @@ namespace Ship_Game.Commands.Goals
         public WarManager(Empire owner, Empire enemy, WarType warType) : this(owner)
         {
             TargetEmpire = enemy;
-            Log.Info(ConsoleColor.Green, $"---- War: New War Goal {warType} vs.: {TargetEmpire.Name} ----");
+            Log.Info(ConsoleColor.Green, $"---- War: New WarManager Goal {warType} vs.: {TargetEmpire.Name} ----");
         }
 
         WarType GetWarType() => Owner.GetRelations(TargetEmpire).ActiveWar.WarType;
@@ -48,7 +49,10 @@ namespace Ship_Game.Commands.Goals
             {
                 if (Owner.CanAddAnotherWarGoal(TargetEmpire))
                 {
-                    Owner.AI.AddGoalAndEvaluate(new WarMission(Owner, TargetEmpire, planet));
+                    var alliesAgreed = Owner.AskAlliesToPrepareForCoordinatedAttack(planet);
+                    bool coordinatedAttack = alliesAgreed.Count > 0;
+                    Log.Info($"{alliesAgreed.Count} allies agreed to coordinated attack on {planet.Name} with {Owner.Name}");
+                    Owner.AI.AddGoalAndEvaluate(new WarMission(Owner, TargetEmpire, planet, coordinatedAttack));
                     return GoalStep.TryAgain;
                 }
             }
