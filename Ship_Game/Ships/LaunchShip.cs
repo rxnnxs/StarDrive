@@ -172,7 +172,7 @@ namespace Ship_Game.Ships
             {
                 Owner = ship;
                 RotationDegZ = rotation;
-                DoBarrelRoll = ShouldBarrelRoll();
+                DoBarrelRoll = false;//ShouldBarrelRoll();
                 Progress = InitialProgress;
                 TotalDuration = (InitialRotationDegX / ship.RotationRadsPerSecond.ToDegrees()).Clamped(2, 5);
                 RelativeDegForBarrel = 3.6f / (1 - Progress);
@@ -285,6 +285,8 @@ namespace Ship_Game.Ships
                 RotationDegZ = planet != null ? ship.Position.AngleToTarget(planet.Position) : rotation;
                 TotalDuration = 7;
                 Velocity = StartingVelocity(ship, RotationDegZ, MaxSpeedMultiplier);
+                FlameTrail = null;
+                Progress = 0;
             }
 
 
@@ -341,6 +343,7 @@ namespace Ship_Game.Ships
                 Owner = ship;
                 RotationDegZ = rotation;
                 TotalDuration = (MaxRotationDegX / (ship.RotationRadsPerSecond.ToDegrees() * 0.25f)).Clamped(5, 15);
+                Progress = 0;
             }
 
             public void Update(FixedSimTime timeStep, bool visible, ref float posZ, out float scale)
