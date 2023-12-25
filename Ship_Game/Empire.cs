@@ -99,7 +99,6 @@ namespace Ship_Game
         public float TotalOrbitalMaintenance { get; private set; }
         public float TotalMaintenanceInScrap { get; private set; }
         public float TotalTroopShipMaintenance { get; private set; }
-
         public float NetPlanetIncomes { get; private set; }
         public float TroopCostOnPlanets { get; private set; } // Maintenance in all Owned planets
         public float TroopInSpaceFoodNeeds { get; private set; }
@@ -114,6 +113,7 @@ namespace Ship_Game
         [StarData] public bool AutoColonize;
         [StarData] public bool AutoResearch;
         [StarData] public bool AutoBuildResearchStations;
+        [StarData] public bool AutoBuildMiningStations;
         public int TotalScore;
         public float TechScore;
         public float ExpansionScore;
@@ -140,6 +140,7 @@ namespace Ship_Game
         public bool CanBuildStations { get; private set; }
         public bool CanBuildShipyards { get; private set; }
         public bool CanBuildResearchStations { get; private set; }
+        public bool CanBuildMiningStations { get; private set; }
         public float CurrentMilitaryStrength;
         public float OffensiveStrength; // No Orbitals
         [StarData] public LoyaltyLists EmpireShips;
@@ -152,6 +153,7 @@ namespace Ship_Game
         public IShipDesign BestPlatformWeCanBuild { get; private set; }
         public IShipDesign BestStationWeCanBuild { get; private set; }
         public IShipDesign BestResearchStationWeCanBuild { get; private set; }
+        public IShipDesign BestMiningStationWeCanBuild { get; private set; }
         public HashSet<string> ShipTechs = new();
         [StarData] public Vector2 WeightedCenter;
         [StarData] public bool RushAllConstruction;
@@ -169,6 +171,7 @@ namespace Ship_Game
         [StarData] public bool AutoPickConstructors;
         [StarData] public bool AutoBuildTerraformers;
         [StarData] public bool AutoPickBestResearchStation;
+        [StarData] public bool AutoPickBestMiningStation;
         [StarData] public bool SymmetricDesignMode = true;
         [StarData] public Array<string> ObsoletePlayerShipModules;
 
@@ -176,6 +179,7 @@ namespace Ship_Game
 
         public const string DefaultBoardingShuttleName = "Assault Shuttle";
         public const string DefaultSupplyShuttleName   = "Supply Shuttle";
+        public const string DefaultMiningShipName      = "Mining Ship";
         public Ship BoardingShuttle => ResourceManager.GetShipTemplate(DefaultBoardingShuttleName, false);
         public Ship SupplyShuttle   => ResourceManager.GetShipTemplate(DefaultSupplyShuttleName);
         public bool IsCybernetic  => data.Traits.Cybernetic != 0;
@@ -255,6 +259,10 @@ namespace Ship_Game
 
             DiplomacyContactQueue = new();
             ObsoletePlayerShipModules = new();
+
+            ExoticBonuses = new();
+            foreach (Good good in ResourceManager.TransportableGoods.Filter(g => g.IsGasGiantMineable))
+                ExoticBonuses.Add(good.ExoticBonusType, new EmpireExoticBonuses(this, good));
         }
 
         // Create REBELS
@@ -267,6 +275,10 @@ namespace Ship_Game
             // clone the entire tech tree
             foreach (var tech in parentEmpire.TechnologyDict)
                 TechnologyDict[tech.Key] = new TechEntry(clone: tech.Value, newOwner:this);
+
+            ExoticBonuses = new();
+            foreach (Good good in ResourceManager.TransportableGoods.Filter(g => g.IsGasGiantMineable))
+                ExoticBonuses.Add(good.ExoticBonusType, new EmpireExoticBonuses(this, good));
 
             Initialize();
             UpdatePopulation();
@@ -345,6 +357,17 @@ namespace Ship_Game
                 return data.DefaultSupplyShuttle;
             }
             return DefaultSupplyShuttleName;
+        }
+
+        // this will get the name of a Mining Ship if defined in race.xml or use default one
+        public string GetMiningShipName()
+        {
+            if (data.DefaultMiningShip.NotEmpty() &&
+                ResourceManager.ShipTemplateExists(data.DefaultMiningShip))
+            {
+                return data.DefaultMiningShip;
+            }
+            return DefaultMiningShipName;
         }
 
         public float KnownEnemyStrengthIn(SolarSystem s, Empire e) => AI.ThreatMatrix.GetHostileStrengthAt(e, s.Position, s.Radius);
@@ -606,6 +629,11 @@ namespace Ship_Game
 
             OwnedPlanets.Add(planet);
             Universe.OnPlanetOwnerAdded(this, planet);
+            if (planet.System.GetPotentialOpsOwner(out Empire potentialMiningOpsOwner))
+            {
+                foreach (Planet mineable in planet.System.PlanetList.Filter(p => p.IsMineable))
+                    mineable.Mining.ChangeOwnershipIfNeeded(potentialMiningOpsOwner);
+            }
 
             OwnedSolarSystems.AddUniqueRef(planet.System);
             CalcWeightedCenter(calcNow: true);
@@ -907,7 +935,9 @@ namespace Ship_Game
                 case TechUnlockType.Diplomacy when techEntry.UnlockFromDiplomacy(this, otherEmpire):
                 case TechUnlockType.Spy       when techEntry.UnlockFromSpy(this, otherEmpire):
                 case TechUnlockType.Scrap     when techEntry.UnlockFromScrap(this, otherEmpire):
-                    UpdateForNewTech(); break;
+                    UpdateForNewTech();
+                    TriggerRemoveGovernorQueuedBuildingsTechUnlock(techEntry);
+                    break;
             }
         }
 
@@ -917,6 +947,15 @@ namespace Ship_Game
             AI.SpaceRoadsManager.UpdateAllRoadsMaintenance();
             AI.TriggerRefit();
             TriggerFreightersRefit();
+        }
+
+        void TriggerRemoveGovernorQueuedBuildingsTechUnlock(TechEntry techEntry)
+        {
+            if (NonCybernetic && techEntry.UnlocksFoodBuilding || techEntry.UnlocksProdBuilding)
+            {
+                foreach (Planet p in OwnedPlanets)
+                    p.Construction.RemoveGovernorQueuedBuildingsTechnUnlock();
+            }
         }
 
         public void AssimilateTech(Empire conqueredEmpire)
@@ -973,6 +1012,7 @@ namespace Ship_Game
                 AI.Update(); // Must be done before DoMoney and Take turn
                 GovernPlanets(); // this does the governing after getting the budgets from UpdateAI when loading a game
                 DoMoney();
+                CalculateExoticBonuses();
                 TakeTurn(us);
 
                 didUpdate = true;
@@ -1141,6 +1181,7 @@ namespace Ship_Game
             BestPlatformWeCanBuild = BestShipWeCanBuild(RoleName.platform, this);
             BestStationWeCanBuild  = BestShipWeCanBuild(RoleName.station, this);
             BestResearchStationWeCanBuild = PickResearchStation(this);
+            BestMiningStationWeCanBuild   = PickMiningStation(this);
         }
 
         public void UpdateDefenseShipBuildingOffense()
@@ -1173,6 +1214,9 @@ namespace Ship_Game
 
             if (s.IsResearchStation)
                 CanBuildResearchStations= true;
+
+            if (s.IsMiningStation)
+                CanBuildMiningStations= true;
         }
 
         public void ApplyModuleHealthTechBonus(float bonus)
@@ -1262,11 +1306,19 @@ namespace Ship_Game
             UpdateTradeIncome();
             UpdateNetPlanetIncomes();
             UpdateShipMaintenance();
-            UpdateAveragePlanetStorage();
-            if (IsEconomyEnabled)
-            {
-                AddMoney(NetIncome);
-            }
+            UpdatePlanetStorageStats();
+            float incomeFromExoticBonus = GetIncomeFromExoticBonus();
+            AddMoney(NetIncome + incomeFromExoticBonus);
+        }
+
+        float GetIncomeFromExoticBonus()
+        {
+            float exoticBonus = GetStaticExoticBonusMuliplier(ExoticBonusType.Credits);
+            exoticBonus = NetPlanetIncomes < 0 ? 1 / exoticBonus : exoticBonus;
+            float planetIncomeWithBonus = NetPlanetIncomes > 0 
+                ? NetPlanetIncomes*exoticBonus - NetPlanetIncomes
+                : NetPlanetIncomes * exoticBonus;
+            return planetIncomeWithBonus;
         }
 
         void ResetMoneySpentOnProduction()
@@ -1346,43 +1398,60 @@ namespace Ship_Game
 
         private void UpdateShipMaintenance()
         {
-            TotalShipMaintenance          = 0.0f;
-            TotalWarShipMaintenance       = 0f;
-            TotalCivShipMaintenance       = 0f;
-            TotalOrbitalMaintenance       = 0;
-            TotalEmpireSupportMaintenance = 0;
-            TotalMaintenanceInScrap       = 0f;
-            TotalTroopShipMaintenance     = 0;
+            float totalShipMaintenance          = 0;
+            float totalWarShipMaintenance       = 0;
+            float totalCivShipMaintenance       = 0;
+            float totalOrbitalMaintenance       = 0;
+            float totalEmpireSupportMaintenance = 0;
+            float totalMaintenanceInScrap       = 0;
+            float totalTroopShipMaintenance     = 0;
+            float totalShipSurfaceArea          = 0;
+            float totalShipWarpThrustK          = 0;
+
             foreach (Ship ship in OwnedShips)
             {
                 float maintenance = ship.GetMaintCost();
                 if (!ship.Active || ship.AI.State == AIState.Scrap)
                 {
-                    TotalMaintenanceInScrap += maintenance;
+                    totalMaintenanceInScrap += maintenance;
                     continue;
                 }
 
                 switch (ship.DesignRoleType)
                 {
                     case RoleType.WarSupport:
-                    case RoleType.Warship: TotalWarShipMaintenance             += maintenance; break;
-                    case RoleType.Civilian: TotalCivShipMaintenance            += maintenance; break;
-                    case RoleType.EmpireSupport: TotalEmpireSupportMaintenance += maintenance; break;
-                    case RoleType.Orbital: TotalOrbitalMaintenance             += maintenance; break;
-                    case RoleType.Troop: TotalTroopShipMaintenance             += maintenance; break;
+                    case RoleType.Warship:       totalWarShipMaintenance       += maintenance; break;
+                    case RoleType.Civilian:      totalCivShipMaintenance       += maintenance; break;
+                    case RoleType.EmpireSupport: totalEmpireSupportMaintenance += maintenance; break;
+                    case RoleType.Orbital:       totalOrbitalMaintenance       += maintenance; break;
+                    case RoleType.Troop:         totalTroopShipMaintenance     += maintenance; break;
                     case RoleType.NotApplicable: break;
                     default:
                         Log.Warning($"Type not included in maintenance and not in notapplicable {ship.DesignRoleType}\n    {ship} ");
                         break;
                 }
-                TotalShipMaintenance += maintenance;
+
+                totalShipMaintenance += maintenance;
+                totalShipSurfaceArea += ship.SurfaceArea;
+                totalShipWarpThrustK += ship.Stats.WarpThrust;
             }
 
             for (int i = 0; i < OwnedProjectors.Count; i++)
             {
                 Ship ship = OwnedProjectors[i];
-                TotalShipMaintenance += ship.GetMaintCost();
+                totalShipMaintenance += ship.GetMaintCost();
+                totalShipSurfaceArea += ship.SurfaceArea;
             }
+
+            TotalShipMaintenance          = totalShipMaintenance;
+            TotalWarShipMaintenance       = totalWarShipMaintenance;
+            TotalCivShipMaintenance       = totalCivShipMaintenance;
+            TotalOrbitalMaintenance       = totalOrbitalMaintenance;
+            TotalEmpireSupportMaintenance = totalEmpireSupportMaintenance;
+            TotalMaintenanceInScrap       = totalMaintenanceInScrap;
+            TotalTroopShipMaintenance     = totalTroopShipMaintenance;
+            TotalShipSurfaceArea          = totalShipSurfaceArea;
+            TotalShipWarpThrustK          = totalShipWarpThrustK * 0.001f;
         }
 
         public float EstimateNetIncomeAtTaxRate(float rate)
@@ -1812,7 +1881,7 @@ namespace Ship_Game
 
         void CheckFederationVsPlayer(UniverseState us)
         {
-            if (us.P.PreventFederations || us.StarDate < 1100f || (us.StarDate % 1).NotZero())
+            if (us.P.PreventFederations || us.StarDate < 1100f || us.StarDate % 1 > 0)
                 return;
 
             float playerScore    = TotalScore;
@@ -2064,7 +2133,7 @@ namespace Ship_Game
             if (fromSave)
                 MilitaryScore = data.MilitaryScoreAverage;
             else
-                MilitaryScore = data.NormalizeMilitaryScore(CurrentMilitaryStrength); // Avoid fluctuations
+                MilitaryScore = HelperFunctions.ExponentialMovingAverage(MilitaryScore, CurrentMilitaryStrength);
 
             TotalScore = (int)(MilitaryScore + IndustrialScore + TechScore + ExpansionScore);
         }

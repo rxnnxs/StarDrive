@@ -133,6 +133,7 @@ namespace Ship_Game
         [StarData] public string CurrentAutoColony    = "";
         [StarData] public string CurrentAutoScout     = "";
         [StarData] public string CurrentConstructor   = "";
+        [StarData] public string CurrentMiningStation = "";
         [StarData] public string CurrentResearchStation = "";
         [StarData] public string DiplomacyDialogPath;
         [StarData] public DTrait DiplomaticPersonality;
@@ -205,6 +206,9 @@ namespace Ship_Game
         [StarData] public float MissileHPModifier = 1f;
         [StarData] public bool Inhibitors;
         [StarData] public float BaseReproductiveRate = 0.01f;
+        [StarData] public float ExoticStorageMultiplier = 1;
+        [StarData] public float MiningSpeedMultiplier = 1;
+        [StarData] public float RefiningRatioMultiplier = 1;
 
         // Added by McShooterz: power bonus
         [StarData] public float PowerFlowMod   = 0f;
@@ -232,8 +236,10 @@ namespace Ship_Game
         //FB: default assault and supply shuttles - it is not mandatory since we have a default boarding / supply shuttles in the game
         [StarData] public string DefaultAssaultShuttle;
         [StarData] public string DefaultSupplyShuttle;
+        [StarData] public string DefaultMiningShip;
 
         [StarData] public string DefaultResearchStation;
+        [StarData] public string DefaultMiningStation;
 
         // FB - Thruster Colors
         [StarData] public byte ThrustColor0R;
@@ -331,6 +337,11 @@ namespace Ship_Game
                                        : "Basic Research Station";
 
         [XmlIgnore]
+        public string MiningStation => CurrentMiningStation.NotEmpty() ? CurrentMiningStation
+                                       : DefaultMiningStation.NotEmpty() ? DefaultMiningStation
+                                       : "Basic Mining Station";
+
+        [XmlIgnore]
         public bool IsCybernetic => Traits.Cybernetic > 0;
         [XmlIgnore]
         public bool IsFaction => Faction > 0;
@@ -410,15 +421,6 @@ namespace Ship_Game
                 case WeaponStat.Shield:    return tag.ShieldDamage;
                 default: return 0f;
             }
-        }
-
-        public float NormalizeMilitaryScore(float currentStr)
-        {
-            // exponential moving average
-            float newRatio = 0.1f;
-            float score = currentStr *= 0.001f;
-            MilitaryScoreAverage = MilitaryScoreAverage*(1f-newRatio) + score*newRatio;
-            return MilitaryScoreAverage;
         }
 
         void SetTechModifierDefaults()

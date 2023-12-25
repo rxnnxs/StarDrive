@@ -56,9 +56,13 @@ namespace Ship_Game.Ships
 
         // EVT: when a fighter of this carrier is launched
         //      or when a boarding party shuttle launches
-        public virtual void OnShipLaunched(Ship ship)
+        public virtual void OnShipLaunched(Ship launchedShip, ShipModule hangar)
         {
-            Carrier.AddToOrdnanceInSpace(ship.ShipOrdLaunchCost);
+            Carrier.AddToOrdnanceInSpace(launchedShip.ShipOrdLaunchCost);
+            ChangeOrdnance(-launchedShip.ShipOrdLaunchCost);
+            hangar.SetHangarShip(launchedShip);
+            launchedShip.Mothership = this;
+            hangar.HangarTimer = hangar.HangarTimerConstant;
         }
 
         // EVT: when a fighter of this carrier returns to hangar
@@ -71,6 +75,7 @@ namespace Ship_Game.Ships
         public virtual void OnLaunchedShipDie(Ship ship)
         {
             Carrier.AddToOrdnanceInSpace(-ship.ShipOrdLaunchCost);
+            UpdateOrdnancePercentage();
         }
 
         // EVT: when a ShipModule installs a new weapon
@@ -107,6 +112,9 @@ namespace Ship_Game.Ships
 
             if (IsResearchStation)
                 OnResearchStationDeath();
+
+            if (IsMiningStation)
+                OnMiningStationDeath();
 
             DamageRelationsOnDeath(pSource);
             CreateEventOnDeath();
@@ -153,6 +161,22 @@ namespace Ship_Game.Ships
             else
             {
                 Log.Error($"On Ship die - research station {Name} no goal found!");
+            }
+
+            Loyalty.AI.SpaceRoadsManager.RemoveRoadIfNeeded(System);
+        }
+
+        void OnMiningStationDeath()
+        {
+            Goal miningGoal = Loyalty.AI.FindGoal(g => g is MiningOps && g.TargetShip == this);
+            if (miningGoal != null && miningGoal.TargetPlanet.IsMineable)
+            {
+                miningGoal.TargetPlanet.System.GetPotentialOpsOwner(out Empire potentialOwner);
+                miningGoal.TargetPlanet.Mining.ChangeOwnershipIfNeeded(potentialOwner);
+            }
+            else
+            {
+                Log.Error($"On Ship die - mining station {Name} no goal found!");
             }
 
             Loyalty.AI.SpaceRoadsManager.RemoveRoadIfNeeded(System);

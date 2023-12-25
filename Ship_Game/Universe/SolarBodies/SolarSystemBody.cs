@@ -213,7 +213,7 @@ namespace Ship_Game
         [StarData] public float BaseFertility { get; protected set; } // This is clamped to a minimum of 0, cannot be negative
         [StarData] public float BaseMaxFertility { get; protected set; } // Natural Fertility, this is clamped to a minimum of 0, cannot be negative
         [StarData] public float BuildingsFertility { get; protected set; }  // Fertility change by all relevant buildings. Can be negative
-        [StarData] public float MineralRichness;
+        [StarData] public float MineralRichness; // Mineable Gas giants get the richness of the exotic resource
 
         [StarData] protected Array<Building> BuildingList = new();
         public int NumBuildings => BuildingList.Count;
@@ -314,11 +314,32 @@ namespace Ship_Game
         {
             get
             {
-                if (MineralRichness > 2.5) return Localizer.Token(GameText.UltraRich);
-                if (MineralRichness > 1.5) return Localizer.Token(GameText.Rich);
-                if (MineralRichness > 0.75) return Localizer.Token(GameText.Average);
-                if (MineralRichness > 0.25) return Localizer.Token(GameText.Poor);
-                return Localizer.Token(GameText.UltraPoor);
+                if (this is Planet p && p.Category == PlanetCategory.GasGiant)
+                {
+                    if (p.IsMineable) 
+                    {
+                        float richness = p.Mining.Richness;
+                        string text;
+                        if (richness > 7.5)      text = $"{Localizer.Token(GameText.UltraRich)} ({richness})";
+                        else if (richness > 5)   text = $"{Localizer.Token(GameText.Rich)} ({richness})";
+                        else if (richness > 2.5) text = $"{Localizer.Token(GameText.Average)} ({richness})";
+                        else                     text = $"{Localizer.Token(GameText.Poor)} ({richness})";
+
+                        return text;
+                    }
+                    else
+                    {
+                        return Localizer.Token(GameText.UltraPoor);
+                    }
+                }
+                else
+                {
+                    if (MineralRichness > 2.5)  return Localizer.Token(GameText.UltraRich);
+                    if (MineralRichness > 1.5)  return Localizer.Token(GameText.Rich);
+                    if (MineralRichness > 0.75) return Localizer.Token(GameText.Average);
+                    if (MineralRichness > 0.25) return Localizer.Token(GameText.Poor);
+                    return Localizer.Token(GameText.UltraPoor);
+                }
             }
         }
 
@@ -562,11 +583,21 @@ namespace Ship_Game
                     GetTraitMax(newOwner.data.Traits.EnemyPlanetInhibitionPercentCounter, ownerTraits.EnemyPlanetInhibitionPercentCounter);
 
                 // Do not add AI difficulty modifiers for the below
-                float realProductionMod = ownerTraits.ProductionMod - oldOwner.DifficultyModifiers.ProductionMod;
-                float realResearchMod   = ownerTraits.ResearchMod - oldOwner.DifficultyModifiers.ResearchMod;
-                float realShipCostMod   = ownerTraits.ShipCostMod - oldOwner.DifficultyModifiers.ShipCostMod;
-                float realModHpModifer  = ownerTraits.ModHpModifier - oldOwner.DifficultyModifiers.ModHpModifier;
-                float realTaxMod        = ownerTraits.TaxMod - oldOwner.DifficultyModifiers.TaxMod;
+                float realProductionMod = Owner.isPlayer && oldOwner.DifficultyModifiers.ProductionMod.NotZero()
+                    ? ownerTraits.ProductionMod/oldOwner.DifficultyModifiers.ProductionMod - 1
+                    : ownerTraits.ProductionMod;
+
+                float realResearchMod = newOwner.isPlayer && oldOwner.DifficultyModifiers.ResearchMod.NotZero()
+                    ? ownerTraits.ResearchMod/oldOwner.DifficultyModifiers.ResearchMod - 1
+                    : ownerTraits.ResearchMod;
+
+                float realTaxMod = newOwner.isPlayer && oldOwner.DifficultyModifiers.TaxMod.NotZero()
+                    ? ownerTraits.TaxMod/oldOwner.DifficultyModifiers.TaxMod - 1 
+                    : ownerTraits.TaxMod;
+
+                float realShipCostMod   = newOwner.isPlayer ? ownerTraits.ShipCostMod - oldOwner.DifficultyModifiers.ShipCostMod : ownerTraits.ShipCostMod;
+                float realModHpModifer  = newOwner.isPlayer ? ownerTraits.ModHpModifier - oldOwner.DifficultyModifiers.ModHpModifier : ownerTraits.ModHpModifier;
+
 
                 newOwner.data.Traits.ShipCostMod   = GetTraitMin(newOwner.data.Traits.ShipCostMod, realShipCostMod); // min
                 newOwner.data.Traits.ProductionMod = GetTraitMax(newOwner.data.Traits.ProductionMod, realProductionMod);

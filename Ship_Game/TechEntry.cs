@@ -154,31 +154,24 @@ namespace Ship_Game
         }
 
         public bool UnlocksFoodBuilding => GoodsBuildingUnlocked(Goods.Food);
+        public bool UnlocksProdBuilding => GoodsBuildingUnlocked(Goods.Production);
         bool GoodsBuildingUnlocked(Goods good)
         {
             foreach (Building building in Tech.GetBuildings())
             {
                 switch (good)
                 {
-                    case Goods.None:
-                        break;
+                    case Goods.None: break;
+                    case Goods.Production when building.ProducesProduction:
+                    case Goods.Food       when building.ProducesFood || building.PlusTerraformPoints > 0 || building.MaxFertilityOnBuild > 0:
+                    case Goods.Colonists  when building.ProducesPopulation: return true;
                     case Goods.Production:
-                        break;
                     case Goods.Food:
-                    {
-                        if (building.PlusFlatFoodAmount > 0
-                            || building.PlusFoodPerColonist > 0
-                            || building.PlusTerraformPoints > 0
-                            || building.MaxFertilityOnBuild > 0)
-                            return true;
-                        break;
-                    }
-                    case Goods.Colonists:
-                        break;
-                    default:
-                        throw new ArgumentOutOfRangeException(nameof(good), good, null);
+                    case Goods.Colonists: break; 
+                    default: throw new ArgumentOutOfRangeException(nameof(good), good, null);
                 }
             }
+
             return false;
         }
 
@@ -687,6 +680,12 @@ namespace Ship_Game
         {
             if (this == None) // this is a None technology, and should never unlock
                 return true;
+            if (Tech.RequiresMiningOps && empire.Universe.P.DisableMiningOps
+                || Tech.RequiresResearchStations && empire.Universe.P.DisableResearchStations)
+            {
+                return true;
+            }
+
             if (IsUnlockedAtGameStart(empire))
                 return false;
             if (Tech.HiddenFrom.Count > 0 && InRaceRequirementsArray(empire, Tech.HiddenFrom))
@@ -973,6 +972,9 @@ namespace Ship_Game
                 case "Set Population Growth Max": data.Traits.PopGrowthMax = unlockedBonus.Bonus; break;
                 case "Xenolinguistic Nuance":
                 case "Diplomacy Bonus": data.OngoingDiplomaticModifier += unlockedBonus.Bonus; break;
+                case "Exotic Storage Bonus": data.ExoticStorageMultiplier += unlockedBonus.Bonus; break;
+                case "Mining Speed Bonus": data.MiningSpeedMultiplier += unlockedBonus.Bonus; break;
+                case "Refining Ratio Bonus": data.RefiningRatioMultiplier += unlockedBonus.Bonus; break;
                 case "Ordnance Effectiveness":
                 case "Ordnance Effectiveness Bonus": data.OrdnanceEffectivenessBonus += unlockedBonus.Bonus; break;
                 case "Tachyons":

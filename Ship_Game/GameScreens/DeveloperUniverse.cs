@@ -68,6 +68,7 @@ public class DeveloperUniverse : UniverseScreen
             e.data.CurrentAutoFreighter = e.data.FreighterShip;
             e.data.CurrentConstructor = e.data.ConstructorShip;
             e.data.CurrentResearchStation = e.data.ResearchStation;
+            e.data.CurrentMiningStation = e.data.MiningStation;
 
             if (isSystemsReq)
             {

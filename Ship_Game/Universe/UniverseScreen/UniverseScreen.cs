@@ -91,7 +91,7 @@ namespace Ship_Game
         public SolarsystemOverlay SystemInfoOverlay;
         public ShipListInfoUIElement shipListInfoUI;
         public VariableUIElement vuiElement;
-        MiniMap minimap;
+        public MiniMap Minimap { get; private set; }
         bool loading;
         public float transitionElapsedTime;
 
@@ -102,6 +102,8 @@ namespace Ship_Game
         public Ship ShipToView;
         public float AdjustCamTimer;
         public AutomationWindow aw;
+        public ExoticBonusesWindow ExoticBonusesWindow;
+        public FreighterUtilizationWindow FreighterUtilizationWindow;
         public bool DefiningAO; // are we defining a new AO?
         public bool DefiningTradeRoutes; // are we defining  trade routes for a freighter?
         public Rectangle AORect; // used for showing current AO Rect definition
@@ -399,9 +401,9 @@ namespace Ship_Game
                                    ? empire.data.StartingShip
                                    : empire.data.PrototypeShip;
 
-                Ship.CreateShipNearPlanet(UState, starterShip, empire, homePlanet, true, initLaunch: false);
-                Ship.CreateShipNearPlanet(UState, colonyShip, empire, homePlanet, true, initLaunch: false);
-                Ship startingFrieghter = Ship.CreateShipNearPlanet(UState, freighter, empire, homePlanet, true, initLaunch: false);
+                Ship.CreateShipNearPlanet(UState, starterShip, empire, homePlanet, true);
+                Ship.CreateShipNearPlanet(UState, colonyShip, empire, homePlanet, true);
+                Ship startingFrieghter = Ship.CreateShipNearPlanet(UState, freighter, empire, homePlanet, true);
                 if (startingFrieghter != null) // FB - wa for new frieghter since this is done onShipComplete in sbproduction
                 {
                     startingFrieghter.TransportingProduction = true;
@@ -411,7 +413,7 @@ namespace Ship_Game
                 }
 
                 for (int i = 0; i < 1 + empire.data.Traits.ExtraStartingScouts; i++)
-                    Ship.CreateShipNearPlanet(UState, startingScout, empire, homePlanet, true, initLaunch: false);
+                    Ship.CreateShipNearPlanet(UState, startingScout, empire, homePlanet, true);
             }
         }
 
@@ -437,7 +439,9 @@ namespace Ship_Game
 
             Frustum = new BoundingFrustum(ViewProjection);
             mmHousing = new Rectangle(width - (276 + minimapOffSet), height - 256, 276 + minimapOffSet, 256);
-            minimap = Add(new MiniMap(this, mmHousing));
+            Minimap = Add(new MiniMap(this, mmHousing));
+            ExoticBonusesWindow = Add(new ExoticBonusesWindow(this));
+            FreighterUtilizationWindow = Add(new FreighterUtilizationWindow(this));
 
             MinimapDisplayRect = new Rectangle(mmHousing.X + 61 + minimapOffSet, mmHousing.Y + 43, 200, 200);
             mmShowBorders = new Rectangle(MinimapDisplayRect.X, MinimapDisplayRect.Y - 25, 32, 32);
@@ -642,6 +646,8 @@ namespace Ship_Game
             Mem.Dispose(ref Particles);
             Mem.Dispose(ref Shields);
             Mem.Dispose(ref aw);
+            Mem.Dispose(ref ExoticBonusesWindow);
+            Mem.Dispose(ref FreighterUtilizationWindow);
             Mem.Dispose(ref DebugWin);
             Mem.Dispose(ref workersPanel);
         }
