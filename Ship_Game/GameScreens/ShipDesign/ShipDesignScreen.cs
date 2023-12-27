@@ -48,9 +48,11 @@ namespace Ship_Game
 
         readonly Array<ShipHull> AvailableHulls = new Array<ShipHull>();
         UIButton BtnSaveAs;
-        UIButton BtnSymmetricDesign; // Symmetric Module Placement Feature by Fat Bastard
-        UIButton BtnFilterModules;   // Filter Absolute Modules
-        UIButton BtnStripShip;       // Removes all modules but armor, shields and command modules
+        UIButton BtnSymmetricDesign;        // Symmetric Module Placement Feature by Fat Bastard
+        UIButton BtnFilterModules;          // Filter Obsolete Modules
+        UIButton BtnAutoFilterArmor;        // Automatically filters out old armor modules
+        UIButton BtnAutoFilterPowerPlants;  // Automatically filters out old reactors
+        UIButton BtnStripShip;              // Removes all modules but armor, shields and command modules
         GenericButton ArcsButton;
         Rectangle SearchBar;
         Rectangle BottomSep;
@@ -94,6 +96,18 @@ namespace Ship_Game
         {
             get => ParentUniverse.UState.P.FilterOldModules;
             set => ParentUniverse.UState.P.FilterOldModules = value;
+        }
+        
+        public bool IsAutoFilterOldArmorMode
+        {
+            get => ParentUniverse.UState.P.AutoFilterOldArmor;
+            set => ParentUniverse.UState.P.AutoFilterOldArmor = value;
+        }
+        
+        public bool IsAutoFilterOldPowerPlantsMode
+        {
+            get => ParentUniverse.UState.P.AutoFilterOldPowerPlants;
+            set => ParentUniverse.UState.P.AutoFilterOldPowerPlants = value;
         }
           
         struct MirrorSlot
@@ -440,11 +454,14 @@ namespace Ship_Game
             UpdateDesignedShip(forceUpdate:true);
         }
 
-        ButtonStyle SymmetricDesignBtnStyle  => IsSymmetricDesignMode ? ButtonStyle.Military : ButtonStyle.BigDip;
-        ButtonStyle FilterModulesBtnStyle    => IsFilterOldModulesMode ? ButtonStyle.Military : ButtonStyle.BigDip;
+        ButtonStyle SymmetricDesignBtnStyle       => IsSymmetricDesignMode ? ButtonStyle.Military : ButtonStyle.BigDip;
+        ButtonStyle FilterModulesBtnStyle         => IsFilterOldModulesMode ? ButtonStyle.Military : ButtonStyle.BigDip;
+        ButtonStyle AutoFilterOldArmorStyle       => IsAutoFilterOldArmorMode ? ButtonStyle.Military : ButtonStyle.BigDip;
+        ButtonStyle AutoFilterOldPowerPlantsStyle => IsAutoFilterOldPowerPlantsMode ? ButtonStyle.Military : ButtonStyle.BigDip;
 
         void CreateGUI()
         {
+            Log.Warning("ShipDesignScreen.CreateGUI");
             RemoveAll();
             ModuleSelectComponent = Add(new ModuleSelection(this, new(5, LowRes ? 45 : 100), new(305, LowRes ? 350 : 490)));
 
@@ -522,6 +539,22 @@ namespace Ship_Game
             BtnFilterModules.ClickSfx = "blip_click";
             BtnFilterModules.Tooltip  = GameText.WhenToggledRedAnyModule;
             BtnFilterModules.Style    = FilterModulesBtnStyle;
+            
+            BtnAutoFilterArmor = bottomListLeft.Add(ButtonStyle.Medium, "Auto-Filter Old Armor", click: b =>
+            {
+                OnAutoFilterArmorToggle();
+            });
+            BtnAutoFilterArmor.ClickSfx = "blip_click";
+            BtnAutoFilterArmor.Tooltip  = "Serves as a switch to toggle all old armor as obsolete";
+            BtnAutoFilterArmor.Style    = AutoFilterOldArmorStyle;
+            
+            BtnAutoFilterPowerPlants = bottomListLeft.Add(ButtonStyle.Medium, "Auto-Filter Old Reactors", click: b =>
+            {
+                OnAutoFilterPowerPlantsToggle();
+            });
+            BtnAutoFilterPowerPlants.ClickSfx = "blip_click";
+            BtnAutoFilterPowerPlants.Tooltip  = "Serves as a switch to toggle all old reactors as obsolete";
+            BtnAutoFilterPowerPlants.Style    = AutoFilterOldPowerPlantsStyle;
 
             SearchBar = new Rectangle((int)ScreenCenter.X, (int)bottomListRight.Y, 210, 25);
             BottomSep = new Rectangle(BlackBar.X, BlackBar.Y, BlackBar.Width, 1);

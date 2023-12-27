@@ -426,6 +426,28 @@ namespace Ship_Game
             BtnFilterModules.Style = FilterModulesBtnStyle;
             ModuleSelectComponent.ResetActiveCategory();
         }
+        
+        void OnAutoFilterArmorToggle()
+        {
+            IsAutoFilterOldArmorMode = !IsAutoFilterOldArmorMode;
+            BtnAutoFilterArmor.Style = AutoFilterOldArmorStyle;
+            
+            var armorUnlockedByPlayer = ResourceManager.PureArmorModules(Player);
+            Log.Info($"ShipDesignScreenInput: OnAutoFilterArmorToggle: {armorUnlockedByPlayer.Count} armor modules unlocked by player");
+            
+            ModuleSelectComponent.ResetActiveCategory();
+        }
+        
+        void OnAutoFilterPowerPlantsToggle()
+        {
+            IsAutoFilterOldPowerPlantsMode = !IsAutoFilterOldPowerPlantsMode;
+            BtnAutoFilterPowerPlants.Style = AutoFilterOldPowerPlantsStyle;
+            
+            var powerPlantsUnlockedByPlayer = ResourceManager.PowerPlants(Player);
+            Log.Info($"ShipDesignScreenInput: OnAutoFilterPowerPlantsToggle: {powerPlantsUnlockedByPlayer.Count} power plants unlocked by player");
+            
+            ModuleSelectComponent.ResetActiveCategory();
+        }
 
         void OnStripShipToggle()
         {
