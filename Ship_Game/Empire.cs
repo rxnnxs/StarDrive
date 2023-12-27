@@ -864,9 +864,21 @@ namespace Ship_Game
             UnlockedModulesDict[moduleUID] = true;
         }
         
+        public void MarkShipModulesObsolete(IList<ShipModule> modules)
+        {
+            foreach (ShipModule module in modules)
+                MarkShipModuleObsolete(module.UID);
+        }
+        
         public void MarkShipModuleObsolete(string moduleUID)
         {
             ObsoletePlayerShipModules.AddUnique(moduleUID); // AddUnique because there are multiple buttons to mark the same module obsolete
+        }
+        
+        public void UnMarkShipModulesObsolete(IList<ShipModule> modules)
+        {
+            foreach (ShipModule module in modules)
+                UnMarkShipModuleObsolete(module.UID);
         }
         
         public void UnMarkShipModuleObsolete(string moduleUID)

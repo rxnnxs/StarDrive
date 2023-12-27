@@ -474,10 +474,7 @@ namespace Ship_Game
             
             if (IsAutoFilterOldArmorMode)
             {
-                foreach (ShipModule armor in totalArmors)
-                {
-                    Player.UnMarkShipModuleObsolete(armor.UID);
-                }
+                Player.UnMarkShipModulesObsolete(totalArmors);
             }
             else
             {
@@ -486,11 +483,8 @@ namespace Ship_Game
                 var bestBulkheads = PickBestModules(bulkheads);
                 var totalBestArmors = bestArmors.Concat(bestPowerArmors).Concat(bestBulkheads).ToList();
 
-                foreach (ShipModule armor in totalArmors)
-                {
-                    if (!totalBestArmors.Contains(armor))
-                        Player.MarkShipModuleObsolete(armor.UID);
-                }
+                var armorsToRemove = totalArmors.Except(totalBestArmors).ToList();
+                Player.MarkShipModulesObsolete(armorsToRemove);
             }
             
             IsAutoFilterOldArmorMode = !IsAutoFilterOldArmorMode;
@@ -504,19 +498,13 @@ namespace Ship_Game
             Log.Info($"ShipDesignScreenInput: OnAutoFilterPowerPlantsToggle: {powerPlantsUnlockedByPlayer.Count} power plants unlocked by player");
             if (IsAutoFilterOldPowerPlantsMode)
             {
-                foreach (ShipModule powerPlant in powerPlantsUnlockedByPlayer)
-                {
-                    Player.UnMarkShipModuleObsolete(powerPlant.UID);
-                }
+                Player.UnMarkShipModulesObsolete(powerPlantsUnlockedByPlayer);
             }
             else
             {
                 var bestPowerPlants = PickBestModules(powerPlantsUnlockedByPlayer);
-                foreach (ShipModule powerPlant in powerPlantsUnlockedByPlayer)
-                {
-                    if (!bestPowerPlants.Contains(powerPlant))
-                        Player.MarkShipModuleObsolete(powerPlant.UID);
-                }
+                var powerPlantsToRemove = powerPlantsUnlockedByPlayer.Except(bestPowerPlants).ToList();
+                Player.MarkShipModulesObsolete(powerPlantsToRemove);
             }
             
             IsAutoFilterOldPowerPlantsMode = !IsAutoFilterOldPowerPlantsMode;
