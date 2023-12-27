@@ -1,5 +1,7 @@
 using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using SDGraphics;
 using SDUtils;
 using Ship_Game.Audio;
@@ -427,25 +429,98 @@ namespace Ship_Game
             ModuleSelectComponent.ResetActiveCategory();
         }
         
+        /// <summary>
+        /// Returns a list of modules that are best from the provided input.
+        /// Each distinct module size is represented by a single module in the output list.
+        /// </summary>
+        private IEnumerable<ShipModule> PickBestModules(IList<ShipModule> modules)
+        {
+            
+            Dictionary<int, List<ShipModule>> modulesPerSize = new(CollectionExt.Count(modules));
+            
+            foreach (var shipModule in modules)
+            {
+                int moduleSize = shipModule.XSize * shipModule.YSize;   // some modules are 4x6, some 6x4, but they are the same size
+                if (!modulesPerSize.TryGetValue(moduleSize, out var modulesOfSameSize))
+                {
+                    modulesOfSameSize = new List<ShipModule>();
+                    modulesPerSize.Add(moduleSize, modulesOfSameSize);
+                }
+                modulesPerSize[moduleSize].Add(shipModule);
+            }
+            
+            List<ShipModule> bestModules = new(modulesPerSize.Count);
+            foreach (var modulesOfSameSize in modulesPerSize.Values)
+            {
+                ShipModule bestModule = modulesOfSameSize[0];
+                foreach (var module in modulesOfSameSize)
+                {
+                    if (module.Cost > bestModule.Cost)
+                        bestModule = module;
+                }
+                bestModules.Add(bestModule);
+            }
+            
+            return bestModules;
+        }
+        
         void OnAutoFilterArmorToggle()
         {
+            var armors = ResourceManager.PureArmorModules(Player);
+            var powerArmors = ResourceManager.PowerArmorModules(Player);
+            var bulkheads = ResourceManager.BulkHeads(Player);
+            var totalArmors = armors.Concat(powerArmors).Concat(bulkheads).ToList();
+            Log.Info($"ShipDesignScreenInput: OnAutoFilterArmorToggle: {totalArmors.Count} armor modules unlocked by player");
+            
+            if (IsAutoFilterOldArmorMode)
+            {
+                foreach (ShipModule armor in totalArmors)
+                {
+                    Player.UnMarkShipModuleObsolete(armor.UID);
+                }
+            }
+            else
+            {
+                var bestArmors = PickBestModules(armors);
+                var bestPowerArmors = PickBestModules(powerArmors);
+                var bestBulkheads = PickBestModules(bulkheads);
+                var totalBestArmors = bestArmors.Concat(bestPowerArmors).Concat(bestBulkheads).ToList();
+
+                foreach (ShipModule armor in totalArmors)
+                {
+                    if (!totalBestArmors.Contains(armor))
+                        Player.MarkShipModuleObsolete(armor.UID);
+                }
+            }
+            
             IsAutoFilterOldArmorMode = !IsAutoFilterOldArmorMode;
             BtnAutoFilterArmor.Style = AutoFilterOldArmorStyle;
-            
-            var armorUnlockedByPlayer = ResourceManager.PureArmorModules(Player);
-            Log.Info($"ShipDesignScreenInput: OnAutoFilterArmorToggle: {armorUnlockedByPlayer.Count} armor modules unlocked by player");
-            
             ModuleSelectComponent.ResetActiveCategory();
         }
         
         void OnAutoFilterPowerPlantsToggle()
         {
-            IsAutoFilterOldPowerPlantsMode = !IsAutoFilterOldPowerPlantsMode;
-            BtnAutoFilterPowerPlants.Style = AutoFilterOldPowerPlantsStyle;
-            
             var powerPlantsUnlockedByPlayer = ResourceManager.PowerPlants(Player);
             Log.Info($"ShipDesignScreenInput: OnAutoFilterPowerPlantsToggle: {powerPlantsUnlockedByPlayer.Count} power plants unlocked by player");
+            if (IsAutoFilterOldPowerPlantsMode)
+            {
+                foreach (ShipModule powerPlant in powerPlantsUnlockedByPlayer)
+                {
+                    Player.UnMarkShipModuleObsolete(powerPlant.UID);
+                }
+            }
+            else
+            {
+                var bestPowerPlants = PickBestModules(powerPlantsUnlockedByPlayer);
+                foreach (ShipModule powerPlant in powerPlantsUnlockedByPlayer)
+                {
+                    if (!bestPowerPlants.Contains(powerPlant))
+                        Player.MarkShipModuleObsolete(powerPlant.UID);
+                }
+            }
             
+            IsAutoFilterOldPowerPlantsMode = !IsAutoFilterOldPowerPlantsMode;
+            BtnAutoFilterPowerPlants.Style = AutoFilterOldPowerPlantsStyle;
             ModuleSelectComponent.ResetActiveCategory();
         }
 
