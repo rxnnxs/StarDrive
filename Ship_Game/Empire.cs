@@ -863,6 +863,16 @@ namespace Ship_Game
         {
             UnlockedModulesDict[moduleUID] = true;
         }
+        
+        public void MarkShipModuleObsolete(string moduleUID)
+        {
+            ObsoletePlayerShipModules.AddUnique(moduleUID); // AddUnique because there are multiple buttons to mark the same module obsolete
+        }
+        
+        public void UnMarkShipModuleObsolete(string moduleUID)
+        {
+            ObsoletePlayerShipModules.Remove(moduleUID);
+        }
 
         public void UnlockEmpireHull(string hullName, string techUID = "")
         {

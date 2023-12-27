@@ -92,9 +92,9 @@ namespace Ship_Game
                 if (input.LeftMouseClick && m != null)
                 {
                     if (!m.IsObsolete(Player))
-                        Player.ObsoletePlayerShipModules.Add(m.UID);
+                        Player.MarkShipModuleObsolete(m.UID);
                     else
-                        Player.ObsoletePlayerShipModules.Remove(m.UID);
+                        Player.UnMarkShipModuleObsolete(m.UID);
 
                     return true;
                 }
