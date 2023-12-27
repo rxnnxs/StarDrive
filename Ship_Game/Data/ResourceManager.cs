@@ -2105,5 +2105,81 @@ namespace Ship_Game
                 Assert(null, requiredShip, "RequiredShip");
             }
         }
+        
+        // Agamenton:   The following 4 methods are disgusting copy-paste, good solution would be a method 'ModulesByType(ShipModuleType type)'
+        //              But ShipModuleType does not contain PowerArmor or Bulkhead and I didnt want to make a new enum
+        /// <summary>
+        /// Returns a list of all ShipModules that are considered pure Armor. The result does not contain power-armors or bulkheads.
+        /// </summary>
+        /// <param name="unlockedBy">Optional Empire that specifies if the ShipModules are unlocked by this Empire</param>
+        public static IList<ShipModule> PureArmorModules(Empire unlockedBy=null)
+        {
+            var armorModules = ShipModules.Values
+                .ToArr()
+                .Filter(m => m.Is(ShipModuleType.Armor) && !m.IsPowerArmor && !m.IsBulkhead);
+            
+            if (armorModules.Length == 0)
+                Log.Warning("No ArmorModules found!");
+            
+            if(unlockedBy != null)
+                armorModules = armorModules.Filter(m => unlockedBy.IsModuleUnlocked(m.UID));
+            
+            return armorModules;
+        }
+        
+        /// <summary>
+        /// Returns a list of all ShipModules that are considered PowerArmor. The result does not contain powered bulkheads.
+        /// </summary>
+        /// <param name="unlockedBy">Optional Empire that specifies if the ShipModules are unlocked by this Empire</param>
+        public static IList<ShipModule> PowerArmorModules(Empire unlockedBy=null)
+        {
+            var powerArmorModules = ShipModules.Values
+                .ToArr()
+                .Filter(m => m.IsPowerArmor && !m.IsBulkhead);
+            
+            if (powerArmorModules.Length == 0)
+                Log.Warning("No PowerArmorModules found!");
+            
+            if(unlockedBy != null)
+                powerArmorModules = powerArmorModules.Filter(m => unlockedBy.IsModuleUnlocked(m.UID));
+            
+            return powerArmorModules;
+        }
+        
+        /// <summary>
+        /// Returns a list of all ShipModules that are considered BulkHeads.
+        /// </summary>
+        /// <param name="unlockedBy">Optional Empire that specifies if the ShipModules are unlocked by this Empire</param>
+        public static IList<ShipModule> BulkHeads(Empire unlockedBy=null)
+        {
+            var bulkHeads = ShipModules.Values
+                .ToArr()
+                .Filter(m => m.IsBulkhead);
+            
+            if (bulkHeads.Length == 0)
+                Log.Warning("No BulkHeads found!");
+            
+            if(unlockedBy != null)
+                bulkHeads = bulkHeads.Filter(m => unlockedBy.IsModuleUnlocked(m.UID));
+            
+            return bulkHeads;
+        }
+        
+        /// <summary>
+        /// Returns a ShipModule list of all PowerPlants.
+        /// </summary>
+        /// <param name="unlockedBy">Optional Empire that specifies if the ShipModules are unlocked by this Empire</param>
+        public static IList<ShipModule> PowerPlants(Empire unlockedBy=null)
+        {
+            var powerPlants = ShipModules.Values.ToArr().Filter(m => m.Is(ShipModuleType.PowerPlant));
+            
+            if (powerPlants.Length == 0)
+                Log.Error("No PowerPlants found!");
+            
+            if(unlockedBy != null)
+                powerPlants = powerPlants.Filter(m => unlockedBy.IsModuleUnlocked(m.UID));
+            
+            return powerPlants;
+        }
     }
 }
