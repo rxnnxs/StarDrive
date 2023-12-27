@@ -11,7 +11,7 @@ public partial class Planet
 {
     Array<Building>GetBuildingsWeCanBuildHere()
     {
-        Array<Building> canBuild = [];
+        Array<Building> canBuild = new();
         if (Owner == null)
             return canBuild;
 
