@@ -396,7 +396,7 @@ namespace Ship_Game
             if (!input.RightMouseClick)
                 return;
 
-            if (slotUnderCursor != null && slotUnderCursor.Parent != null)
+            if (slotUnderCursor != null && (slotUnderCursor.Module != null || slotUnderCursor.Parent != null))
                 DeleteModuleAtSlot(slotUnderCursor);
             else
                 ActiveModule = null;
