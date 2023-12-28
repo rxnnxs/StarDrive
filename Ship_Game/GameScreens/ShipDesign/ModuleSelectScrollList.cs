@@ -133,8 +133,8 @@ namespace Ship_Game
                     int ab = b.Area;
                     if (aa != ab) return aa - ab;
 
-                    // and finally by UID
-                    return string.Compare(a.UID, b.UID, StringComparison.Ordinal);
+                    // and finally by Cost
+                    return a.Cost.CompareTo(b.Cost);
                 });
                 return modules;
             }
