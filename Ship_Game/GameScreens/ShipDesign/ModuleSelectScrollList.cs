@@ -154,7 +154,6 @@ namespace Ship_Game
                     AddCategoryItem("Bomb".GetHashCode(), "Bomb", m);
                 }
             }
-            OpenCategoryByIndex(0);
         }
 
         void AddPowerCategories()
@@ -170,8 +169,6 @@ namespace Ship_Game
                 else if (type == ShipModuleType.FuelCell)
                     AddCategoryItem((int)type, Localizer.Token(GameText.PowerCell), m);
             }
-            if (!OpenCategory((int)ShipModuleType.PowerPlant))
-                OpenCategoryByIndex(0);
         }
 
         void AddDefenseCategories()
@@ -196,8 +193,6 @@ namespace Ship_Game
                     AddCategoryItem(6173, Localizer.Token(GameText.Bulkhead), m);
                 }
             }
-            if (!OpenCategory((int)ShipModuleType.Shield))
-                OpenCategoryByIndex(0);
         }
 
         void AddSpecialCategories()
@@ -212,8 +207,6 @@ namespace Ship_Game
                     type == ShipModuleType.Ordnance || type == ShipModuleType.Construction)
                     AddCategoryItem((int)type, type.ToString(), m);
             }
-            OpenCategory((int)ShipModuleType.Command);
-            OpenCategory((int)ShipModuleType.Storage);
         }
 
         static bool IsModuleAvailableForHullRole(RoleName role, ShipModule mod)
