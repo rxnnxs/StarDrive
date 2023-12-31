@@ -88,6 +88,7 @@ namespace Ship_Game
 
         public abstract void OnItemHovered(ScrollListItemBase item);
         public abstract void OnItemClicked(ScrollListItemBase item);
+        public abstract void OnItemCtrlClicked(ScrollListItemBase item);
         public abstract void OnItemDoubleClicked(ScrollListItemBase item);
         public abstract void OnItemDragged(ScrollListItemBase item, DragEvent evt, bool outside);
         public abstract void OnItemDragReordered(ScrollListItemBase dragged, ScrollListItemBase destination);

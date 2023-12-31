@@ -12,35 +12,35 @@ namespace Ship_Game
     {
         public ScrollListBase List;
 
-        // Customization Point: Provide a custom dynamic Height for Scroll List Items
+        /// Customization Point: Provide a custom dynamic Height for Scroll List Items
         public virtual int ItemHeight => 0;
 
-        // Entries with IsHeader=true can be expanded or collapsed via category title
+        /// Entries with IsHeader=true can be expanded or collapsed via category title
         public bool Expanded { get; protected set; }
 
-        // true if item is currently being hovered over with mouse cursor
+        /// true if item is currently being hovered over with mouse cursor
         public bool Hovered { get; protected set; }
 
-        // Absolute index of this item in the ScrollList
+        /// Absolute index of this item in the ScrollList
         public int ItemIndex;
 
-        // Visible index of this item, where 0 is the topmost visible item
+        /// Visible index of this item, where 0 is the topmost visible item
         public int VisibleIndex;
 
-        // If TRUE, this entry acts as a special ScrollList Item Header
-        // Which can be expanded and collapsed
+        /// If TRUE, this entry acts as a special ScrollList Item Header
+        /// Which can be expanded and collapsed
         public bool IsHeader;
         public string HeaderText;
         public int HeaderMaxWidth = 350; // maximum allowed header width limit
 
-        // EVT: Triggered if ScrollList has Click events enabled and this Item is clicked
+        /// EVT: Triggered if ScrollList has Click events enabled and this Item is clicked
         public Action OnClick;
 
         protected Array<ScrollListItemBase> SubEntries;
 
-        // Lightweight dynamic elements
-        // @note This provides customization options for each ScrollList Item
-        //       use methods EnablePlus() / EnableUpDown() / etc to enable these elements
+        /// Lightweight dynamic elements
+        /// @note This provides customization options for each ScrollList Item
+        ///       use methods EnablePlus() / EnableUpDown() / etc to enable these elements
         protected Array<Element> DynamicElements;
 
 
@@ -203,7 +203,15 @@ namespace Ship_Game
                     List.OnItemDoubleClicked(this);
                     return true;
                 }
-                if (input.LeftMouseClick)
+                
+                if (input.LeftMouseClick && input.IsCtrlKeyDown)
+                {
+                    GameAudio.AcceptClick();
+                    List.OnItemCtrlClicked(this);
+                    return true;
+                }
+                
+                if(input.LeftMouseClick)
                 {
                     GameAudio.AcceptClick();
                     Expand(!Expanded);

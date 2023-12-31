@@ -32,6 +32,7 @@ namespace Ship_Game
         Action<T> EvtHovered;
         Action<T> EvtClick;
         Action<T> EvtDoubleClick;
+        Action<T> EvtCtrlClick;
         ScrollListDragOutEvt<T> EvtDragOut;
         ScrollListDragReorderEvt<T> EvtDragReorder;
 
@@ -58,6 +59,16 @@ namespace Ship_Game
             set
             {
                 EvtClick = value;
+                EnableItemEvents = ShouldEnableItemEvents();
+            }
+        }
+        
+        // EVENT: Called when an item is ctrl-clicked on
+        public Action<T> OnCtrlClick
+        {
+            set
+            {
+                EvtCtrlClick = value;
                 EnableItemEvents = ShouldEnableItemEvents();
             }
         }
@@ -120,6 +131,11 @@ namespace Ship_Game
         public override void OnItemClicked(ScrollListItemBase item)
         {
             EvtClick?.Invoke((T)item);
+        }
+        
+        public override void OnItemCtrlClicked(ScrollListItemBase item)
+        {
+            EvtCtrlClick?.Invoke((T)item);
         }
 
         public override void OnItemDoubleClicked(ScrollListItemBase item)
