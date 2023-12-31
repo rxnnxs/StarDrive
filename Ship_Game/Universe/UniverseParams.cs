@@ -73,8 +73,6 @@ public class UniverseParams
     [StarData] public bool DisableVolcanoWarning;
     [StarData(DefaultValue=true)] public bool ShowAllDesigns = true;
     [StarData] public bool FilterOldModules;
-    [StarData] public bool AutoFilterOldArmor;
-    [StarData] public bool AutoFilterOldPowerPlants;
 
     [StarData] public bool DisableRemnantStory;
     [StarData] public bool DisableAlternateAITraits;
