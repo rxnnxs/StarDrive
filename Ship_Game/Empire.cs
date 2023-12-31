@@ -173,6 +173,31 @@ namespace Ship_Game
         [StarData] public bool AutoPickBestMiningStation;
         [StarData] public bool SymmetricDesignMode = true;
         [StarData] public Array<string> ObsoletePlayerShipModules;
+        public Array<int> AutoObsoleteCategories = new();
+        
+        /// <summary>
+        /// Toggles if the category should use auto-obsolete or not.
+        /// </summary>
+        /// <param name="categoryId">you can use HeaderText.GetHashCode() of the category scroll list item</param>
+        /// <returns>TRUE if after calling this method the category should use auto-obsolete, else FALSE</returns>
+        public bool ToggleAutoObsoleteForCategory(int categoryId)
+        {
+            if (AutoObsoleteCategories.Contains(categoryId))
+            {
+                AutoObsoleteCategories.Remove(categoryId);
+                return false;
+            }
+            else
+            {
+                AutoObsoleteCategories.AddUnique(categoryId);
+                return true;
+            }
+        }
+        
+        public bool IsCategoryAutoObsolete(int categoryId)
+        {
+            return AutoObsoleteCategories.Contains(categoryId);
+        }
 
         public int AtWarCount;
 
@@ -859,9 +884,15 @@ namespace Ship_Game
 
         public bool WeCanBuildTroop(string id) => UnlockedTroopDict.TryGetValue(id, out bool canBuild) && canBuild;
 
-        public void UnlockEmpireShipModule(string moduleUID)
+        public void UnlockEmpireShipModule(string moduleUid)
         {
-            UnlockedModulesDict[moduleUID] = true;
+            UnlockedModulesDict[moduleUid] = true;
+        }
+        
+        public void MarkShipModulesObsolete(IList<string> modulesUIDs)
+        {
+            foreach (string moduleUid in modulesUIDs)
+                MarkShipModuleObsolete(moduleUid);
         }
         
         public void MarkShipModulesObsolete(IList<ShipModule> modules)
@@ -870,9 +901,15 @@ namespace Ship_Game
                 MarkShipModuleObsolete(module.UID);
         }
         
-        public void MarkShipModuleObsolete(string moduleUID)
+        public void MarkShipModuleObsolete(string moduleUid)
         {
-            ObsoletePlayerShipModules.AddUnique(moduleUID); // AddUnique because there are multiple buttons to mark the same module obsolete
+            ObsoletePlayerShipModules.AddUnique(moduleUid); // AddUnique because there are multiple buttons to mark the same module obsolete
+        }
+        
+        public void UnMarkShipModulesObsolete(IList<string> modulesUIDs)
+        {
+            foreach (string moduleUid in modulesUIDs)
+                UnMarkShipModuleObsolete(moduleUid);
         }
         
         public void UnMarkShipModulesObsolete(IList<ShipModule> modules)

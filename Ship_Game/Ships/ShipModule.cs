@@ -4,6 +4,7 @@ using Ship_Game.Audio;
 using Ship_Game.Debug;
 using Ship_Game.Gameplay;
 using System;
+using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 using SDGraphics;
 using SDUtils;
@@ -1610,6 +1611,68 @@ namespace Ship_Game.Ships
             HangarShip = null;
             Mem.Dispose(ref InstalledWeapon);
             SetSystem(null);
+        }
+        
+        
+        /// <summary>
+        /// Returns a list of modules that are best from the provided input.
+        /// Each distinct module size is represented by a single module in the output list.
+        /// </summary>
+        /// <param name="moduleUIDs">List of modules UIDs to be picked from</param>
+        /// <param name="comparator">(optional) function to be used for picking the best module, default is: higher Cost = better</param>
+        public static IEnumerable<string> PickBestModules(IList<string> moduleUIDs, Func<ShipModule, int> comparator = null)
+        {
+            List<ShipModule> modules = new(moduleUIDs.Count);
+            foreach (var uid in moduleUIDs)
+            {
+                if (ResourceManager.GetModuleTemplate(uid, out ShipModule module))
+                    modules.Add(module);
+            }
+            
+            var bestModules = PickBestModules(modules, comparator);
+            List<string> bestModuleUIDs = new();
+            foreach (var module in bestModules)
+                bestModuleUIDs.Add(module.UID);
+            return bestModuleUIDs;
+        }
+        
+        /// <summary>
+        /// Returns a list of modules that are best from the provided input.
+        /// Each distinct module size is represented by a single module in the output list.
+        /// </summary>
+        /// <param name="modules">List of ShipModules to be picked from</param>
+        /// <param name="comparator">(optional) function to be used for picking the best module, default is: higher Cost = better</param>
+        public static IEnumerable<ShipModule> PickBestModules(IList<ShipModule> modules, Func<ShipModule, int> comparator = null)
+        {
+            if (comparator == null)
+                comparator = module => (int)module.Cost;
+            
+            Dictionary<int, List<ShipModule>> modulesPerSize = new(CollectionExt.Count(modules));
+            
+            foreach (var shipModule in modules)
+            {
+                int moduleSize = shipModule.XSize * shipModule.YSize;   // some modules are 4x6, some 6x4, but they are the same size
+                if (!modulesPerSize.TryGetValue(moduleSize, out var modulesOfSameSize))
+                {
+                    modulesOfSameSize = new List<ShipModule>();
+                    modulesPerSize.Add(moduleSize, modulesOfSameSize);
+                }
+                modulesPerSize[moduleSize].Add(shipModule);
+            }
+            
+            List<ShipModule> bestModules = new(modulesPerSize.Count);
+            foreach (var modulesOfSameSize in modulesPerSize.Values)
+            {
+                ShipModule bestModule = modulesOfSameSize[0];
+                foreach (var module in modulesOfSameSize)
+                {
+                    if (comparator(module) > comparator(bestModule))
+                        bestModule = module;
+                }
+                bestModules.Add(bestModule);
+            }
+            
+            return bestModules;
         }
     }
 }

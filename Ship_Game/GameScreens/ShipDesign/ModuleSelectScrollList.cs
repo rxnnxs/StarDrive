@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using Microsoft.Xna.Framework.Graphics;
 using SDGraphics;
 using SDUtils;
@@ -13,6 +15,8 @@ namespace Ship_Game
     {
         public readonly ShipDesignScreen Screen;
         Empire Player => Screen.Player;
+        
+        public Dictionary<int, Array<string>> CategoryModulesMap = new Dictionary<int, Array<string>>();
 
         public ModuleSelectScrollList(IClientArea rectSource, ShipDesignScreen screen) : base(rectSource)
         {
@@ -28,6 +32,49 @@ namespace Ship_Game
                 Screen.SetActiveModule(weaponItem.Module.UID, ModuleOrientation.Normal, 0, DynamicHangarOptions.DynamicLaunch.ToString());
             }
             base.OnItemClicked(item);
+        }
+        
+        /// <summary>
+        /// If scroll list item is a header, then toggle automatic marking of obsoleteness for modules in that category,
+        /// else do nothing.
+        /// </summary>
+        public override void OnItemCtrlClicked(ScrollListItemBase item)
+        {
+            if (!item.IsHeader) return;
+            
+            item = (ModuleSelectListItem)item;
+            
+            int categoryId = item.HeaderText.GetHashCode();
+            Player.ToggleAutoObsoleteForCategory(categoryId);
+            UpdateAutoObsoleteForCategory(categoryId);
+            
+            if (Screen.IsFilterOldModulesMode)
+                Screen.ModuleSelectComponent.ResetActiveCategory();
+        }
+
+        /// <summary>
+        /// If auto-obsolete marking is enabled for provided category ID, then mark relevant modules in that category obsolete,
+        /// else unmark all of them.
+        /// </summary>
+        /// <param name="categoryId">The Category</param>
+        /// <param name="comparator">(optional) comparator function for picking the best modules for this category</param>
+        void UpdateAutoObsoleteForCategory(int categoryId, Func<ShipModule, int> comparator = null)
+        {
+            var moduleUIDsInCategory = CategoryModulesMap[categoryId];
+            if(Player.IsCategoryAutoObsolete(categoryId))
+            {
+                var bestModulesInCategory = ShipModule.PickBestModules(moduleUIDsInCategory, comparator).ToList();
+                Player.UnMarkShipModulesObsolete(moduleUIDsInCategory);  // unmark all modules in this category because the comparator could have changed
+                foreach (var moduleUid in moduleUIDsInCategory)
+                {
+                    if (!bestModulesInCategory.Contains(moduleUid))
+                        Player.MarkShipModuleObsolete(moduleUid);
+                }
+            }
+            else
+            {
+                Player.UnMarkShipModulesObsolete(moduleUIDsInCategory);
+            }
         }
 
         bool CanNeverFitModuleGrid(ShipModule module)
@@ -49,6 +96,11 @@ namespace Ship_Game
 
         void AddCategoryItem(int categoryId, string categoryName, ShipModule mod)
         {
+            if (!CategoryModulesMap.Keys.Contains(categoryId))
+                CategoryModulesMap[categoryId] = new Array<string>();
+            
+            CategoryModulesMap[categoryId].AddUnique(mod.UID);
+            
             if (ShouldBeFiltered(mod))
                 return;
 
@@ -142,22 +194,30 @@ namespace Ship_Game
 
         void AddWeaponCategories()
         {
+            Array<int> weaponCategories = new();
             foreach (ShipModule m in SortedModules)
             {
                 if (m.IsWeapon)
                 {
                     Weapon w = m.InstalledWeapon;
                     AddCategoryItem(w.WeaponType.GetHashCode(), w.WeaponType, m);
+                    weaponCategories.AddUnique(w.WeaponType.GetHashCode());
                 }
                 else if (m.ModuleType == ShipModuleType.Bomb)
                 {
                     AddCategoryItem("Bomb".GetHashCode(), "Bomb", m);
+                    weaponCategories.AddUnique("Bomb".GetHashCode());
                 }
             }
+
+            foreach (int categoryId in weaponCategories)
+                UpdateAutoObsoleteForCategory(categoryId);
+            
         }
 
         void AddPowerCategories()
         {
+            Array<int> powerCategories = new();
             foreach (ShipModule m in SortedModules)
             {
                 ShipModuleType type = m.ModuleType;
@@ -165,14 +225,24 @@ namespace Ship_Game
                     type = ShipModuleType.PowerPlant;
 
                 if (type == ShipModuleType.PowerPlant || type == ShipModuleType.Engine)
-                    AddCategoryItem((int)type, type.ToString(), m);
+                {
+                    AddCategoryItem(type.ToString().GetHashCode(), type.ToString(), m);
+                    powerCategories.AddUnique(type.ToString().GetHashCode());
+                }
                 else if (type == ShipModuleType.FuelCell)
-                    AddCategoryItem((int)type, Localizer.Token(GameText.PowerCell), m);
+                {
+                    AddCategoryItem(Localizer.Token(GameText.PowerCell).GetHashCode(), Localizer.Token(GameText.PowerCell), m);
+                    powerCategories.AddUnique(Localizer.Token(GameText.PowerCell).GetHashCode());
+                }
             }
+            
+            foreach (int categoryId in powerCategories)
+                UpdateAutoObsoleteForCategory(categoryId);
         }
 
         void AddDefenseCategories()
         {
+            Array<int> defenseCategories = new();
             foreach (ShipModule m in SortedModules)
             {
                 ShipModuleType type = m.ModuleType;
@@ -180,23 +250,30 @@ namespace Ship_Game
                     type == ShipModuleType.Countermeasure ||
                     (type == ShipModuleType.Armor && !m.IsBulkhead && !m.IsPowerArmor))
                 {
-                    AddCategoryItem((int)type, type.ToString(), m);
+                    AddCategoryItem(type.ToString().GetHashCode(), type.ToString(), m);
+                    defenseCategories.AddUnique(type.ToString().GetHashCode());
                 }
                 // These need special booleans as they are ModuleType ARMOR - and the armor ModuleType
                 // is needed for vsArmor damage calculations - don't want to use new moduletype therefore.
                 else if (m.IsPowerArmor && type == ShipModuleType.Armor)
                 {
-                    AddCategoryItem(6172, Localizer.Token(GameText.PowerArmour), m);
+                    AddCategoryItem(Localizer.Token(GameText.PowerArmour).GetHashCode(), Localizer.Token(GameText.PowerArmour), m);
+                    defenseCategories.AddUnique(Localizer.Token(GameText.PowerArmour).GetHashCode());
                 }
                 else if (m.IsBulkhead && type == ShipModuleType.Armor)
                 {
-                    AddCategoryItem(6173, Localizer.Token(GameText.Bulkhead), m);
+                    AddCategoryItem(Localizer.Token(GameText.Bulkhead).GetHashCode(), Localizer.Token(GameText.Bulkhead), m);
+                    defenseCategories.AddUnique(Localizer.Token(GameText.Bulkhead).GetHashCode());
                 }
             }
+            
+            foreach (int categoryId in defenseCategories)
+                UpdateAutoObsoleteForCategory(categoryId);
         }
 
         void AddSpecialCategories()
         {
+            Array<int> specialCategories = new();
             foreach (ShipModule m in SortedModules)
             {
                 ShipModuleType type = m.ModuleType;
@@ -205,8 +282,14 @@ namespace Ship_Game
                     type == ShipModuleType.Hangar   || type == ShipModuleType.Sensors     ||
                     type == ShipModuleType.Special  || type == ShipModuleType.Transporter ||
                     type == ShipModuleType.Ordnance || type == ShipModuleType.Construction)
-                    AddCategoryItem((int)type, type.ToString(), m);
+                {
+                    AddCategoryItem(type.ToString().GetHashCode(), type.ToString(), m);
+                    specialCategories.AddUnique(type.ToString().GetHashCode());
+                }
             }
+            
+            foreach (int categoryId in specialCategories)
+                UpdateAutoObsoleteForCategory(categoryId);
         }
 
         static bool IsModuleAvailableForHullRole(RoleName role, ShipModule mod)
