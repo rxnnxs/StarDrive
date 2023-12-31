@@ -48,9 +48,9 @@ namespace Ship_Game
 
         readonly Array<ShipHull> AvailableHulls = new Array<ShipHull>();
         UIButton BtnSaveAs;
-        UIButton BtnSymmetricDesign;        // Symmetric Module Placement Feature by Fat Bastard
-        UIButton BtnFilterModules;          // Filter Obsolete Modules
-        UIButton BtnStripShip;              // Removes all modules but armor, shields and command modules
+        UIButton BtnSymmetricDesign; // Symmetric Module Placement Feature by Fat Bastard
+        UIButton BtnFilterModules;   // Filter Obsolete Modules
+        UIButton BtnStripShip;       // Removes all modules but armor, shields and command modules
         GenericButton ArcsButton;
         Rectangle SearchBar;
         Rectangle BottomSep;
@@ -440,12 +440,11 @@ namespace Ship_Game
             UpdateDesignedShip(forceUpdate:true);
         }
 
-        ButtonStyle SymmetricDesignBtnStyle       => IsSymmetricDesignMode ? ButtonStyle.Military : ButtonStyle.BigDip;
-        ButtonStyle FilterModulesBtnStyle         => IsFilterOldModulesMode ? ButtonStyle.Military : ButtonStyle.BigDip;
+        ButtonStyle SymmetricDesignBtnStyle => IsSymmetricDesignMode ? ButtonStyle.Military : ButtonStyle.BigDip;
+        ButtonStyle FilterModulesBtnStyle   => IsFilterOldModulesMode ? ButtonStyle.Military : ButtonStyle.BigDip;
 
         void CreateGUI()
         {
-            Log.Warning("ShipDesignScreen.CreateGUI");
             RemoveAll();
             ModuleSelectComponent = Add(new ModuleSelection(this, new(5, LowRes ? 45 : 100), new(305, LowRes ? 350 : 490)));
 
