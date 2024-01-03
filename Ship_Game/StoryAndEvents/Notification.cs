@@ -1,3 +1,4 @@
+using System;
 using System.Windows.Forms;
 using SDGraphics;
 using Ship_Game.Audio;
@@ -27,6 +28,9 @@ public sealed class Notification
     public bool Tech;
     public bool ShowMessage;
     public bool Pause = true;
+
+    public int endOfLifeSeconds;
+    public DateTime notificationCreationTime;
 
     /** @return TRUE if input was captured */
     public bool HandleInput(InputState input, NotificationManager m)

@@ -63,7 +63,8 @@ namespace Ship_Game
         {
             notify.ClickRect = DefaultClickRect;
             notify.DestinationRect = DefaultNotificationRect;
-
+            notify.endOfLifeSeconds = 4;
+            notify.notificationCreationTime = DateTime.Now;
             foreach (string cue in soundCueStrings)
                 GameAudio.PlaySfxAsync(cue);
 
@@ -1023,6 +1024,15 @@ namespace Ship_Game
                 //fbedard : Add filter to pause
                 if (GlobalStats.PauseOnNotification && n.ClickRect.Y >= n.DestinationRect.Y && n.Pause)
                     Screen.UState.Paused = true;
+
+                if (n.notificationCreationTime.AddSeconds(n.endOfLifeSeconds) <= DateTime.Now)
+                {
+                    lock (NotificationList)
+                    {
+                        NotificationList.Remove(n);
+                        UpdateAllPositions();
+                    }
+                }
             }
 
             // fbedard: remove excess notifications
