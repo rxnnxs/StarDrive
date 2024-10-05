@@ -12600,7 +12600,7 @@ UnlocksANewHullType:
  UKR: "Відкриває новий тип корпусу:"
 AddShipDesignsToThis:
  Id: 4043
- GER: "Füge der Flotte mittels rechter Auswahl Schiffe hinzu.\nUmschalttaste+linksklick erlaubt es einem, das Schiff mehrmals zu platzieren. Wähle Schaltfläche 'Requisition', um nach aktiven Schiffen zu  suchen, die in die Flotte aufgenommen werden können.\nWenn nicht genug Schiffe existieren, werden sie auf einem geeigneten Planeten in die Bauliste aufgenommen."
+ GER: "Füge der Flotte Schiffe hinzu.\nUmschalt-T.+L.M.-Klick erlaubt es einem, das gewählte Schiff mehrmals zu platzieren. Wähle Schaltfläche 'Requisition...', um nach aktiven Schiffen zu  suchen, die in die Flotte aufgenommen werden können.\nWenn nicht genug Schiffe existieren, werden sie auf einem geeigneten Planeten in die Bauliste aufgenommen."
  ENG: "\n        Add ship designs to this fleet from the panel on the right. Use 'Shift' key to place multiple ships of the same type. When you are done, you can press the 'Requisition' button, which will search your empire for ships that can fill your fleet. If you do not have the ships, it will order that they are built at a suitable planet.\n\nReturn here at any time to requisition replacements for any ships that are lost in combat.\n      "
  RUS: "Добавьте дизайны кораблей к этому флоту с панели справа. Используйте клавишу 'Shift', чтобы разместить несколько кораблей одного типа. Когда вы закончите, вы можете нажать кнопку 'Запрос',она будет искать в вашей империи корабли, которые могут заполнить ваш флот. Если у вас нет кораблей,то они построятся на подходящей плнете.Вернитесь сюда в любое время, чтобы запросить замену любых кораблей, потерянных в бою.\n     "
  SPA: "\n        Añade diseños de naves a esta flota desde el panel de la derecha. Cuando hayas terminado, pulsa el botón \"Solicitar\" y se iniciará una búsqueda en tu imperio de naves que puedan conformar tu flota. Si no dispones de esas naves, se enviará la orden de que sean construidas en un planeta adecuado.\n\nVuelve aquí cuando quieras solicitar reemplazos para las naves perdidas en combate.\n      "
@@ -12684,7 +12684,7 @@ NoFleetSelected:
  UKR: "Фліт не вибрано"
 YouAreNotCurrentlyEditing:
  Id: 4055
- GER: 
+ GER: "Sie bearbeiten derzeit keine Flotte.  Klicken Sie auf einen Hotkey auf der linken Seite des Bildschirms, um mit der Erstellung oder Bearbeitung der entsprechenden Flotte zu beginnen.\n\nWenn Sie mit der Bearbeitung fertig sind, können Sie Ihren Flottenentwurf für einen späteren schnellen Zugriff auf der Festplatte speichern."
  ENG: "You are not currently editing a fleet. Click a hotkey on the left side of the screen to begin creating or editing the corresponding fleet.\n\nWhen you are finished editing, you can save your fleet design to disk for quick access in the future."
  RUS: "Вы в настоящее время не редактируете флот. Нажмите горячую клавишу в левой части экрана, чтобы начать создание или редактирование соответствующего флота.\n\nКогда вы закончите редактирование, вы можете сохранить проект флота на диск для быстрого доступа в будущем."
  SPA: "Actualmente no estás editando ninguna flota. Haz clic en la tecla que aparece en el lado izquierdo de la pantalla para empezar a crear o editar la flota correspondiente.\n\nCuando hayas terminado, puedes guardar el diseño de tu flota para acceder con mayor rapidez en el futuro."
@@ -13508,31 +13508,31 @@ HaveAFlagshipnlurkingSomewhereIn:
  UKR: "мають флагманський корабель,\n що ховається десь у галактиці."
 OmitOldModules:
  Id: 4185
- GER: 
+ GER: "Blende alte Module aus"
  ENG: "Omit Old Modules"
  RUS: "Старые модули"
  UKR: "Опустити старі модулі"
 WhenToggledRedAnyModule:
  Id: 4186
- GER: 
+ GER: "Wenn diese Option aktiviert ist (Rot), werden alle Module, die Sie als veraltet markieren, nicht in den Modullisten angezeigt.  Wenn diese Option nicht aktiviert ist, werden veraltete Modulnamen angezeigt, jedoch rot dargestellt.  Sie können ein Modul auf der Registerkarte 'Aktives Modul' als veraltet markieren."
  ENG: "When Toggled (Red), any module you mark as obsolete will not be shown in the module lists. When not toggled, obsolete modules names would be shown, but would be painted red. You can mark a module as obsolete in the Active Module tab."
  RUS: "При переключении (красный) любой модуль, который вы помечаете как устаревший, не будет отображаться в списках модулей. Если этот переключатель не включен, имена устаревших модулей будут отображаться, но окрашены в красный цвет. Вы можете отметить модуль как устаревший на вкладке \"Активный модуль\"."
  UKR: "Якщо увімкнено (червоний), будь-який модуль, який ви позначили як застарілий, не буде показано у списках модулів. Якщо прапорець не увімкнено, назви застарілих модулів будуть показані, але будуть позначені червоним кольором. Ви можете позначити модуль як застарілий на вкладці Активний модуль."
 IndicatesThatThisModuleCan:
  Id: 4187
- GER: 
+ GER: "Zeigt an, dass dieses Modul mit den Pfeiltasten gedreht werden kann"
  ENG: "Indicates that this module can be rotated using the arrow keys"
  RUS: "Указывает, что этот модуль можно повернуть с помощью клавиш со стрелками"
  UKR: "Показує, що цей модуль можна повертати за допомогою клавіш зі стрілками"
 ThisModuleWasMarkedAs:
  Id: 4188
- GER: 
+ GER: "Dieses Modul wurde als veraltet markiert.  Sie können es auf der Registerkarte „Aktives Modul“ wieder aktivieren."
  ENG: "This module was marked as obsolete. You can reinstate it in the Active Module tab."
  RUS: "Этот модуль был отмечен как устаревший. Вы можете восстановить его на вкладке \"Активный модуль\"."
  UKR: "Цей модуль було позначено як застарілий. Ви можете відновити його на вкладці Активні модулі."
 MarkThisModuleAsObsolete:
  Id: 4189
- GER: 
+ GER: "Markieren Sie dieses Modul als veraltet.  Beim nächsten Durchsuchen der Modulkategorien wird es nicht mehr angezeigt.  Die Auswahl eines veralteten Moduls für ein bestehendes Design ist möglich.  Durch erneutes Klicken auf diese Schaltfläche wird die veraltete Markierung aus diesem Modul entfernt."
  ENG: "Mark this module as obsolete. You will not see it next time you browse the module categories. Selecting an obsolete module on existing design is possible. Clicking this button again will remove the obsolete mark from this module."
  RUS: "Отметить этот модуль как устаревший. Вы не увидите его в следующий раз, когда будете просматривать категории модулей. Возможен выбор устаревшего модуля на существующей конструкции.Повторное нажатие на эту кнопку удалит модуль из устаревших."
  UKR: "Позначте цей модуль як застарілий. Ви не побачите його наступного разу, коли будете переглядати категорії модулів. Вибір застарілого модуля в існуючому дизайні можливий. Повторне натискання цієї кнопки зніме позначку застарілого модуля з цього модуля."
@@ -13550,7 +13550,7 @@ InFleetsOnly:
  UKR: "Тільки для флотів"
 ShowOnlyShipsWhichAre:
  Id: 4192
- GER: 
+ GER: "Zeigt nur Schiffe an, die Flotten zugeordnet sind"
  ENG: "Show only ships which are assigned to Fleets"
  RUS: "Показывать только те корабли, котороые задейстованы в флоте"
  UKR: "Показувати тільки ті кораблі, які приписані до флотів"
@@ -13574,61 +13574,61 @@ Fleet:
  UKR: "Флот"
 IndicatesThisModuleHasA:
  Id: 4196
- GER: 
+ GER: "Zeigt an, dass in diesem Modul eine Waffe mit Turm installiert ist und der Feuerbogen gedreht werden kann.  Klicken Sie auf dieses Modul, halten Sie die Maustaste gedrückt, während es auf dem Schiff installiert ist, und bewegen Sie die Maus, um den Bogen in Schritten von 15 Grad zu drehen.  Sie können auch die Umschalttaste gedrückt halten, um in Schritten von 1 Grad zu drehen."
  ENG: "Indicates this module has a Turreted weapon installed and it's fire arc can be rotated. Click and hold this module while installed on the ship and move the mouse to rotate the arc by 15 degrees intervals. You can also hold Shift to rotate in 1 degree intervals."
  RUS: "Указывает на то, что в этом модуле установлено оружие на поворотной платформе, и его дуга огня может вращаться. Нажмите ЛКМ и удерживайте мишь на этом модуле, когда он установлен на корабле, и перемещайте мышь, чтобы повернуть дугу с интервалом 15 градусов. Вы также можете удерживать Shift для поворота с интервалом в 1 градус."
  UKR: "Вказує на те, що на цьому модулі встановлено баштову зброю, і його дуга вогню може бути повернута. Натисніть і утримуйте цей модуль, коли він встановлений на кораблі, і рухайте мишею, щоб повернути дугу на 15 градусів з інтервалом у 15 градусів. Ви також можете утримувати клавішу Shift для повороту з інтервалом в 1 градус."
 ThisModuleCanBeRotated:
  Id: 4197
- GER: 
+ GER: "Dieses Modul kann gedreht werden und der Feuerwinkel seiner Waffe kann als Geschützturm geändert werden."
  ENG: "This module can be rotated and it's weapon fire arc can be changed as a turret."
  RUS: "Модуль турельного типа.Сектор поражения этого оружия можно вращать."
  UKR: "Цей модуль можна повертати, а дугу вогню зброї можна змінювати, як у башті."
 Statistics2:
  Id: 4198
- GER: 
+ GER: "Statistik"
  ENG: "Statistics"
  RUS: "Статистика"
  UKR: "Статистика"
 Trade2:
  Id: 4199
- GER: 
+ GER: "Handel"
  ENG: "Trade"
  RUS: "Торговля"
  UKR: "Торгівля"
 Description:
  Id: 4200
- GER: 
+ GER: "Beschreibung"
  ENG: "Description"
  RUS: "Описание"
  UKR: "Опис"
 ManualOrbitalLimit:
  Id: 4201
- GER: 
+ GER: "Limitiere Weltraumstationen"
  ENG: "Manual Orbital Limit"
  RUS: "Ручное ограничение орбиталей"
  UKR: "Ручне обмеження орбіти"
 OverrideGovernorDecisionsRegardingOrbital:
  Id: 4202
- GER: 
+ GER: "Ign. Wahl d. Gouverneurs bzgl. Weltraumstationen"
  ENG: "Override Governor decisions regarding Orbital limits."
  RUS: "Отменить решение губернатора относительно лимита орбиталей."
  UKR: "Відмінити рішення Губернатора щодо орбітальних лімітів."
 TheRankOfTheColony:
  Id: 4203
- GER: 
+ GER: "Der Rang der Kolonie im Hinblick darauf, wie viele Orbitale der Gouverneur bauen wird.  Je höher der Rang, desto mehr Verteidigungsorbitale wird der Gouverneur zu bauen versuchen."
  ENG: "The rank of the colony in regards to how many orbitals the Governor will build. The higher the rank, the more defense orbitals the Governor will try to build."
  RUS: "Ранг колонии который указывает, сколько орбиталей может соорудить губернатор. Чем выше ранг, тем больше защитных платформ губернатор может построить."
  UKR: "Ранг колонії щодо того, скільки орбіталей побудує губернатор. Чим вищий ранг, тим більше оборонних орбіт губернатор намагатиметься побудувати."
 ManuallyAdjustTheNumberOf:
  Id: 4204
- GER: 
+ GER: "Passen Sie die Anzahl der gewünschten Plattformen für diese Kolonie manuell an."
  ENG: "Manually adjust the number of wanted Platforms for this colony."
  RUS: "Вручную настройте количество требуемых платформ для этой колонии."
  UKR: "Вручну налаштуйте кількість бажаних Платформ для цієї колонії."
 ManuallyAdjustTheNumberOf2:
  Id: 4205
- GER: 
+ GER: "Passen Sie die Anzahl der gewünschten Werften für diese Kolonie manuell an."
  ENG: "Manually adjust the number of wanted Shipyards for this colony."
  RUS: "Вручную настройте количество требуемых верфей для этой колонии."
  UKR: "Вручну налаштуйте кількість верфей для цієї колонії."
