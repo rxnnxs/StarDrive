@@ -865,21 +865,21 @@ Mass2:
  UKR: "Маса"
 Health:
  Id: 124
- GER: "Hüllstärke"
+ GER: "TP"
  ENG: "Health"
  RUS: "ХП"
  SPA: "Salud"
  UKR: "Здоров'я"
 Power:
  Id: 125
- GER: "Kampfkraft"
+ GER: "Energie"
  ENG: "Power"
  RUS: "Мощь"
  SPA: "Potencia"
  UKR: "Потужність"
 Range:
  Id: 126
- GER: "Reichweite"
+ GER: "Distanz"
  ENG: "Range"
  RUS: "Дистан."
  SPA: "Distancia"
@@ -900,7 +900,7 @@ Cost:
  UKR: "Ціна"
 Speed:
  Id: 129
- GER: "Geschwindigkeit"
+ GER: "V-Max"
  ENG: "Speed"
  RUS: "Скор.Снар."
  SPA: "Velocidad"
@@ -8764,7 +8764,7 @@ TerraformingATile:
  UKR: "Тераформування плитки"
 Accuracy:
  Id: 1973
- GER: 
+ GER: "Streuung"
  ENG: "Accuracy"
  RUS: "Точн."
  UKR: "Точність"
@@ -8830,91 +8830,91 @@ AFunctionalShipNeedsA:
  UKR: "Функціонуючому кораблю потрібен командний модуль (кабіна, місток або командна рубка). Він також повинен отримувати енергію від реакторів корабля"
 YouCanSwitchFromNormal:
  Id: 1984
- GER: 
+ GER: "Sie können vom normalen Designmodus in den symmetrischen Designmodus wechseln, in dem die Module nach Möglichkeit symmetrisch (links und rechts) auf dem Schiff installiert werden.  Sie werden auch zusammen gelöscht und ihre Feuerbögen werden in die entgegengesetzte Richtung angepasst, wenn Sie sie ändern"
  ENG: "You can switch from Normal Design mode to Symmetric Design mode, in which modules will be installed symmetrically (left and right) onto the ship, if possible. They will be also deleted together and their fire arcs will be adjusted to the opposite direction if you change them"
  RUS: "Вы можете переключиться из режима нормального дизайна в режим симметричного дизайна, в котором модули будут установлены симметрично (слева и справа) на корабль, если это возможно. Они также будут удалены вместе, а их огненные дуги будут настроены в противоположном направлении, если вы их измените."
  UKR: "Ви можете переключитися з режиму Звичайний дизайн на режим Симетричний дизайн, в якому модулі будуть встановлені симетрично (ліворуч і праворуч) на кораблі, якщо це можливо. Вони також будуть видалятися разом, а їхні вогняні дуги будуть симетрично змінені, якщо ви їх зміните"
 SymmetricDesign:
  Id: 1985
- GER: 
+ GER: "Symmetrie I/O"
  ENG: "Toggle Symmetry"
  RUS: "Симметрия"
  UKR: "Симетрія"
 NormalDesign:
  Id: 1986
- GER: 
+ GER: "Schiff leeren"
  ENG: "Strip Ship"
  RUS: "Демонтаж"
  UKR: "Розібрати"
 TT_BurstWpnPwrTime:
  Id: 1987
- GER: 
+ GER: "Die Gesamtzeit, die das Schiff während der Strahldauer mit Energiewaffen und Strahlen mit Spitzenleistung abfeuern kann"
  ENG: "The total time the ship can maintain energy weapon fire along with beams at peak power during beam duration time"
  RUS: "Общее время, в течение которого корабль может поддерживать огонь энергетического оружия вместе с лучами на максимальной мощности в течение времени действия луча."
  UKR: "Загальний час, протягом якого корабель може підтримувати вогонь енергетичної зброї разом з променями на піковій потужності протягом часу тривалості променя"
 TT_BurstWpnPwerDrain:
  Id: 1988
- GER: 
+ GER: "Dies weist darauf hin, dass die Reserven des Schiffes (nach Berücksichtigung der Energieaufladung) netto an Energie verloren gehen, wenn alle Energiewaffen des Schiffs zusammen mit den Strahlen mit voller Leistung kontinuierlich auf Ziele schießen, basierend auf der Energie der Waffen pro Sekunde beim Abfeuern"
  ENG: "This indicates that there is a net power drain from the ship's reserves (after considering power recharge) when all the ship's energy weapons, along with beams at full power, are persistently firing on targets, based on the weapons' power per second upon firing"
  RUS: "Указывает на чистую утечку энергии из резервов корабля (с учетом перезарядки энергии), когда все энергетическое оружие корабля вместе с лучами на полной мощности постоянно стреляет по целям в зависимости от мощности оружия в секунду при стрельбе."
  UKR: "Це вказує на те, що існує чистий відтік енергії з резервів корабля (з урахуванням перезарядки), коли вся енергетична зброя корабля, разом з променями на повній потужності, постійно веде вогонь по цілях, виходячи з потужності зброї в секунду при стрільбі."
 TT_ExcessWpnPwrDrain:
  Id: 1989
- GER: 
+ GER: "„Dies deutet darauf hin, dass die Reserven des Schiffes (nach Berücksichtigung der Energieaufladung) netto an Energie verlieren, wenn alle Energiewaffen des Schiffes ständig auf Ziele schießen, basierend auf der Energie pro Sekunde der Waffen beim Abfeuern.“"
  ENG: "This indicates that there is a net power drain from the ship's reserves (after considering power recharge) when all the ship's energy weapons are persistently firing on targets, based on the weapons' power per second upon firing"
  RUS: "Указывает на чистую утечку энергии из резервов корабля (с учетом перезарядки энергии), когда все энергетическое оружие корабля постоянно стреляет по целям, в зависимости от мощности оружия в секунду при стрельбе."
  UKR: "Це вказує на те, що існує чистий відтік енергії з резервів корабля (з урахуванням перезарядки), коли вся енергетична зброя корабля постійно веде вогонь по цілях, виходячи з потужності зброї в секунду під час стрільби."
 ThisWeaponFiresMoreThan:
  Id: 1990
- GER: 
+ GER: "„Diese Waffe feuert mehr als ein Projektil pro Schuss ab. Sie feuert auch mehrere Projektile pro Salve ab, wenn sie über Salvenfeuer verfügt. Eine Waffe mit einer Projektilzahl von 2 und einer Salve von 3 feuert beispielsweise 6 Projektile pro Salve ab"
  ENG: "This weapon fires more than one projectile per shot. It will also fire this multiple projectiles per Salvo, if it has Salvo fire. A weapon with projectile count of 2 and salvo of 3, for instance, will fire 6 projectiles per salvo"
  RUS: "Это оружие выпускает более одного снаряда за выстрел. Он также будет стрелять этими несколькими снарядами за залп, если у него есть залповый огонь. Например, оружие с числом снарядов 2 и залпом 3 будет выпускать 6 снарядов за залп"
  UKR: "Ця зброя вистрілює більше одного снаряда за постріл. Вона також вистрілить цю кількість снарядів за залп, якщо у неї є залповий вогонь. Наприклад, зброя з кількістю снарядів 2 і залпом 3 вистрілить 6 снарядів за залп"
 TheMoreComplexTheModule:
  Id: 1991
- GER: 
+ GER: "Je komplexer das Modul ist, desto schwieriger ist es, es zu reparieren.  Eine Komplexität von 2 bedeutet beispielsweise, dass die Reparatur des Moduls doppelt so lange dauert.  Eine Komplexität von 0,5 bedeutet, dass die Reparatur doppelt so schnell ist"
  ENG: "The more complex the module is, the more it is harder to repair it. A complexity of 2, for instance, means that it will take twice the amount of time to repair the module. Complexity of 0.5 means it will be twice as fast to repair"
  RUS: "Чем сложнее модуль, тем сложнее его отремонтировать. Например, сложность 2 означает, что на ремонт модуля потребуется в два раза больше времени. Сложность 0,5 означает, что ремонт будет в два раза быстрее"
  UKR: "Чим складніший модуль, тим складніше його відремонтувати. Наприклад, складність 2 означає, що на ремонт модуля знадобиться вдвічі більше часу. Складність 0,5 означає, що полагодити його можна буде вдвічі швидше"
 Complexity:
  Id: 1992
- GER: 
+ GER: "Komplexität"
  ENG: "Complexity"
  RUS: "Сложн.Рем"
  UKR: "Складність"
 ThisShieldCanRechargeEven:
  Id: 1993
- GER: 
+ GER: "Dieser Schild kann sich auch während des Kampfes wieder aufladen."
  ENG: "This shield can recharge even during combat."
  RUS: "Этот щит может перезаряжаться даже во время боя."
  UKR: "Цей щит може перезаряджатися навіть під час бою."
 Crecharge:
  Id: 1994
- GER: 
+ GER: "Kampfladerate"
  ENG: "C.Recharge"
  RUS: "Перезар.в бою"
  UKR: "Бой. Перезар."
 TheDamageRadiusOfThis:
  Id: 1995
- GER: 
+ GER: "Dieses Modul explodiert, wenn es zerstört wird, und verursacht Schaden an benachbarten Modulen.  Der Radius wird kleiner, wenn in der Nähe befindliche Module die Explosion absorbieren.  Die Anzahl wird in Slots angegeben.  Ein Radius von 4 bedeutet also, dass etwa 4 Slots vom Explosionszentrum aus betroffen sind."
  ENG: "This modules explodes when destroyed, causing damage to nearby modules. The radius will get smaller as modules nearby absorb the explosion. The number is given as slots. So a Radius of 4 means around 4 slots will be affected from the explosion center."
  RUS: "Эти модули взрываются при уничтожении, вызрыв повреждает ближайшие модули. Радиус будет уменьшаться, поскольку расположенные поблизости модули поглощают взрыв. Номер указан в виде ячеек. Таким образом, радиус 4 означает, что центр взрыва будет затронут примерно 4 ячейками."
  UKR: "Цей модуль вибухає при знищенні, завдаючи шкоди сусіднім модулям. Радіус буде зменшуватися, коли модулі поблизу поглинатимуть вибух. Кількість вказано в слотах. Отже, радіус 4 означає, що близько 4 слотів буде пошкоджено від центру вибуху."
 TheDamageCausedToNearby:
  Id: 1996
- GER: 
+ GER: "Der Schaden, der an benachbarten Modulen entsteht, wenn dieses Modul zerstört wird.  Beachten Sie, dass Module, die die Explosion auffangen, auch den Explosionsschaden reduzieren."
  ENG: "The damage caused to nearby modules when this module is destroyed. Note that modules which soak the explosion also reduce the explosion damage."
  RUS: "Ущерб, нанесенный ближайшим модулям при уничтожении этого модуля. Обратите внимание, что модули, поглощающие взрыв, также уменьшают урон от взрыва."
  UKR: "Пошкодження, завдані сусіднім модулям, коли цей модуль знищено. Зверніть увагу, що модулі, які поглинають вибух, також зменшують шкоду від вибуху."
 ExpRad:
  Id: 1997
- GER: 
+ GER: "Expl.-Rad."
  ENG: "Exp Rad"
  RUS: "Радиус взр."
  UKR: "Рад. виб."
 ExpDmg:
  Id: 1998
- GER: 
+ GER: "Expl.-Sch."
  ENG: "Exp Dmg"
  RUS: "Урон взр."
  UKR: "Урон виб."
@@ -8933,14 +8933,14 @@ WasDestroyedByUnknownForces:
  UKR: "було знищено невідомими силами"
 BB_Tech_PlasmaOrdnance_Name:
  Id: 2001
- GER: 
+ GER: "Plasmamunition"
  ENG: "Plasma Ordnance"
  RUS: "Плазменные боеприпасы"
  SPA: "Munición de plasma"
  UKR: "Плазмові боєприпаси"
 BB_Tech_PlasmaOrdnance_Desc:
  Id: 2002
- GER: 
+ GER: "Durch die Umstellung unserer Kampfmittel auf einen plasmabasierten Standard können wir eine dichtere Nutzlast mit höherer Energie in unsere Waffen einbringen, um größeren Schaden und größere Wirkung zu erzielen."
  ENG: "By switching our Ordnance to a plasma-based standard, we can deliver a denser, higher-energy payload in our weapons for greater damage and effect."
  RUS: "Перейдя на плазменные боеприпасы, мы сможем использовать более плотные и мощные высокоэнергетические заряды, наносящие больший урон."
  SPA: "Al cambiar a munición de plasma, podemos dotar nuestras armas de una carga de energía mayor y más densa para causar más daño y otros efectos."
@@ -9283,7 +9283,7 @@ TT_Mass:
  UKR: "Загальна маса корабля визначає його маневреність і максимальну швидкість як у викривленні, так і на досвітлових швидкостях. Маса не може бути зменшена нижче значення розміру корабля (кількості модульних слотів)."
 AModulesHealthRepresentsHow:
  Id: 2051
- GER: "Die Stärke eines Moduls gibt an, wie viel Schaden es ertragen kann, bevor es zerstört wird"
+ GER: "Die Trefferpunkte eines Moduls geben an, wie viel Schaden es ertragen kann, bevor es zerstört wird"
  ENG: "A module's health represents how much damage it can take before being destroyed"
  RUS: "Здоровье модуля определяет, сколько урона он может получить, прежде чем будет уничтожен"
  SPA: "La salud de un módulo representa el daño que puede encajar antes de quedar destruido"
@@ -9829,7 +9829,7 @@ NeedsOrdnance:
  UKR: "Потребує боєприпасів"
 Ordnance:
  Id: 2129
- GER: "Nachschub"
+ GER: "Magazin"
  ENG: "Ordnance"
  RUS: "Боеприпасы"
  SPA: "Artillería"
@@ -18539,14 +18539,14 @@ RandomChanceThisWeaponWill:
  UKR: "Випадкова ймовірність того, що ця зброя буде стріляти крізь ворожі щити. Золотий колір означає, що це значення змінено порівняно з початковим."
 ThisWeaponsFireASalvo:
  Id: 7033
- GER: 
+ GER: "Diese Waffe feuert eine Salve von Projektilen"
  ENG: "This weapons fire a salvo of projectiles"
  RUS: "Это оружие стреляет залпом снарядов"
  SPA: "Esta arma dispara un salvo de proyectiles"
  UKR: "Ця зброя стріляє залпом снарядів"
 TimeBetweenShots:
  Id: 7034
- GER: 
+ GER: "Feuerrate"
  ENG: "Time between shots"
  RUS: "Время между выстрелами"
  SPA: "Tiempo entre disparos"
@@ -19007,7 +19007,7 @@ SaveHullDesign:
  ENG: "Save Hull Design"
  UKR: "Зберегти дизайн корпусу"
 TT_GuardMode:
- GER: "Das Schiff befindet sich in Schutzstellung und vermeidet einen aggressiven Angriff und die Verfolgung feindlicher Schiffe"
+ GER: "Das Schiff befindet sich in Verteidigungsstellung und vermeidet einen aggressiven Angriff und die Verfolgung feindlicher Schiffe"
  ENG: "Ship will be in guard stance and avoid aggressively engaging and chasing enemy ships"
  UKR: "Корабель буде перебувати в сторожовій позиції та уникатиме агресивного зіткнення та переслідування ворожих кораблів"
 EngineTrails:
