@@ -714,7 +714,7 @@ Choose:
  UKR: "Обрати"
 Fleets:
  Id: 103
- GER: "Flotten"
+ GER: "Flottenmanager"
  ENG: "Fleets"
  RUS: "Флоты"
  SPA: "Flotas"
@@ -10358,7 +10358,7 @@ BB_Tech_XenoIntelligence_SpyOffenseRollBonus_Bonus:
  UKR: "Отримайте бонус +5 до кидків наступального агента"
 ToggleTheModuleGridOverlay:
  Id: 2204
- GER: "Schalten Sie die Modulrasterüberlagerung ein oder aus"
+ GER: "Schalten Sie die Modulanzeige an/aus\nDies funktioniert nur bei Schiffen des Originalspiels"
  ENG: "Toggle the module grid overlay on or off"
  RUS: "Переключает режим отображения модульной сетки"
  SPA: "Activa o desactiva la sobreimpresión cuadricular de módulos"
@@ -12600,7 +12600,7 @@ UnlocksANewHullType:
  UKR: "Відкриває новий тип корпусу:"
 AddShipDesignsToThis:
  Id: 4043
- GER: "Füge der Flotte mittels Auswahl rechts Schiffe hinzu. Umschalttaste+linksklick platziert mehrmals. Auf Schaltfläche 'Anfordern' klicken, um nach aktiven Schiffen zu  suchen, die in die Flotte aufgenommen werden können. Wenn diese Schiffe nicht reichen, wird angeordnet sie auf einem geeigneten Planeten zu bauen."
+ GER: "Füge der Flotte mittels rechter Auswahl Schiffe hinzu.\nUmschalttaste+linksklick erlaubt es einem, das Schiff mehrmals zu platzieren. Wähle Schaltfläche 'Requisition', um nach aktiven Schiffen zu  suchen, die in die Flotte aufgenommen werden können.\nWenn nicht genug Schiffe existieren, werden sie auf einem geeigneten Planeten in die Bauliste aufgenommen."
  ENG: "\n        Add ship designs to this fleet from the panel on the right. Use 'Shift' key to place multiple ships of the same type. When you are done, you can press the 'Requisition' button, which will search your empire for ships that can fill your fleet. If you do not have the ships, it will order that they are built at a suitable planet.\n\nReturn here at any time to requisition replacements for any ships that are lost in combat.\n      "
  RUS: "Добавьте дизайны кораблей к этому флоту с панели справа. Используйте клавишу 'Shift', чтобы разместить несколько кораблей одного типа. Когда вы закончите, вы можете нажать кнопку 'Запрос',она будет искать в вашей империи корабли, которые могут заполнить ваш флот. Если у вас нет кораблей,то они построятся на подходящей плнете.Вернитесь сюда в любое время, чтобы запросить замену любых кораблей, потерянных в бою.\n     "
  SPA: "\n        Añade diseños de naves a esta flota desde el panel de la derecha. Cuando hayas terminado, pulsa el botón \"Solicitar\" y se iniciará una búsqueda en tu imperio de naves que puedan conformar tu flota. Si no dispones de esas naves, se enviará la orden de que sean construidas en un planeta adecuado.\n\nVuelve aquí cuando quieras solicitar reemplazos para las naves perdidas en combate.\n      "
