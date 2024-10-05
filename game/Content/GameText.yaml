@@ -637,28 +637,28 @@ TheRacialHomeworldIsMuch2:
  UKR: "Расовий рідний світ набагато менший за середню планету і вміщує на 25% менше населення"
 PrototypeFlagship:
  Id: 92
- GER: 
+ GER: "Flaggschiffprototyp"
  ENG: "Prototype Flagship"
  RUS: "Прототип флагмана"
  SPA: "Prototipo de nave almirante"
  UKR: "Прототип флагмана"
 BeginTheGameWithAn:
  Id: 93
- GER: 
+ GER: "Beginnen Sie das Spiel mit einem fortschrittlichen Flaggschiff-Prototyp, der mit Technologien ausgestattet ist, die sonst zu Beginn des Spiels nicht verfügbar wären"
  ENG: "Begin the game with an advanced prototype flagship equipped with technologies that otherwise would not be available at the game's start"
  RUS: "Начать игру с мощным флагманским кораблем, оснащенным технологиями, в ином случае не доступными в начале игры."
  SPA: "Comienzas la partida con un prototipo avanzado de nave almirante con tecnologías que, de otra forma, no estarían disponibles al principio del juego"
  UKR: "Почніть гру з передового прототипу флагмана, оснащеного технологіями, які інакше були б недоступні на початку гри"
 Prewarp:
  Id: 94
- GER: 
+ GER: "Prä-Warp"
  ENG: "Pre-Warp"
  RUS: "Пре-варп"
  SPA: "Velocidad presupraluminal"
  UKR: "Пре-варп"
 PrewarpRacesDiscoveredAnAncient:
  Id: 95
- GER: 
+ GER: "Vor-Warp-Rassen entdeckten ein uraltes außerirdisches Schiff, das im Polareis ihrer Heimatwelt vergraben war.   Sie beginnen das Spiel mit einem mächtigen außerirdischen Kreuzer, verfügen aber über keine Raumfahrttechnologien und keine Sternenbasis für den Schiffsbau"
  ENG: "Pre-Warp races discovered an ancient alien vessel buried in the polar ice of their homeworld.  They begin the game with a powerful alien cruiser, but possess no star faring technologies and no starbase for ship construction"
  RUS: "Расы в пре-варпе находят в своем родном мире древний инопланетный корабль. Они начинают игру с мощным инопланетным крейсером, но не имеют технологий путешествия в космосе и звездной базы для строительства кораблей."
  SPA: "Las razas con velocidad presupraluminal descubrieron una antigua nave alienígena sepultada en el hielo polar de su planeta natal.  Comienzan el juego con un poderoso crucero alienígena, pero no poseen tecnologías para viajes interestelares ni bases estelares para la construcción de naves"
@@ -970,7 +970,7 @@ Carrier:
  UKR: "Носій"
 Scout:
  Id: 139
- GER: ""Aufklärer
+ GER: "Aufklärer"
  ENG: "Scout"
  RUS: "Разведчик"
  SPA: "Nave exploradora"
@@ -1295,7 +1295,7 @@ ReturningToHangar:
  UKR: "Повернення до ангару"
 Orbiting:
  Id: 182
- GER: "umkreist"
+ GER: "Umkreise"
  ENG: "Orbiting"
  RUS: "На орбите"
  SPA: "Orbitando"
@@ -2053,14 +2053,14 @@ Store:
  UKR: "Склад"
 Import:
  Id: 330
- GER: "Import"
+ GER: "importieren"
  ENG: "Import"
  RUS: "Импорт"
  SPA: "Importar"
  UKR: "Імпорт"
 Export:
  Id: 331
- GER: "Export"
+ GER: "exportieren"
  ENG: "Export"
  RUS: "Экспорт"
  SPA: "Exportar"
@@ -10970,7 +10970,7 @@ OpensTheHelpMenu:
  UKR: "Відкриває меню довідки"
 ThisHelpMenuContainsInformation:
  Id: 2303
- GER: "Dieses Hilfemenü enthält Informationen zu allen in StarDrive enthaltenen Spielmachaniken.  Sie können sich auch eines von mehreren Einführungsfilmen anschauen, um eine entwicklergeführte Einführung in StarDrive zu erhalten."
+ GER: "Dieses Hilfemenü enthält Informationen zu allen in StarDrive enthaltenen Spielmechaniken.  Sie können sich auch eines von mehreren Einführungsfilmen anschauen, um eine entwicklergeführte Einführung in StarDrive zu erhalten."
  ENG: "This help menu contains information on all of the gameplay systems contained in StarDrive. You can also watch one of several tutorial videos for a developer-guided introduction to StarDrive."
  RUS: "Это меню справки содержит всю информацию об игровом процессе StarDrive. Также вы можете просмотреть обучающие видеоролики для начального знакомства со StarDrive."
  SPA: "Este menú contiene información sobre todos los sistemas de juego que contiene StarDrive. También puedes ver alguno de los diversos tutoriales en los que los desarrolladores te presentan StarDrive."
@@ -13754,13 +13754,13 @@ Budget:
  UKR: "Бюджет"
 Override:
  Id: 4226
- GER: "Überschreiben"
+ GER: "Ändern"
  ENG: "Override"
  RUS: "Изменить"
  UKR: "Перевизначення"
 OverrideThisBudgetAndSet:
  Id: 4227
- GER: "Überschreiben Sie dieses Budget und legen Sie Ihr eigenes fest."
+ GER: "Ändern Sie dieses Budget und legen Sie Ihr eigenes fest."
  ENG: "Override this budget and set your own."
  RUS: "Изменить бюджет вручную"
  UKR: "Перевизначте цей бюджет і встановіть свій власний."
@@ -14256,52 +14256,52 @@ BB_Tech_Terraforming3_Bonus:
  UKR: "Рівень тераформування 3. На цьому рівні тераформери приберуть з планети всі вулкани і погану місцевість, зроблять придатними для життя тайли, а також перетворять вашу планету на найкращу для вашої раси і підвищать її родючість до 1."
 Terraforming:
  Id: 4311
- GER: 
+ GER: "Terraformung im Gange"
  ENG: "Terraforming In Progress"
  UKR: "Тераформування триває"
 Blockade2:
  Id: 4312
- GER: 
+ GER: "Blockade!"
  ENG: "Blockade!"
  UKR: "Блокада!"
 Starvation:
  Id: 4313
- GER: 
+ GER: "Hunger!"
  ENG: "Starvation!"
  UKR: "Голод!"
 TerraformingOperationsLevel:
  Id: 4314
- GER: 
+ GER: "Terraformingoperation - Stufe"
  ENG: "Terraforming Operations - Level"
  UKR: "Операції з тераформування - рівень"
 TerraformingStatus:
  Id: 4315
- GER: 
+ GER: "Status:"
  ENG: "Status:"
  UKR: "Статус:"
 TerraformersHere:
  Id: 4316
- GER: 
+ GER: "Terraformer:"
  ENG: "Terraformers:"
  UKR: "Тераформери:"
 TerraformersDone:
  Id: 4317
- GER: 
+ GER: "Fertig"
  ENG: "Done"
  UKR: "Зроблено."
 TerraformPlanet:
  Id: 4318
- GER: 
+ GER: "Planet:"
  ENG: "Planet:"
  UKR: "Планета:"
 TerraformTargetFert:
  Id: 4319
- GER: 
+ GER: "Fruchtbarkeitsziel:"
  ENG: "Target Fertility:"
  UKR: "Цільова фертильність:"
 TerraformEsPop:
  Id: 4320
- GER: 
+ GER: "Geschätze Population:"
  ENG: "Estimated Population:"
  UKR: "Орієнтовна кількість населення:"
 TerraformNegativeEnv:
@@ -14311,77 +14311,77 @@ TerraformNegativeEnv:
  UKR: "(будівлі з негативним впливом на навколишнє середовище)"
 NegativeEnvWarning:
  Id: 4322
- GER: 
+ GER: "„WARNUNG – Dieses Gebäude wird die maximale Fruchtbarkeit aufgrund der derzeit auf diesem Planeten vorhandenen Gebäude mit negativer Umgebung nicht über 0 erhöhen (effektive maximale Fruchtbarkeit ist)."
  ENG: "WARNING - This building won't raise Max Fertility above 0 due to currently present negative environment buildings on this planet (effective Max Fertility is"
  UKR: "ПОПЕРЕДЖЕННЯ - Ця будівля не підніме максимальну родючість вище 0 через наявні будівлі з негативним впливом на навколишнє середовище на цій планеті (ефективна максимальна родючість становить"
 TerraformersNotStarted:
  Id: 4323
- GER: 
+ GER: "Nicht begonnen"
  ENG: "Not Started"
  UKR: "Не розпочато"
 TerraformersInProgress:
  Id: 4324
- GER: 
+ GER: "Im Gange"
  ENG: "In Progress"
  UKR: "У процесі"
 TerraformersTerrain:
  Id: 4325
- GER: 
+ GER: "Unwegsames Gelände:"
  ENG: "Rough Terrain:"
  UKR: "Пересічена місцевість:"
 TerraformersTiles:
  Id: 4326
- GER: 
+ GER: "Felder: ""
  ENG: "Tiles: "
  UKR: "Плитка:"
 TerraformersTerrain2:
  Id: 4327
- GER: 
+ GER: "Unwegsames Gelände ("
  ENG: "Rough Terrain ("
  UKR: "Пересічена місцевість ("
 TerraformersTiles2:
  Id: 4328
- GER: 
+ GER: "Felder ("
  ENG: "Tiles ("
  UKR: "Плитка ("
 Automatic:
  Id: 4329
- GER: 
+ GER: "Auto"
  ENG: "Automatic"
  UKR: "Автоматично"
 IncomingFreighters:
  Id: 4330
- GER: 
+ GER: "Einlaufende Frachter"
  ENG: "Incoming Freighters"
  UKR: "Вантажоперевізники, що прибувають"
 OutgoingFreighters:
  Id: 4331
- GER: 
+ GER: "Auslaufende Frachter"
  ENG: "Outgoing Freighters"
  UKR: "Вихідні вантажні судна"
 ColonyTrade:
  Id: 4332
- GER: 
+ GER: "Koloniehandel"
  ENG: "Colony Trade"
  UKR: "Колоніальна торгівля"
 ManualImport:
  Id: 4333
- GER: 
+ GER: "Ändern der Importdocks"
  ENG: "Override Import Trade Slots"
  UKR: "Перевизначити імпортні торгові слоти"
 ManualExport:
  Id: 4334
- GER: 
+ GER: "Ändern der Exportdocks"
  ENG: "Override Export Trade Slots"
  UKR: "Перевизначити експортні торгові слоти"
 IncomingOutGoingTip:
  Id: 4335
- GER: 
+ GER: "Die Anzahl der ein- u. ausgehenden Frachter im Vergleich zur Anzahl der auf dem Planeten geöffneten Warendocks.  Wenn der Planet die Waren nicht exportiert oder importiert, gibt es keine offnen Docks."
  ENG: "The number of freighters incoming or outgoing vs. the number of goods slots the planet is has opened. If the planet does not export or import the goods, the open slots will be zero."
  UKR: "Кількість вантажних кораблів, що прибувають або відправляються, проти кількості відкритих слотів для виробництва на планеті. Якщо планета не експортує та не імпортує товари, то відкриті слоти дорівнюють нулю."
 ManualTradeSlotTip:
  Id: 4336
- GER: 
+ GER: "Sie können festlegen, wie viele Slots für den Warenimport oder -export frei sind.  Bei der Einstellung 0 wird die Berechnung des offenen Slots wieder im automatischen Modus durchgeführt.  Gehen Sie mit manuellen Slots vorsichtig um, da eine hohe Anzahl an Slots Ihre Frachter möglicherweise an bestimmte Güter binden könnte.  Wenn der Planet die Waren nicht importiert oder exportiert, sind die entsprechenden Slots null."
  ENG: "You may adjust out many slots are open for the goods import or export. When set to 0, the open slot calcultion will resume automatic mode. Use manual slots carefully, as high number of slots might lock your freighters on specific goods. If the planet is not importing or exporting the goods, the corresponding slots will be zero."
  UKR: "Ви можете налаштувати кількість відкритих слотів для імпорту або експорту виробництва. Якщо встановити значення 0, підрахунок відкритих слотів відновиться в автоматичному режимі. Використовуйте слоти вручну обережно, оскільки велика кількість слотів може заблокувати ваші фрахтувальники на певних товарах. Якщо планета не імпортує і не експортує товари, відповідні слоти будуть дорівнювати нулю."
 MeteorShowerWarningNotOurPlanet:
@@ -15232,17 +15232,17 @@ CargoDistribution:
  UKR: "Розподіл вантажів"
 Freighters: 
  Id: 4506 
- GER: 
+ GER: "Frachter"
  ENG: "Freighters"                 
  UKR: "Транспорти"
 ImportingPlanets: 
  Id: 4507 
- GER: 
+ GER: "Importiere"
  ENG: "Importing"                 
  UKR: "Імпортує"
 ExportingPlanets: 
  Id: 4508 
- GER: 
+ GER: "Exportiere"
  ENG: "Exporting"
  UKR: "Експортує"
 OpenFreighterUtilWindow: 
@@ -17282,7 +17282,7 @@ OrdnanceAdded:
  UKR: "Додано боєприпаси"
 Prototype:
  Id: 6134
- GER: 
+ GER: "Prototyp"
  ENG: "Prototype"
  RUS: "Прототип"
  SPA: "Prototipo"
