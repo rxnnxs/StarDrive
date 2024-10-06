@@ -700,7 +700,7 @@ Diplomacy:
  UKR: "Дипломатія"
 MainMenu:
  Id: 101
- GER: "Hauptmenü"
+ GER: "Einstellungen"
  ENG: "Main Menu"
  RUS: "Главное меню"
  SPA: "Menú principal"
@@ -1857,7 +1857,7 @@ ReturnToGame:
  UKR: "Повернутися до гри"
 ExitToMainMenu:
  Id: 302
- GER: "Hauptmenü"
+ GER: "Zum Hauptmenü"
  ENG: "Exit to Main Menu"
  RUS: "Выйти в меню"
  SPA: "Salir al menú principal"
@@ -2527,14 +2527,14 @@ Biospheres:
  UKR: "Біосфери"
 BiospheresAreSpecialHighlyAdaptable:
  Id: 407
- GER: "Biosphären sind besondere, sehr anpassungsfähige Lebensräume. \nBiosphären dürfen nur auf unbewohnbarem Gelände errichtet werden; Dadurch wird das Gelände bewohnbar und der Planet erhält die maximale Bevölkerung basierend auf der Hälfte der Kolonisten pro Feld.\nAnschließend können unter der Biosphäre Wirtschaftsgebäude errichtet werden."
+ GER: "Biosphären sind besondere, sehr anpassungsfähige Lebensräume. \nSie können nur auf unbewohnbarem Gelände errichtet werden; So wird das Gelände bewohnbar und eine Fläche bietet der Bevölkerung halb so viel Platz wie ein normales Feld."
  ENG: "Biospheres are special, highly adaptable living habitats. Biospheres may only be built on Uninhabitable terrain; in doing so, the terrain becomes habitable and the planet gains max population based on the half of the Colonists per Tile. Economic buildings can thereafter be built underneath the biosphere."
  RUS: "Биосферы - это специальные легкоадаптируемые живые жилища. Биосферы можно строить только на планетах, непригодных для обитания; после их строительства планета становится обитаемой и получает 0,5 к максимальному населению на клетку. Затем внутри биосферы уже можно строить другие объекты."
  SPA: "Las biosferas son hábitats especiales en las que la vida se adapta fácilmente. Solo pueden construirse en terreno no habitable; al hacerlo, dicho terreno pasa a ser habitable y el planeta añade 0,5 a su población máxima. Al amparo de la biosfera pueden construirse edificios económicos."
  UKR: "Біосфери - це особливі, високоадаптивні середовища проживання. Біосфери можна будувати лише на непридатній для життя місцевості; при цьому місцевість стає придатною, а планета отримує максимальну кількість населення, виходячи з половини кількості колоністів на тайл. Після цього під біосферою можна будувати економічні будівлі."
 PopulationCapTurnsInhabitableTiles:
  Id: 408
- GER: "Bevölkerungsobergrenze; \nVerwandelt unbewohnbare Flächen in bewohnbare"
+ GER: "Bevölkerungsobergrenze; Unbewohnbare Flächen werden bewohnbar"
  ENG: "population cap; turns inhabitable tiles into habitable"
  RUS: "Увеличивает максимальное население планеты; делает непригодную для жизни территорию пригодной для заселения"
  SPA: "+0,5 de capacidad de población; vuelve habitables casillas que antes no lo eran"
@@ -3072,7 +3072,7 @@ BB_Tech_Biospheres_Name:
  UKR: "Біосфери"
 BB_Tech_Biospheres_Desc:
  Id: 525
- GER: "Biosphären sind große geodätische Kuppelstrukturen, die viele Kolonisten beherbergen können. \nDamit auf einem kargen Planeten eine große Bevölkerung leben kann, sind Biosphären unbedingt erforderlich. \nBauen Sie Biosphären auf unbewohnbarem Land, um es bewohnbar zu machen."
+ GER: "Biosphären sind große geodätische Kuppelstrukturen, die viele Kolonisten beherbergen können. Damit auf einem kargen Planeten eine große Bevölkerung leben kann, sind Biosphären unbedingt erforderlich. Bauen Sie Biosphären auf unbewohnbarem Land, um es bewohnbar zu machen."
  ENG: "Biospheres are large geodesic dome structures capable of supporting many colonists in an artificial environment. For a barren planet to house a large population, biospheres are absolutely necessary. Build biospheres on uninhabitable land to make that land habitable."
  RUS: "Биосферы - это большие куполообразные сооружения для поддержания жизнедеятельности колонистов в искусственно созданной среде. В бесплодных мирах биосферы абсолютно необходимы - иначе планета не сможет вместить много населения. Стройте биосферы на непригодной для жизни территории, чтобы потом заселить ее."
  SPA: "Las biosferas son estructuras en forma de cúpula geodésica capaces de albergar muchos colonos en un entorno artificial. Las biosferas son absolutamente necesarias para que un planeta árido pueda ser habitado. Constrúyelas en zonas inhabitables para crear asentamientos de población. "
@@ -14794,37 +14794,37 @@ DesignIssueLowResearchTimeTitle:
  UKR: "Малий час дослідження"
 DesignIssueLowResearchTimeProblem:
  Id: 4419
- GER: 
+ GER: "Diese Forschungsstation verfügt nicht über genügend Produktionsspeicher, um über einen längeren Zeitraum Forschung zu produzieren.  Dies könnte den Verkehr von Frachtschiffen zu dieser Station erhöhen."
  ENG: "This Research Station does not have enough production storage to produce Research for long periods. This might increase traffic of freighters to this Station."
  UKR: "Ця дослідницька станція не має достатньо виробничих складів для проведення досліджень протягом тривалого часу. Це може збільшити трафік вантажних суден до цієї станції."
 DesignIssueLowResearchTimeRemidiation:
  Id: 4420
- GER: 
+ GER: "Fügen Sie Speicherplatz hinzu oder verringern Sie die Anzahl der Forschungsmodule."
  ENG: "Add Storage or lower the amount of Research modules."
  UKR: "Додайте Сховище або зменшіть кількість модулів Дослідження."
 DesignIssueLowResearchTimeNotGood:
  Id: 4421
- GER: 
+ GER: "Beachten Sie, dass diese Station nicht verwendet wird, wenn Sie sich dafür entschieden haben, die Auswahl von Forschungsstationen zu automatisieren.  Es ist zu ineffizient."
  ENG: "Note that if you elected to automate Research Stations picking, this Station would not be used. It is too inefficient." 
  UKR: "Зверніть увагу, що якщо ви вирішили автоматизувати вибір дослідницьких станцій, ця станція не буде використовуватися. Вона занадто неефективна."
 ResearchStationCanBePlaced:
  Id: 4422
- GER: 
+ GER: "Zeigt an, dass eine Forschungsstation im Orbit dieses Planeten stationiert werden kann."
  ENG: "Indicates that a Research Station can be deployed in orbit of this planet."  
  UKR: "Означає, що на орбіті цієї планети може бути розгорнута дослідницька станція."
 ResearchStationCanBePlacedSystem:
  Id: 4423
- GER: 
+ GER: "Zeigt an, dass eine Forschungsstation in diesem System eingesetzt werden kann, um ihren Stern zu erforschen."
  ENG: "Indicates that a Research Station can be deployed in this system to research it's Star."   
  UKR: "Вказує на те, що в цій системі можна розмістити дослідницьку станцію для дослідження зірки."
 RemoveExcessResearchStation:
  Id: 4424
- GER: 
+ GER: "Die Forschungsstation wurde evakuiert, da\npro Stern oder Planet nur eine Station vorhanden sein kann."
  ENG: "Research Station was evacuated since there\ncan only be one station per Star or Planet."    
  UKR: "Дослідницьку станцію було евакуйовано, оскільки на кожну зірку чи планету може бути лише одна станція."
 RemoveResearchStationTerraform:
  Id: 4425
- GER: 
+ GER: "Die Forschungsstation wurde evakuiert, da der Planet\nnicht mehr untersucht werden kann."
  ENG: "Research Station was evacuated since the planet\nCannot be studied anymore."     
  UKR: "Дослідницька станція була евакуйована, оскільки планету більше не можна вивчати."
 ResearchPlanResearching:
@@ -14839,12 +14839,12 @@ ResearchPlanIdle:
  UKR: "Офлайн - немає Дослідницької теми"
 ExoticPlanNoSupply:
  Id: 4428
- GER: 
+ GER: "Offline – Warten auf Nachschub"
  ENG: "Offline - waiting for supplies" 
  UKR: "Офлайн - очікування поставок"
 ResearchStationDeployed:
  Id: 4429
- GER: 
+ GER: "Forschungsstation in Betrieb"
  ENG: "Research Station Deployed"  
  UKR: "Розгорнуто дослідницьку станцію"
 ExoticSystemsArray:
@@ -14854,12 +14854,12 @@ ExoticSystemsArray:
  UKR: "Масив екзотичних систем"
 CannotBuildResearchStationTip2:
  Id: 4431
- GER: 
+ GER: "Forschungsstationstechnologie ist noch nicht verfügbar."
  ENG: "Research Station Tech not available yet."   
  UKR: "Технологія дослідницької станції поки що недоступна."
 ExoticSystemsArrayTip:
  Id: 4432
- GER: 
+ GER: "Alle erforschten exotischen Systeme anzeigen."
  ENG: "View all explored exotic systems."    
  UKR: "Переглянути всі досліджені екзотичні системи."
 StarOrPlanet:
@@ -14869,265 +14869,265 @@ StarOrPlanet:
  UKR: "Зірка чи планета"
 ResearchStationBuiltPlanetNotify: 
  Id: 4434
- GER: 
+ GER: "(Forschungsstation) in Umlaufbahn von"
  ENG: "(Research Station) was\ndeployed in orbit of"
  UKR: "(Дослідницька станція) була\nрозгорнута на орбіті"
 ResearchStationBuiltSystemNotify: 
  Id: 4435
- GER: 
+ GER: "(Forschungsstation) fertiggestellt. System:"
  ENG: "(Research Station) was\ndeployed in system"
  UKR: "(Дослідницька станція) була\nрозгорнута в системі"      
 AllowPlayerInterTradeTitle:
  Id: 4436
- GER: 
+ GER: "Erlaube den Imperialen Handel"
  ENG: "Allow Empire Inter Trade"      
  UKR: "Дозволити міждержавну торгівлю"
 AllowPlayerInterTradeTip:
  Id: 4437
- GER: 
+ GER: "Ermöglicht Ihren stillgelegten Frachtern den Transport von Waren zu Imperien, mit denen Sie Handelsverträge abgeschlossen haben, wenn die interne Nachfrage gedeckt wird.  Sie können dies immer noch für bestimmte Frachter deaktivieren.  Der Transfer von Waren in andere Imperien bringt zusammen mit allen anderen Erträgen eines normalen Handels einen hohen Kreditbonus von 2 Kreditpunkten pro Ware"
  ENG: "Allows your idle freighters to transfer goods to empires you have trade treaties with them if internal demand is satisfied. You can still disable this for specific freighters. Transferring goods to other empires yields large credit bonus of 2 credits per good along with any other yields of a normal trade"      
  UKR: "Дозволяє вашим фрахтувальникам, що простоюють, перевозити товари в імперії, з якими у вас є торгові договори, якщо внутрішній попит задоволений. Ви все ще можете вимкнути цю можливість для певних кораблів. Передача товарів в інші імперії приносить великий кредитний бонус у розмірі 2 кредитів за кожен товар, а також інші прибутки від звичайної торгівлі"
 LavaPoolTerraformable:
   Id: 4438
-  GER: 
+  GER: "Heiße Lava umgibt dieses Feld und macht eine Besiedlung unmöglich.  Dieser natürliche Pool kann terraformiert werden, wenn wir über die richtige Technologie verfügen."
  ENG: "Hot Lava surrounds this tile, making habitation impossible. This natural pool can be Terraformed when we have the right technology."
   UKR: "Гаряча лава оточує цю плитку, роблячи її непридатною для проживання. Цей природний басейн може бути тераформований, якщо ми матимемо відповідну технологію."
 RandomGameMode:
  Id: 4439
- GER: 
+ GER: "Zufällig"
  ENG: "Random"
  RUS: "Случайный"
  SPA: "Aleatorio"    
  UKR: "Випадковість"
 InRandomGameMode:
  Id: 4440
- GER: 
+ GER: "Der Zufallsspielmodus ist dem Sandbox-Spielmodus sehr ähnlich, die Startpositionen sind jedoch zufällig.  Einige Imperien beginnen möglicherweise sehr nahe beieinander und andere verfügen möglicherweise über viel Raum zur Expansion."
  ENG: "Random game mode is very similar to Sandbox Game Mode but starting positions are randomized. Some empires might start very close to eachother and some may have a lot of space to expand."
  RUS: "Случайный режим игры очень похож на режим песочницы, но стартовые позиции случайны. Некоторые империи могут начинаться очень близко друг к другу, а у некоторых может быть много места для расширения."
  SPA: "El modo de juego aleatorio es muy similar al modo de juego Sandbox, pero las posiciones iniciales son aleatorias. Algunos imperios pueden comenzar muy cerca uno del otro y otros pueden tener mucho espacio para expandirse."  
  UKR: "Режим випадкової гри дуже схожий на режим гри в пісочниці, але стартові позиції рандомізовані. Деякі імперії можуть почати гру дуже близько одна до одної, а деякі матимуть багато простору для розширення."
 DisableAlternateTraits:
  Id: 4441
- GER: 
+ GER: "Keine alternatives KI-Rassenverhalten"
  ENG: "Disable Alternate AI Trait Sets"
  UKR: "Вимкнути альтернативні набори ознак ШІ"
 DisableAlternateTraitsTip:
  Id: 4442
- GER: 
+ GER: "Deaktivieren Sie die Möglichkeit, alternative Verhaltensweisen für KI-Imperien zu erstellen.  Die KI-Imperien starten mit den Merkmalen, die Sie im Rassendesign-Bildschirm sehen.  Durch die Verwendung alternativer KI-Merkmalssätze werden in jedem neuen Spiel leicht unterschiedliche Imperien geschaffen, was den Wiederspielwert erhöht."
  ENG: "Disable the ability to create alternate traits sets for AI empires. The AI empires will start with the traits you see when you cycle the races during in the Race Design Screen. Using alternate AI trait sets will create slightly diffrent empires each new game, increasing replayability."
  UKR: "Вимкнути можливість створювати альтернативні набори рис для імперій ШІ. Імперії ШІ починатимуться з тими рисами, які ви бачите під час циклічного перемикання рас на екрані проектування гонки. Використання альтернативних наборів рис ШІ створюватиме дещо відмінні імперії у кожній новій грі, що підвищує реграбельність."
 ConstructionProgressTip:
  Id: 4443
- GER: 
+ GER: "Anzahl der abgeschlossenen Bauarbeiten.  Das Bauschiff fügt in jeder Runde Produktionspunkte hinzu, und wenn sich die Struktur in einem befreundeten System befindet, werden die Kolonien Bauschiffe aussenden, um den Bau zu unterstützen.  Die Bauschiffe benötigen keine weitere Produktion."
  ENG: "Amount of Completed Consturction. The contructor adds construction every turn and if the structure position in in a friendly system, the colonies will launch builder ships to aid the construction efforts. The builder ships do not require more production." 
  UKR: "Кількість завершеного будівництва. Будівельник додає будівництво кожного ходу, і якщо структура знаходиться в дружній системі, колонії запускають кораблі будівельників, щоб допомогти в будівництві. Кораблі-будівельники не потребують додаткового виробництва."
 AutoPickConstructorsName:
  Id: 4444
- GER: 
+ GER: "Autowahl der Bauschiffe"
  ENG: "Auto Pick Constructors"  
  UKR: "Автоматичні конструктори підбору"
 AutoPickConstructorsTip:
  Id: 4445
- GER: 
+ GER: "Die besten Konstrukteure für den Auftrag werden automatisch ausgewählt.  Wenn sich ein Bauauftragsort in einem System mit befreundeten Kolonien befindet, werden im Allgemeinen günstigere Konstrukteure ausgewählt, da billige Konstrukteure keine zusätzlichen Produktionskosten für die auf einem Planeten zu errichtende Struktur verursachen und die Kolonien Bauschiffe starten können, um die Baubemühungen zu unterstützen."
  ENG: "Best constructors for the job will be selected automatically. Generally, if a build job localtion is in a system with friendly colonies, cheaper constructors will be selected since cheap constructors do not add extra production cost to the structure being built in a planet and the colonies can launch Builder Ships to aid the construction efforts."   
  UKR: "Найкращі будівничі будуть обрані автоматично. Як правило, якщо локалізація будівельного завдання знаходиться в системі з дружніми колоніями, будуть обрані дешевші будівельники, оскільки дешеві будівельники не додають додаткових виробничих витрат до споруди, що будується на планеті, а колонії можуть запускати кораблі-будівельники, щоб допомогти в будівництві."
 DesignIssueConstructorCostTitle:
  Id: 4446
- GER: 
+ GER: "Hohe Bauschiffkosten"
  ENG: "High Constructor Cost"    
  UKR: "Висока вартість конструктора"
 DesignIssueConstructorCostProblem:
  Id: 4447
- GER: 
+ GER: "Ein Teil der Kosten dieses Konstrukteurs wird zu den Produktionskosten des Orbitalbaus hinzugerechnet.  Hinweis: 50% der Produktionskosten des Konstrukteurs werden für die Orbitalkonstruktion vor Ort verwendet, um die Bauzeit zu verkürzen."
  ENG: "Some of this constructor's cost will be added to the orbital construction production cost. Note: 50% of the constructor production cost will be recycled to the orbital construction on site to speed up constrcution time."    
  UKR: "Частина вартості цього конструктора буде додана до вартості виробництва орбітального корабля. Примітка: 50% вартості конструктора буде перероблено на орбітальну конструкцію на місці, щоб пришвидшити час будівництва."
 DesignIssueConstructorCostRemidiation:
  Id: 4448
- GER: 
+ GER: "Sie möchten möglicherweise die Kosten für diesen Konstruktor senken.  Überschüssige Produktionskosten werden zu den Orbitalproduktionskosten addiert, wenn dieser Konstruktor ausgewählt wird:"
  ENG: "You my want to lower the cost of this constructor. Excess production cost added to any orbital production cost when this constructor is selected:"     
  UKR: "Ви хочете знизити вартість цього конструктора. Надлишкова виробнича вартість додається до будь-якої орбітальної виробничої вартості при виборі цього конструктора:"
 RefinningPerTurnStat:
  Id: 4449
- GER: 
+ GER: "Raffination/Runde"
  ENG: "Refining Per Turn"      
  UKR: "Переробка за один оборот"
 RefiningPerTurnStatTip:
  Id: 4450
- GER: 
+ GER: "Zeigt an, wie viel die Station pro Runde erzeugt.  Einige exotische Ressourcen sind einfacher oder schwieriger zu verarbeiten.  Diese Raffination wird im Planeten-Infobildschirm der Planeten mir Rohstoffen angezeigt."
  ENG: "Inticates how much Refining this station can handle per turn. Some Exotic resources are easier or harder to refine. You will see this Refine Ration in the Planet Info Screen of Mineable planets."       
  UKR: "Показує, скільки переробки може здійснити ця станція за один хід. Деякі екзотичні ресурси легше або важче переробляти. Ви побачите цю норму переробки на інформаційному екрані планети, яку можна видобувати."
 MiningStationRefiningTimeStat:
  Id: 4451 
- GER: 
+ GER: "Laufzeit"
  ENG: "Processing Turns"   
 MiningStationRefiningTimeStatTip:
  Id: 4452
- GER: 
+ GER: "Anzahl der Runden, in denen diese Station rohe exotische Ressourcen veredeln kann, bis die Lebensmittelvorräte aufgebraucht sind."
  ENG: "Number of turns this Station can refine raw exotic resources until Food stocks are depleted."   
  UKR: "Кількість ходів, за які ця станція може переробляти сирі екзотичні ресурси, поки не вичерпаються запаси їжі."
 RefiningModule:
  Id: 4453
- GER: 
+ GER: "raffiniere"
  ENG: "Refining"    
  UKR: "Переробка"
 MiningStationsCanBePlaced:
  Id: 4454
- GER: 
+ GER: "Zeigt an, dass Bergbaustationen im Orbit dieses Planeten gebaut werden können."
  ENG: "Indicates that Mining Stations can be deployed in orbit of this planet."   
  UKR: "Вказує на те, що на орбіті цієї планети можуть бути розгорнуті майнінгові станції."
 MiningStationBuiltPlanetNotify: 
  Id: 4455
- GER: 
+ GER: "(Bergbaustation) errichtet.\nUmkreist nun"
  ENG: "(Mining Station) was\ndeployed in orbit of"
  UKR: "(Гірнича станція) була\nрозгорнута на орбіті"
 MiningPlanIdle:
  Id: 4456
- GER: 
+ GER: "Inaktiv – Warte auf Bergbauschiffe oder Imperialer Speicher voll"
  ENG: "Offline - waiting for mining ships or Empire storage full"  
  UKR: "Офлайн - чекає на заповнення кораблів або сховища Імперії"
 MiningPlanRefining:
  Id: 4457
- GER: 
+ GER: "Raffiniere Exotische Ressourcen"
  ENG: "Refining Exotic Resource"  
  UKR: "Переробка екзотичного ресурсу"
 DeployMiningStation:
  Id: 4458 
- GER: 
+ GER: "Erbaue Minenstation"
  ENG: "Deploy Mining Station"
  UKR: "Розгорнути гірничу станцію"
 DeployMiningStationTip:
  Id: 4459 
- GER: 
+ GER: "Setzen Sie eine Bergbaustation in der Umlaufbahn dieses Planeten ein.  Es können bis zu 4 Bergbaustationen eingesetzt werden. Pro Planet kann es nur einen Besitzer der Bergbauoperationen geben."
  ENG: "Deploy Mining Station in this planet's orbit. Up to 4 Mining Stations can be deployed And there can be only one owner of the Mining Ops per planet."
  UKR: "Розмістіть майнінгову станцію на орбіті цієї планети. Можна розмістити до 4-х видобувних станцій, і на кожній планеті може бути лише один власник видобувної станції."
 CannotBuildMiningStationTip:
  Id: 4460 
- GER: 
+ GER: "Sie verfügen nicht über die erforderliche Technologie, um mit dem Bergbaubetrieb zu beginnen. Erforschen Sie relevante Technologie, um Pläne für die Bergbaustation zu erhalten."
  ENG: "You do not have the required technology to start Mining Operations, research relevant tech to gain Mining Station schematics."
  UKR: "Ви не маєте необхідної технології для початку видобутку корисних копалин, знайдіть відповідну технологію, щоб отримати схеми видобувних станцій."
 CannotDeployMiningStationNotOwnerTip:
  Id: 4461 
- GER: 
+ GER: "Sie können hier keine Bergbauoperationen starten, da es bereits einen Eigentümer für diese Operationen gibt."
  ENG: "You Cannot start Mining Operations here since there is already an owner for these ops."
  UKR: "Ви не можете розпочати видобуток  тут, оскільки для цих операцій вже є власник."
 DesignIssueLowRefiningTimeTitle:
  Id: 4462
- GER: 
+ GER: "Niedrige Raffinationzeit"
  ENG: "Low Refining Time"
  UKR: "Низький час переробки"
 DesignIssueLowRefiningTimeProblem:
  Id: 4463
- GER: 
+ GER: "Diese Bergbaustation verfügt nicht über genügend Lagerkapazität, um exotische Ressourcen über längere Zeiträume zu raffinieren.  Der Frachtverkehr zu diesem Station könnte zunehmen.  Bergbaustationen nutzen 50% des Speichers für Verbrauchsgüter und den Rest für die Lagerung der Erzeugnissen."
  ENG: "This Mining Station does not have enough consumption storage to refine exotic resources for long periods. Freighters traffic to this Station might increase. Mining Stations use 50% of the storage for consumption and the rest for storing raw exotic resources."
  UKR: "Ця гірничодобувна станція не має достатнього сховища для переробки екзотичних ресурсів протягом тривалого часу. Трафік вантажних кораблів до цієї станції може збільшитися. Гірничодобувні станції використовують 50% сховища для споживання, а решту - для зберігання сирих екзотичних ресурсів."
 DesignIssueLowRefiningTimeRemidiation:
  Id: 4464
- GER: 
+ GER: "Fügen Sie Speicher hinzu oder verringern Sie die Anzahl der Veredelungsmodule."
  ENG: "Add Storage or lower the amount of Refining modules."
  UKR: "Додайте Сховище або зменшіть кількість модулів Переробки."
 DesignIssueLowRefiningTimeNotGood:
  Id: 4465
- GER: 
+ GER: "Beachten Sie, dass diese Station nicht verwendet wird, wenn Sie die Auswahl der Bergbaustationen automatisieren möchten. Sie ist nicht effizient genug"
  ENG: "Note that if you elected to automate mining Stations picking, this Station would not be used. It is too inefficient." 
  UKR: "Зверніть увагу, що якщо ви вирішили автоматизувати вибір станцій видобутку, ця станція не буде використовуватися. Вона занадто неефективна."
 AutoBuildMiningStation:
  Id: 4466 
- GER: 
+ GER: "Autobau der Orbitalminen"
  ENG: "Auto Build Mining Stations"
  UKR: "Автоматичне будівництво видобувних станцій"
 AutoBuildMiningStationTip:
  Id: 4467 
- GER: 
+ GER: "Dadurch werden automatisch Bergbaustationen rund um relevante Planeten für Sie gebaut.  Es wird die Bergbaustation verwendet, die Sie in der Dropdown-Liste unten auswählen (sichtbar, wenn Ihr Imperium Zugriff auf Bergbaustationstechnologie hat).  Dadurch werden auch bereits vorhandene Stationen auf die von Ihnen ausgewählte neue Station aktualisiert."
  ENG: "This will auto build Mining stations for you around relevant planets. It will use whatever Mining Station you pick in the dropdown list below (visible if your empire has access to Mining station technology). This will also upgrade already existing Stations to the new station you have selected."
  UKR: "Автоматично побудує для вас гірничодобувні станції навколо відповідних планет. При цьому буде використовуватися будь-яка видобувна станція, яку ви виберете у випадаючому списку нижче (відображається, якщо ваша імперія має доступ до технології видобувних станцій). Також буде покращено вже існуючі станції до вибраної вами нової станції."
 AutoPickMiningStation:
  Id: 4468 
- GER: 
+ GER: "Autowahl der Orbitalminen"
  ENG: "Auto Pick Mining Stations"
  UKR: "Автоматичний вибір видобувної станції"
 AutoPickMiningStationTip:
  Id: 4469 
- GER: 
+ GER: "Dadurch wird die beste Bergbaustation mit den meisten erzeugten Raffinierungen ausgewählt und sie, wann immer möglich, aktualisiert, wenn das Kontrollkästchen „Bergbaustationen automatisch erstellen“ aktiviert ist."
  ENG: "This will pick the best Mining Station with most Refining generated and will upgrade them whenever possible, if the auto build Mining Stations checkbox is checked."
  UKR: "Буде обрано найкращу видобувну станцію з найбільшою кількістю переробки, і вона буде оновлюватися, коли це можливо, якщо встановлено прапорець автоматичної побудови видобувних станцій."
 MiningPlanetStatus:
  Id: 4470 
- GER: 
+ GER: "Baue exotische Ressourcen ab"
  ENG: "Mining Exotic Resource"    
  UKR: "Видобуток екзотичних ресурсів"
 MiningStationsOpsOwned:
  Id: 4471 
- GER: 
+ GER: "Die Bergbaubetriebe hier sind Eigentum dieses Imperiums"
  ENG: "Mining Station operations here are owned by this empire"     
  UKR: "Гірничодобувна станція тут належить цій імперії"
 ResourceName:
  Id: 4472 
- GER: 
+ GER: "Ressource"
  ENG: "Resource"      
  UKR: "Ресурс"
 AbortDeployent:
  Id: 4473 
- GER: 
+ GER: "Stoppe den Bau"
  ENG: "Abort Deployment"     
  UKR: "Скасувати розгортання"  
 MiningOpsOwnedByAnother:
  Id: 4474 
- GER: 
+ GER: "Bergbaubetriebe auf diesem Planeten sind im Besitz von"
  ENG: "Mining Ops around this planet are owned by"        
  UKR: "Видобувні станції на цій планеті належать"
 CannotBuildMiningStationTip2:
  Id: 4475
- GER: 
+ GER: "Bergbaustationstechnologie ist noch nicht verfügbar."
  ENG: "Mining Station Tech not available yet."    
  UKR: "Mining Station Tech поки що не доступний."
 OpensExoticPlanetsPanel:
  Id: 4476
- GER: 
+ GER: "Öffnet die Exotische Systeme Übersicht"
  ENG: "Opens Exotic Systems Array" 
  UKR: "Відкриває список екзотичних систем"
 ExoticResourcesMenu:
  Id: 4477
- GER: 
+ GER: "Exotische Ressourcen"
  ENG: "Exotic Resources"  
  UKR: "Екзотичні ресурси"
 ExoticResourcesBonus:   
  Id: 4478
- GER: 
+ GER: "Bonus"
  ENG: "Bonus"  
  UKR: "Бонус"
 ExoticResourcesName:
  Id: 4479
- GER: 
+ GER: "Ressource"
  ENG: "Resource Name"   
  UKR: "Назва ресурсу"
 ExoticResourcesOutput:
  Id: 4480
- GER: 
+ GER: "Leistung"
  ENG: "Output"    
  UKR: "Вихідні дані"
 ExoticRefiningVsConsumption:
  Id: 4481
- GER: 
+ GER: "Veredelung/Verbrauch"
  ENG: "Refining/Consumption"     
  UKR: "Переробка/споживання"
 ExoticRefiningMaxPotential:
  Id: 4482
- GER: 
+ GER: "Max."
  ENG: "Max"      
  UKR: "Макс"
 ExoticNumOps:
  Id: 4483
- GER: 
+ GER: "Anz."
  ENG: "Ops"       
  UKR: "станцій"
 EmpireExoticStorage:
  Id: 4484
- GER: 
+ GER: "Ändere Lagerkapazität Exot. Güter"
  ENG: "Empire Exotic Storage Modifier"
  UKR: "Модифікатор зберігання екзотичних ресурсів"
 EmpireMiningSpeed:
  Id: 4485
- GER: 
+ GER: "Ändere Abbaugescwhindigkeit"
  ENG: "Mining Speed Modifier"
  UKR: "Модифікатор швидкості видобутку"
 EmpireRefiningEfficiency:
@@ -15202,32 +15202,32 @@ OpensEmpireExoticBonuses:
  UKR: "Панель "Екзотичні бонуси імперії" відображає всі бонуси за екзотичні ресурси та статус операцій з видобутку корисних копалин"         
 OpensEmpireExoticBonusesDisabled: 
  Id: 4500
- GER: 
+ GER: "Abbau Operationen sind in diesem Spiel deaktiviert.\nIm Bedienfeld 'Exotische Boni' werden alle Boni für exotische Ressourcen und der Mining Ops-Status angezeigt"
  ENG: "Mining Ops are disabled in this game.\nThe Empire Exotic Bonuses panel specifies all Exotic Resources bonuses and Mining Ops status"            
  UKR: "У цій грі видобуток корисних копалин вимкнено.\nПанель "Екзотичні бонуси Імперії" відображає всі бонуси за екзотичні ресурси та статус видобутку корисних копалин."
 MineablePlanetNotification: 
  Id: 4501
- GER: 
+ GER: "enthält eine exotische Substanz, die abgebaut werden kann,\nvorausgesetzt, wir haben eine geeignete Weltraumbergbautechnologie erforscht."
  ENG: "contains an exotic substance which can be mined,\nproviding we have a proper space mining tech researched."             
  UKR: "містить екзотичну речовину, яку можна видобути,\nза умови, що у нас є відповідна досліджена технологія космічного видобутку."
 MineableRichnessTip: 
  Id: 4502
- GER: 
+ GER: "Exotic Richness gibt an, wie einfach Bergbauschiffe das Gas gewinnen können.  Die Zahl gibt die Menge an Ressourcen an, die ein Bergbauschiff pro Runde abbaut.  Das Mining-Tempo könnte durch neue Technologien verbessert werden."
  ENG: "Exotic Richness indicates how easily mining ships can harvest the gas. The number is the amount of resource a mining ship mines per turn. The mining pace might be improved with new tech."              
  UKR: "Екзотичне багатство показує, наскільки легко видобувні кораблі можуть видобувати газ. Число - це кількість ресурсу, яку видобувний корабель видобуває за хід. Швидкість видобутку може бути покращена за допомогою нових технологій."
 FreighterUtilization: 
  Id: 4503
- GER: 
+ GER: "Frachterauslastung"
  ENG: "Freighter Utilization"               
  UKR: "Завантаженість транспортів"
 TotalFreighterUtilization: 
  Id: 4504
- GER: 
+ GER: "Gesamtauslastung"
  ENG: "Total Utilization"               
  UKR: "Повне використання"
 CargoDistribution: 
  Id: 4505 
- GER: 
+ GER: "Frachtverteilung"
  ENG: "Cargo Distribution"                
  UKR: "Розподіл вантажів"
 Freighters: 
@@ -15247,37 +15247,37 @@ ExportingPlanets:
  UKR: "Експортує"
 OpenFreighterUtilWindow: 
  Id: 4509 
- GER: 
+ GER: "Öffnet das Fenster 'Frachterauslastung'."
  ENG: "Opens the Freighter Utilization Window."
  UKR: "Відкриває вікно використання транспортів."
 TotalUtilizationTip: 
  Id: 4510 
- GER: 
+ GER: "Zeigt den Prozentsatz der Frachter in Ihrem Imperium an, welche Waren transportieren."
  ENG: "Shows the perentage of freighters in your empire which are transferring goods." 
  UKR: "Показує відсоток транспортів у вашій імперії, які перевозять товари."
 CargoDistributionTip: 
  Id: 4511 
- GER: 
+ GER: "Zeigt die Ladungsverteilung der eingesetzten Frachter."
  ENG: "Shows the cargo distribution of utilized freighters."  
  UKR: "Показує розподіл вантажу на задіяних транспортах"
 NumberOfFreightersTip: 
  Id: 4512 
- GER: 
+ GER: "Anzahl der Frachter die Waren transportieren"
  ENG: "How many frieghters are currently assigned to transfer goods."   
  UKR: "Скільки транспортів призначено для передачі товарів."
 IdleFrieghters: 
  Id: 4513 
- GER: 
+ GER: "Untätige Frachter"
  ENG: "Idle Freighters:"    
  UKR: "Простоюючі транспроти:"
 FreightersUnderConstruction: 
  Id: 4514 
- GER: 
+ GER: "Wird gebaut:"
  ENG: "Under Construction:"     
  UKR: "Будується"
 BuildFrieghter: 
  Id: 4515 
- GER: 
+ GER: "Baue Frachter"
  ENG: "Build Freighter"      
  UKR: "Збудувати транспорт"
 ResearchQueuePositionOptions:
@@ -15297,27 +15297,27 @@ ResearchUnlocksMoreThanFourItems:
  UKR: "Ця технологія розблоковує більше 4 предметів. Клацніть правою кнопкою миші на назві, щоб розгорнути"
 RemnantsDefeatedFleetsMayAttack:
  Id: 4519
- GER: 
+ GER: "Allerdings könnten die verbleibenden Restflotten in diesem Sektor immer noch eine aktive Bedrohung darstellen, bis sie zerstört werden."
  ENG: "However, remaining Remnant fleets in this sector might still\npose an active threat until destroyed." 
  UKR: "Проте, залишки флотів у цьому секторі можуть становити активну загрозу доти, доки їх не буде знищено."
 PLanetInfoNumberOfDefenseShips:
  Id: 4520
- GER: 
+ GER: "Anzahl der Verteidigungsschiffe auf Luftwaffenstützpunkten auf diesem Planeten."
  ENG: "Number of Defense ships in Air Bases on this planet." 
  UKR: "Кількість кораблів оборони на авіабазах на цій планеті."
 ThisTileCanBeTerraformedHarder:
  Id: 4521
- GER: 
+ GER: "Dieses Feld kann im Rahmen von Terraforming-Vorgängen nutzbar gemacht werden.  Der Prozess wird aufgrund der Komplexität von Biosphären-Terraformung mehr Zeit in Anspruch nehmen."
  ENG: "This tile can be terraformed as part of terraforming operations. The process will take more time due to Biosphere Terraforming complexity." 
  UKR: "Ця плитка може бути терраформована в рамках операцій терраформування. Процес займе більше часу через складність тераформування біосфери."
 BioshperesAreBuiltHere:
  Id: 4522
- GER: 
+ GER: "Hier werden Biosphären gebaut.  Klicken Sie mit der rechten Maustaste, wenn Sie diese Biosphären verschrotten möchten."
  ENG: "Biospheres are built here. Right Click if you wish to scrap these Bioshperes."
  UKR: "Тут побудовані біосфери. Клацніть правою кнопкою миші, якщо ви бажаєте скасувати ці Bioshperes." 
 ThisTileCanBeTerraformed:
  Id: 4523
- GER: 
+ GER: "Dieses Feld kann im Rahmen von Terraforming-Vorgängen bewohnbar gemacht werden"
  ENG: "This tile can be terraformed as part of terraforming operations.
  UKR: "Ця плитка може бути терраформована в рамках операцій терраформування." 
 DisableScreenPanningOption:
@@ -15364,37 +15364,37 @@ BB_MiningSpeedTechDescr:
  UKR: "Збільште швидкість видобутку на наших шахтарських кораблях"
 BB_MiningSpeedTechDescrBonus:
  Id: 4926
- GER: 
+ GER: "20% Steigerung der Abbau-Geschwindigkeit im Reich"
  ENG: "20% Empire-wide increase in mining speeds" 
  UKR: "20% збільшення швидкості видобутку по всій імперії"
 BB_RefiningEfficiencyTech:
  Id: 4927
- GER: 
+ GER: "Raffinerie Effizenz"
  ENG: "Refining Efficiency"
  UKR: "Ефективність переробки"
 BB_RefiningEfficiencyTechDescr:
  Id: 4928
- GER: 
+ GER: "Steigern Sie die Effizienz unserer Raffinierung exotischer Ressourcen"
  ENG: "Increase our Exotic Resources Refining Efficiency"
  UKR: "Підвищення ефективності переробки екзотичних ресурсів"
 BB_RefiningEfficiencyTechDescrBonus:
  Id: 4929
- GER: 
+ GER: "20% Steigerung der Abbau-Effizienz im Reich"
  ENG: "20% Empire-wide increase in Refining Efficiency"  
  UKR: "20% підвищення ефективності нафтопереробки по всій імперії"
 BB_ExoticStorageTech:
  Id: 4930
- GER: 
+ GER: "Exotische Ress. Lager"
  ENG: "Exotic Storage"
  UKR: "Екзотичне зберігання"
 BB_ExoticStorageTechDescr:
  Id: 4931
- GER: 
+ GER: "Erhöhen Sie die Lagerkapazität unseres Imperiums für jede exotische Ressource"
  ENG: "Increase our empire storage capacity for each exotic resource"
  UKR: "Збільшуйте ємність нашої імперії для зберігання кожного екзотичного ресурсу"
 BB_ExoticStorageTechDescrBonus:
  Id: 4932
- GER: 
+ GER: "20% Steigerung der Exotische Ressourcen Lagerung im Reich"
  ENG: "20% Empire-wide increase in Exotic Storage" 
  UKR: "20% збільшення екзотичного сховища по всій імперії"
 ExoticResourceRefinedPulsefieldName:
@@ -15479,7 +15479,7 @@ ExoticResourceLuxariumDesc:
  UKR: "Вишуканий Лукзаріум може збільшити кількість Кредитів, що додаються до вашої імперії за хід, на 50%."
 ColonistsCargName:
  Id: 4949 
- GER: 
+ GER: "Kolonisten"
  ENG: "Colonists"      
  UKR: "Колоністи"
 ProductionCargoDesc:
