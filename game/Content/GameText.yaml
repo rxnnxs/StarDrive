@@ -3142,7 +3142,7 @@ BB_Tech_CombatReadiness_Desc:
  UKR: "Дослідження цієї технології дозволить нам створювати певні броньовані компоненти, які витримують більше влучень, ніж їхні неброньовані версії."
 BB_Tech_Cruisers_Name:
  Id: 536
- GER: "Kreuzer-Klasse"
+ GER: "Kreuzer Bauplan"
  ENG: "Cruiser Construction"
  RUS: "Крейсер"
  SPA: "Construcción de cruceros"
@@ -3156,7 +3156,7 @@ BB_Tech_Cruisers_Desc:
  UKR: "Крейсери - це великі, важкі кораблі, які можуть виконувати як наступальні, так і оборонні функції.  Крейсери часто розглядаються як командні кораблі для флотів менших фрегатів або винищувачів, і є достатньо великими, щоб мати кілька відсіків для винищувачів щоб виконувати роль авіаносців."
 BB_Tech_Cryogenics_Name:
  Id: 538
- GER: 
+ GER: "Kryostase"
  ENG: "Cryogenics"
  RUS: "Криогеника"
  SPA: "Criogenia"
@@ -3366,7 +3366,7 @@ BB_Tech_FleetSupply_Desc:
  UKR: "Для флоту, що перебуває на тривалому бойовому чергуванні, нестача боєприпасів може стати серйозною проблемою. Тому кораблі забезпечення були невід'ємною частиною великих флотських операцій з самого початку морської епохи."
 BB_Tech_FrigateConstruction_Name:
  Id: 568
- GER: 
+ GER: "Fregatten Bauplan"
  ENG: "Frigate Construction"
  RUS: "Фрегат"
  SPA: "Construcción de fragatas"
@@ -3807,7 +3807,7 @@ BB_Tech_Physics_Bonus:
  UKR: "Отримайте можливість будувати підпросторові проекторні платформи у відкритому космосі."
 BB_Tech_PlanetaryDefenseI_Name:
  Id: 632
- GER: "Planetare Verteidigung Stufe I"
+ GER: "Planetare Vertdg. I"
  ENG: "Planetary Defense I"
  RUS: "Планетарная оборона"
  SPA: "Defensa planetaria"
@@ -3940,7 +3940,7 @@ BB_Tech_ReactionDrive_STLSpeedBonus_Bonus:
  UKR: "Переобладнавши всі наші двигуни під стандарт реактивного приводу, ми зможемо досягти на 20% вищих субсвітлових швидкостей."
 BB_Tech_ScientificFoundations_Name:
  Id: 652
- GER: "Wissenschaftliche Grundlagen"
+ GER: "Wissenschaftl. Grundlagen"
  ENG: "Scientific Foundations"
  RUS: "Научные фонды"
  SPA: "Infraestructuras científicas"
@@ -4234,7 +4234,7 @@ BB_Tech_XenoComputing_ResearchBonus_Bonus:
  UKR: "Застосовує знання інопланетних мов до обчислювальних наук, надаючи +10% бонусу до досліджень для вашої імперії."
 BB_Tech_XenoLinguistics_Name:
  Id: 696
- GER: "Univeralübersetzer"
+ GER: "Universal- Übersetzer"
  ENG: "Xeno Linguistics"
  RUS: "Ксено лингвистика"
  SPA: "Xenolingüística"
@@ -4262,7 +4262,7 @@ BB_Tech_XenoLinguistics_DiplomacyBonus_Bonus:
  UKR: "Більш тонке розуміння іноземних мов дає 10% бонус до дипломатичних зусиль"
 BB_Tech_XenoFarming_Name:
  Id: 700
- GER: "Xeno-Landwirtschaft"
+ GER: "Xeno- Landwirtschaft"
  ENG: "Xeno Farming"
  RUS: "Ксено фермы"
  SPA: "Xenoagricultura"
@@ -10900,7 +10900,7 @@ ThisMegastructureEmploysAdvancedAgricultural:
  UKR: "Ця мегаструктура використовує передові сільськогосподарські технології та робототехніку для створення величезної кількості продуктів харчування"
 BB_Tech_VerticalFarming_Name:
  Id: 2293
- GER: "Hochregalbauernhöfe"
+ GER: "Hochregal- Bauernhöfe"
  ENG: "Vertical Farming"
  RUS: "Вертикальные фермы"
  SPA: "Agricultura vertical"
@@ -12845,7 +12845,7 @@ XenolinguisticNuance:
  UKR: "Ксено-лінгвістичний нюанс"
 XenoCompilers:
  Id: 4079
- GER: "Universalübersetzer"
+ GER: "Universal- Übersetzer"
  ENG: "Xeno Compilers"
  RUS: "Ксено-компиляторы"
  SPA: "Xenocompiladores"
@@ -14261,12 +14261,12 @@ Terraforming:
  UKR: "Тераформування триває"
 Blockade2:
  Id: 4312
- GER: "Blockade!"
+ GER: "!Blockade!"
  ENG: "Blockade!"
  UKR: "Блокада!"
 Starvation:
  Id: 4313
- GER: "Hunger!"
+ GER: "!Hungersnot!"
  ENG: "Starvation!"
  UKR: "Голод!"
 TerraformingOperationsLevel:
@@ -14386,386 +14386,386 @@ ManualTradeSlotTip:
  UKR: "Ви можете налаштувати кількість відкритих слотів для імпорту або експорту виробництва. Якщо встановити значення 0, підрахунок відкритих слотів відновиться в автоматичному режимі. Використовуйте слоти вручну обережно, оскільки велика кількість слотів може заблокувати ваші фрахтувальники на певних товарах. Якщо планета не імпортує і не експортує товари, відповідні слоти будуть дорівнювати нулю."
 MeteorShowerWarningNotOurPlanet:
  Id: 4337
- GER: 
+ GER: ": Ein Meteoritenschauer zieht durch das System.\nWir schätzen, dass einige der Meteore auf dem Planeten einschlagen werden\naber wir haben dort keine Kolonie."
  ENG: ": A Meteor Shower is passing through the system.\nWe estimate that some of the meteors are going to crash on the planet\nbut we do not have a colony there."
  UKR: ": Через систему проходить метеоритний потік. За нашими оцінками, частина метеорів впаде на планету, але ми не маємо там колонії."
 MeteorShowerWarning:
  Id: 4338
- GER: 
+ GER: ": Ein Meteoritenschauer zieht durch das System.\nWir schätzen, dass einige der Meteore auf dem Planeten einschlagen werden!"
  ENG: ": A Meteor Shower is passing through the system.\nWe estimate that some of the meteors are going to crash on the planet!"
  UKR: ": Через систему проходить метеорний потік.\nЗа нашими оцінками, частина метеорів впаде на планету!"
 BudgetLimitReached:
  Id: 4339
- GER: 
+ GER: "Die Grenze des zivilen Budgets ist erreicht!"
  ENG: "Civilian Budget Limit Reached!"
  UKR: "Ліміт цивільного бюджету досягнуто!"
 BB_Tech_SubspatialDynamics_CounterEnemyPlanetInhibitionBonus_Bonus:
  Id: 4340
- GER: 
+ GER: "Normalerweise machen feindliche Planeten unsere eigenen Projektoreffekte zunichte und behindern unsere Schiffe.  Diese Technologie ermöglicht es uns, die Schwerkraft des gegnerischen Planeten deutlich um 25% zu verringern, wenn wir einen Projektor in Reichweite haben."
  ENG: "Normaly, hostile planets negate our own projector effects and inhibit our ships. This tech allows us to decrease the enemy planet's gravity well by 25%, if we have a projector in range."
  UKR: "Зазвичай ворожі планети зводять нанівець власні ефекти проектора і гальмують наші кораблі. Ця технологія дозволяє нам зменшити гравітацію ворожої планети на 25%, якщо у нас є проектор у зоні досяжності."
 OurSpiesReport:
  Id: 4341
- GER: 
+ GER: "Unsere Spione haben entdeckt das"
  ENG: "Our spies detected that"
  UKR: "Наші шпигуни виявили, що"
 TheyPreparingForWar:
  Id: 4342
- GER: 
+ GER: "planen einen Krieg\n gegen uns und bauen irgendwo eine Flotte auf."
  ENG: "are plotting a war\n against us and are amassing a fleet somewhere."
  UKR: "замишляють війну\n проти нас і десь збирають флот."
 ButtonBuildCapitalName:
  Id: 4343
- GER: 
+ GER: "Baue Hauptstadt"
  ENG: "Build Capital"
  UKR: "Побудуй капітал"
 ButtonBuildCapitalTip:
  Id: 4344
- GER: 
+ GER: "Sie können hier eine neue Hauptstadt errichten, da Sie in Ihrem Reich keine Hauptstädte haben.  Wenn wir unsere ursprüngliche Heimatwelt zurückerobern, wird die Hauptstadt von diesem Planeten entfernt und in unserer Heimatwelt wieder aufgebaut."
  ENG: "You can build a new capital here, since you do not have any capitals within your empire. If we retake our origin Homeworld, the capital will be removed from this planet and built back in our homeworld."
  UKR: "Ви можете побудувати тут нову столицю, оскільки у вашій імперії немає столиць. Якщо ми повернемо собі рідну планету, столицю буде перенесено з цієї планети і побудовано на нашій рідній планеті."
 NotifyCapitalTransfer:
  Id: 4345
- GER: 
+ GER: "Hier wird die Hauotstadt neu aufgebaut und entfernt von"
  ENG: "Capital is being rebuilt here, and removed from"
  UKR: "Тут відбудовують капітал і вивозять його з"
 TerraformersUnknownOrigin:
  Id: 4346
- GER: 
+ GER: "Unbekannte Herkunft"
  ENG: "Unknown Origin"
  UKR: "Невідоме походження"
 NonaggressionPact3:
  Id: 4347
- GER: 
+ GER: "Nicht Angriffspakt"
  ENG: "Non Aggression"
  UKR: "Неагресивність"
 OpenBordersTreaty2:
  Id: 4348
- GER: 
+ GER: "Offene Grenzen"
  ENG: "Open Borders"
  UKR: "Відкриті кордони"
 EmpireRelationships:
  Id: 4349
- GER: 
+ GER: "Netzwerk der Reiche untereinander"
  ENG: "Empire Relationships Cross Reference"
  UKR: "Перехресні посилання на імперські відносини"
 ViewWarsOrAlliancesName:
  Id: 4350
- GER: 
+ GER: "Zeige Kriege und Allianzen"
  ENG: "View Wars or Alliances"
  UKR: "Переглянути війни або альянси"
 ViewWarsOrAlliancesTip:
  Id: 4351
- GER: 
+ GER: "Filtert friedliche- /Allianz -Verbindungen"
  ENG: "Filters out non War or Alliances links"
  UKR: "Відфільтровує посилання, що не стосуються війни або альянсів"
 ViewTradeTreatiesName:
  Id: 4352
- GER: 
+ GER: "Zeige Handelsverträge"
  ENG: "View Trade Treaties"
  UKR: "Переглянути торгові договори"
 ViewTradeTreatiesTip:
  Id: 4353
- GER: 
+ GER: "Handelsverträge anzeigen I/O"
  ENG: "Enable or disable trade treaties view"
  UKR: "Увімкнути або вимкнути перегляд торговельних угод"
 DeclaredWarOnUsBecause:
  Id: 4354
- GER: 
+ GER: "haben uns den Krieg erklärt, weil sie von ihrem Verbündeten dazu aufgefordert wurden -"
  ENG: "declared war on us because they were requsted\nto do so by their ally -"
  UKR: "оголосили нам війну, тому що їх попросив зробити це їхній союзник -"
 RuleOptionsUseHullUpkeepName:
  Id: 4355
- GER: 
+ GER: "Unterhaltkosten nach Rumpfgröße"
  ENG: "Use Upkeep by Hull Size"
  UKR: "Використання обслуговування за розміром корпусу"
 RuleOptionsUseHullUpkeepTip:
  Id: 4356
- GER: 
+ GER: "Normalerweise wird der Schiffsunterhalt als Bruchteil der Schiffskosten berechnet (mit einigen Modifikatoren).  Bei Verwendung von 'Rumpfgrößenbasierter Unterhalt' beträgt der Unterhalt des Schiffs 1% der Anzahl der Plätze, über die es verfügt (die Größe des Jägerhangars wird ebenfalls hinzugefügt), unabhängig von den Kosten.  Auf diese Weise können Sie fortgeschrittene Schiffe mit dem gleichen Unterhalt bauen wie weniger fortgeschrittene Schiffe mit identischer Größe, aber die KI wird dazu auch in der Lage sein"
  ENG: "Normally, ship upkeep is calculated as a fraction of the ship's cost (with some modifiers). When using Hull Size Based Upkeep, the upkeep of the ship will be 1% of the number of slot it has (Fightger Hangar size is added as well), regardless of cost. This will let you build advanced ships with the same upkeep as less advanced ships with identical size, but the AI will be able to do so as well"
  UKR: "Зазвичай утримання корабля розраховується як частка від вартості корабля (з деякими модифікаторами). При використанні утримання на основі розміру корпусу, утримання корабля становитиме 1% від кількості слотів, які він має (також додається розмір ангару винищувача), незалежно від вартості. Це дозволить вам будувати просунуті кораблі з такою ж вартістю обслуговування, як і менш просунуті кораблі з ідентичним розміром, але ШІ також зможе це робити"
 DesignIssueOrbitalHangarHoldPositionTitle:
  Id: 4357
- GER: 
+ GER: "Orbitalhangar-Startplatz"
  ENG: "Orbital Hangar Launch Range"
  UKR: "Радіус запуску Орбітального ангару"
 DesignIssueOrbitalHangarHoldPositionProblem:
  Id: 4358
- GER: 
+ GER: "Ihr Orbital ist auf die Position „Kampfhaltung halten“ eingestellt, während Sie Kampfhangars haben.  Sie werden nicht abgefeuert, es sei denn, der Feind befindet sich in unmittelbarer Nähe."
  ENG: "Your Orbital is set to Hold Position Combat Stance while having fighter hangars. It will not launch them unless the enemy is at point blank range."
  UKR: "Ваш орбітальний корабель перебуває в бойовій позиції з винищувачами в ангарах. Він не запускатиме їх, поки ворог не буде на відстані прямого попадання."
 DesignIssueOrbitalHangarHoldPositionRemidiation:
  Id: 4359
- GER: 
+ GER: "Es wird empfohlen, für Orbitale mit Hangars die Kampfstellung „Lang-/Kurzstreckenkampf“ zu verwenden."
  ENG: "It is recommended to use Long / Short range combat stance for orbitals with hangars."
  UKR: "Для орбіт з ангарами рекомендується використовувати бойову стійку Довга/Коротка дистанція."
 HasSurrenderedTo2:
  Id: 4360
- GER: 
+ GER: "hat sich ergeben"
  ENG: "has surrendered to"
  UKR: "здався на поталу"
 HasMergedWith:
  Id: 4361
- GER: 
+ GER: "hat sich mit zusammengeschlossen"
  ENG: "has merged with"
  UKR: "об'єдналася з"
 DueToLosingWarUS:
  Id: 4362
- GER: 
+ GER: "aufgrund eines verlorenen Krieges mit uns"
  ENG: "due to a losing war with us"
  UKR: "через програну війну з нами"
 DueToLosingWarThem:
  Id: 4363
- GER: 
+ GER: "aufgrund eines verlorenen Krieges mit"
  ENG: "due to a losing war with"
  UKR: "через програну війну з"
 AcceptedIntoOurEmpire:
  Id: 4364
- GER: 
+ GER: "wurden in unser Reich aufgenommen!"
  ENG: "were accepted into our empire!"
  UKR: "були прийняті до нашої імперії!"
 NoPortsFoundForBuild:
  Id: 4365
- GER: 
+ GER: "Der Bau war geplant, aber kein Planet konnte den Auftrag ausführen.  Möglicherweise haben Sie keinen Planeten mit einem Raumhafen, Ihre Planeten sind sabotiert oder befinden sich im Kampf."
  ENG: "Planned to be constructed, but no planet could take the order. It is possible you have no planet with a space port, your planets are sabotaged or are in combat."
  UKR: "Планувалося побудувати, але жодна планета не змогла прийняти замовлення. Можливо, у вас немає планети з космічним портом, ваші планети піддаються саботажу або перебувають у стані війни."
 DesignIssueSalvoFirePowerEfficiencyTitle:
  Id: 4366
- GER: 
+ GER: "Niedr. Salvoenergie"
  ENG: "Low Salvo Power"
  UKR: "Низька потужність залпу"
 DesignIssueSalvoFirePowerEfficiencyProblem:
  Id: 4367
- GER: 
+ GER: "Aufgrund der geringen Energiekapazität kann das Schiff keine vollständige Salve mit all seinen Energiewaffen abfeuern."
  ENG: "The ship cannot fire a full salvo with all it's Energy Weapons due to low power capacity."
  UKR: "Корабель не може випустити повний залп з усієї своєї енергетичної зброї через низьку потужність."
 DesignIssueSalvoFirePowerEfficiencyRemidiation:
  Id: 4368
- GER: 
+ GER: "Fügen Sie dem Schiff weitere Energiezellen oder Reaktoren hinzu.  Der aktuelle Überschussenergiebedarf für eine vollständige Salve aller Energiewaffen beträgt"
  ENG: "Add more Power Cells or Reactors to the ship. Current excess power requirements for a full salvo from all Energy Weapons is" 
  UKR: "Додайте на корабель більше елементів живлення або реакторів. Поточна надлишкова потреба в енергії для повного залпу з усіх видів енергетичної зброї становить"
 CreditsPerTurn:
  Id: 4369
- GER: 
+ GER: "Geld/Runde"
  ENG: "Credits Per Turn"  
  UKR: "Кредити за хід"
 SaveShipDesignDesc:
  Id: 4370
- GER: 
+ GER: "Speichert das Schiffsdesign.  Wenn das Schiff nicht fertiggestellt ist, wird es als 'In Bearbeitung' gespeichert."
  ENG: "Saves the ship design. If the ship is not complete, it will be saved as Work in progress."
  UKR: "Зберігає дизайн корабля. Якщо корабель не завершено, його буде збережено як незавершене будівництво."
 SaveWIP:
  Id: 4371
- GER: 
+ GER: "Speichere Entwurf"
  ENG: "Save WIP" 
  UKR: "Зберегти WIP"
 BuildingCreatedFromLava:
  Id: 4372
- GER: 
+ GER: "Es wurden außerdem Ressourcen erstellt:"
  ENG: "Resources were also created:"
  UKR: "Також були створені ресурси:"
 MaxFerfilityOnBuild:
  Id: 4373
- GER: 
+ GER: "Max. Fruchtbarkeit"
  ENG: "Max Fertility" 
  UKR: "Максимальна фертильність"
 FoodPerColonist:
  Id: 4374
- GER: 
+ GER: "Nahrung/zugew. Kolonisten"
  ENG: "Food Per Assigned Colonist"  
  UKR: "Їжа на одного колоніста"
 ProdPerColonist:
  Id: 4375
- GER: 
+ GER: "Produktion/zugew. Kolonisten"
  ENG: "Production Per Assigned Colonist"  
  UKR: "Виробництво на призначеного колоніста"
 ProdPerTurn:
  Id: 4376
- GER: 
+ GER: "Prod./Runde"
  ENG: "Production Per Turn"   
  UKR: "Виробництво за один оборот"
 MaxStorage:
  Id: 4377
- GER: 
- ENG: "Max Storage"    
+ GER: "Lagerkapazität"
+ ENG: "Max. Storage"    
  UKR: "Максимальний обсяг пам'яті"
 PlusFlatPop:
  Id: 4378
- GER: 
+ GER: "Population (in Millionen)"
  ENG: "Flat Population (Million)"     
  UKR: "Рівнинне населення (млн.)"
 Infrastructure:
  Id: 4379
- GER: 
+ GER: "Infrastruktur"
  ENG: "Infrastructure"      
  UKR: "Інфраструктура"
 PopMax:
  Id: 4380
- GER: 
+ GER: "Max. Pop. (in Milliarden)"
  ENG: "Max Population (Billion)"       
  UKR: "Максимальна кількість населення (млрд)"
 MineralRichness:
  Id: 4381
- GER: 
+ GER: "Mineralienreichtum"
  ENG: "Mineral Richness" 
  UKR: "Багатство мінералів"
 RingGalaxyGameTip:
  Id: 4382
- GER: 
+ GER: "Jedes Imperium beginnt an einem zufälligen Ort in einer Ringgalaxie"
  ENG: "Each empire starts at a random place in a Ring Galaxy"
  UKR: "Кожна імперія починається у випадковому місці в Кільцевій галактиці"
 RingGalaxyGame:
  Id: 4383
- GER: 
+ GER: "Ringgalaxie"
  ENG: "Ring Galaxy"
  UKR: "Кільцева галактика"
 FlatIncomePerTurn:
  Id: 4384
- GER: 
+ GER: "Einkommen/Runde"
  ENG: "Flat Income Per Turn" 
  UKR: "Фіксований дохід за оборот"
 AutoBuildTerraformers:
  Id: 4385
- GER: 
+ GER: "Auto-Terraform"
  ENG: "Auto Terraform"  
  UKR: "Авто Терраформ"
 AutoBuildTerraformersTip:
  Id: 4386
- GER: 
+ GER: "Ihr Imperium verwaltet die Terraforming-Bemühungen automatisch und baut auf der Grundlage eines Budgets zuerst Terraformer auf den potenziell wertvollsten Planeten.  Beachten Sie, dass Gebäude abgerissen werden, um Platz für Terraformer zu schaffen, auch wenn der Planet keinen Gouverneur hat oder nicht abgerissen werden darf, da diese Befehle von Ihrem Imperium kommen."
  ENG: "Your empire will manage terraforming efforts automatically, building terraformers on the best potential valued planets first, based on a budget. Note that it will scrap buildings to make room for Terraformers even if the planet has no Governor or not allowed to scrap, since these orders are coming from your empire."
  UKR: "Ваша імперія керуватиме тераформуванням автоматично, будуючи тераформери спочатку на планетах з найбільшою потенційною цінністю, виходячи з бюджету. Зверніть увагу, що імперія буде зносити будівлі, щоб звільнити місце для тераформерів, навіть якщо на планеті немає губернатора або їй не дозволено зносити будівлі, оскільки ці накази надходять від вашої імперії."
 BB_Golddeposit:
  Id: 4387
- GER: 
+ GER: "Goldader"
  ENG: "Gold Deposit"
  UKR: "Золоте родовище"
 BB_GolddepositDesc:
  Id: 4388
- GER: 
+ GER: "Leicht abbaubare Goldlagerstätte, die entstand, als es auf dem Planeten viele aktive Vulkane gab"
  ENG: "Easily extractable gold deposit that was formed when planet had a lot of active volcanoes"
  UKR: "Легко видобувне родовище золота, яке утворилося, коли на планеті було багато діючих вулканів"
 BB_GolddepositDescShort:
  Id: 4389
- GER: 
+ GER: "Bietet 2 Prod./Kolonist, +3 Credits, Gesamtwert: 350 Produktion"
  ENG: "Provides 2 production per colonist, +3 credits, total worth of 350 production"
  UKR: "Надає 2 виробництва на колоніста, +3 кредити, загальною вартістю 350 виробництв"
 BB_GoldMoutain:
  Id: 4390
- GER: 
+ GER: "Goldberg"
  ENG: "Golden Mountain"
  UKR: "Золота гора"
 BB_GoldMountainDesc:
  Id: 4391
- GER: 
+ GER: "Riesiger Berg, der mit Goldvorkommen gefüllt ist."
  ENG: "Huge Mountain that is filled with gold deposits."
  UKR: "Величезна гора, яка наповнена покладами золота."
 BB_GoldMountainDescShort:
  Id: 4392
- GER: 
+ GER: "Bietet 1,5 Produktion/Kolonist, erhöht den Reichtum des Planeten um 2, Gesamtwert: 3000 Produktion"
  ENG: "Provides 1.5 production per colonist, increases planet richness by 2, total worth of 3000 production"
  UKR: "Забезпечує 1,5 виробництва на колоніста, збільшує багатство планети на 2, загальною вартістю 3000 виробництва"
 BB_MoltenGold:
  Id: 4393
- GER: 
+ GER: "Geschmolzene Goldgrube"
  ENG: "Molten gold pit"
  UKR: "Яма з розплавленим золотом"
 BB_MoltenGoldDesc:
  Id: 4394
- GER: 
+ GER: "„Eine mit geschmolzenem Gold gefüllte Grube, die durch intensive vulkanische Aktivität entsteht, die sich erhitzt und große Mengen Gold an die Oberfläche drückt. In diesem Zustand kann man es nur auf sehr heißen Vulkanplaneten finden.“"
  ENG: "A pit filled with molten gold thats is created by intense volcanic activity, that heats up and pushes to the survace large amounts of gold, it can be found in this state only on very hot volcanic planets."
  UKR: "Яма, заповнена розплавленим золотом, що утворюється внаслідок інтенсивної вулканічної активності, яка нагріває і виштовхує на поверхню велику кількість золота, його можна знайти в такому стані тільки на дуже гарячих вулканічних планетах."
 BB_MoltenGoldDescShort:
  Id: 4395
- GER: 
+ GER: "Bietet 0,5 Produktion/Kolonist und erhöht den Reichtum des Planeten um 0,35"
  ENG: "Provides 0.5 production per colonist, increases planet richness by 0.35" 
  UKR: "Забезпечує 0,5 виробництва на колоніста, збільшує багатство планети на 0,35"
 BB_RushRefit:
  Id: 4396
- GER: 
+ GER: "Blitz-Umbau"
  ENG: "Rush Refit"  
  UKR: "Швидкий ремонт"
 BB_RushRefitTip:
  Id: 4397
- GER: 
+ GER: "Blitz-Umbau wird dieser Überholung Priorität einräumen und sie beschleunigen.  Seien Sie vorsichtig, wenn Sie viele Schiffe umrüsten, da dadurch viel Geld für die hohe Geschwindigkeit ausgegeben wird."
  ENG: "Rush Refit will prioritize this refit and rush it. Use with caution if you are refitting a lot of ships since this spends money on rush. "   
  UKR: "Поспішний ремонт надає пріоритет цьому ремонту і прискорює його. Використовуйте з обережністю, якщо ви ремонтуєте багато кораблів, оскільки це витрачає гроші на поспіх."
 BB_EnableStarvationWarning:
  Id: 4398
- GER: 
+ GER: "Aktivieren Sie Hungersnotwarnungen"
  ENG: "Enable Starvation Warnings"    
  UKR: "Увімкнути попередження про голод"
 BB_EnableStarvationWarningTip:
  Id: 4399
- GER: 
+ GER: "Wenn diese Option aktiviert ist, erhalten Sie eine Warnung, wenn eine Planetenbevölkerung zu verhungern beginnt."
  ENG: "When enabled, you will get a warning when a planet population start starving."    
  UKR: "Якщо увімкнено, ви отримаєте попередження, коли населення планети почне голодувати."
 StarvationOnPlanet:
  Id: 4400
- GER: 
+ GER: "Die Hungersnot begann"
  ENG: "Starvation started on"     
  UKR: "Голодування почалося на"
 ResearchablePlanetVolcanic:
  Id: 4401
- GER: 
+ GER: "Intensive vulkanische Aktivität kann\nvon einer Forschungsstation untersucht werden, wenn sie im Orbit platziert wird."
  ENG: "intense volcanic activity can\nstudied by a Research Station, if placed in orbit."      
  UKR: "інтенсивну вулканічну активність можна\n вивчати за допомогою дослідницької станції, якщо її розмістити на орбіті."
 ResearchablePlanetGasGiant:
  Id: 4402 
- GER: 
+ GER: "verfügt über eine seltene Gaszusammensetzung, die uns bei verschiedenen\nForschungsbemühungen helfen kann, wenn eine Forschungsstation im Orbit platziert wird."
  ENG: "has rare composition of gases which can aid us in various\nresearch efforts, if a Research Station is placed in orbit."
  UKR: "має рідкісний склад газів, який може допомогти нам у різних\n дослідженнях, якщо на орбіті буде розміщена дослідницька станція."
 ResearchablePlanetDefault:
  Id: 4403 
- GER: 
+ GER: "kann von einer orbitalen Forschungsstation untersucht werden, um die Forschungsbemühungen zu unterstützen"
  ENG: "can be studied by a Research Station placed in orbit to aid in research efforts."
  UKR: "можна вивчати за допомогою дослідницької станції, розміщеної на орбіті для сприяння науковим дослідженням."
 ResearchableStar:
  Id: 4404 
- GER: 
+ GER: "'s einzigartigen Emissionen können von einer nahegelegenen Forschungsstation untersucht werden, was unsere Forschung voranbringen wird."
  ENG: "'s unique emmisions can be studied by a Research Station\nplaced near it, which will boost our research efforts."
  UKR: "унікальні викиди можуть вивчатися дослідницькою станцією\nрозташованою поблизу, що посилить наші дослідницькі зусилля"
 DeployResearchStation:
  Id: 4405 
- GER: 
+ GER: "Baue Forschungsstation"
  ENG: "Deploy Research Station"
  UKR: "Розгорнути дослідницьку станцію"
 DeployResearchStationTip:
  Id: 4406 
- GER: 
+ GER: "Errichten Sie eine orbitale Forschungsstation.  Pro Imperium kann nur eine Forschungsstation eingesetzt werden."
  ENG: "Deploy Research Station in this planet's orbit. Only one Research Station can be deployed per empire."
  UKR: "Розмістіть дослідницьку станцію на орбіті цієї планети. Одна імперія може розгорнути лише одну дослідницьку станцію."
 ShipyardHullNotEditible:
  Id: 4407
- GER: 
+ GER: "Beachten Sie, dass Schiffsrümpfe nicht bearbeitet werden können"
  ENG: "Note that Shipyard hulls are not editable"  
 CancelDeployResearchStationTip:
  Id: 4408 
- GER: 
+ GER: "Stoppen den Bau der orbitalen Forschungsstation."
  ENG: "Cancel ongoing deployment mission of research station to this planet's orbit."         
  UKR: "Скасувати поточну місію розгортання дослідницької станції на орбіті цієї планети."
 AutoBuildResearchStation:
  Id: 4409 
- GER: 
+ GER: "Auto-Bau der Forschungsstationen"
  ENG: "Auto Build Research Stations"
  UKR: "Автоматичні дослідн. станції"          
 AutoBuildResearchStationTip:
  Id: 4410 
- GER: 
+ GER: "Dadurch werden für Sie automatisch Forschungsstationen rund um relevante Planeten oder Sterne errichtet.  Es wird die Forschungsstation verwendet, die Sie in der Dropdown-Liste unten auswählen (sichtbar, wenn Ihr Imperium Zugriff auf Forschungsstationstechnologie hat).  Dadurch werden auch bereits vorhandene Stationen auf die von Ihnen ausgewählte neue Station aktualisiert"
  ENG: "This will auto build Research stations for you around relevant planets or stars. It will use whatever Research Station you pick in the dropdown list below (visible if your empire has access to research station technology). This will also upgrade already existing Stations to the new station you have selected"
  UKR: "Це автоматично створить для вас дослідницькі станції навколо відповідних планет або зірок. Воно буде використовувати будь-яку дослідницьку станцію, яку ви виберете у випадаючому списку нижче (відображається, якщо ваша імперія має доступ до технології дослідницьких станцій). Це також покращить вже існуючі станції до нової станції, яку ви вибрали"
 AutoPickResearchStation:
  Id: 4411 
- GER: 
+ GER: "Auto-Wahl der Forschungsstation"
  ENG: "Auto Pick Research Station"
  UKR: "Автопідбір дослідн. станції"          
 AutoPickResearchStationTip:
  Id: 4412 
- GER: 
+ GER: "Dadurch wird die beste Forschungsstation mit den höchsten Forschungsrate ausgewählt und diese nach Möglichkeit aktualisiert, wenn das Kontrollkästchen 'Forschungsstationen automatisch erstellen' aktiviert ist."
  ENG: "This will pick the best Research Station with most Research generated and will upgrade them whenever possible, if the auto build Research Stations checkbox is checked." 
  UKR: "Буде обрано найкращу дослідницьку станцію з найбільшою кількістю згенерованих досліджень, і вона буде оновлюватися, коли це можливо, якщо встановлено прапорець автоматичного створення дослідницьких станцій."
 CannotBuildResearchStationTip:
  Id: 4413 
- GER: 
+ GER: "Sie verfügen nicht über die erforderliche Technologie, um eine Forschungsstation zu bauen. Erforschen Sie relevante Technologie, um Pläne für eine Forschungsstation zu erhalten."
  ENG: "You do not have the required technology to build a Research Station, research relevant tech to gain Research Station schematics."
  UKR: "Ви не маєте необхідної технології для побудови дослідницької станції, дослідіть відповідні технології, щоб отримати схеми дослідницьких станцій."  
 ResearchPerTurnStatTip:
@@ -19739,7 +19739,7 @@ TheseMinesAreEquippedWith:
  UKR: "Ці шахти оснащені кращими технологіями для розробки більшої кількості покладів корисних копалин на планеті. Їхні побічні продукти можна продавати на місцевих ринках, отримуючи невеликий дохід."
 Tech_ImperialUni_Name:
  Id: 10344
- GER: "Reichsuniversität"
+ GER: "Reichs- universität"
  ENG: "Imperial University"
  RUS: "Имперский университет"
  UKR: "Імператорський університет"
@@ -20576,7 +20576,7 @@ AMegaCityIsA:
  UKR: "Мегаполіс - це зона з висотними хмарочосами, призначена для проживання 1 мільярда людей в гідних умовах. Через втрату величезних площ орних земель родючість дещо знижується."
 Tech_ParticleAcceleration_Name:
  Id: 10059
- GER: "Partikelbeschleuniger"
+ GER: "Partikel- Beschleuniger"
  ENG: "Particle Acceleration"
  RUS: "Ускоритель частиц"
  UKR: "Прискорення частинок"
@@ -20624,7 +20624,7 @@ Tech_GalacticStockTrade_Desc:
  UKR: "Рівень обміну доходами, якого потребують наші галактичні мегакорпорації, виходить далеко за рамки того, що може забезпечити одна планета. Було б розумно створити єдине місце в нашій імперії, де ці корпорації могли б зустрічатися з інвесторами. Було б так само розумно обкласти їх податками за це."
 Tech_SoilEnrichment_Name:
  Id: 10041
- GER: "Bodenanreicherung"
+ GER: "Boden- anreicherung"
  ENG: "Soil Enrichment"
  RUS: "Обогащение почвы"
  UKR: "Збагачення ґрунту"
@@ -20636,7 +20636,7 @@ Tech_SoilEnrichment_Desc:
  UKR: "Поєднуючи штучні та природні добрива, ми можемо покращити родючість планети та збільшити виробництво сільськогосподарської продукції."
 Tech_WeatherManipulation_Name:
  Id: 10045
- GER: "Wettermanipulation"
+ GER: "Wetter- manipulation"
  ENG: "Weather Manipulation"
  RUS: "Манипуляции с погодой"
  UKR: "Маніпулювання погодою"
@@ -20728,7 +20728,7 @@ AdvancedWarpDescr:
  UKR: "Нові дослідження в галузі квантової механіки відкрили екзотичні езотеричні частинки, які можуть покращити наші двигуни викривлення, зробивши їх ще швидшими, ніж раніше."
 CorvetteDefencetech:
  Id: 10093
- GER: "Korvettenverteidigung"
+ GER: "Korvetten- verteidigung"
  ENG: "Corvette Defence"
  UKR: "Захист корветів"
 CorvetteDefencetechDescr:
@@ -20738,7 +20738,7 @@ CorvetteDefencetechDescr:
  UKR: "Стаціонарні сили з декількох кораблів класу Корвет, готових до розгортання з поверхні планети, коли планетарні сканери зафіксують ворожі сигнали. Запущені кораблі завжди будуть використовувати найкращі проекти з найновішими технологіями, які були досліджені."
 FrigateDefencetech:
  Id: 10095
- GER: "Fregattenverteidigung"
+ GER: "Fregatten- verteidigung"
  ENG: "Frigate Defence"
  UKR: "Захист фрегатів"
 FrigateDefencetechDescr:
@@ -20748,7 +20748,7 @@ FrigateDefencetechDescr:
  UKR: "Стаціонарні сили з декількох кораблів класу Фрегат, готові до розгортання з поверхні планети, коли планетарні сканери зафіксують ворожі сигнатури. Запущені кораблі завжди будуть використовувати найкращі проекти з найновішими технологіями, які були досліджені."
 CorvetteLaunchPad:
  Id: 10097
- GER: "Korvettenstartrampe"
+ GER: "Korvetten- startrampe"
  ENG: "Corvette Launch Pad"
  UKR: "Пусковий майданчик для корветів"
 CorvetteLaunchPadDescrShort:
@@ -20763,7 +20763,7 @@ CorvetteLaunchPadDescr:
  UKR: "Цей об'єкт буде підтримувати крило з 6 корветів, які стрибнуть на захист колонії, коли помітять ворога. Він запускатиме найкращі корвети, доступні у вашій імперії. Ви зможете керувати ними лише в бою. Запуск коштує грошей, але ви отримаєте їх назад, якщо вони повернуться додому."
 FrigateLaunchPad:
  Id: 10100
- GER: "Fregattenstartrampe"
+ GER: "Fregatten- startrampe"
  ENG: "Frigate Launch Pad"
  UKR: "Пусковий майданчик для фрегатів"
 FrigateLaunchPadDescrShort:
@@ -20778,7 +20778,7 @@ FrigateLaunchPadDescr:
  UKR: "Цей об'єкт буде підтримувати ескадру з 4 фрегатів, які стануть на захист колонії, коли помітять ворога. Він буде запускати найкращі фрегати, доступні у вашій імперії. Ви зможете керувати ними лише в бою. Запуск коштує грошей, але ви отримаєте їх назад, якщо вони повернуться додому."
 AntiFighterSystems:
  Id: 10103
- GER: 
+ GER: "Antijäger- Systeme"
  ENG: "Anti-Fighter Systems"
  UKR: "Системи протидії винищувачам"
 AntiFighterSystemsDescr:
@@ -20788,7 +20788,7 @@ AntiFighterSystemsDescr:
  UKR: "Потужні системи озброєння, які дуже ефективні проти невеликих кораблів, що не мають багато броні і покладаються в основному на щити для захисту."
 MissileTurret:
  Id: 17500
- GER: 
+ GER: "Raketenwerfer- Turm"
  ENG: "Missile Turret"
  UKR: "Ракетна вежа"
 MissileTurrettechDescr:
@@ -20803,7 +20803,7 @@ MissileTurretWepDescr:
  UKR: "Ця турель вистрілює високоманевреною ракетою на високій швидкості, яка може ухилятися від вогню зенітних комплексів."
 DualMissileTurret1:
  Id: 17504
- GER: 
+ GER: "Zwillings-M Turm"
  ENG: "Dual-M Turret"
  UKR: "Башта Дуал-М"
 DualMissileTurrettechDescr:
@@ -20813,7 +20813,7 @@ DualMissileTurrettechDescr:
  UKR: "Ракети найкраще працюють, коли стріляють залпами, щоб протистояти потенційному вогню зенітних комплексів, тому ми розробили важку башту, яка може вистрілити двома трохи більшими і більш руйнівними ракетами у швидкій послідовності, щоб вивести з ладу ворожі PD-системи."
 DualMissileTurretwep:
  Id: 17506
- GER: 
+ GER: "Zwillings- Raketenw.- Turm"
  ENG: "Dual Missile Turret"
  UKR: "Подвійна ракетна башта"
 DualMissileTurretWepDescr:
@@ -20823,7 +20823,7 @@ DualMissileTurretWepDescr:
  UKR: "Ця турель може стріляти двома більшими високоманевреними ракетами на високих швидкостях, які можуть ухилятися від систем ППО і виводити їх з ладу."
 QuadMissileTurret:
  Id: 17508
- GER: 
+ GER: "Vierlings-M Turm"
  ENG: "Quad-M Turret"
  UKR: "Башта Квад-М"
 QuadMissileTurrettechDescr:
@@ -20833,7 +20833,7 @@ QuadMissileTurrettechDescr:
  UKR: "Для повної перемоги над системами ППО була розроблена масивна міцна ракетна вежа Квад. Вона вміщує 4 великі та надсучасні ракети, які випускаються залпами."
 QuadMissileTurretwep:
  Id: 17510
- GER: 
+ GER: "Vierlings Raketenw.- Turm"
  ENG: "Quad Missile Turret."
  UKR: "Четверна ракетна башта."
 QuadMissileTurretWepDescr:
@@ -21622,7 +21622,7 @@ ThisSimpleStructureIsUsed:
  UKR: "Ця проста структура використовується як \"наповнювач\" для кораблів, які не потребують більшої функціональності модуля"
 Tech_Terraforming_Name:
  Id: 18279
- GER: "Planetenwandler Stufe I"
+ GER: "Planetenwandl. Stufe I"
  ENG: "Terraforming I"
  UKR: "Тераформування I"
 Tech_Terraforming_Desc:
@@ -21632,7 +21632,7 @@ Tech_Terraforming_Desc:
  UKR: "Тераформування планет - це повільний процес, але він може дати чудові результати. Якщо його дослідити, ми зможемо побудувати тераформери - величезні машини, здатні перетворити навіть найсмертоносніший вулкан на милий, нешкідливий пагорб."
 Tech_Terraforming2_Name:
  Id: 18281
- GER: "Planetenwandler Stufe II"
+ GER: "Planetenwandl. Stufe II"
  ENG: "Terraforming II"
  UKR: "Тераформування II"
 Tech_Terraforming2_Desc:
@@ -21642,7 +21642,7 @@ Tech_Terraforming2_Desc:
  UKR: "Продовжуючи напрямок досліджень у сфері тераформування, ми зможемо зробити тераформери ще ефективнішими. Вони зможуть перетворювати непридатні для життя ділянки планети на цілком придатні для життя землі, збільшуючи кількість населення."
 Tech_Terraforming3_Name:
  Id: 18283
- GER: "Planetenwandler Stufe III"
+ GER: "Planetenwandl. Stufe III"
  ENG: "Terraforming III"
  UKR: "Тераформування III"
 Tech_Terraforming3_Desc:
