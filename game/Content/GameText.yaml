@@ -2527,7 +2527,7 @@ Biospheres:
  UKR: "Біосфери"
 BiospheresAreSpecialHighlyAdaptable:
  Id: 407
- GER: "Biosphären sind besondere, sehr anpassungsfähige Lebensräume. \nBiosphären dürfen nur auf unbewohnbarem Gelände errichtet werden; Dadurch wird das Gelände bewohnbar und der Planet erhält die maximale Bevölkerung basierend auf der Hälfte der Kolonisten pro Plättchen.\nAnschließend können unter der Biosphäre Wirtschaftsgebäude errichtet werden."
+ GER: "Biosphären sind besondere, sehr anpassungsfähige Lebensräume. \nBiosphären dürfen nur auf unbewohnbarem Gelände errichtet werden; Dadurch wird das Gelände bewohnbar und der Planet erhält die maximale Bevölkerung basierend auf der Hälfte der Kolonisten pro Feld.\nAnschließend können unter der Biosphäre Wirtschaftsgebäude errichtet werden."
  ENG: "Biospheres are special, highly adaptable living habitats. Biospheres may only be built on Uninhabitable terrain; in doing so, the terrain becomes habitable and the planet gains max population based on the half of the Colonists per Tile. Economic buildings can thereafter be built underneath the biosphere."
  RUS: "Биосферы - это специальные легкоадаптируемые живые жилища. Биосферы можно строить только на планетах, непригодных для обитания; после их строительства планета становится обитаемой и получает 0,5 к максимальному населению на клетку. Затем внутри биосферы уже можно строить другие объекты."
  SPA: "Las biosferas son hábitats especiales en las que la vida se adapta fácilmente. Solo pueden construirse en terreno no habitable; al hacerlo, dicho terreno pasa a ser habitable y el planeta añade 0,5 a su población máxima. Al amparo de la biosfera pueden construirse edificios económicos."
@@ -3051,7 +3051,7 @@ BB_Tech_BattleRaiders_Desc:
  UKR: "Наші наймасивніші кораблі можуть розгортати з цих гігантських причалів кораблі розміром з корвет, а також менші фрегати.  Однак, коли ці \"бойові рейдери\" знищуються, відродження не відбувається, поки материнський корабель не повернеться на верф для поповнення запасів."
 BB_Tech_Battleships_Name:
  Id: 522
- GER: "Schlachtschiff-Bauplan"
+ GER: "Schlachtschiff Bauplan"
  ENG: "Battleship Construction"
  RUS: "Линейный корабль"
  SPA: "Construcción de naves"
@@ -3072,7 +3072,7 @@ BB_Tech_Biospheres_Name:
  UKR: "Біосфери"
 BB_Tech_Biospheres_Desc:
  Id: 525
- GER: "Biosphären sind große geodätische Kuppelstrukturen, die viele Kolonisten in einer künstlichen Umgebung unterstützen können. \nDamit ein karger Planet eine große Bevölkerung beherbergen kann, sind Biosphären unbedingt erforderlich. \nBauen Sie Biosphären auf unbewohnbarem Land, um dieses Land bewohnbar zu machen."
+ GER: "Biosphären sind große geodätische Kuppelstrukturen, die viele Kolonisten beherbergen können. \nDamit auf einem kargen Planeten eine große Bevölkerung leben kann, sind Biosphären unbedingt erforderlich. \nBauen Sie Biosphären auf unbewohnbarem Land, um es bewohnbar zu machen."
  ENG: "Biospheres are large geodesic dome structures capable of supporting many colonists in an artificial environment. For a barren planet to house a large population, biospheres are absolutely necessary. Build biospheres on uninhabitable land to make that land habitable."
  RUS: "Биосферы - это большие куполообразные сооружения для поддержания жизнедеятельности колонистов в искусственно созданной среде. В бесплодных мирах биосферы абсолютно необходимы - иначе планета не сможет вместить много населения. Стройте биосферы на непригодной для жизни территории, чтобы потом заселить ее."
  SPA: "Las biosferas son estructuras en forma de cúpula geodésica capaces de albergar muchos colonos en un entorno artificial. Las biosferas son absolutamente necesarias para que un planeta árido pueda ser habitado. Constrúyelas en zonas inhabitables para crear asentamientos de población. "
@@ -3982,7 +3982,7 @@ BB_Tech_SiphonBeam_Desc:
  UKR: "Сифонні промені створюють зв'язок між кораблем, що стріляє, і енергетичними щитами корабля-мішені. Промінь виснажує енергію щита і переносить її в енергетичні запаси корабля, що стріляє. В іншому випадку зброя неефективна."
 BB_Tech_SlipstreamProjection_Name:
  Id: 658
- GER: "Slipstream-Projektion"
+ GER: "Slipstream Projektion"
  ENG: "Slipstream Projection"
  RUS: "Слипстрим-проекция"
  SPA: "Proyección de estela"
@@ -4038,7 +4038,7 @@ BB_Tech_SubspaceArtillery_Desc:
  UKR: "Наші вчені дійшли висновку, що звичайна зброя, якщо її начинити достатньою кількістю вибухівки, може конкурувати навіть з найсучаснішою енергетичною зброєю за первинною руйнівною силою. Прискорте цю вибухівку за допомогою субпросторових технологій - і ви отримаєте дуже масивну гармату. Масс драйвери були створені для боротьби з кораблями з важким захистом здалеку."
 BB_Tech_SubspaceCommunication_Name:
  Id: 667
- GER: "Subraumkommunikation"
+ GER: "Subraum Kommunikation"
  ENG: "Subspace Communication"
  RUS: "Коммуникация в космосе"
  SPA: "Comunicación subespacial"
@@ -7956,276 +7956,276 @@ YouCanUseShiftClick:
  UKR: "Використовуйте Shift + Клік, щоб замінити всі подібні модулі. Це корисно, якщо ви модернізуєте свій корабель. Це також збереже вигляд вашої старої зброї при груповій заміні зброї."
 ShieldPen:
  Id: 1828
- GER: "Schildstift"
+ GER: "Schildnadel"
  ENG: "Shield Pen"
  RUS: "Пробой щита"
  UKR: "Пробиття щита"
 ArmorPen:
  Id: 1829
- GER: "Rüstungsstift"
+ GER: "Treibspiegel"
  ENG: "Armor Pen"
  RUS: "Пробой брони"
  UKR: "Пробиття броні"
 ArmorPenetrationEnablesThisWeapon:
  Id: 1830
- GER: 
+ GER: "Durch die Panzerungsdurchdringung kann diese Waffe beim Aufprall die Panzerung durchdringen.  Die Zahl gibt die Größe der Panzerung an, die durchdrungen werden kann (oder eine Kombination kleinerer Panzerungen).  Einige Panzerungsmodule verfügen möglicherweise über einen Widerstand gegen Panzerungsdurchdringung.  Goldene Farbe bedeutet, dass dieser Wert gegenüber der ursprünglichen Zahl geändert wurde."
  ENG: "Armor Penetration enables this weapon to \"bypass\" armor on impact. The number indicates the size of the armor which can be penetrated (or combination of smaller sized armor). Some armor modules might have resistance to Armor Penetration. Golden color means that this value is modified from the original number."
  RUS: "Пробитие брони позволяет этому оружию \"обходить\" броню при попадании. Число это размер брони, которую можно пробить (или комбинацию брони меньшего размера). Некоторые модули брони могут иметь сопротивление к пробитию брони. Золотой цвет означает, что это значение изменено по сравнению с исходным числом."
  UKR: "Бронепробивність дозволяє цій зброї \"обходити\" броню при ударі. Число вказує на розмір броні, яку можна пробити (або комбінацію броні меншого розміру). Деякі модулі броні можуть мати опір до пробиття броні. Золотий колір означає, що це значення було змінено в порівнянні з початковим числом."
 BlastSize:
  Id: 1831
- GER: 
+ GER: "Explosionsradius"
  ENG: "Blast Size"
  RUS: "Радиус взрыва"
  UKR: "Радіус вибуху"
 TheRadiusOfTheProjectiles:
  Id: 1832
- GER: 
+ GER: "Der Radius der Projektilexplosion.  Die angegebene Anzahl wird in Feldern angegeben.  3 bedeutet also, dass 3 Felder in jede Richtung von der Explosion betroffen sein könnten."
  ENG: "The radius of the projectile's explosion. The number given is in slots. So 3 means 3 slots in every direction might be affected by the blast."
  RUS: "Радиус взрыва снаряда.Число указано в ячейках.Пример:3 означает,что взрыв затронет 3 ячейки в каждом направлении."
  UKR: "Радіус вибуху снаряда. Число вказано в слотах. Отже, 3 означає, що вибух може зачепити 3 слоти в кожному напрямку."
 AutomaticRequisition:
  Id: 1833
- GER: 
+ GER: "Autom. Reihen füllen"
  ENG: "Automatic Requisition"
  RUS: "Автомат. заявка"
  UKR: "Автоматичнний запит"
 IfCheckedEveryTimeA:
  Id: 1834
- GER: 
+ GER: "Wenn diese Option aktiviert ist, wird jedes Mal, wenn ein Schiff der Flotte zerstört wird, ein neues hergestellt, um die Reihen zu füllen.  Das Schiff muss von Ihrem Imperium gebaut werden können."
  ENG: "If checked, every time a ship in the fleet is destroyed, a new one will be created to fill the lines. The ship must be able to be built by your empire."
  RUS: "Если этот флажок установлен, каждый раз, когда корабль который состоит в флоте уничтожается, будет создаваться новый для замены. Корабль должен быть построен вашей империей."
  UKR: "Якщо позначити цю опцію, то кожного разу, коли корабель у флоті буде знищено, буде створено новий, щоб заповнити рядки. Корабель повинен мати можливість бути побудованим у вашій імперії."
 DisableBuildingAlerts:
  Id: 1835
- GER: 
+ GER: "Bauwarnung deaktivieren"
  ENG: "Disable Building Alerts"
  RUS: "Отк.оповещ.строительст."
  UKR: "Вимкнути сповіщення про будівлі"
 NormallyWhenYouManuallyAdd:
  Id: 1836
- GER: 
+ GER: "Wenn Sie ein Gebäude manuell zur Bauwarteschlange der Kolonie hinzufügen, werden Sie normalerweise benachrichtigt, wenn es abgeschlossen ist.  Sie können diese Benachrichtigungen deaktivieren, wenn Sie dazu neigen, die meisten Ihrer Gebäude manuell zu bauen."
  ENG: " Normally, when you manually add a building to the colony's build queue, you will be notified when it is completed. You can disable these notifications, if you tend to manually build most of your buildings."
  RUS: "Обычно, когда вы вручную добавляете здание в очередь строительства колонии, вы получаете уведомление, когда оно будет завершено. Вы можете отключить эти уведомления."
  UKR: " Зазвичай, коли ви вручну додаєте будівлю до черги на будівництво колонії, ви отримаєте сповіщення про її завершення. Ви можете вимкнути ці сповіщення, якщо ви будуєте більшість будівель вручну."
 AutoPickColonyShip:
  Id: 1837
- GER: 
+ GER: "Wähle Kolonieschiff autom."
  ENG: "Auto Pick Colony Ship"
  RUS: "Ав.выбор Колон.корабля"
  UKR: "Автовибір колон. корабля"
 TheBestColonyShipWill:
  Id: 1838
- GER: 
+ GER: "Das beste Kolonieschiff wird für den Bau ausgewählt, wenn Sie „Automatisch kolonisieren“ aktiviert haben oder auf eine der Schaltflächen „Kolonisieren“ klicken."
  ENG: "The best Colony Ship will be selected for construction if you have enable Auto Colonize or when you click on any Colonize buttons."
  RUS: "Лучший колониальный корабль будет выбран для постройки, если вы включили автоколонизацию или когда вы нажмете любую кнопку колонизации."
  UKR: "Найкращий колоніальний корабель буде обрано для будівництва, якщо ви увімкнули автоматичну колонізацію або коли ви натиснете на будь-яку кнопку колонізації."
 Battleship:
  Id: 1839
- GER: 
+ GER: "Schlachtschiff"
  ENG: "Battleship"
  RUS: "Линкор"
  UKR: "Лінкор"
 IndicatesThatThisPlanetIs:
  Id: 1840
- GER: 
+ GER: "Zeigt an, dass dieser Planet aufgrund von Kämpfen in der Umlaufbahn des Planeten oder manueller Quarantäne für den Gütertransport unsicher ist und daher kein Frachter dort sein wird, bis die Blockade oder Quarantäne aufgehoben wird."
  ENG: "Indicates that this planet is unsafe for goods transportation, due to combat in the planet's orbit or manual Quarantine, and therefore no freighter will be until the Blockade or Quarantine is lifted."
  RUS: "Указывает, что эта планета небезопасна для перевозки грузов из-за боевых действий на орбите планеты или ручного карантина, и поэтому грузового судна не будет здесь до тех пор, пока не будет снята блокада или карантин.."
  UKR: "Означає, що ця планета небезпечна для транспортування товарів, через бойові дії на орбіті планети або ручний Карантин, і тому жодного вантажоперевезення не буде, поки не буде знята Блокада або Карантин."
 ThisShipIsInhibitedAnd:
  Id: 1841
- GER: 
+ GER: "Dieses Schiff kann aufgrund hoher Gravitation keinen Sprung durchführen.  Weitere Informationen finden Sie unten im roten Statussymbol.  Sie können diese Text- und Kreiswarnungen im Automatisierungsbildschirm deaktivieren.  Sie können die Schwerkraftanzeige auch über die entsprechende Schaltfläche neben der Minikarte aktivieren."
  ENG: "This ship is inhibited and cannot engage warp. Check The red status symbol below for more details. You can disable this text and circle alerts in the Automation Screen. You can also enable gravity well display in the related button next to the Mini-map."
  RUS: "Этот корабль не может запустить варп-прыжок. Для получения дополнительной информации проверьте красный символ состояния ниже. Вы можете отключить этот текст и предупреждения на экране автоматизации. Вы также можете включить отображение гравитационных скважин с помощью соответствующей кнопки рядом с мини-картой.."
  UKR: "Цей корабель заблоковано і він не може увійти у варп. Дивіться червоний символ стану нижче для більш детальної інформації. Ви можете вимкнути ці текстові та кругові сповіщення на екрані автоматизації. Ви також можете увімкнути відображення гравітаційного колодязя за допомогою відповідної кнопки поруч з міні-мапою."
 DisableInhibitionAlerts:
  Id: 1842
- GER: 
+ GER: "Gravitationswarnung aus"
  ENG: "Disable Inhibition Alerts"
  RUS: "Отк. предупр. о запрете"
  UKR: "Вимкнути спов. блок. варпу"
 InhibitionAlertsAreDisplayedWhen:
  Id: 1843
- GER: 
+ GER: "Gravitationswarnungen werden angezeigt, wenn ein einzelnes Schiff ausgewählt und verlangsamt wird.  Im Allgemeinen ist es für Anfänger gedacht und ist standardmäßig deaktiviert, wenn ein Spiel auf Schwer und höher gestartet wird."
  ENG: "Inhibition Alerts are displayed when a single ship is selected and it is inhibited. Generally it is meant for Novice players and it will be off by default when starting a game on Hard and above."
  RUS: "Предупреждения о запрете отображаются, когда выбран один корабль, и он заблокирован. Обычно он предназначен для начинающих игроков и по умолчанию будет отключен при запуске игры на уровне сложности и выше."
  UKR: "Сповіщення про блокування з'являються, коли вибрано один корабель і він заблокований. Зазвичай воно призначене для гравців-початківців і за замовчуванням вимкнене, коли ви починаєте гру на складному рівні і вище."
 DisableRemnantStory:
  Id: 1844
- GER: 
+ GER: "Remnants aus"
  ENG: "Disable Remnant Story"
  RUS: "Отключить Историю Предтечь"
  UKR: "Вимкнути історію Древніх"
 IfCheckedRemnantForcesIn:
  Id: 1845
- GER: 
+ GER: "Wenn diese Option aktiviert ist, fungieren die Remnants im Spiel nur als passive Planetenwächter."
  ENG: "If checked, Remnant forces in the game will act as passive planet Guardians only."
  RUS: "Если этот флажок установлен,то войска Преддечь в игре будут действовать только как пассивные стражи планет."
  UKR: "Якщо відмічено, то сили Древніх у грі діятимуть лише як пасивні охоронці планети."
 RemnantTitanEngine:
  Id: 1846
- GER: 
+ GER: "Remnant Titan Antrieb"
  ENG: "Remnant Titan Engine"
  RUS: "Двигатели Титана Предтечь"
  UKR: "Двигун Титану Древніх"
 RemnantCapitalEngine:
  Id: 1847
- GER: 
- ENG: "Remnant Capital Engine"
+ GER: "Remnant"
+ ENG: "Remnant Großkampfschiff"
  RUS: "Двигатели Столицы Предтечь"
  UKR: "Двигун капіталу Древніх"
 RemnantMediumEngine:
  Id: 1848
- GER: 
+ GER: "Remnant Antrieb"
  ENG: "Remnant Medium Engine"
  RUS: "Средние двигатели Предтечь"
  UKR: "Середній двигун Древніх"
 RemnantSmallEngine:
  Id: 1849
- GER: 
+ GER: "Kleiner Remnant Antrieb"
  ENG: "Remnant Small Engine"
  RUS: "Малые двигатели Предтечь"
  UKR: "Малий двигун Древніх"
 Ruthless:
  Id: 1850
- GER: 
+ GER: "skrupellos"
  ENG: "Ruthless"
  RUS: "Беспощадные"
  SPA: "Despiadados"
  UKR: "Безжалісний"
 Pacifist:
  Id: 1851
- GER: 
+ GER: "Pazifist"
  ENG: "Pacifist"
  RUS: "Пацифисты"
  SPA: "Pacifistas"
  UKR: "Пацифіст"
 Xenophobic:
  Id: 1852
- GER: 
+ GER: "fremdenfeindlich"
  ENG: "Xenophobic"
  RUS: "Ксенофобы"
  SPA: "Xenófobos"
  UKR: "Ксенофоби"
 Honorable:
  Id: 1853
- GER: 
+ GER: "Ehrenwert"
  ENG: "Honorable"
  RUS: "Благородные"
  SPA: "Honorables"
  UKR: "Шановний"
 Aggressive:
  Id: 1854
- GER: 
+ GER: "Aggressiv"
  ENG: "Aggressive"
  RUS: "Агрессивные"
  SPA: "Agresivos"
  UKR: "Агресивні"
 Cunning:
  Id: 1855
- GER: 
+ GER: "listig"
  ENG: "Cunning"
  RUS: "Хитрые"
  SPA: "Astutos"
  UKR: "Хитрі"
 Industrialists:
  Id: 1856
- GER: 
+ GER: "Industrielle"
  ENG: "Industrialists"
  RUS: "Промышленники"
  SPA: "Industriales"
  UKR: "Промисловці"
 Technologists:
  Id: 1857
- GER: 
+ GER: "Technologen"
  ENG: "Technologists"
  RUS: "Технологи"
  SPA: "Tecnológicos"
  UKR: "Технологи"
 Militarists:
  Id: 1858
- GER: 
+ GER: "Militaristen"
  ENG: "Militarists"
  RUS: "Милитаристы"
  SPA: "Militaristas"
  UKR: "Мілітаристи"
 Generalists:
  Id: 1859
- GER: 
+ GER: "Generalisten"
  ENG: "Generalists"
  RUS: "Уравновешенные"
  SPA: "Generalistas"
  UKR: "Універсали"
 Expansionists:
  Id: 1860
- GER: 
+ GER: "Expansionisten"
  ENG: "Expansionists"
  RUS: "Экспансионисты"
  SPA: "Expansionistas"
  UKR: "Експансіоністи"
 FixedShipAndBuildingsCost:
  Id: 1861
- GER: 
+ GER: "Feste Schiffs- und Gebäudekosten"
  ENG: "Fixed Ship And Buildings Cost"
  RUS: "Фиксированная стоимость кораблей и построек"
  UKR: "Фіксована вартість судна та будівель"
 KeepFixedCreditCostOf:
  Id: 1862
- GER: 
+ GER: "Behalten Sie die festen Finanzierungskosten für Schiffe und Militärgebäude für Spieler bei, unabhängig vom Schwierigkeitsgrad.  Dies wird Hart und Brutal etwas leichter machen."
  ENG: "Keep fixed credit cost of ships and military buildings for players regardless of difficulty level. This will make Hard and Brutal easier."
  RUS: "Сохраняйте фиксированную стоимость кредитов на корабли и военные постройки для игроков независимо от уровня сложности. Это сделает сложность Тяжело и Брутально проще."
  UKR: "Зберегти фіксовану вартість кораблів та військових будівель для гравців незалежно від рівня складності. Це полегшить проходження Hard та Brutal."
 NoteInOrderToSee:
  Id: 1863
- GER: 
+ GER: "HINWEIS: Um weitere Details zu diesem Planeten zu sehen, benötigen Sie Truppen auf dem Planeten, eine Kolonie auf einem anderen Planeten in diesem System, die den Planeten beobachten kann, oder Schiffe in Scanreichweite (Sensorreichweite)."
  ENG: "NOTE: In order to see more details regarding this planet, you need to have troops on it, a colony on another planet in this system which can observe the planet, or ships within scan range (Sensor range)."
  RUS: "ПРИМЕЧАНИЕ: Чтобы увидеть более подробную информацию об этой планете, вам необходимо иметь на ней войска,колонию на другой планете в этой системе, которая может наблюдать за планетой, или корабли в пределах диапазона сканирования (дальности сенсоров)"
  UKR: "ПРИМІТКА: Щоб побачити більш детальну інформацію про цю планету, вам потрібно мати на ній війська, колонію на іншій планеті в цій системі, яка може спостерігати за планетою, або кораблі в межах діапазону сканування (дальність сенсора)."
 HangarSize:
  Id: 1864
- GER: 
+ GER: "Hangargröße"
  ENG: "Hangar Size"
  RUS: "Вместимость"
  UKR: "Розмір ангару"
 ThisIsTheMaximumNumber:
  Id: 1865
- GER: 
+ GER: "Dies ist die maximale Anzahl an Schiffsplätzen, die dieser Hangar aufnehmen kann."
  ENG: "This is the maximum number of ship slot size this hanger can store."
  RUS: "Это максимальное количество ячеек корабля, которое может вмещать этот ангар."
  UKR: "Це максимальна кількість слотів для кораблів, яку може зберігати цей ангар."
 MineralRichnessHasGoneDown:
  Id: 1866
- GER: 
+ GER: "Der Mineralgehalt ist unter 1 gesunken."
  ENG: " Mineral Richness has gone down below 1."
  RUS: "Богатство минералами опустилось ниже 1."
  UKR: " Багатство мінералів впало нижче 1."
 RawMineralsWereDiscoverednmineralRichness:
  Id: 1867
- GER: 
+ GER: "- Rohmineralien wurden entdeckt.\nMineralreichtum erhöht um"
  ENG: "- Raw minerals were discovered.\nMineral Richness increased by"
  RUS: "- Минералы обнаружены.\nМинеральное богатство увеличено на"
  UKR: "- Виявлено корисні копалини.\nБагатство корисних копалин збільшилося на"
 DisablePirates:
  Id: 1868
- GER: 
+ GER: "Piraten deaktivieren"
  ENG: "Disable Pirates"
  RUS: "Отключить Пиратов"
  UKR: "Вимкнути піратів"
 DisablesAllPirateFactionsFor:
  Id: 1869
- GER: 
+ GER: "Deaktiviert alle Piratenfraktionen für dieses Spiel."
  ENG: "Disables all pirate factions for this game."
  RUS: "Отключает все пиратские фракции в этой игре."
  UKR: "Вимикає всі піратські фракції для цієї гри."
 ClearBuildableItemsFilter:
  Id: 1870
- GER: 
+ GER: "Löscht den Filter für herstellbare Gegenstände."
  ENG: "Clears the buildable items filter."
  RUS: "Очищает фильтр строящихся предметов."
  UKR: "Очищає фільтр створюваних предметів."
 DestroyedPirateBase:
  Id: 1871
- GER: 
+ GER: "Wir haben es eine Piratenbasis zerstört\n und haben wertvolle Ausrüstung gefunden!"
  ENG: "We Managed to destroy a pirate base!\n We found equipment worth"
  RUS: "Нам удалось уничтожить пиратскую базу!\n Нашли стоящее оборудование"
  UKR: "Нам вдалося знищити піратську базу!\n Ми знайшли обладнання на суму"
@@ -8947,119 +8947,119 @@ BB_Tech_PlasmaOrdnance_Desc:
  UKR: "Перейшовши на плазмовий стандарт боєприпасів, ми зможемо доставляти більш щільне, високоенергетичне корисне навантаження для більшої шкоди та ефекту."
 BB_Tech_PlasmaOrdnance_Weapon_Damage_Bonus:
  Id: 2003
- GER: 
+ GER: "Plasma Munition verleiht allen unseren Munitionsbasierten Waffen einen um 25% größeren Explosionsradius."
  ENG: "Plasma Ordnance provides a 25% greater explosive radius to all of our Ordnance-based weapons."
  RUS: "Плазменные боеприпасы позволяют увеличить радиус взрыва на 25% ,всему оружию использующему боеприпасы."
  SPA: "La munición de plasma aumenta el radio explosivo en un 25% y concede una bonificación de daño del 25% a todas nuestras armas que usen munición."
  UKR: "Плазмовий боєприпас збільшує радіус вибуху на 25% для всіх наших боєприпасів на основі боєприпасів."
 BB_Tech_ReactiveArmor_Name:
  Id: 2004
- GER: 
+ GER: "Verstärkte Komponenten"
  ENG: "Reinforced Components"
  RUS: "Реактивная броня"
  SPA: "Blindaje reactivo"
  UKR: "Посилені компоненти"
 BB_Tech_ReactiveArmor_Desc:
  Id: 2005
- GER: 
+ GER: "Durch den Einbau gehärteter Schiffskomponenten wird die Effektivität von Explosionsschäden verringert."
  ENG: "Integration of hardened ship components reduces the effectiveness of explosion damage."
  RUS: "Реактивная броня задействует базовое энергетическое поле, которое создает в броне направленные микровзрывы в ожидаемой точке попадания вражеского снаряда, что снижает его пробивную силу."
  SPA: "El blindaje reactivo utiliza un campo de energía básico para detectar impactos inminentes, con lo que activa microexplosivos incluidos en el blindaje que explotan para contrarrestar los proyectiles enemigos. Con ello se debilita el ataque contrario. "
  UKR: "Інтеграція загартованих компонентів корабля знижує ефективність пошкоджень від вибуху."
 BB_Tech_ReactiveArmor_ArmorExplosionReduction_Bonus:
  Id: 2006
- GER: 
+ GER: "Alle Schiffsmodule sind leicht verstärkt worden.  Reduziert den Explosionsradius um 25%."
  ENG: "All ship modules are now slightly reinforced. Reducing radius of explosions by 25%."
  RUS: "Вся броня оснащается реактивными системами, снижающими эффективность вражеского взрывчатого оружия на 25%."
  SPA: "Ahora todos los blindajes están equipados con sistemas reactivos, que reducen la eficacia de las armas explosivas en un 25%."
  UKR: "Всі модулі корабля тепер трохи посилені. Зменшено радіус вибухів на 25%."
 BB_Tech_PhasedOrdnance_Name:
  Id: 2007
- GER: 
+ GER: "Gephaste Munition"
  ENG: "Phased Ordnance"
  RUS: "Фазовые боеприпасы"
  SPA: "Artillería fásica"
  UKR: "Фазовані боєприпаси"
 BB_Tech_PhasedOrdnance_Desc:
  Id: 2008
- GER: 
+ GER: "Wenn wir unsere Projektile mithilfe eines Subraumfelds beschleunigen, glauben wir, dass es möglich ist, eine Subraum-Phasenschleife einzuleiten, bei der die Energiesignatur des Projektils in den realen Raum hinein und aus ihm heraus rotiert.  Wenn das Projektil in den Subraum gelangt, während es einen Schild berühren würde, ignoriert der Schild es, da er seine Energiesignatur nicht erkennen kann."
  ENG: "When we accelerate our projectiles using a subspace field, we believe it is possible to initiate a subspace phase loop where the projectile's energy signature will rotate in and out of real space. If the projectile is phased into subspace when it would contact a shield, then the shield will ignore it because it cannot detect its energy signature."
  RUS: "Когда мы разгоняем наши снаряды при помощи субпространственного поля, мы рассчитываем, что есть возможность инициировать возникновение субпространственной фазовой петли, в которой энергетическая сигнатура снаряда будет перемещаться в реальное пространство и из него. Если эта петля возникнет в момент контакта снаряда со щитом, тот не задержит его, потому что не сможет распознать его сигнатуру. Фактически мы \"проталкиваем\" наши снаряды прямо сквозь щиты."
  SPA: "Si aceleramos nuestros proyectiles mediante un campo subespacial, creemos que es posible iniciar un bucle de fase subespacial en el que la energía característica del proyectil entrará y saldrá del espacio real. Si el proyectil se mueve por fases en el subespacio al entrar en contacto con un escudo, este último lo ignorará porque no podrá detectar su energía característica. Básicamente, estamos usando artillería que atravesará sus escudos a velocidad supraluminal. "
  UKR: "Коли ми прискорюємо наші снаряди за допомогою підпросторового поля, ми вважаємо, що можна ініціювати підпросторову фазову петлю, де енергетична сигнатура снаряда буде обертатися в реальному просторі і з нього. Якщо снаряд фазується в підпросторі, коли він стикається зі щитом, то щит ігнорує його, оскільки не може виявити його енергетичну сигнатуру."
 BB_Tech_PhasedOrdnance_Weapon_ShieldPenetration_Bonus:
  Id: 2009
- GER: 
+ GER: "Bietet eine Chance von 35% auf die Schilddurchdringung von Projektilen, die von ballistischen Kanonen abgefeuert werden"
  ENG: "Provides a 35% shield penetration chance to projectiles fired from Ballistic Cannons"
  RUS: "Дает снарядам, выпущенным из баллистических орудий, 35% вероятность пробить щиты"
  SPA: "Los disparos de los cañones balísticos tienen un 35% más de posibilidades de penetrar los escudos"
  UKR: "Забезпечує 35% шанс пробиття щита для снарядів, випущених з балістичних гармат"
 IndicatesAShipsExperienceLevel:
  Id: 2010
- GER: 
+ GER: "Zeigt die Erfahrungsstufe eines Schiffes an, bis zu einem Maximum von 5 Sternen.  Für jede Erfahrungsstufe erhält ein Schiff jeweils einen Bonus von 5% auf Reparaturrate, Drehgeschwindigkeit und Waffenschaden."
  ENG: "Indicates a ship's experience level, up to a maximum of 5 stars. For each experience level, a ship gains a 5% bonus each to repair rate, turning speed, and weapons damage. "
  RUS: "Увеличивает уровень опыта корабля вплоть до максимум 5 звезд. За каждый уровень опыта корабль получает 5% бонус к скорости ремонта, урону от оружия и скорости поворота. "
  SPA: "Indica el nivel de experiencia de una nave hasta un máximo de 5 estrellas. Por cada nivel de experiencia, una nave gana una bonificación del 5% en ritmo de reparación y daño de sus armas. "
  UKR: "Показує рівень досвіду корабля, максимум до 5 зірок. За кожен рівень досвіду корабель отримує бонус 5% до швидкості ремонту, швидкості повороту і пошкоджень від зброї."
 BB_Tech_AceTraining_Name:
  Id: 2011
- GER: 
+ GER: "FliegerAs Training"
  ENG: "Ace Training"
  RUS: "Обучение асов"
  SPA: "Adiestramiento de ases"
  UKR: "Ace Training"
 BB_Tech_AceTraining_Desc:
  Id: 2012
- GER: 
+ GER: "Unsere Kampfpiloten sollten die Besten der Besten sein.  Indem wir in eine strenge Kandidatenauswahl und intensive Pilotenschulungsprotokolle investieren, können wir unsere Piloten zu den Besten der Galaxis machen."
  ENG: "Our fighter pilots should be the best of the best. By investing in rigorous candidate screening and intense pilot training protocols, we can make our pilots the top guns in the galaxy. "
  RUS: "Наши пилоты должны быть лучшими из лучших. Вкладывая усилия в отбор только самых лучших кандидатов и их интенсивное обучение, мы сделаем своих пилотов лучшими асами в галактике. "
  SPA: "Nuestros pilotos de cazas deben ser lo mejor de lo mejor. Al invertir en una selección rigurosa de los candidatos e intensificar los protocolos de adiestramiento, podemos conseguir que los pilotos sean nuestras mejores armas en la galaxia. "
  UKR: "Наші пілоти винищувачів повинні бути кращими з кращих. Інвестуючи в суворий відбір кандидатів та інтенсивні протоколи підготовки пілотів, ми можемо зробити наших пілотів найкращими у галактиці."
 BB_Tech_AceTraining_BonusFighterLevels_Bonus:
  Id: 2013
- GER: 
+ GER: "Alle Jäger erhalten 2 kostenlose Erfahrungsstufen."
  ENG: "All fighter class vessels receive 2 free experience levels."
  RUS: "Все корабли класса истребителей получают 2 \"бесплатных\" уровня опыта."
  SPA: "Todas las naves de clase caza reciben 2 niveles de experiencia gratis."
  UKR: "Всі кораблі винищувального класу отримують 2 безкоштовних рівня досвіду."
 BB_Tech_XenoIntelligence_Name:
  Id: 2014
- GER: 
+ GER: "Xeno Intelligenz"
  ENG: "Xeno Intelligence"
  RUS: "Ксено разведка"
  SPA: "Xenointeligencia"
  UKR: "Ксенорозвідка"
 BB_Tech_XenoIntelligence_Desc:
  Id: 2015
- GER: 
+ GER: "Wenn wir die Sprache der Außerirdischen verstehen, können wir besser verstehen, wie dieser Außerirdische denkt.  Zu verstehen, wie ein Außerirdischer denkt, ist der Schlüssel, um ihn zu täuschen."
  ENG: "Understanding an alien's language helps us understand how that alien thinks. Understanding how an alien thinks is the key to deceiving it. "
  RUS: "Понимание языка инопланетян помогает нам понять логику их мыслей. Понимание логики мыслей инопланетянина позволит предсказать его действия. "
  SPA: "Conocer bien el lenguaje de una raza alienígena nos ayuda a entender su manera de pensar; y entender su manera de pensar es fundamental para poder engañarlos. "
  UKR: "Розуміння мови іншопланетян допомагає нам зрозуміти, як він мислить. Розуміння того, як мислить інопланетянин, є ключем до його обману."
 BB_Tech_XenoIntelligence_SpyDefenseRollBonus_Bonus:
  Id: 2016
- GER: 
+ GER: "Erhalten Sie einen Bonus von +10 auf Defensive Agent-Würfe"
  ENG: "Gain a +10 bonus to Defensive Agent rolls"
  RUS: "Дает +10 бонус к проверкам действий агентов контрразведки"
  SPA: "Concede a los agentes defensivos +10 de probabilidades de éxito"
  UKR: "Отримайте бонус +10 до кидків захисного агента"
 LocksThisSliderPreventingThe:
  Id: 2017
- GER: 
+ GER: "Sperrt diesen Schieberegler und verhindert so, dass die Stellung direkt oder indirekt geändert wird."
  ENG: "Locks this slider, preventing the assigned labor percentage from being altered directly or indirectly."
  RUS: "Блокирует ползунок, не давая изменить заданный процент труда прямыми или непрямыми методами."
  SPA: "Bloquea este control deslizante, impidiendo que el porcentaje de trabajo asignado cambie directa o indirectamente."
  UKR: "Блокує цей повзунок, запобігаючи прямій або непрямій зміні призначеного відсотка праці."
 FoodIsEatenByYour:
  Id: 2018
- GER: 
+ GER: "Nahrung wird in jeder Runde von Ihren Kolonisten konsumiert.  Die Zahl rechts neben diesem Schieberegler gibt die Überproduktion der Nahrung an.  Ein negativer Wert bedeutet, dass Sie nicht genügend Nahrungsmittel produzieren, um den Nahrungsmittelbedarf Ihrer Bevölkerung zu decken.  \n \n Wenn Ihre Nahrungsmittelproduktion negativ ist und Sie nicht genügend Nahrungsmittel vorrätig haben, um Ihr Defizit zu decken, beginnt Ihre Bevölkerung zu verhungern und zu sterben."
  ENG: "Food is eaten by your colonists each turn. The number to the right of this slider indicates the net value of the food you are producing at this planet after the colonists have eaten. A negative value means that you are not producing enough food to cover your population's food needs. \n \n If your food production is negative and you do not have enough food in storage to cover your shortfall, then your population will begin to starve and die."
  RUS: "Каждый ход колонисты потребляют еду. Число справа от этого ползунка указывает количество еды, произведенное на этой планете, за вычетом той еды, которая ушла на прокорм колонистов. Отрицательное значение говорит о том, что вы производите недостаточно еды для удовлетворения нужд вашего населения. \n \n Если у вас отрицательный баланс по еде и на складе недостаточно еды, чтобы покрыть эту нехватку, население начнет вымирать от голода."
  SPA: "Nuestros colonos consumen alimentos en cada turno. El número a la derecha de este control deslizante indica el valor neto de los alimentos que estás produciendo en este planeta. Un valor negativo significa que no estás produciendo suficientes alimentos para cubrir las necesidades de tu población. \n \n Si tu producción de comida es negativa y no tienes suficiente en tus almacenes para cubrir tu déficit, tu población empezará a pasar hambre y morirá."
  UKR: "Їжа з'їдається вашими колоністами кожного ходу. Число праворуч від цього повзунка вказує на чисту вартість їжі, яку ви виробляєте на цій планеті після того, як колоністи поїли. Від'ємне значення означає, що ви виробляєте недостатньо їжі, щоб задовольнити потреби населення. \n \n Якщо ваше виробництво їжі від'ємне і у вас не вистачає їжі на складі, щоб покрити нестачу, то ваше населення почне голодувати і вмирати."
 ProductionIsRequiredForThe:
  Id: 2019
- GER: 
+ GER: "Für den Bau von Schiffen, Gebäuden und Truppen ist Produktion erforderlich.  Die Zahl rechts neben dem Schieberegler gibt Ihre Überschussproduktion an.  Kybernetische Rassen konsumieren Produktion statt Nahrung."
  ENG: "Production is required for the creation of ships, buildings, and troops. The number to the right of slider indicates your net production. Cybernetic races eat production rather than food. "
  RUS: "Производство необходимо для строительства кораблей, зданий и войск. Число справа от ползунка указывает итоговое производство. Кибернетические расы потребляют единицы производства вместо еды. "
  SPA: "Para crear naves, edificios y tropas se necesita producción. El número a la derecha del control deslizante indica tu producción neta. Las razas cibernéticas consumen producción en lugar de alimentos. "
@@ -9682,10 +9682,10 @@ InTheAscensionGameMode:
  UKR: "В ігровому режимі Вознесіння мета полягає в тому, щоб стати першою расою, яка підніметься до Божества, захопивши рідну планету Древніх в центрі галактики."
 ClickToContinue:
  Id: 2108
- GER: "Klick zum Fortsetzen"
+ GER: "Klicke zum Fortsetzen"
  ENG: "Click to Continue!"
  RUS: "Нажмите для продолжения!"
- SPA: "¡Haz clic para continuar!"
+ SPA: "¡Haz clic p ara continuar!"
  UKR: "Натисніть кнопку Продовжити!"
 IndicatesHowManyUnitsOf:
  Id: 2109
@@ -12880,14 +12880,14 @@ FtlEfficiency:
  UKR: "Ефективність надсвітлової швидкості"
 Slipstreams:
  Id: 4084
- GER: "Windschattenantrieb"
+ GER: "Windschatten Antrieb"
  ENG: "Slipstreams"
  RUS: "Слипстримы"
  SPA: "Estelas"
  UKR: "Сліп-стріми"
 OrdnanceEffectiveness:
  Id: 4085
- GER: "Kampfstoffeffektivitätssteigerung"
+ GER: "Kampfstoff Effektivitätssteigerung"
  ENG: "Ordnance Effectiveness"
  RUS: "Эффективность боеприпасов"
  SPA: "Eficacia de la munición"
@@ -20525,7 +20525,7 @@ Tech_RemnantShielding_Bonus:
  UKR: "Забезпечує 30% потужності щита"
 Tech_SlipStreams_Name:
  Id: 18270
- GER: "Subraum-Tunnelbau"
+ GER: "Subraum Tunnelbau"
  ENG: "Subspace Tunneling"
  UKR: "Підпросторове тунелювання"
 Tech_SlipStreams_Desc:
