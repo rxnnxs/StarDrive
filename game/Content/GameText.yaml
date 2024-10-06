@@ -3177,189 +3177,189 @@ BB_Tech_Cryogenics_PassengerModifier_Bonus:
  UKR: "Подвоює кількість колоністів, що перевозяться пасажирськими кораблями в межах вашої імперії"
 BB_Tech_DeepCoreMining_Name:
  Id: 541
- GER: 
+ GER: "Tiefkernbergbau"
  ENG: "Deep Core Mining"
  RUS: "Сверхглубокие шахты"
  SPA: "Minería de núcleo profundo"
  UKR: "Надглибокі шахти"
 BB_Tech_DeepCoreMining_Desc:
  Id: 542
- GER: 
+ GER: "Wenn die Ressourcengewinnung wichtiger ist als die Umwelt, ist Tiefkernbergbau die Lösung.  Tiefkernminen werden alle bis auf die widerstandsfähigsten Ökosysteme des Planeten zerstören und eignen sich am besten für karge Welten."
  ENG: "When resource extraction matters more than the environment, Deep Core Mines are the solution. Deep Core mines will ruin all but the hardiest planetary ecosystems and are best suited for barren worlds. "
  RUS: "Когда добыча ресурсов приоритетнее защиты окружающей среды, сверхглубокие шахты становятся отличным решением. Они быстро приводят в упадок большинство экосистем, поэтому лучше всего строить их в бесплодных мирах."
  SPA: "Cuando la extracción de recursos importa más que el medio ambiente, la solución son las minas de núcleo profundo. Estas minas destruirán todo menos los ecosistemas planetarios más resistentes y son óptimas para mundos áridos. "
  UKR: "Коли видобуток ресурсів має більше значення, ніж охорона довкілля, рішенням є шахти глибокого закладання. Глибокі шахти зруйнують усе, крім найстійкіших планетарних екосистем, і найкраще підходять для безплідних світів."
 BB_Tech_DisintegratorArray_Name:
  Id: 543
- GER: 
+ GER: "Desintegrator Lanze"
  ENG: "Disintegrator Array"
  RUS: "Дезинтеграция"
  SPA: "Matriz de desintegración"
  UKR: "Масив дезінтеграторів"
 BB_Tech_DisintegratorArray_Desc:
  Id: 544
- GER: 
+ GER: "Die Desintegrator Lanze ist eine äußerst leistungsstarke Strahlwaffe, die nur für eine Montage in Frontrichtung geeignet ist."
  ENG: "The Disintegrator Array is a massively powerful beam weapon suitable only for a fixed spinal mount."
  RUS: "Дезинтегратор - мощное лучевое оружие, которое можно использовать только с фиксированным креплением наверху."
  SPA: "La matriz de desintegración es un arma que dispara potentes rayos y que solo se puede montar de forma fija en el lomo de una nave."
  UKR: "Масив дезінтеграторів - це потужна променева зброя, придатна лише для фіксованого кріплення на кораблі."
 BB_Tech_Disruptors_Name:
  Id: 545
- GER: 
+ GER: "Disruptoren"
  ENG: "Disruptors"
  RUS: "Разрушители"
  SPA: "Disruptores"
  UKR: "Руйнівники"
 BB_Tech_Disruptors_Desc:
  Id: 546
- GER: 
+ GER: "Disruptorkanonen haben eine ähnliche Funktion wie Laserkanonen – ein ionisiertes Paket hochenergetischen Plasmas wird aus der Kanone abgefeuert.  Allerdings ist die Disruptor-Nutzlast mit einer dichteren und viel flüchtigeren Plasmaladung ausgestattet."
  ENG: "Disruptors Cannons are similar in function to Laser Cannons -- an ionized packet of high-energy plasma is shot from the cannon. However, the disruptor payload is engineered with a denser and much more volatile plasma charge.   "
  RUS: "Пушки-разрушители работают аналогично лазерным пушкам - из оружия выстреливается заряд высокоэнергетической плазмы. Однако снаряд разрушителя обладает большей плотностью и быстрее рассеивается."
  SPA: "Los cañones disruptores tienen una función similar a la de los cañones láser y disparan un haz ionizado de plasma de gran energía. Eso sí, su carga explosiva se compone de una carga de plasma más densa y mucho más volátil.   "
  UKR: "Гармати-руйнівники за своєю функцією схожі на лазерні гармати - з гармати вистрілюють іонізованим пакетом високоенергетичної плазми. Однак корисне навантаження дизраптора складається з більш щільного і набагато більш летючого плазмового заряду.   "
 BB_Tech_ECM_Name:
  Id: 547
- GER: 
+ GER: "EGM"
  ENG: "ECM"
  RUS: "РПД"
  SPA: "MCE"
  UKR: "ЕЗП"
 BB_Tech_ECM_Desc:
  Id: 548
- GER: 
+ GER: "Elektronische Gegenmaßnahmen wie Infrarot- und Subraumfrequenz-Störsender können feindliche Punktverteidigungssensoren so verwirren, dass sie ihre Ziele verfehlen."
  ENG: "Electronic Counter Measures such infrared and subspace frequency jammers can confuse enemy point defense sensors into missing their targets."
  RUS: "Меры радиопротиводействия, такие как ИК-помехи и радиопомехи, нарушают работу сенсоров механизмов точечной защиты, в результате чего те не могут эффективно поражать свои цели."
  SPA: "Las medidas contraelectrónicas (MCE) como los inhibidores de frecuencia subespaciales e infrarrojos pueden engañar a los sensores de defensa puntual y hacer que fallen sus blancos."
  UKR: "Електронні засоби протидії, такі як інфрачервоні та підпросторові частотні перешкоди, можуть збити з пантелику ворожі датчики точкової оборони і змусити їх пропускати цілі."
 BB_Tech_ECM_MissileDodgeChangeBonus_Bonus:
  Id: 549
- GER: 
+ GER: "Gewährt Raketenwaffen (z. B. Raketen, Lenkflugkörper und Torpedos) eine Chance von 25%, dem Abfangfeuer auszuweichen."
  ENG: "Grants missile weapon (such as rockets, guided missiles, and torpedoes) a 25% chance to dodge intercepting fire."
  RUS: "Дает ракетному оружию (ракеты, самонаводящиеся ракеты и торпеды) 25% вероятность уклониться от перехвата."
  SPA: "Proporcionan a los proyectiles autopropulsados (como cohetes, misiles guiados o torpedos) un 25% de posibilidades de esquivar el fuego de interceptación."
  UKR: "Надає ракетній зброї (наприклад, ракетам, керованим ракетам і торпедам) 25% шанс ухилитися від перехоплюючого вогню."
 BB_Tech_EMPCannons_Name:
  Id: 550
- GER: 
+ GER: "EMP Kanonen"
  ENG: "EMP Cannons"
  RUS: "ЭМИ-орудия"
  SPA: "Cañones PEM"
  UKR: "ЕМІ гармати"
 BB_Tech_EMPCannons_Desc:
  Id: 551
- GER: 
+ GER: "ElektroMagnetischePuls-Kanonen werden verwendet, um anvisierte Schiffe außer Gefecht zu setzen, indem ihre Stromnetze mit zufälliger Stromspitzen überlastet werden.  Alle Schiffe verfügen je nach Größe über eine natürliche EMP-Verteidigung.   EMP-Waffen sind gegen abgeschirmte Ziele wirkungslos."
  ENG: "EMP Cannons are used to disable targeted ships by overloading their power grids with random energy. All ships have a natural EMP defense based on their size.  EMP weapons are ineffective against shielded targets. "
  RUS: "ЭМИ-орудия выводят из строя вражеские суда, перегружая их энергосети. Все корабли обладают естественной защитой от ЭМИ в зависимости от размера корабля. ЭМИ-оружие неэффективно против щитов."
  SPA: "Los cañones de pulsos electromagnéticos (PEM) sirven para sobrecargar el suministro eléctrico de las naves enemigas con energía aleatoria y así neutralizarlas. Todas las naves tienen una defensa contra PEM según su tamaño.  Las armas PEM no son eficaces contra escudos. "
  UKR: "Електромагнітні гармати використовуються для виведення з ладу цільових кораблів, перевантажуючи їхні електромережі випадковою енергією. Всі кораблі мають природний захист від ЕМІ, який залежить від їхнього розміру.  ЕМІ-зброя неефективна проти цілей з щитами."
 BB_Tech_EMPTorpedo_Name:
  Id: 552
- GER: 
+ GER: "EMP Torpedos"
  ENG: "EMP Torpedoes"
  RUS: "ЭМИ-торпеды"
  SPA: "Torpedos PEM"
  UKR: "ЕМІ-торпеди"
 BB_Tech_EMPTorpedo_Desc:
  Id: 553
- GER: 
+ GER: "Elektromagnetische Impulstorpedos verursachen einen massiven Schock in einem Wirkungsbereich, der auch befreundete Ziele umfasst.  Wenn diese Explosion die EMP-Verteidigung eines Schiffs überwältigt, wird das Schiff 3 Sekunden lang außer Betrieb gesetzt."
  ENG: "Electromagnetic pulse torpedoes deliver a massive shock to an area of effect that includes friendly targets. If this blast overwhelms a ship's EMP defenses, the ship will be stunned for 3 seconds. "
  RUS: "Торпеды, создающие при детонации мощный электромагнитный импульс в определенной зоне действия (также затрагивает и союзные корабли). Если взрыв пробьет ЭМИ-защиту корабля, тот будет выведен из строя на 3 секунды."
  SPA: "Los torpedos de impulsos electromagnéticos generan una descarga tremenda en un radio que puede afectar también a objetivos aliados. Si dicha descarga acaba con las defensas PEM de una nave, quedará paralizada 3 segundos. "
  UKR: "Торпеди з електромагнітним імпульсом завдають потужного удару в зоні ураження, яка включає дружні цілі. Якщо цей вибух перекриває захист корабля від електромагнітного випромінювання, корабель буде оглушений на 3 секунди."
 BB_Tech_EnergyCannons_Name:
  Id: 554
- GER: 
+ GER: "Energie Kanonen"
  ENG: "Energy Cannons"
  RUS: "Энергопушки"
  SPA: "Cañones de energía"
  UKR: "Енергетичні гармати"
 BB_Tech_EnergyCannons_Desc:
  Id: 555
- GER: 
+ GER: "'Laser'-Kanonen sind etwas irreführend, da die Kanone tatsächlich eine ionisierte Magnethülle abfeuert, die mit überhitztem Plasma gefüllt ist. Die Kanone hat ihren Namen erhalten, weil das Plasma durch einen Laser erhitzt wird, bevor es magnetisch beschleunigt und auf sein Ziel geschossen wird."
  ENG: "\"Laser\" Cannons are somewhat of a misnomer because the cannon in fact fires an ionized magnetic shell filled with superheated plasma. The cannon gains its name because the plasma is heated by laser before being magnetically accelerated and shot towards its target. "
  RUS: "\"Лазерные пушки\" - не совсем точное название для этого оружия, поскольку на самом деле они выстреливают ионизированный магнитный снаряд, наполненный перегретой плазмой. Плазма нагревается лазером, после чего выстреливается в цель ЭМ-ускорителем."
  SPA: "Los cañones \"láser\" tienen un nombre poco apropiado porque en realidad lo que disparan es un proyectil magnético ionizado lleno de plasma supercalentado. El cañón se llama así porque el plasma se calienta por láser antes de ser magnéticamente acelerado y disparado contra su objetivo. "
  UKR: "\"Лазерні\" гармати - це дещо неправильна назва, тому що насправді гармата стріляє іонізованою магнітною оболонкою, наповненою перегрітою плазмою. Гармата отримала свою назву тому, що плазма нагрівається лазером перед тим, як отримати магнітне прискорення і вистрілити в ціль."
 BB_Tech_EnergyWeapons_Name:
  Id: 556
- GER: 
+ GER: "Energie Waffen"
  ENG: "Energy Weapons"
  RUS: "Энергетическое оружие"
  SPA: "Armas de energía"
  UKR: "Енергетична зброя"
 BB_Tech_EnergyWeapons_Desc:
  Id: 557
- GER: 
+ GER: "Viele unserer führenden Militärwissenschaftler glauben, dass gerichtete Energiewaffen die Zukunft des Weltraumkampfes sind.  Andere Wissenschaftler befürworten die Einkapselung verschiedener Energien in ionisierte Pakete, wodurch Energiekanonen entstehen.  Diese Technologie stellt unsere ersten Schritte in diesem Bereich dar."
  ENG: "Many of our top military scientists believe that directed energy weapons are the future of space combat. Other scientists favor the encapsulation of various energies into ionized packets, creating energy \"cannons\". This technology represents our first steps into this field."
  RUS: "Многие ученые в области военного дела полагают, что будущее космических боев - за направленным энергетическим оружием. Другие считают, что предпочтительнее использовать ионизированные \"капсулы\", то есть энергопушки. Эта технология - наши первые шаги в этой области."
  SPA: "Muchos de nuestros más brillantes científicos militares creen que las armas de energía dirigida son el futuro del combate espacial. Otros se decantan por la encapsulación de varias energías en paquetes ionizados, creando así \"cañones\" de energía. Con esta tecnología damos nuestros primeros pasos en este campo."
  UKR: "Багато наших провідних військових вчених вважають, що зброя зі спрямованою енергією - це майбутнє космічних боїв. Інші вчені виступають за інкапсуляцію різних видів енергії в іонізовані пакети, створюючи енергетичні \"гармати\". Ця технологія являє собою наші перші кроки в цій галузі."
 BB_Tech_Energy_Name:
  Id: 558
- GER: 
+ GER: "Energie"
  ENG: "Energy"
  RUS: "Энергия"
  SPA: "Energía"
  UKR: "Енергія"
 BB_Tech_Energy_Desc:
  Id: 559
- GER: 
+ GER: "Der Technologiezweig erforscht die Bereiche Stromerzeugung und Energie mit Anwendungen sowohl in der Industrie als auch im Militär."
  ENG: "The technology branch explores power creation and energy fields, with applications both industrial and military. "
  RUS: "Эта область технологий изучает выработку энергии и энергетические поля, а также их промышленное и военное применение."
  SPA: "Rama de la tecnología que explora la creación de electricidad y campos de energía con aplicaciones tanto industriales como militares. "
  UKR: "Технологічна галузь досліджує створення енергії та енергетичні галузі, що мають як промислове, так і військове застосування."
 BB_Tech_EnergyShielding_Name:
  Id: 560
- GER: 
+ GER: "Energieabschirmung"
  ENG: "Energy Shielding"
  RUS: "Энергетические щиты"
  SPA: "Escudos de energía"
  UKR: "Енергетичний захист"
 BB_Tech_EnergyShielding_Desc:
  Id: 561
- GER: 
+ GER: "Energieschilde sind eine Voraussetzung für jeden Kapitän, der sich auf einen Kampf einlässt.   Diese Geräte erweitern ein absorbierendes Energiefeld auf Projektile, die in ihren Schutzbereich gelangen.  Schilde 'laden' sich wieder auf, indem sie die aufgenommene Energie abgeben.  Schilde variieren in Stärke, Wiederaufladerate und Schutzradius"
  ENG: "Energy shields are a requirement for any Captain expecting to engage in combat.  These devices extend an absorbent energy field towards projectiles entering its sphere of protection. Shields 'recharge' by shedding the energy captured. Shields vary in strength, recharge rate, and protection radius"
  RUS: "Энергетические щиты совершенно необходимы любому командиру, ожидающему боя. Эти устройства создают абсорбирующее энергетическое поле, перехватывающие снаряды, попадающие в область защиты. Щиты подзаряжаются за счет поглощаемой энергии. Поглотив слишком много энергии, щит будет перегружен и выйдет из строя. Щиты различаются по мощности, скорости подзарядки и радиусу защиты."
  SPA: "Los escudos de energía son imprescindibles para cualquier capitán que quiera entrar en combate.  Estos dispositivos extienden un campo de energía absorbente hacia los proyectiles que penetran en su zona protegida.  Los escudos se \"recargan\" derivando la energía capturada.  El escudo se sobrecargará y quedará destruido si absorbe demasiados impactos. La resistencia, velocidad de recarga y radio de protección varían de un escudo a otro.  "
  UKR: "Енергетичні щити - обов'язкова вимога для будь-якого капітана, який планує брати участь у бойових діях.  Ці пристрої поширюють поглинаюче енергетичне поле на снаряди, що потрапляють у сферу їхнього захисту. Щити \"перезаряджаються\", віддаючи захоплену енергію. Щити відрізняються за міцністю, швидкістю перезарядки та радіусом захисту"
 BB_Tech_FighterShields_Name:
  Id: 562
- GER: 
+ GER: "Jäger Schilde"
  ENG: "Fighter Shields"
  RUS: "Щиты истребителей"
  SPA: "Escudos de cazas"
  UKR: "Щити винищувачів"
 BB_Tech_FighterShields_Desc:
  Id: 563
- GER: 
+ GER: "Einige Flottenkommandeure stellen Schilde für Jägern in Frage und halten dies für eine Verschwendung von Ressourcen für so einen Fliegenschiss.  Trotzdem steht außer Frage, dass ein Kämpfer mit Schild besser ist als einer ohne, und vielleicht lassen sich für diese kleinen Schilde noch andere Verwendungsmöglichkeiten finden."
  ENG: "Some fleet commanders question the prudence of shielding fighters, believing it to be a waste of resources for a disposable asset. Even so, there is no quesiton that a fighter with a shield is better than one without, and perhaps other uses can be found for these small shields. "
  RUS: "Некоторые командиры подвергают сомнению необходимость защиты истребителей щитами, полагая это пустой тратой ресурсов, учитывая, что истребители являются, по сути, расходным материалом. Однако в любом случае защищенный истребитель лучше, чем незащищенный; кроме того, этим миниатюрным щитам может найтись и другое применение."
  SPA: "Algunos comandantes de flotas cuestionan que sea prudente proteger los cazas con escudos: creen que es un desperdicio de recursos para un activo prescindible. Aun así, no cabe duda de que un caza con escudo es mejor que otro que carezca de él, y a lo mejor podrían encontrarse otros usos para estos pequeños escudos. "
  UKR: "Деякі командувачі флотів ставлять під сумнів доцільність щитів на винищувачах, вважаючи, що це марна трата ресурсів для одноразового активу. Незважаючи на це, немає жодних сумнівів, що винищувач зі щитом кращий за винищувача без щита, і, можливо, можна знайти інше застосування цим маленьким щитам."
 BB_Tech_FighterTheory_Name:
  Id: 564
- GER: 
+ GER: "Jagdflieger Theorie"
  ENG: "Fighter Theory"
  RUS: "Теория истребителей"
  SPA: "Teoría de los cazas"
  UKR: "Теорія винищувачів"
 BB_Tech_FighterTheory_Desc:
  Id: 565
- GER: 
+ GER: "Wenn sich unsere Fähigkeit zum Bau größerer Schiffe verbessert, können wir mit dem Bau von Mutterschiffen beginnen, die kleineren Schiffen Anlegeplätze bieten können.  Letztlich stellen wir uns große Kreuzer vor, die in der Lage sind, Dutzende von Jägern oder Bombern in einer Kampfsituation einzusetzen.  Beachten Sie, dass die Fähigkeiten von Trägerschiffen die Wartungskosten des Trägers erhöhen, da auch die dortigen Jäger gewartet werden müssen."
  ENG: "As our ability to build larger ships improves, we can begin to build motherships capable of providing berths to smaller ships. Ultimately, we envision large cruisers capable of deploying dozens of fighters or bombers into a combat situation. Note that carrier ship capabilities will increase the carrier's maintenance cost, as the fighters there need to be maintained as well."
  RUS: "По мере улучшения наших возможностей строительства крупных кораблей мы можем переходить к строительству материнских кораблей, перевозящих маленькие корабли. В конечном счете мы придем к сооружению огромных крейсеров, бросающих в бой десятки малых истребителей и бомбардировщиков."
  SPA: "A medida que aumenta nuestra capacidad para construir naves más grandes, podemos empezar a fabricar naves nodrizas donde puedan atracar aeronaves más pequeñas.  En última instancia, contemplamos el uso de grandes cruceros capaces de desplegar docenas de cazas o bombarderos en operaciones de combate."
  UKR: "Коли наша здатність будувати більші кораблі покращиться, ми зможемо почати будувати флагманські кораблі, здатні надавати причали для менших кораблів. Зрештою, ми уявляємо собі великі крейсери, здатні розгортати десятки винищувачів або бомбардувальників у бойовій обстановці. Зауважте, що можливості корабля-носія збільшать витрати на його утримання, оскільки винищувачі на ньому також потребуватимуть обслуговування."
 BB_Tech_FleetSupply_Name:
  Id: 566
- GER: 
+ GER: "Versorgung"
  ENG: "Fleet Supply"
  RUS: "Снабжение флота"
  SPA: "Abastecimiento de flotas"
  UKR: "Постачання флоту"
 BB_Tech_FleetSupply_Desc:
  Id: 567
- GER: 
+ GER: "Für eine Flotte, die längere Zeit im Einsatz ist, kann der Mangel an Munition ein großes Problem darstellen.  Versorgungsschiffe sind daher seit Beginn des Marinezeitalters ein fester Bestandteil großer Flotteneinsätze."
  ENG: "For a fleet on extended deployment, running out of ammunition can be a major problem. Supply ships have therefore been an integral part of large fleet actions since the dawn of the naval age."
  RUS: "Для флота, выполняющего затяжную миссию, нехватка боеприпасов может стать серьезной проблемой - поэтому корабли снабжения играли очень важную роль в боевых операциях с самого начала развития космического флота."
  SPA: "Para un despliegue prolongado de una flota, la falta de munición puede suponer un gran problema. Las naves de abastecimiento desempeñan, por tanto, un papel fundamental en las acciones de la flota desde los albores de la edad naval."
@@ -3373,91 +3373,91 @@ BB_Tech_FrigateConstruction_Name:
  UKR: "Будівництво фрегатів"
 BB_Tech_FrigateConstruction_Desc:
  Id: 569
- GER: 
+ GER: "Mit Investitionen in den Fregattenbau können wir damit beginnen, robustere Schiffe zu bauen, die besser auf alle Gefahren vorbereitet sind als unsere vergleichsweise schwachen Frachtschiffe."
  ENG: "With investment into frigate construction, we can begin to build heartier ships that are more prepared for whatever dangers are out there than our comparatively flimsy cargo ships."
  RUS: "Корабли класса 'Фрегат' - серьезный шаг вперед в развитии космического флота. Они гораздо лучше подготовлены к встрече с опасностями в космосе, чем хлипкие грузовые корабли."
  SPA: "Si investigamos en la construcción de fragatas, podemos construir naves más vigorosas y preparadas para potenciales peligros que nuestras endebles naves de carga."
  UKR: "Інвестувавши у будівництво фрегатів, ми зможемо почати будувати більш міцні кораблі, які краще підготовлені до будь-яких небезпек, ніж наші порівняно неміцні вантажні судна."
 BB_Tech_FuelCell1_Name:
  Id: 570
- GER: 
+ GER: "Deuterium Energiezellen"
  ENG: "Deuterium Power Cells"
  RUS: "Дейтериевые энергоблоки"
  SPA: "Celdas de energía de deuterio"
  UKR: "Дейтерієві елем. живлення"
 BB_Tech_FuelCell1_Desc:
  Id: 571
- GER: 
+ GER: "Diese Technologie wird alle dedizierten Energiezellen Ihrer Schiffe auf den neueren Deuterium-Standard umstellen.   Deuteriumzellen können 15% mehr Energie aufnehmen als eine Standardzelle, was sich in einer größeren effektiven Reichweite für Schiffe sowie in größeren verfügbaren Energiereserven für Kampfsysteme niederschlägt."
  ENG: "This technology will switch all of your ships' dedicated power cells over to the newer Deuterium standard.  Deuterium cells can hold 15% more power than a standard cell, which translates into longer effective range for ships as well as greater energy pools available for combat systems. "
  RUS: "Эта технология позволяет переоборудовать все корабли под использование более современных дейтериевых энергоблоков. Дейтериевые блоки позволяют запасать на 15% больше энергии по сравнению со стандартными, что позволяет кораблям путешествовать на большие расстояния, а также предоставить больше энергии боевым системам."
  SPA: "Esta tecnología cambiará todas las celdas de energía de tus naves por otras nuevas de deuterio,  que pueden contener 15% más de energía que una celda normal. Esto se traduce en un alcance efectivo mayor para las naves y en más reservas de energía para los sistemas de combate. "
  UKR: "Ця технологія переведе всі спеціальні елементи живлення ваших кораблів на новіший дейтерієвий стандарт.  Дейтерієві елементи можуть утримувати на 15% більше енергії, ніж стандартні елементи, що означає більший ефективний радіус дії для кораблів, а також більші енергетични резерви, доступні для бойових систем."
 BB_Tech_FuelCell1_FuelCellBonus_Bonus:
  Id: 572
- GER: 
+ GER: "Erhalten Sie einen imperiumsweiten Bonus von 15 %auf die Energiemenge, die in speziellen Energiezellen gespeichert ist"
  ENG: "Gain an empire-wide 15% bonus to the amount of power that is stored in dedicated power cells"
  RUS: "Дает по всей империи 15% бонус к запасу энергии, накопленной в энергоблоках"
  SPA: "Añade una bonificación del 15% a la cantidad de energía almacenada en celdas de combustible"
  UKR: "Отримайте бонус 15% до кількості енергії, що зберігається в спеціальних енергетичних комірках в масштабах всієї імперії"
 BB_Tech_FuelCell2_Name:
  Id: 573
- GER: 
+ GER: "Iridium-Energiezellen"
  ENG: "Iridium Power Cells"
  RUS: "Иридиевые энергоблоки"
  SPA: "Celdas de energía de iridio"
  UKR: "Іридієві елем. живлення"
 BB_Tech_FuelCell2_Desc:
  Id: 574
- GER: 
+ GER: "Iridium hat sich als überlegenes Element für Energiespeicherzwecke erwiesen.   Diese Technologie stellt alle dedizierten Energiezellen Ihres Imperiums auf den Iridium-Standard um und erhöht so die Effizienz der dedizierten Energiezellen um insgesamt 30%."
  ENG: "Iridium has proven itself the superior element for power storage purposes.  This technology switches all of your empire's dedicated power cells to the Iridium standard, increasing dedicated power cell efficiency by a total of 30%. "
  RUS: "Иридий - оптимальный элемент для использования в энергетической промышленности. Переводит все корабли в империи на иридиевые энергоблоки, увеличивая их ресурс в сумме на 30%."
  SPA: "El iridio ha demostrado ser lo mejor para el almacenamiento de energía.  Esta tecnología cambia todas las celdas de combustible de tu imperio por otras de iridio, aumentando su eficiencia en un 30%. "
  UKR: "Ірідій зарекомендував себе як найкращий елемент для зберігання енергії.  Ця технологія переводе всі виділені елементи живлення вашої імперії на Ірідієві, збільшуючи ефективність елементів живлення загалом на 30%."
 BB_Tech_FusionBeam_Name:
  Id: 576
- GER: 
+ GER: "Fusions Strahlen"
  ENG: "Fusion Beams"
  RUS: "Термоядерные лучи"
  SPA: "Rayos de fusión"
  UKR: "Термоядерні промені"
 BB_Tech_FusionBeam_Desc:
  Id: 577
- GER: 
+ GER: "Der Fusionsstrahl lenkt zwei schmale Ströme atomarer Teilchen auf einen Konvergenzpunkt, wo die Atome verschmelzen und die Energie freigesetzt wird.  Das Ergebnis ist eine leistungsstarke Strahlwaffe."
  ENG: "The fusion beam directs two narrow streams of atomic particles at a convergence point, where the atoms are fused and the energy is released. The result is a high-powered beam weapon."
  RUS: "Термоядерный луч направляет два узких пучка атомных частиц в точку схождения, где атомы сливаются друг с другом, высвобождая энергию. Это мощное лучевое оружие."
  SPA: "Los rayos de fusión dirigen dos corrientes estrechas de partículas atómicas hacia un punto de convergencia, donde los átomos se fusionan y se libera la energía. El resultado es un arma sumamente poderosa."
  UKR: "Термоядерний промінь спрямовує два вузькі потоки атомних частинок у точку зближення, де відбувається злиття атомів і вивільнення енергії. В результаті виходить потужна променева зброя."
 BB_Tech_GeneticManipulation_Name:
  Id: 578
- GER: 
+ GER: "Genmanipulation"
  ENG: "Genetic Manipulation"
  RUS: "Генетические манипуляции"
  SPA: "Manipulación genética"
  UKR: "Генетичні маніпуляції"
 BB_Tech_GeneticManipulation_Desc:
  Id: 579
- GER: 
+ GER: "Unser Verständnis der Genetik blüht so weit auf, dass wir fast die vollständige Kontrolle über unsere eigene DNA haben."
  ENG: "Our understanding of genetics is blossoming to the point where we have almost total control over our own DNA. "
  RUS: "Наше понимание генетики скоро выйдет на такой уровень, что мы сможем практически полностью контролировать свою ДНК."
  SPA: "Nuestros conocimientos sobre genética van mejorando hasta el punto de que tenemos un control casi absoluto de nuestro ADN. "
  UKR: "Наше розуміння генетики розквітло до такої міри, що ми маємо майже повний контроль над власною ДНК."
 BB_Tech_GeneticManipulation_TroopStrengthModifierBonus_Bonus:
  Id: 580
- GER: 
+ GER: "Erhalten Sie einen Supersoldaten-Bonus von 25% auf alle Truppenstärken"
  ENG: "Gain a 25% super solider bonus to all troop strengths"
  RUS: "Дает 25% бонус суперсолдата всем параметрам войск"
  SPA: "Añade una bonificación del 25% de supersoldado a todas las cualidades de las tropas"
  UKR: "Отримуйте 25% бонус супер-солдата до всіх характеристик військ"
 BB_Tech_GuidedMissiles_Name:
  Id: 581
- GER: 
+ GER: "Anti Fregatten Raketen"
  ENG: "Anti-Frigate Missiles"
  RUS: "Противофрегатные ракеты"
  SPA: "Misiles antifragata"
  UKR: "Протифрегатні ракети"
 BB_Tech_GuidedMissiles_Desc:
  Id: 582
- GER: 
+ GER: "Um größere feindliche Bedrohungen bekämpfen zu können, müssen wir unsere aktuelle Raketentechnologie aufrüsten, um größere Reichweiten und höhere Nutzlasten zu erreichen"
  ENG: "To engage larger enemy threats we need to upgrade our current missile technology to have longer ranges and increased payloads"
  RUS: "Для эффективного противостояния крупным вражеским угрозам мы должны улучшить текущие ракетные технологии. В первую очередь требуется увеличить мощность боеголовок и дальность."
  SPA: "Con el objetivo de hacer frente a amenazas más poderosas, necesitamos mejorar nuestra tecnología de misiles actual para incrementar el alcance y las cargas explosivas"
@@ -12390,189 +12390,189 @@ HasExperiencedAMassiveVolcanic:
  UKR: " пережило потужне виверження вулкану \nНавколишнє середовище було серйозно пошкоджене"
 LoadModification:
  Id: 4013
- GER: 
+ GER: "Lade Modifikation"
  ENG: "Load Modification"
  RUS: "Загрузить модификацию"
  SPA: "Cargar modificación"
  UKR: "Модифікація навантаження"
 AvailableModifications:
  Id: 4014
- GER: 
+ GER: "vefügbare Mods"
  ENG: "Available Modifications"
  RUS: "Доступные модификации"
  SPA: "Modificaciones disponibles"
  UKR: "Доступні модифікації"
 LoadModsWeb:
  Id: 4015
- GER: 
+ GER: "Lade Mods (www)"
  ENG: "Load Mods (Web)"
  RUS: "Загрузить мод (Веб)"
  SPA: "Cargar modificadores (web)"
  UKR: "Завантажити модифікації (веб)"
 ClearActive:
  Id: 4016
- GER: 
+ GER: "Deaktiviere Mod"
  ENG: "Clear Active"
  RUS: "Очистить активный"
  SPA: "Eliminar activo"
  UKR: "Очистити активний"
 PopulationGrowthModifier:
  Id: 4017
- GER: 
+ GER: "Ändere Bev.-Wachstum"
  ENG: "Population Growth Modifier"
  RUS: "Модификатор роста населения"
  SPA: "Modificador del crecimiento de la población"
  UKR: "Модифікатор зростання населення"
 ProductionModifier:
  Id: 4018
- GER: 
+ GER: "Ändere Produktionsrate"
  ENG: "Production Modifier"
  RUS: "Модификатор продукции"
  SPA: "Modificador de la producción"
  UKR: "Виробничий модифікатор"
 ResearchModifier:
  Id: 4019
- GER: 
+ GER: "Ändere Forschungsrate"
  ENG: "Research Modifier"
  RUS: "Модификато исследований"
  SPA: "Modificador de la investigación"
  UKR: "Дослідницький модифікатор"
 DiplomacyModifier:
  Id: 4020
- GER: 
+ GER: "Ändere Diplomatierate"
  ENG: "Diplomacy Modifier"
  RUS: "Модификатор дипломатии"
  SPA: "Modificador de la diplomacia"
  UKR: "Модифікатор дипломатії"
 TroopStrengthModifier:
  Id: 4021
- GER: 
+ GER: "Ändere Truppenstärke"
  ENG: "Troop Strength Modifier"
  RUS: "Модификатор силы отрядов"
  SPA: "Modificador de la fortaleza de las tropas"
  UKR: "Модифікатор сили війська"
 ShipCostModifier:
  Id: 4022
- GER: 
+ GER: "Ändere Schiffskosten"
  ENG: "Ship Cost Modifier"
  RUS: "Модификатор стоимости корабля"
  SPA: "Modificador del coste de las naves"
  UKR: "Модифікатор вартості судна"
 ShipHitpointsModifier:
  Id: 4023
- GER: 
+ GER: "Ändere Trefferpunkte"
  ENG: "Ship Hitpoints Modifier"
  RUS: "Модификатор ОП корабля"
  SPA: "Modificador de los puntos de vida de las naves"
  UKR: "Модифікатор хітпоінтів корабля"
 TaxIncomeModifier:
  Id: 4024
- GER: 
+ GER: "Ändere Steuereinkommen"
  ENG: "Tax Income Modifier"
  RUS: "Модификатор налогового дохода"
  SPA: "Modificador de los ingresos por impuestos"
  UKR: "Модифікатор податкового доходу"
 InbordersFtlBonus:
  Id: 4025
- GER: 
+ GER: "Ändere Sprungbonus im Reich"
  ENG: "In-borders FTL Bonus"
  RUS: "Бонус FLT в империи"
  SPA: "Bonificación de velocidad supraluminal dentro del imperio"
  UKR: "Бонус за швидкісний переліт у межах країни"
 FtlSpeedMultiplier:
  Id: 4026
- GER: 
+ GER: "Ändere Sprunggeschwindigkeit"
  ENG: "FTL Speed Multiplier"
  RUS: "Множитель скорости FTL"
  SPA: "Multiplicador de la velocidad supraluminal"
  UKR: "Мультиплікатор надсвітлової швидкості"
 FtlPowerDrainModifier:
  Id: 4027
- GER: 
+ GER: "Ändere Spung-Energieverbrauch"
  ENG: "FTL Power Drain Modifier"
  RUS: "Модификатор расхода энергии FTL"
  SPA: "Modificador del consumo de energía a velocidad supraluminal"
  UKR: "Модифікатор розсіювання енергії FTL"
 SublightSpeedBonus:
  Id: 4028
- GER: 
+ GER: "Ändere Unterlicht Geschw."
  ENG: "Sublight Speed Bonus"
  RUS: "Бонус сверхсветовой скорости"
  SPA: "Bonificación de velocidad subluminal"
  UKR: "Бонусна досвітлова швидкість"
 SensorRangeModifier:
  Id: 4029
- GER: 
+ GER: "Ändere Sensor Reichweite"
  ENG: "Sensor Range Modifier"
  RUS: "Модификатор дальности сенсоров"
  SPA: "Modificador del alcance sensorial"
  UKR: "Модифікатор діапазону датчика"
 SpyEffectivenessModifier:
  Id: 4030
- GER: 
+ GER: "Ändere Spionageeffizienz"
  ENG: "Spy Effectiveness Modifier"
  RUS: "Модификатор эфективности шпионов"
  SPA: "Modificador de la eficacia de los espías"
  UKR: "Модифікатор шпигунської ефективності"
 ArtifactBonusModifier:
  Id: 4031
- GER: 
+ GER: "Ändere Artefaktbonus"
  ENG: "Artifact Bonus Modifier"
  RUS: "Модификатор бонуса артефактов"
  SPA: "Modificador de la bonificación de los artefactos"
  UKR: "Модифікатор артефактного бонусу"
 CannonAccuracyModifier:
  Id: 4032
- GER: 
+ GER: "Ändere Zielgenauigkeit"
  ENG: "Cannon Accuracy Modifier"
  RUS: "Модификатор точности орудий"
  SPA: "Modificador del daño de los cañones"
  UKR: "Модифікатор точності гармати"
 OrdnanceDamageradiusModifier:
  Id: 4033
- GER: 
+ GER: "Ändere Munition Expl.-Radius"
  ENG: "Ordnance Damage/Radius Modifier"
  RUS: "Модификатор радиуса взрыва/урона боеприпасов"
  SPA: "Modificador del radio/daño de la munición"
  UKR: "Модифікатор пошкодження боєприпасів / модифікатор радіусу дії"
 MissileHitpointsBonus:
  Id: 4034
- GER: 
+ GER: "Ändere Raketen HP Bonus"
  ENG: "Missile Hitpoints Bonus"
  RUS: "Бонус ОП ракет"
  SPA: "Bonificación de puntos de vida de los misiles"
  UKR: "Бонус до хітпоінтів від ракет"
 MissileDodgeChance:
  Id: 4035
- GER: 
+ GER: "Ändere Raketenausweichchance"
  ENG: "Missile Dodge Chance"
  RUS: "Шанс уклонения ракет"
  SPA: "Probabilidad de esquivar misiles"
  UKR: "Шанс ухилення від ракети"
 ShipMassModifier:
  Id: 4036
- GER: 
+ GER: "Ändere Schiffsträgheit"
  ENG: "Ship Mass Modifier"
  RUS: "Модификатор массы корабля"
  SPA: "Modificador de la masa de las naves"
  UKR: "Модифікатор маси корабля"
 MaintenanceModifier:
  Id: 4037
- GER: 
+ GER: "Ändere Gebäudeinstandh.-Kosten"
  ENG: "Buildings Maintenance Modifier"
  RUS: "Модификатор технического обслуживания зданий"
  SPA: "Modificador de mantenimiento de edificios"
  UKR: "Модифікатор обслуговування будівель"
 InsystemFtlSpeed:
  Id: 4038
- GER: 
+ GER: "Ändere Inn.-Syst. ÜL-Geschw."
  ENG: "In-system FTL speed"
  RUS: "Скорость FLT в системе"
  SPA: "Velocidad supraluminal dentro del sistema"
  UKR: "Внутрішньосистемна надсвітлова швидкість"
 FuelCellModifier:
  Id: 4039
- GER: 
+ GER: "Ändere Brennstoffz. Effizienz"
  ENG: "Fuel Cell Modifier"
  RUS: "Модификатор энергоячеек"
  SPA: "Modificador de las celdas de combustible"
