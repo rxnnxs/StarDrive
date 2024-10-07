@@ -15399,82 +15399,82 @@ BB_ExoticStorageTechDescrBonus:
  UKR: "20% збільшення екзотичного сховища по всій імперії"
 ExoticResourceRefinedPulsefieldName:
  Id: 4933 
- GER: 
+ GER: "Gepulstes Feld"
  ENG: "Pulsefield"  
  UKR: "Пульсфільд"  
 ExoticResourceRefinedLuxariumName:
  Id: 4934 
- GER: 
+ GER: "Luxarium"
  ENG: "Luxarium"    
  UKR: "Лукзаріум"
 ExoticResourceRefinedFortifumeName:
  Id: 4935 
- GER: 
+ GER: "Stahlon"
  ENG: "Fortifume"    
  UKR: "Фортіф'юм"
 ExoticResourceRefinedEnergonName:
  Id: 4936 
- GER: 
+ GER: "Ätherium"
  ENG: "Energon"    
  UKR: "Енергон"
 ExoticResourceRefinedNanoName:
  Id: 4937 
- GER: 
+ GER: "Nano"
  ENG: "Nano"    
  UKR: "Нано"
 ExoticResourceRefinedAetheriumName:
  Id: 4938 
- GER: 
+ GER: "Ätherium"
  ENG: "Aetherium"     
  UKR: "Етеріум"
 ExoticResourceAetheriumName:
  Id: 4939 
- GER: 
+ GER: "Ätherium Gas"
  ENG: "Aetherium Gas"    
  UKR: "Етеріумний газ"
 ExoticResourceAetheriumDesc:
  Id: 4940 
- GER: 
+ GER: "Veredeltes Ätherium kann die Warpgeschwindigkeit um bis zu 100 % erhöhen."
  ENG: "Refined Aetherium can increase Warp Speeds by up to 100%."          
  UKR: "Очищений Етеріум може збільшити швидкість викривлення до 100%."
 ExoticResourceNanoGasName:
  Id: 4941 
- GER: 
+ GER: "Nano Gas"
  ENG: "Nano Gas"    
  UKR: "Нано газ"
 ExoticResourceNanoGasDesc:
  Id: 4942 
- GER: 
+ GER: "Raffiniertes Nanogas kann die Reparaturrate um bis zu 100% erhöhen."
  ENG: "Refined Nano Gas can increase Repair rate by up to 100%."         
  UKR: "Очищений Нано газ може збільшити швидкість ремонту до 100%."
 ExoticResourceEnergonName:
  Id: 4943 
- GER: 
+ GER: "Energon Gas"
  ENG: "Energon Gas"    
  UKR: "Енергон газ"
 ExoticResourceEnergonDesc:
  Id: 4944 
- GER: 
+ GER: "Raffiniertes Energon kann die Produktionsleistung um bis zu 25% steigern."
  ENG: "Refined Energon can increase Production output by up to 25%."        
  UKR: "Очищений Енергон може підвищити виробництво на 25%"
 ExoticResourceFortifumeName:
  Id: 4945 
- GER: 
+ GER: "Stahlgas"
  ENG: "Fortifume Gas"    
  UKR: "Фортіф'юм газ"
 ExoticResourceFortifumeDesc:
  Id: 4946 
- GER: 
+ GER: "Veredeltes Stahlgas kann den an Ihren Schiffsmodulen verursachten Schaden um bis zu 50% verringern. Die Schadensreduzierung wird angewendet, wenn das Modul tatsächlich getroffen wurde (das Projektil wurde nicht abgelenkt)."
  ENG: "Refined Fortifume can decrease damage dealt to your ship modules by up to 50%, the damage reduction is applied if the module was actually hit (projectile was not deflected)."       
  UKR: "Покращений Фортіф'юм може зменшити шкоду, що наноситься вашим корабельним модулям на 50%, зменшення шкоди застосовується, якщо модуль був дійсно влучений (снаряд не був відхилений)."
 ExoticResourceLuxariumName:
  Id: 4947 
- GER: 
+ GER: "Luxarium Gas"
  ENG: "Luxarium Gas"    
  UKR: "Лукзаріум газ"
 ExoticResourceLuxariumDesc:
  Id: 4948 
- GER: 
+ GER: "Das verfeinerte Luxarium kann die Rate der Credits, die Ihrem Imperium pro Runde hinzugefügt werden, um 50% erhöhen."
  ENG: "Refined Luxarium can increase the rate of Credits added to your empire per turn by 50%"      
  UKR: "Вишуканий Лукзаріум може збільшити кількість Кредитів, що додаються до вашої імперії за хід, на 50%."
 ColonistsCargName:
@@ -15484,833 +15484,833 @@ ColonistsCargName:
  UKR: "Колоністи"
 ProductionCargoDesc:
  Id: 4950 
- GER: 
+ GER: "Teile, Werkzeuge, Maschinen, Fertigteile und andere Gimmicks, die für die Infrastruktur der Galaxie von entscheidender Bedeutung sind."
  ENG: "Parts, tools, machinery, prefabs, and other widgets that are critical to the infrastructure of the galaxy."     
  UKR: "Деталі, інструменти, машини, збірні конструкції та інші штуки, які є критично важливими для інфраструктури галактики."
 FoodCargoDesc:
  Id: 4951 
- GER: 
+ GER: "Diese Lebensmittel werden so gelagert, dass sie praktisch unverderblich sind.  Es ist vielleicht nicht das schmackhafteste, aber es liefert alle grundlegenden Nährstoffe, die zum Überleben notwendig sind."
  ENG: "This food is stored in a manner that makes it essentially non-perishable. It may not be the most palatable, but it will provide all of the basic nutrition needed to survive."       
  UKR: "Ця їжа зберігається таким чином, що вона практично не псується. Можливо, вона не найсмачніша, але вона забезпечить вас усіма основними поживними речовинами, необхідними для виживання."
 ColonistsCargoDesc:
  Id: 4952 
- GER: 
+ GER: "Diese verzweifelten Seelen sind ordentlich verpackt und gestapelt in ihren Stasiskapseln für ihre lange Reise durch den Weltraum.  Da Personen in Stasis weder Nahrung, Bewegungsfreiheit noch andere lebenserhaltende Maßnahmen benötigen, ist dies die bevorzugte Reisemethode für preisbewusste Reisende.  Sie sind in jeder Hinsicht nur ein weiteres Stück Fracht und kein zusätzliches Maul zum Füttern.   Dies macht Stasis-Reisen sehr erschwinglich."
  ENG: "These desperate souls are neatly packed and stacked in their stasis pods for their long journey through space. Because individuals in stasis do not require sustenance, room to move about, or other life support, this is the preferred method of travel for the budget-minded traveler. They are, for all intents and purposes, just another piece of cargo rather than an additional mouth to feed.  This makes stasis travel very affordable."       
  UKR: "Ці зневірені душі акуратно упаковані і складені в стазисні капсули для довгої подорожі через космос. Оскільки люди в стазисі не потребують їжі, місця для пересування чи інших засобів життєзабезпечення, це найкращий спосіб подорожі для мандрівників з обмеженим бюджетом. Вони, за всіма ознаками, є просто ще одним вантажем, а не додатковим ротом, який потрібно годувати.  Це робить стазисні подорожі дуже доступними."
 ExoticResourcePulseFieldName:
  Id: 4953 
- GER: 
+ GER: "Pulsfeldgas"
  ENG: "Pulsefield Gas"    
  UKR: "Пульсфільд газ" 
 ExoticResourcePulseFieldDesc:
  Id: 4954 
- GER: 
+ GER: "Raffiniertes Pulsfeldgas kann die Wiederaufladung von Schiffs- und Planetenschilden um bis zu 50% steigern"
  ENG: "Refined Pulsefield Gas can enhance the recharge of ship and planetary shields by up to 50%"     
  UKR: "Очищений газ Пульсфільд може посилити перезарядку корабельних і планетарних щитів на 50%" 
 ProcessingUnitName:
  Id: 4955 
- GER: 
+ GER: "Verarbeitungseinheit"
  ENG: "Processing Unit"   
  UKR: "Блок переробки" 
 ProcessingUnitDesc:
  Id: 4956
- GER: 
+ GER: "Die Verarbeitungseinheit kann rohe exotische Ressourcen in raffinierte Produkte umwandeln, was dem gesamten Imperium Vorteile verschafft.  Es enthält auch einen Hangar für ein Bergbauschiff, das die Rohstoffe an die Verarbeitungseinheit liefert."
  ENG: "Processing Unit can transfer raw Exotic Resources to refined products which gives empire wide benefits. It also contains a hangar bay for a mining ship which delivers the raw resource to the processing unit."    
  UKR: "Переробний блок може переробляти сирі екзотичні ресурси на рафіновані продукти, що дає імперії широкі переваги. Він також містить ангар для гірничодобувного корабля, який доставляє сировину до переробного блоку."
 Trait_Research_Collaborators_Name: 
  Id: 4957
- GER: 
+ GER: "Forschungs Kollaborateure"
  ENG: "Research Collaborators"     
  UKR: "Наукові колеги" 
 Trait_Research_Collaborators_Desc: 
  Id: 4958
- GER: 
+ GER: "Ihre Wissenschaftler sind für ihren Wunsch bekannt, zusammenzuarbeiten und Forschungsergebnisse zu teilen.  15% Forschungsvorteil von jeder Allianz statt der normalen 10%."
  ENG: "Your Scientists are known for their desire to collaborate and share Research. 15% Research Benefit from each Alliance instead of the normal 10%."       
  UKR: "Ваші вчені відомі своїм бажанням співпрацювати та ділитися дослідженнями. 15% дослідницької вигоди від кожного Альянсу замість звичайних 10%." 
 Trait_Research_Adversaries_Name: 
  Id: 4959
- GER: 
+ GER: "Forschungsgegner"
  ENG: "Research Adversaries"
  UKR: "Наукові Суперники"
 Trait_Research_Adversaries_Desc: 
  Id: 4960
- GER: 
+ GER: "Ihre Wissenschaftler sind für ihr Ego bekannt, wenn sie mit Verbündeten zusammenarbeiten, was die Forschungsvorteile der Allianz beeinträchtigt.  5% Forschungsvorteil von jeder Allianz statt der normalen 10%."
  ENG: "Your Scientists are known for their ego when collaborating with allies, which disrupts alliance research benefits. 5% Research Benefit from each Alliance instead of the normal 10%."      
  UKR: "Ваші вчені відомі своїм егоїзмом під час співпраці з союзниками, що знижує користь від досліджень. 5% дослідницької вигоди від кожного альянсу замість звичайних 10%." 
 Tech_BuilderShipEfficiency:
  Id: 4961
- GER: 
+ GER: "Dank besserer Bauwerkzeuge können Bauschiffe ihre Baurate um 50 % steigern."
  ENG: "Better construction tools alow Builder ships to increase its build rate by 50%"     
  UKR: "Покращені будівельні інструменти дозволяють кораблям Builder збільшити швидкість будівництва на 50%."
 Trait_OrbitalAversion_Name:
  Id: 4962
- GER: 
+ GER: "Raumbasenhasser"
  ENG: "Orbital Aversion"    
  UKR: "Орбітальна аверсивність"
 Trait_OrbitalAversion_Desc:
  Id: 4963
- GER: 
+ GER: "Ihre Leute mögen keine stationären Weltraumstrukturen und glauben, dass sie den Himmel ihrer Kolonien verunreinigen, obwohl sie ihre Notwendigkeit anerkennen.  Ihre Konstrukteure bauen Orbitalstrukturen 50% langsamer."
  ENG: "Your people dislike stationary Space structures and believe they litter their colonies' skies although they do acknowledge their necessity . Their Constructors build orbital structures 50% slower."      
  UKR: "Ваші люди не люблять стаціонарні космічні споруди і вважають, що вони засмічують небо над їхніми колоніями, хоча й визнають їхню необхідність. Їхні конструктори будують орбітальні споруди на 50% повільніше."
 Trait_OrbitalConstructors_Name:
  Id: 4964
- GER: 
+ GER: "Raumbasenfan"
  ENG: "Orbital Builders"    
  UKR: "Орбітальні будівельники"
 Trait_OrbitalConstructors_Desc:
  Id: 4965
- GER: 
+ GER: "Raumbasenfans haben Freude daran, Weltraumstrukturen zu bauen.  Ihre Konstrukteure bauen Orbitalstrukturen 50% schneller."
  ENG: "Orbital Builders enjoy building Space structures. Their Constructors build orbital structures 50% faster."     
  UKR: "Орбітальним будівельникам подобається будувати космічні споруди. Їхні Конструктори будують орбітальні споруди на 50% швидше."
 TraitSalvagersName:
  Id: 4966
- GER: 
+ GER: "Schrottsammler"
  ENG: "Salvagers"   
  UKR: "Рятувальники"
 TraitSalvagersDesc:
  Id: 4967
- GER: 
+ GER: "Schrottsammler sammeln gerne Altmaterial und Upgrades.  Ihr Imperium erhält 1 Credit pro 20 Slots getöteter feindlicher Schiffe"
  ENG: "salvagers like to collect scrap matel and upgrades. Your empire will get 1 credit per 20 slots of enemy ships killed."       
  UKR: "Рятівники люблять збирати металобрухт і поліпшення. Ваша імперія отримає 1 кредит за кожні 20 слотів знищених ворожих кораблів."
 TraitCompensationName:
  Id: 4968
- GER: 
+ GER: "Hinterbliebenenrente"
  ENG: "Crew Compensation Plan"   
  UKR: "План компенсації екіпажу"
 TraitCompensationDesc:
  Id: 4969
- GER: 
+ GER: "Ihr Imperium entschädigt die Familien der Gefallenen mit 1 Credit pro 20 Schiffsfeldern, welche von Feinden zerstört wurden."
  ENG: "Your empire will compansate the families of battle casualties at a rate of 1 credit per 20 slots of ships killed by enemies."         
  UKR: "Ваша імперія виплатить компенсацію сім'ям загиблих у бою з розрахунку 1 кредит за 20 слотів кораблів, вбитих ворогами."
 TraitTerranHomeworldName:
  Id: 4970
- GER: 
+ GER: "Taranische Heimatwelt"
  ENG: "Terran Homeworld"   
  UKR: "Земна Homeworld"    
 TraitTerranHomeworldDesc:
  Id: 4971
- GER: 
+ GER: "Ihr Imperium beginnt in einer terranischen Heimatwelt und erhält +50% Fruchtbarkeit und maximale Bevölkerung für andere terranische Welten."
  ENG: "Your empire starts in a Terran homeworld and gets +50% Fertility and Max Population for other Terran worlds."      
  UKR: "Ваша імперія починається на рідній планеті землян і отримує +50% народжуваності і максимального населення для інших світів землян."
 TraitOceanicHomeworldName:
  Id: 4972
- GER: 
+ GER: "Ozeanische Heimatwelt"
  ENG: "Oceanic Homeworld"   
  UKR: "Океанічна батьківщина"
 TraitOceanicHomeworldDesc:
  Id: 4973
- GER: 
+ GER: "Ihr Imperium beginnt in einer ozeanischen Heimatwelt und erhält +50 % Fruchtbarkeit und maximale Bevölkerung für andere ozeanische Welten."
  ENG: "Your empire starts in an Oceanic homeworld and gets +50% Fertility and Max Population for other Oceanic worlds."      
  UKR: "Ваша імперія починається на океанічній батьківщині і отримує +50% народжуваності і максимального населення для інших океанічних світів."
 TraitSteppeHomeworldName:
  Id: 4974
- GER: 
+ GER: "Steppe Heimatwelt"
  ENG: "Steppe Homeworld"   
  UKR: "Степова батьківщина"
 TraitSteppeHomeworldDesc:
  Id: 4975
- GER: 
+ GER: "Ihr Imperium beginnt in einer Steppen-Heimatwelt und erhält +50% Fruchtbarkeit und maximale Bevölkerung für andere Steppenwelten."
  ENG: "Your empire starts in a Steppe homeworld and gets +50% Fertility and Max Population for other Steppe worlds."      
  UKR: "Ваша імперія починається на степовій батьківщині і отримує +50% народжуваності і максимального населення для інших степових світів."
 TraitTundraHomeworldName:
  Id: 4976
- GER: 
+ GER: "Tundra Hemiatwelt"
  ENG: "Tundra Homeworld"   
  UKR: "Тундрова батьківщина"
 TraitTundraHomeworldDesc:
  Id: 4977
- GER: 
+ GER: "Ihr Imperium beginnt in einer Tundra-Heimatwelt und erhält +50% Fruchtbarkeit und maximale Bevölkerung für andere Tundra-Welten."
  ENG: "Your empire starts in a Tuntra homeworld and gets +50% Fertility and Max Population for other Tundra worlds."      
  UKR: "Ваша імперія починається на рідній планеті Тундри і отримує +50% народжуваності і максимального населення для інших тундрових світів."
 TraitSwampHomeworldName:
  Id: 4978
- GER: 
+ GER: "Sumpf-Heimatwelt"
  ENG: "Swamp Homeworld"   
  UKR: "Болотна батьківщина"
 TraitSwampHomeworldDesc:
  Id: 4979
- GER: 
+ GER: "Ihr Imperium beginnt in einer Sumpf-Heimatwelt und erhält +50% Fruchtbarkeit und maximale Bevölkerung für andere Sumpfwelten."
  ENG: "Your empire starts in a Swamp homeworld and gets +50% Fertility and Max Population for other Swamp worlds."      
  UKR: "Ваша імперія починається на рідній планеті боліт і отримує +50% родючості та максимальну кількість населення для інших болотних світів."
 TraitDesertHomeworldName:
  Id: 4980
- GER: 
+ GER: "Wüsten Heimatwelt"
  ENG: "Desert Homeworld"   
  UKR: "Пустельна батьківщина"
 TraitDesertHomeworldDesc:
  Id: 4981
- GER: 
+ GER: "Ihr Imperium beginnt in einer Wüsten-Heimatwelt und erhält +50 % Fruchtbarkeit und maximale Bevölkerung für andere Wüstenwelten."
  ENG: "Your empire starts in a Desert homeworld and gets +50% Fertility and Max Population for other Desert worlds."      
  UKR: "Ваша імперія починається на пустельній планеті і отримує +50% народжуваності і максимального населення для інших пустельних світів."
 TraitIceHomeworldName:
  Id: 4982
- GER: 
+ GER: "Eis Heimatwelt"
  ENG: "Ice Homeworld"   
  UKR: "Крижана батьківщина"
 TraitIceHomeworldDesc:
  Id: 4983
- GER: 
+ GER: "Ihr Imperium beginnt in einer Eis-Heimatwelt und erhält +50 % Fruchtbarkeit und maximale Bevölkerung für andere Eis-Welten."
  ENG: "Your empire starts in an Ice homeworld and gets +50% Fertility and Max Population for other Ice worlds."      
  UKR: "Ваша імперія починається на крижаній батьківщині і отримує +50% народжуваності і максимального населення для інших крижаних світів."
 TraitExplorers_Name: 
  Id: 4984
- GER: 
+ GER: "Entdecker"
  ENG: "Explorers"
  UKR: "Дослідники"
 TraitExplorers_Desc:
  Id: 4985
- GER: 
+ GER: "Entdeckerrassen sind sehr neugierig und erkunden gerne ihre Umgebung.  Dadurch verdreifacht sich die erforderliche Mindesterkundungsdistanz zur Erkundung neuer Sonnensysteme und Planeten und Sie beginnen mit 2 zusätzlichen Scouts."
  ENG: "Explorer races are very curious and like exploring their surroundings. As a result, the minimum exploration distance required to explore new solar systems and planets is trippled and you start with 2 extra Scouts."
  UKR: "Раси дослідників дуже допитливі і люблять досліджувати навколишній світ. Як наслідок, мінімальна дослідницька відстань, необхідна для вивчення нових сонячних систем і планет, збільшується втричі, і ви починаєте з 2 додатковими скаутами."
 TraitAquaticName:
  Id: 4986
- GER: 
+ GER: "Aquatisch"
  ENG: "Aquatic"   
  UKR: "Водний"
 TraitAquaticDesc:
  Id: 4987
- GER: 
+ GER: "Diese Rasse bevorzugt die Fortpflanzung und das Leben im Wasser.  Es kann gut schwimmen und unter Wasser atmen.  Es beginnt mit Oceanic Homeworld und hat unterschiedliche Vorlieben für andere Planetentypen."
  ENG: "This Race prefers to reproduce and live in water. It can swim well and breath underwater. It starts with Oceanic Homeworld and has different preferences for other planet types."     
  UKR: "Ця раса воліє розмножуватися і жити у воді. Вона може добре плавати і дихати під водою. Вона починає з Океанічної Батьківщини і має різні уподобання щодо інших типів планет."
 ShipMaintenanceMultiplier:
  Id: 4988
- GER: 
+ GER: "Schiffswartungsfaktor"
  ENG: "Ship Maintenance Multiplier"
  RUS: "Модификатор технического обслуживания корабля"
  SPA: "Modificador de mantenimiento de barcos" 
  UKR: "Мультиплікатор технічного обслуговування суден"
 ResearchLabName:
  Id: 4989
- GER: 
+ GER: "Forschungslabor"
  ENG: "Research Lab"
  UKR: "Дослідницька лабораторія"
 ResearchLabDesc:
  Id: 4990
- GER: 
+ GER: "Dieses große Labor ist ein Fortschritt in unseren Forschungsanstrengungen zu Sternen und Planeten.  Es kann auf unseren Stationsrümpfen installiert werden."
  ENG: "This large Lab is a step forward in our Stars and Planets research efforts. It can be installed on our Station hulls." 
  UKR: "Ця велика лабораторія - крок вперед у наших дослідженнях зірок і планет. Вона може бути встановлена на корпусах наших станцій."
 ResearchArrayName:
  Id: 4991
- GER: 
+ GER: "Forschungsmodul"
  ENG: "Research Module"
  UKR: "Дослідницький модуль"
 ResearchArrayDesc:
  Id: 4992
- GER: 
+ GER: "Dieses kleine Labor kann unsere Forschungsbemühungen im Weltraum bei der Untersuchung von Sternen und einzigartigen Planetenzusammensetzungen erheblich verbessern."
  ENG: "This small Lab can greatly enhance our research efforts in Space, when studying Stars and unique planet compositions."
  UKR: "Ця невелика лабораторія може значно посилити наші дослідження в космосі, вивчаючи зірки та унікальні планетні композиції."
 OnSurface:
  Id: 4993
- GER: 
+ GER: "auf dem Boden"
  ENG: "on surface"
  RUS: "на поверхности"
  UKR: "на поверхні"
 InSpace:
  Id: 4994
- GER: 
+ GER: "im Weltall"
  ENG: "in space"
  RUS: "в космосе"
  UKR: "у просторі"
 OnSurfaceAndInSpace:
  Id: 4995
- GER: 
+ GER: "Boden und All"
  ENG: "on surface and in space"
  RUS: "на поверхности и в космосе"
  UKR: "на поверхні та в космосі"
 FoodConsumptionPerTurnFor:
  Id: 4996
- GER: 
+ GER: "Nahrungsverbrauch pro Runde für Truppen"
  ENG: "Food consumption per turn for Troops"
  RUS: "Еда за ход для войск"
  UKR: "Споживання їжі за хід для військ"
 ProductionConsumptionPerTurnFor:
  Id: 4997
- GER: 
+ GER: "Produktionsverbrauch pro Runde für Truppen"
  ENG: "Production consumption per turn for Troops"
  RUS: "Продукция за ход для войск"
  UKR: "Витрати виробництва за хід для військ"
 CreditsPerTurnForTroop:
  Id: 4998
- GER: 
+ GER: "Credits pro Spielzug für die Truppenwartung"
  ENG: "Credits per turn for Troop maintenance"
  RUS: "Кредиты за ход на содержание войск"
  UKR: "Кредити за хід на утримання війська"
 TroopMaint:
  Id: 4999
- GER: 
+ GER: "Truppen-Inst."
  ENG: "Troop Maint."
  RUS: "Содерж. войск"
  UKR: "Забезпечення військ."
 ForAShipToBe:
  Id: 5000
- GER: 
+ GER: "Damit ein Schiff warpfähig ist, muss es über einen Warpkern verfügen.  Warpkerne bieten eine warpbare Massenkapazität.  Wenn die Masse eines Schiffs kleiner oder gleich der verformbaren Masse eines Schiffs ist, kann es schneller als Licht reisen."
  ENG: "For a ship to be warp capable, it must have a Warp Core installed. Warp Cores provide a Warpable Mass Capacity. If a ship's mass is less than or equal to a ship's Warpable Mass, then it can achieve faster than light travel."
  RUS: "Чтобы корабль мог совершить варп-прыжок, на нем должно быть установлено Варп-ядро. Ядра деформации обеспечивают деформируемую массу. Если масса корабля меньше или равна деформируемой массе корабля, то он может двигаться быстрее света."
  SPA: "Para que una nave sea capaz del viaje supraluminal debe tener un nucleo de desformación instalado. Los nucleos de desformación proveen de masa desformable. Si la masa de una nave es igual o menor que la de su capacidad de desformación de masa podra viajar a velocidad supraluminal."
  UKR: "Для того, щоб корабель міг викривлятися, на ньому повинно бути встановлене викривлювальне ядро. Варп-ядра забезпечують здатність до викривлення маси. Якщо маса корабля менша або дорівнює його здатності до викривлення, то він може подорожувати швидше за світло."
 SmallWarpCore:
  Id: 5001
- GER: 
+ GER: "Kleiner Warpkern"
  ENG: "Small Warp Core"
  RUS: "Малое варп-ядро"
  SPA: "Nucleos de desformacion pequeños"
  UKR: "Мале варп-ядро"
 ThisWarpCoreIsSmall:
  Id: 5002
- GER: 
+ GER: "Dieser Warpkern ist klein und ineffizient, kann ein Schiff jedoch weiter und schneller antreiben als jedes herkömmliche Antriebssystem"
  ENG: "This warp core is small and inefficient but is capable of driving a ship farther and faster than any conventional propulsion system"
  RUS: "Это варп-ядро мало и неэффективно, но способно вести корабль дальше и быстрее, чем любая обычная силовая установка."
  SPA: "Este nucleo de desformacion es pequeño e ineficiente pero, puede llevar a la nave a velocidades mas altas y mas lejos que los metodos de propulsión convencionales. "
  UKR: "Це варп-ядро невелике і неефективне, але здатне рухати корабель далі і швидше, ніж будь-який звичайний двигун"
 PlasmaBomb:
  Id: 5003
- GER: 
+ GER: "Plasmabombe"
  ENG: "Plasma Bomb"
  RUS: "Плазменная бомба"
  SPA: "Bomba de plasma"
  UKR: "Плазмова бомба"
 ThisFighterbomberWeaponHasA:
  Id: 5004
- GER: 
+ GER: "Diese Jagdbomberwaffe hat für ihre Größe eine relativ große Wirkung.  Es verfügt über ein kleines Führungspaket, verlässt sich bei seiner Geschwindigkeit jedoch auf die Dynamik seines Mutterschiffs."
  ENG: "This fighter-bomber weapon has a relatively huge impact for its size. It has a small guidance package but relies on the momentum of its mothership for its speed. "
  RUS: "Этот истребитель-бомбардировщик имеет относительно большую пользу для своих размеров. У него есть небольшая система наведения, но его скорость зависит от движущей силы своего материнского корабля. "
  SPA: "Esta arma de caza-bombardero tiene un impacto relativamente alto para su tamañao. Posee un pequeño sistema de apuntado, pero depende de la velocidad de su nave madre para su momentum. "
  UKR: "Ця зброя винищувача-бомбардувальника має відносно великий вплив для свого розміру. Він має невелику систему наведення, але в швидкості покладається на імпульс свого материнського корабля."
 DisruptionBomb:
  Id: 5005
- GER: 
+ GER: "Disruptorbombe"
  ENG: "Disruption Bomb"
  RUS: "Деструктивная бомба"
  SPA: "Bomba de ruptura"
  UKR: "Бомба підриву"
 AnEnergybasedSpacebombThatIs:
  Id: 5006
- GER: 
+ GER: "Eine energiebasierte Weltraumbombe, die im Vergleich zu Schilden doppelt so effektiv ist"
  ENG: "An energy-based Space Bomb that is twice as effective versus shields "
  RUS: "Энергетическая космическая бомба в два раза эффективнее против щитов"
  SPA: "Una bomba basada en energia que es el doble de efectiva contra escudos. "
  UKR: "Енергетична космічна бомба, яка вдвічі ефективніша проти щитів"
 SpaceBombs:
  Id: 5007
- GER: 
+ GER: "Weltraumbombe"
  ENG: "Space Bombs"
  RUS: "Космические бомбы"
  SPA: "Bombas espaciales"
  UKR: "Космічні бомби"
 WithTheProperEquipmentSwarms:
  Id: 5008
- GER: 
+ GER: "Mit der richtigen Ausrüstung können Schwärme kleiner Schiffe selbst für die größten Schiffe eine Gefahr darstellen"
  ENG: "With the proper equipment, swarms of small vessels can be a danger to even the largest ships"
  RUS: "При надлежащем оборудовании скопления небольших судов могут представлять опасность даже для самых крупных кораблей."
  SPA: "Con el equipo adecuado, Enjambres de pequeñas naves pueden ser un peligro a considerar para incluso las naves mas grandes."
  UKR: "За наявності належного обладнання зграї малих суден можуть становити небезпеку навіть для найбільших кораблів"
 WarpDrive:
  Id: 5009
- GER: 
+ GER: "Sprungantrieb"
  ENG: "Warp Drive"
  RUS: "Варп-двигатель"
  SPA: "Motor de curvatura"
  UKR: "Варп-Драйв."
 MakingAnObjectWithMass:
  Id: 5010
- GER: 
+ GER: "Es ist im realen Raum nicht möglich, ein Masseobjekt schneller als mit Lichtgeschwindigkeit zu bewegen.  Ein Warp-Antrieb erreicht Überlichtgescwhindigkeit, indem er die Masse eines Schiffs in einer Subraumblase einschließt und sie so effektiv aus dem realen Raum entfernt, während der Antrieb eingeschaltet ist."
  ENG: "Making an object with mass travel faster than the speed of light is not possible in real space. A warp drive achieves FTL travel by encasing a ship's mass in a subspace bubble, effectively removing it from real space while the drive is engaged. "
  RUS: "Заставить объект с массой двигаться быстрее скорости света невозможно в реальном космосе. Варп-двигатель обеспечивает сверхсветовое перемещение, заключая массу корабля в подпространственный пузырь, эффективно удаляя его из реального космоса, пока двигатель включен. "
  SPA: "Hacer que un objeto con masa viaje a velocidades supraluminales (mas rapido que la luz) es imposible en el espacio real. Un motor a curvatura reviste a la masa de la nave en una burbuja subespacial, desvinculandola del espacio real mientras el motor este funcionando. "
  UKR: "Змусити об'єкт з масою рухатися швидше за швидкість світла неможливо в реальному просторі. Привід викривлення досягає надсвітлової швидкості, поміщаючи масу корабля в підпросторову бульбашку, ефективно видаляючи його з реального простору, поки привід задіяний."
 SubspaceTunneling:
  Id: 5011
- GER: 
+ GER: "Subraum Tunnel"
  ENG: "Subspace Tunneling"
  RUS: "Подпространс. туннелирование"
  SPA: "Tuneleo subespacial"
  UKR: "Підпросторове тунелювання"
 SubspaceTunnelingIsTheScience:
  Id: 5012
- GER: 
+ GER: "Subraum-Tunnel-Forschung wird zur Ermittlung der effizientesten Route zwischen zwei realen Raumpunkten im deutlich komplizierteren Netz des Subraums betrieben"
  ENG: "Subspace Tunneling is the science of identifying the most efficient route between two real space points in the decidedly more complicated web of subspace "
  RUS: "Подпространственное туннелирование - это наука определения наиболее эффективного маршрута между двумя реальными точками пространства в более сложной паутине подпространства."
  SPA: "El tuneleo subespacial es buscar la ruta mas eficiente entre dos puntos del espacio en la compleja red del espacio subespacial. "
  UKR: "Підпросторове тунелювання - це наука про визначення найефективнішого маршруту між двома точками реального простору в значно складнішій мережі підпростору"
 CoreIntegration:
  Id: 5013
- GER: 
+ GER: "Kernintegration"
  ENG: "Core Integration"
  RUS: "Интеграция ядра"
  SPA: "Integración nuclear"
  UKR: "Основна інтеграція"
 ByIntegratingNewAdvancesIn:
  Id: 5014
- GER: 
+ GER: "Durch die Integration neuer Fortschritte in den Bereichen Kühlung und Energieübertragung sind wir in der Lage, einen größeren und effizienteren Warpkern zu bauen, der für den Einsatz in Großkampfschiffen geeignet ist"
  ENG: "By integrating new advances in the fields of cooling and power transfer, we are able to build a larger and more efficient warp core suited for use in capital ships"
  RUS: "Интегрируя новые достижения в области охлаждения и передачи энергии, мы можем построить более крупный и эффективный варп-сердечник, подходящий для использования на крупных кораблях."
  SPA: "Utilizando los nuevos avances en termoregulación y transmición de energia, hemos sido capaces de crear nucleos de desformacion mas estables, apropiados para su uso en naves de tamaño capital."
  UKR: "Інтегруючи нові досягнення в галузі охолодження та передачі енергії, ми можемо створити більше та ефективніше варп-ядро, придатне для використання в капітальних кораблях."
 ManeuveringThruster:
  Id: 5015
- GER: 
+ GER: "Manövrierantrieb"
  ENG: "Maneuvering Thruster"
  RUS: "Маневровый двигатель"
  SPA: "Propulsor de maniobra"
  UKR: "Маневровий двигун"
 ABalancedEngineThatProvides:
  Id: 5016
- GER: 
+ GER: "Ein ausgewogener Antrieb, der enorme Manövrierfähigkeiten bietet"
  ENG: "A balanced engine that provides hugh maneuvering capabilities"
  RUS: "Сбалансированный двигатель, обеспечивающий приличную тягу и маневренность, а также варп для межсистемных перемещений."
  SPA: "Un motor bien balanceado, con un empuje decente y capacidades de maniobra, junto a un postcombustador para el entre estrellas."
  UKR: "Збалансований двигун, що забезпечує високу маневреність"
 RangeThruster:
  Id: 5017
- GER: 
+ GER: "Langstreckenantrieb"
  ENG: "Range Thruster"
  RUS: "Варп-ускоритель"
  SPA: "Propulsor Extensor"
  UKR: "Прискорювач дальності"
 ThisEngineHasOnlyTwo:
  Id: 5018
- GER: 
+ GER: "Dieser Motor hat nur zwei Zustände: Aus oder Vollgas.  Es eignet sich nicht als Manövriertriebwerk, ist aber das effizienteste Triebwerk für Unterlicht-Intersystemische Reisen"
  ENG: "This engine has only two states: off or full burn. It is not suitable as a maneuvering engine but is the most efficient engine for sublight inter-system travel"
  RUS: "У этого двигателя всего два состояния: выключен или полностью запущен. Он не подходит в качестве маневренного двигателя, но является наиболее эффективным двигателем для сверхсветовых межсистемных путешествий."
  SPA: "Este motor tiene dos estados, apagado o máxima potencia. no es apropiado para maniobrar, pero es el mas apto para el viaje supraluminal y el viaje entre estrellas."
  UKR: "Цей двигун має лише два стани: вимкнений або на повній потужності. Він не підходить для маневрування, але є найефективнішим двигуном для досвітлових міжсистемних переміщень"
 CombatThruster2:
  Id: 5019
- GER: 
+ GER: "Kampfantrieb"
  ENG: "Combat Thruster"
  RUS: "Боевые ускорители"
  SPA: "Propulsor de combate"
  UKR: "Бойовий двигун"
 ThisEngineProvidesExcellentCombat:
  Id: 5020
- GER: 
+ GER: "Dieses Triebwerk bietet hervorragende Kampfmanövrierfähigkeit und Schubkraft, verfügt jedoch über keine Nachbrennerfähigkeiten.  Es ist weniger effizient als andere Motoren"
  ENG: "This engine provides excellent combat maneuvering and thrusting but has no afterburner capabilities. It is less efficient than other engines"
  RUS: "Этот двигатель обеспечивает отличное боевое маневрирование и тягу, но не имеет возможности варпа. Он менее эффективен, чем другие двигатели"
  SPA: "Este motor provee excelente capacidad de maniobra y empuje pero no posee un postcombustador. Es menos eficiente que otros propulsores."
  UKR: "Цей двигун забезпечує відмінне бойове маневрування і тягу, але не має можливості форсажу. Він менш ефективний, ніж інші двигуни"
 AdvancedRocketry:
  Id: 5021
- GER: 
+ GER: "Verb. Raketentechnik"
  ENG: "Advanced Rocketry"
  RUS: "Продвинутая ракетная техника"
  SPA: "Coheteria avanazada"
  UKR: "Передова ракетна техніка"
 AdvancesInCoolingAndPropellant:
  Id: 5022
- GER: 
+ GER: "Fortschritte bei Kühl- und Treibstoffabgabemechanismen ermöglichen es uns, immer weiter in die Sterne vorzudringen."
  ENG: "Advances in cooling and propellant delivery mechanisms are allowing us to reach farther and farther into the stars."
  RUS: "Достижения в механизмах охлаждения и доставки топлива позволяют нам достигать все большего и большего расстояни между звездами"
  SPA: "Avances en el enfriamiento y los suministros de propelente nos estan permitiendo llegar cada vez mas lejos entre las estrellas."
  UKR: "Досягнення в галузі охолодження та механізмів доставки пального дозволяють нам досягати все далі і далі до зірок."
 SublightSpeedsAreIncreasedBy:
  Id: 5023
- GER: 
+ GER: "Die Geschwindigkeit des Unterlichts wird um 15% erhöht."
  ENG: "Sublight speeds are increased by 15%"
  RUS: "Субсветовая скорость увеличена на 15%"
  SPA: "Velocidades infraluminales aumentadas en un 15%"
  UKR: "Досвітлова швидкість збільшена на 15%."
 NuclearDrive:
  Id: 5024
- GER: 
+ GER: "Nuklearantrieb"
  ENG: "Nuclear Drive"
  RUS: "Ядерный двигатель"
  SPA: "Motores nucleares"
  UKR: "Ядерний двигун"
 WhileItMayNotSeem:
  Id: 5025
- GER: 
+ GER: "Auch wenn dies nicht ganz sicher erscheint, haben wir herausgefunden, dass wir hinter unseren Schiffen kleine nukleare Explosionen erzeugen und diese Energie einfangen können, um interstellare Ziele zu erreichen"
  ENG: "While it may not seem entirely safe to do so, we have discovered that we can create small nuclear explosions behind our ships and capture this energy to reach interstellar targets"
  RUS: "Хотя это может показаться не совсем безопасным, мы обнаружили, что можем создавать небольшие ядерные взрывы позади наших кораблей и использовать эту энергию для достижения межзвездных целей."
  SPA: "Mientras quizas no se vea complamente seguro, hemos descuvierto que podemos crear pequeñas explosiones detras de nuestras naves y capturar esa energía para alcanzar objetivos interestelares."
  UKR: "Хоча це може здатися не зовсім безпечним, ми виявили, що можемо створювати невеликі ядерні вибухи позаду наших кораблів і використовувати цю енергію для досягнення міжзоряних цілей"
 AfterburnerSpeedsAreIncreasedBy:
  Id: 5026
- GER: 
+ GER: "Die Geschwindigkeit des Nachbrenners wird um 25% erhöht."
  ENG: "Afterburner speeds are increased by 25%"
  RUS: "Скорость форсажной камеры увеличена на 25%"
  SPA: "Velocidades de los postcombustadores aumentada en un 25%"
  UKR: "Швидкість форсажу збільшена на 25%"
 ImpulseDrive:
  Id: 5027
- GER: 
+ GER: "Impulsantrieb"
  ENG: "Impulse Drive"
  RUS: "Импульсный двигатель"
  SPA: "Motores de impulso"
  UKR: "Імпульсний привід"
 TheTheoryForTheImpulse:
  Id: 5028
- GER: 
+ GER: "Die Theorie für den Impulsantrieb ähnelt der des Nuklearantriebs.  Der eigentliche Fortschritt liegt in unserer Fähigkeit, die Stärke der Explosionen zu kontrollieren, was eine allgemeinere Anwendung der Technologie ermöglicht"
  ENG: "The theory for the Impulse Drive is similar to the Nuclear Drive. The real advancement is in our ability to control the strength of the explosions, allowing a more general application of the technology"
  RUS: "Теория импульсного двигателя аналогична теории ядерного двигателя. Настоящий прогресс заключается в нашей способности контролировать силу взрывов, что позволяет более широко применять эту технологию."
  SPA: "La teoria para el motor de impulso es similar a la del motor nuclear. Nuestro real avance es nuestar habilidad para controlar la fuerza de las explociones, permitiendonos una aplicación mas general de la tecnología."
  UKR: "Теорія імпульсного приводу схожа на теорію ядерного приводу. Справжній прогрес полягає в нашій здатності контролювати силу вибухів, що дозволяє більш широке застосування технології"
 SublightSpeedsAreIncreasedBy2:
  Id: 5029
- GER: 
+ GER: "Die Geschwindigkeit des Unterlichts wird um 15% erhöht."
  ENG: "Sublight speeds are increased by 15%"
  RUS: "Субсветовая скорость увеличена на 15%"
  SPA: "Velocidades infraluminales aumentadas en un 15%"
  UKR: "Досвітлова швидкість збільшена на 15%."
 FrigateEngines:
  Id: 5030
- GER: 
+ GER: "Fregattenantrieb"
  ENG: "Frigate Engines"
  RUS: "Двигатели фрегата"
  SPA: "Motores de fragata"
  UKR: "Фрегатні двигуни"
 ThisNewestGenerationOfEngines:
  Id: 5031
- GER: 
+ GER: "Diese neueste Triebwerksgeneration bietet größere, leistungsstärkere und effizientere Unterlichttriebwerke"
  ENG: "This newest generation of engines provides larger, more powerful, and more efficient sublight thrusters"
  RUS: "Это новейшее поколение двигателей обеспечивает более крупные, более мощные и более эффективные субсветовые подруливающие устройства."
  SPA: "Esta nueva de generacion de motores nos proveen de mas grandes, mas potentes y mas eficientes propulsores infraluminales."
  UKR: "Це новітнє покоління двигунів забезпечує більші, потужніші та ефективніші досвітлові рушії"
 FrigateCombatThruster:
  Id: 5032
- GER: 
+ GER: "Fregatten Kampfantrieb"
  ENG: "Frigate Combat Thruster"
  RUS: "Боевой двигатель фрегата"
  SPA: "Propulsor de fragata de combate"
  UKR: "Бойовий двигун фрегату"
 ACombatThrusterFeaturingAn:
  Id: 5033
- GER: 
+ GER: "Ein Kampfantrieb mit einem verbesserten Schub-Leistungs-Verhältnis"
  ENG: "A combat thruster featuring an improved thrust to power ratio"
  RUS: "Боевой двигатель с улучшенным соотношением тяги к мощности."
  SPA: "Un propulsor de combate ofreciendo una mejor relacion potencia-peso."
  UKR: "Бойовий двигун з покращеним співвідношенням тяги до потужності"
 FrigateRangeThruster:
  Id: 5034
- GER: 
+ GER: "Fregatten Langstreckenantrieb"
  ENG: "Frigate Range Thruster"
  RUS: "Варп-ускоритель фрегата"
  SPA: "Propulsor extensor de fragata"
  UKR: "Фрегатний досвітловий прискорювач"
 AMorePowerfulAndEfficient:
  Id: 5035
- GER: 
+ GER: "Ein leistungsstärkerer und effizienterer Nachbrenner in Fregattengröße für Verbrennungen über große Entfernungen"
  ENG: "A more powerful and efficient frigate-sized afterburner meant for long-range burns"
  RUS: "Более мощный и эффективный форсажный аппарат, предназначенный для дальних полетов"
  SPA: "Un postcombustador del tamaño en relacion a una fragata, mas potente y eficiente diseñado para saltos de larga distancia. "
  UKR: "Більш потужне та ефективний прискорювач для фрегату, призначений для подорожей на двлекі відстані"
 FrigateManeuveringThruster:
  Id: 5036
- GER: 
+ GER: "Fregatten Manövrierantrieb"
  ENG: "Frigate Maneuvering Thruster"
  RUS: "Маневровый двигатель фрегата"
  SPA: "Propulsor de maniobra de fragata"
  UKR: "Маневрений двишуг фрегата"
 ABalancedAndEfficientFrigate:
  Id: 5037
- GER: 
+ GER: "Ein ausgewogener und effizienter Fregattenmotor"
  ENG: "A balanced and efficient frigate engine"
  RUS: "Сбалансированный и эффективный двигатель фрегата"
  SPA: "Un eficiente y balanceado propulsor de fragata."
  UKR: "Збалансований та ефективний фрегатний двигун"
 CruiserEngines:
  Id: 5038
- GER: 
+ GER: "Kreuzer Antrieb"
  ENG: "Cruiser Engines"
  RUS: "Крейсерские двигатели"
  SPA: "Motores de crusero"
  UKR: "Крейсерські двигуни"
 BiggerBetterAndMoreEfficient:
  Id: 5039
- GER: 
+ GER: "Diese Antriebe sind größer, besser und effizienter als frühere Konstruktionen und eignen sich für den Einsatz auf Schiffen der Kreuzerklasse"
  ENG: "Bigger, better, and more efficient than earlier designs, these engines are suitable for usage on cruiser class vessels"
  RUS: "Эти двигатели больше, лучше и эффективнее, чем предыдущие модели, и подходят для использования на судах крейсерского класса."
  SPA: "Mas grandes y mejores que los diseños anteriores, estos motores son aptos para naves de tamaño de crucero."
  UKR: "Більші, кращі та ефективніші, ніж попередні розробки, ці двигуни підходять для використання на суднах крейсерського класу"
 CruiserRangeThruster:
  Id: 5040
- GER: 
+ GER: "Kreuzer Langstreckenantrieb"
  ENG: "Cruiser Range Thruster"
  RUS: "Крейсерский варп-двигатель"
  SPA: "Propulsor extensor de crucero"
  UKR: "Підрулюючий пристрій для крейсерської дальності"
 ALargeAndEfficientCruiserclass:
  Id: 5041
- GER: 
+ GER: "Ein großer und effizienter Nachbrennermotor der Cruiser-Klasse für weitreichende Unterlichtverbrennungen"
  ENG: "A large and efficient cruiser-class afterburner engine for making long range sub-light burns"
  RUS: "Большой и эффективный варп-двигатель крейсерского класса для создания субсветовых полетов на большие расстояния"
  SPA: "Un postcombustador de crucero, mas grande y eficiente para realizar viajes de larga distancia infraluminales."
  UKR: "Великий та ефективний форсажний двигун крейсерського класу для здійснення дальніх польотів у досвітловому діапазоні"
 CruiserManueveringThruster:
  Id: 5042
- GER: 
+ GER: "Kreuzer Manövrierantrieb"
  ENG: "Cruiser Maneuvering Thruster"
  RUS: "Маневровый двигатель крейсера"
  SPA: "Propulsor de maniobra de crucero"
  UKR: "Крейсерський маневрений двигун"
 CruiserCombatThruster:
  Id: 5044
- GER: 
+ GER: "Kreuzer Kampfantrieb"
  ENG: "Cruiser Combat Thruster"
  RUS: "Боевой ускоритель крейсера"
  SPA: "Propulsor de combate de crucero"
  UKR: "Крейсерський бойовий двигун"
 AHighpoweredEngineDesignedTo:
  Id: 5045
- GER: 
+ GER: "Ein leistungsstarker Motor, der den Schiffen der Kreuzerklasse Kampfmanövrierfähigkeit verleiht"
  ENG: "A high-powered engine designed to provide combat maneuverability to cruiser-class vessels"
  RUS: "Мощный двигатель, обеспечивающий боевую маневренность судов крейсерского класса."
  SPA: "Un motor de alta potencia, diseñado para proveer de maniobrabilidad de combate a naves de tamaño de crucero."
  UKR: "Потужний двигун, призначений для забезпечення бойової маневреності кораблів крейсерського класу"
 TitanEngines:
  Id: 5046
- GER: 
+ GER: "Titan Antrieb"
  ENG: "Titan Engines"
  RUS: "Двигатели Титана"
  SPA: "Motores titánicos"
  UKR: "Титанові двигуни"
 ThePinnacleOfSublightEngine:
  Id: 5047
- GER: 
+ GER: "Diese Motoren stellen den Gipfel der Sublight-Motorentechnologie dar und sind für die größten Schiffe gedacht"
  ENG: "The pinnacle of sub-light engine technology, these engines are meant for the largest of ships"
  RUS: "Вершина технологии субсветовых двигателей, эти двигатели предназначены для самых больших кораблей."
  SPA: "El pináculo de la tecnología de motores infraluminales. Estos motores estan hechos para las naves mas grandes."
  UKR: "Вершина технології досвітлових двигунів, ці двигуни призначені для найбільших кораблів"
 TitanCombatThruster:
  Id: 5048
- GER: 
+ GER: "Titan Kampfantrieb"
  ENG: "Titan Combat Thruster"
  RUS: "Боевой ускоритель Титана"
  SPA: "Motores de combate titánicos"
  UKR: "Бойовий двигун Титану"
 AMonstrousAndPowerfulEngine:
  Id: 5049
- GER: 
+ GER: "Ein monströser und leistungsstarker Motor für unterleichte Kampfmanöver"
  ENG: "A monstrous and powerful engine for sub-light combat maneuvers"
  RUS: "Чудовищный и мощный двигатель для субсветовых боевых маневров."
  SPA: "Un monstruoso y poderoso motor para maniobras de combate infraluminales."
  UKR: "Жахливий і потужний двигун для надлегких бойових маневрів"
 TitanRangeThruster:
  Id: 5051
- GER: 
+ GER: "Titan Langstreckenantrieb"
  ENG: "Titan Range Thruster"
  RUS: "Варп-двигатель Титана"
  SPA: "Propulsores extensores titánicos"
  UKR: "Титановий досвітловий двигун"
 ATitanicAfterburnerForSublight:
  Id: 5052
- GER: 
+ GER: "Ein gigantischer Nachbrenner für Beschleunigung unter Licht"
  ENG: "A titanic afterburner for sub-light acceleration"
  RUS: "Титанический варп-прыжок для сверхсветового ускорения"
  SPA: "Un postcombustador titánico para la aceleracion infraluminal."
  UKR: "Титанічний двигун для досвітлового прискорення"
 TitanManeuveringThruster:
  Id: 5053
- GER: 
+ GER: "Titan Manövrierantrieb"
  ENG: "Titan Maneuvering Thruster"
  RUS: "Маневровый двигатель Титана"
  SPA: "Propulsor de maniobra titánico"
  UKR: "Маневрений двигун Титану"
 FrigateMount:
  Id: 5055
- GER: 
+ GER: "Fregatten Lafette"
  ENG: "Frigate Mount"
  RUS: "Фрегат"
  SPA: "Montura de fragata"
  UKR: "Фрегат-гора"
 WhenOurScientistsThoughtAbout:
  Id: 5056
- GER: 
+ GER: "Als unsere Wissenschaftler darüber nachdachten, wie man Weltraumbomben effektiver machen könnte, kam ihnen am besten der Bau einer noch größeren Bombe in den Sinn"
  ENG: "When our scientists thought about how to make Space Bombs more effective, the best they could come up with was to make a bigger bomb"
  RUS: "Когда наши ученые думали о том, как сделать космические бомбы более эффективными, лучшее, что они могли придумать, - это сделать бомбу побольше."
  SPA: "Cuando nuestros cienteficos pensaron en como hacer nuestras bombas espaciales mas efectivas, solo se les ocurrió hacer la bomba mas grande."
  UKR: "Коли наші вчені думали про те, як зробити космічні бомби більш ефективними, найкраще, що вони могли придумати, це зробити більшу бомбу"
 Moasb:
  Id: 5057
- GER: 
+ GER: "MAWAB"
  ENG: "MOASB"
  RUS: "MOASB"
  SPA: "MOABS"
  UKR: "MOASB"
 ThisWeaponIsAffectionatelyCalled:
  Id: 5058
- GER: 
+ GER: "Diese Waffe wird aufgrund ihrer enormen Explosionswirkung liebevoll die Mutter Aller Welt-All-Bomben genannt"
  ENG: "This weapon is affectionately called the Mother of All Space Bombs due to its huge blast effect"
  RUS: "Это оружие ласково называют Матерью всех космических бомб из-за его огромного взрывного эффекта."
  SPA: "Esta arma nombrada afectivamente la Madre de todas las bombas espaciales(Mother of All Space Bombs) Debido a su gigantesca onda explosiva."
  UKR: "Цю зброю ласкаво називають Матір'ю всіх космічних бомб через її величезний вибуховий ефект"
 PdFocus:
  Id: 5059
- GER: 
+ GER: "PV Fokus"
  ENG: "PD Focus"
  RUS: "ТЗ Focus"
  SPA: "Enfoque en defensa puntual"
  UKR: "Сфокусувати зенітні комплекси"
 TheNumberOfExplosiveThreats:
  Id: 5060
- GER: 
+ GER: "Die Zahl der explosiven Bedrohungen in der Galaxie erfordert weitere Investitionen in Punktverteidigungswaffen"
  ENG: "The number of explosive threats in the galaxy mandates further investment in point defense weaponry"
  RUS: "Количество ракетных угроз в галактике требует дальнейших инвестиций в точечную оборону"
  SPA: "El numero de amenazas explosivas en la galaxia nos obliga a un mayor desarrollo en armas de defensa puntual."
  UKR: "Кількість вибухонебезпечних загроз у галактиці вимагає подальших інвестицій у засоби точкової оборони"
 RapidLoading:
  Id: 5061
- GER: 
+ GER: "Schnelles Nachladen"
  ENG: "Rapid Loading"
  RUS: "Быстрая загрузка"
  SPA: "Recarga rápida"
  UKR: "Швидке завантаження"
 AllPointDefenseWeaponsReceive:
  Id: 5062
- GER: 
+ GER: "Alle Punktverteidigungswaffen erhalten einen Bonus von 25% auf ihre Feuerrate"
  ENG: "All point defense weapons receive a 25% bonus to their rate of fire"
  RUS: "Все оружия точечной защиты получают 25% бонус к их скорострельности"
  SPA: "Todas las armas de defensa puntual reciben un bono del 25% a su candencia de tiro."
  UKR: "Вся зброя точкового захисту отримує 25% бонус до швидкості стрільби"
 AllPointDefenseWeaponsReceive2:
  Id: 5063
- GER: 
+ GER: "Alle Punktverteidigungswaffen erhalten einen Bonus von 25% auf die Geschwindigkeit ihrer Projektile"
  ENG: "All point defense weapons receive a 25% bonus to the speed of their projectiles"
  RUS: "Все оружие точечной защиты получает 25% бонус к скорости снарядов."
  SPA: "Todas las armas de defensa puntual reciben un bono del 25% a la velocidad de sus proyectiles"
  UKR: "Вся точкова зброя отримує 25% бонус до швидкості своїх снарядів"
 AllPointDefenseWeaponsReceive3:
  Id: 5064
- GER: 
+ GER: "Alle Punktverteidigungswaffen erhalten einen Bonus von 25% auf ihre Reichweite"
  ENG: "All point defense weapons receive a 25% bonus to their range"
  RUS: "Все оружия точечной защиты получают 25% бонус к их дальности."
  SPA: "Todas las armas de defensa puntual reciben un bono del 25% a su rango efectivo."
  UKR: "Вся зброя точкового захисту отримує 25% бонус до дальності стрільби"
 CapitalWarpCore:
  Id: 5065
- GER: 
+ GER: "Großkampfschiff Warpkern"
  ENG: "Capital Warp Core"
  RUS: "Варп-ядро Столицы"
  SPA: "Nucleo de desformacion titanico"
  UKR: "Ядро викривлення Капіталу"
 TheBeatingHeartOfA:
  Id: 5066
- GER: 
+ GER: "Dieser Warpkern ist das schlagende Herz eines Großkampfschiffs und massiv, leistungsstark und effizient"
  ENG: "The beating heart of a capital ship, this warp core is massive, powerful, and efficient"
  RUS: "Это бьющееся сердце крупного корабля, массивное, мощное и эффективное ядро варпа."
  SPA: "El corazon de toda nave capital, este nucleo de desformación es masivo, potente y eficiente."
  UKR: "Серце капітального корабля, що б'ється, це ядро викривлення - масивне, потужне та ефективне."
 AdvancedContainment:
  Id: 5067
- GER: 
+ GER: "Verb. Eindämmung"
  ENG: "Advanced Containment"
  RUS: "Расширенное сдерживание"
  SPA: "Contención avanzada"
  UKR: "Удосконалене утримання"
 BuildingLargeReactorsThatAre:
  Id: 5068
- GER: 
+ GER: "Beim Bau großer Reaktoren, die für die Raumfahrt geeignet sind, geht es in Wirklichkeit darum, die radioaktive und thermische Freisetzung des Reaktors einzudämmen, um die Schiffsbesatzung und die Systeme zu schützen"
  ENG: "Building large reactors that are fit for space travel is really a matter of containing the radioactive and thermal output of the reactor to protect ship crew and systems"
  RUS: "Создание больших реакторов, пригодных для космических путешествий, на самом деле является вопросом сдерживания радиоактивной и тепловой мощности реактора для защиты экипажа и систем корабля."
  SPA: "Construit reactores lo suficientemente grandes para usarse en el viaje espacial es realmente el poder contener las fugas radioactivas y termicas de estos para proteger a la tripulación y los sistemas de la nave."
  UKR: "Створення великих реакторів, придатних для космічних подорожей, насправді є питанням стримування радіоактивної та теплової потужності реактора для захисту екіпажу та систем корабля."
 ReactorFuelCell:
  Id: 5069
- GER: 
+ GER: "Reaktor-Brennstoffzelle"
  ENG: "Reactor Fuel Cell"
  RUS: "Топливный элемент реактора"
  SPA: "Célula de energía reactiva"
  UKR: "Паливний елемент реактора"
 ThisCellStoresReactorFuel:
  Id: 5070
- GER: 
+ GER: "Diese Zelle speichert Reaktorbrennstoff, der für den Einsatz in Warp-Reaktoren und Nachbrennermotoren geeignet ist"
  ENG: "This cell stores reactor fuel suitable for use in Warp Reactor and afterburner engines"
  RUS: "В этой ячейке хранится реакторное топливо, подходящее для использования в варп-реакторах и субсветовых двигателях."
  SPA: "esta célula almacena combustible reactivle apta para el uso en los nucleos de desformacion y los motores a postcombistión."
  UKR: "Ця комірка зберігає реакторне паливо, придатне для використання у реакторі-викривлення та досвітлових двигунах "
 PowerCapacitor:
  Id: 5071
- GER: 
+ GER: "Leistungskondensator"
  ENG: "Power Capacitor"
  RUS: "Конденсатор мощности"
  SPA: "Capacitador."
  UKR: "Конденсатор живлення"
 ThisDeviceStoresPowerWhich:
  Id: 5072
- GER: 
+ GER: "Dieses Gerät speichert Energie, die für den Betrieb vieler Schiffssysteme erforderlich ist, darunter Schilde, Waffen und bestimmte Arten von Motoren"
  ENG: "This device stores power, which is required for the operation of many ship systems including shields, weapons, and certain types of engines"
  RUS: "В этом устройстве хранится энергия, необходимая для работы многих систем корабля, включая щиты, оружие и определенные типы двигателей."
  SPA: "Este dispositivo almacena energía, la cual es necesaria para la operacion de muchos sistemas de las naves, incluidos los escudos, armas y algunos tipos de motores."
  UKR: "Цей пристрій накопичує енергію, яка необхідна для роботи багатьох систем корабля, включаючи щити, зброю та певні типи двигунів."
 FissionableMaterial:
  Id: 5073
- GER: 
+ GER: "Spaltbares Material"
  ENG: "Fissionable Material"
  RUS: "Расщепляющийся материал"
  SPA: "Material fisionable"
  UKR: "Матеріал, що розщеплюється"
 TheseRareMetalsAreRaw:
  Id: 5074
- GER: 
+ GER: "Diese seltenen Metalle sind Rohstoffe, die sich für die Weiterverarbeitung zu nutzbarem Reaktorbrennstoff eignen.  Zur Verarbeitung dieser Materialien ist eine Kraftstoffraffinerie erforderlich."
  ENG: "These rare metals are raw materials suitable for refinement into usable reactor fuel. A fuel refinery is required to process these materials."
  RUS: "Эти редкие металлы являются сырьем, подходящим для переработки в пригодное для использования реакторное топливо. Для переработки этих материалов требуется топливный завод."
  SPA: "Estos metales raros son realmente metales sin refinar aptos para ser refinados en combustile de reaccion. una refineria es nesesaria para procesar estos materiales."
  UKR: "Ці рідкісні метали є сировиною, придатною для переробки на придатне для використання реакторне паливо. Для переробки цих матеріалів потрібен паливний завод."
 FuelRefinery:
  Id: 5075
- GER: 
+ GER: "Kraftstoffraffinerie"
  ENG: "Fuel Refinery"
  RUS: "Топливный НПЗ"
  SPA: "Refineria de combustible"
  UKR: "Нафтопереробний завод"
 ThisBuildingConvertsRawFissionable:
  Id: 5076
- GER: 
+ GER: "Dieses Gebäude wandelt rohes spaltbares Material in nutzbaren Reaktorbrennstoff um und erzeugt in jeder Runde 100 Einheiten Reaktorbrennstoff pro verfügbarem spaltbarem Material"
  ENG: "This building converts raw Fissionable Materials into usable Reactor Fuel, creating 100 reactor fuel per 1 Fissionable Material available each turn"
  RUS: "Это здание превращает сырые Делящиеся материалы в пригодное для использования реакторное топливо, создавая 100 реакторного топлива на 1 делящийся материал, доступный каждый ход."
  SPA: "Esta estructura convierte los materiales fisionables sin refinar en combustible de reactor, creando 100 unidades de combustible de reactor por 1 unidad de material fisionable sin refinar cada turno."
  UKR: "Ця будівля перетворює сирі матеріали, що розщеплюються, на придатне для використання реакторне паливо, створюючи 100 реакторного палива на 1 доступний матеріал, що розщеплюється, за кожен хід"
 ConvertsFissionablesToFuel:
  Id: 5077
- GER: 
+ GER: "Wandelt spaltbare Stoffe in Treibstoff um"
  ENG: "Converts Fissionables to Fuel"
  RUS: "Преобразует расщепляющееся топливо в топливо"
  SPA: "Convierte fisionables en combustible"
  UKR: "Перетворює розщеплювані матеріали на паливо"
 FissionablesMine:
  Id: 5078
- GER: 
+ GER: "Spaltstoff Bergwerk"
  ENG: "Fissionables Mine"
  RUS: "Делящаяся шахта"
  SPA: "Mina de fisionables"
  UKR: "Шахта з виробництва розщеплюваних матеріалів"
 AMineThatExtractsRaw:
  Id: 5079
- GER: 
+ GER: "Eine Mine, die mit spaltbaren Materialien von einem Planeten fördert.  Je mehr spaltbare Ressourcen ein Planet hat, desto schneller erfolgt die Gewinnung"
  ENG: "A mine that extracts raw Fissionable Materials from a planet with the Fissionable Materials Resource. The more Fissionable Materials resources a planet has, the faster the extraction"
  RUS: "Шахта, которая добывает сырые делящиеся материалы с планеты с ресурсами делящихся материалов. Чем больше у планеты ресурсов расщепляющихся материалов, тем быстрее будет добыча."
  SPA: "Una mina que extrae materiales fisionables sin refinar de un planeta con materiales fisionables, entre mas materiables fisionables tiene un planeta, mas materiales fisionables produce."
  UKR: "Шахта, яка видобуває сировину для розщеплення з планети з ресурсом розщеплюваних матеріалів. Чим більше ресурсів розщеплюваних матеріалів на планеті, тим швидше відбувається видобуток"
 ExtractsRawFissionables:
  Id: 5080
- GER: 
+ GER: "Extrahiert spaltbares Material"
  ENG: "Extracts Raw Fissionables"
  RUS: "Извлекает сырые делящиеся вещества"
  SPA: "Extrae fisionables sin refinar"
  UKR: "Екстракція сирих матеріалів, що розщеплюються"
 IndustrializedHomeworld:
  Id: 5081
- GER: 
+ GER: "Industrialisierte Heimatwelt"
  ENG: "Industrialized Homeworld"
  RUS: "Индустриальный родной мир"
  SPA: "Planeta natal industrializado"
  UKR: "Індустріальна рідна планета"
 TreesWhoNeedsTreesWhat:
  Id: 5082
- GER: 
+ GER: "Bäume?  Wer braucht Bäume.  Was Ihre Leute brauchten, war Platz für mehr Fabriken.  +1 Heimatweltreichtum, -1 Heimatweltfruchtbarkeit"
  ENG: "Trees? Who needs trees. What your people needed was room for more factories. +1 homeworld richness, -1 homeworld fertility"
  RUS: "Деревья? Кому нужны деревья. Вашим людям нужно было место для новых заводов. +1 богатство родного мира, -1 плодородие родного мира"
  SPA: "¿Árboles? ¿Quien nesesita arboles?. Lo que tu gente nesesita es mas espacio para fabricas. +1 a la riqueza del planeta natal, -1 a la fertilidad del planeta natal."
  UKR: "Дерева? Кому потрібні дерева. Що потрібно вашому народу, так це місце для нових фабрик. +1 багатство рідної планети, -1 родючість рідної планети"
 BB_Tech_Ascension_Name:
  Id: 5083
- GER: 
+ GER: "Aufstieg"
  ENG: "Ascension"
  RUS: "Вознесение"
  SPA: "Ascensión"
  UKR: "Вознесіння"
 BB_Tech_Ascension_Desc:
  Id: 5084
- GER: 
+ GER: "Der Datenstrom vom Mutterschiff der Remnants enthält den Schlüssel zu ihrem Geheimnis.  Wir müssen es sofort studieren, bevor wir alle zerstört werden!"
  ENG: "The data-stream from the Remnant Mothership holds the key to the Mystery of the Remnant. We need to study it immediately, before we're all destroyed!"
  RUS: "В потоке данных с корабля-Предтечь хранится ключ к Тайне Предтечей. Нам нужно изучить его немедленно, пока мы все не уничтожены!"
  SPA: "Este flujo de datos de la nave nodriza remanente contiene la llave al misterio de los remanentes. nesesitamos estudiarla inmediatamente. ¡Antes de que seamos todos destruidos!"
@@ -16351,28 +16351,28 @@ SensorRange:
  UKR: "діапазон датчика"
 SubspaceProjectionArea:
  Id: 6001
- GER: 
+ GER: "Subraum-Projektionsfläche"
  ENG: "subspace projection area"
  RUS: "область проекции подпространства"
  SPA: "Area de proyeccion subespacial"
  UKR: "область проекції підпростору"
 GravityWellRadius:
  Id: 6002
- GER: 
+ GER: "Schwerkraftfeldradius"
  ENG: "Gravity Well Radius"
  RUS: "Радиус гравитационной скважины"
  SPA: "Radio de los pozos gravitatorios"
  UKR: "Радіус гравітаційної свердловини"
 DefinesTheRadiusOfPlanetary:
  Id: 6003
- GER: 
+ GER: "Definiert den Radius der Anziehungskraft eines Planeten.  Größere Werte bedeuten, dass Schiffe weiter von einem Planetenkörper entfernt sein müssen, um springen zu können, und umgekehrt."
  ENG: "Defines the radius of planetary gravity wells. Larger values means ships need to be further away from a planetary body to engage FTL, et vice versa."
  RUS: "Определяет радиус планетарной гравитационной скважины. Большие значения означают, что корабли должны быть дальше от планетарного тела, чтобы вступить в бой на сверхсветовой скорости, и наоборот."
  SPA: "Define el radio de los pozos gravitatorios planearios. Valores altos significaras que las naves nesesitaran alejarce de un cuerpo planetario para anclar los saltos supraminales y viceversa."
  UKR: "Визначає радіус планетарних гравітаційних колодязів. Більші значення означають, що кораблі повинні бути далі від планети, щоб перейти на надзвукову швидкість, і навпаки."
 Ecm2:
  Id: 6004
- GER: "ECM"
+ GER: "EGM"
  ENG: "ECM"
  RUS: "Электронные контрмеры"
  SPA: "Contramedidas electrónicas"
@@ -16386,7 +16386,7 @@ EcmResist:
  UKR: "Опір Радіоелектронній протидії"
 BeamDur:
  Id: 6006
- GER: 
+ GER: "Strahldauer"
  ENG: "Beam Dur"
  RUS: "Длит.луча"
  SPA: "Beam Dur"
@@ -16428,532 +16428,532 @@ PowerWarp:
  UKR: "Енергія у викривленні"
 RepairRateModifier:
  Id: 6012
- GER: 
+ GER: "Reparaturrate Multiplikator"
  ENG: "Repair Rate Modifier"
  RUS: "Модификатор скорости ремонта"
  SPA: "Modificador en el ratio de reparación"
  UKR: "Модифікатор швидкості ремонту"
 RepairRate:
  Id: 6013
- GER: 
+ GER: "Reparaturrate"
  ENG: "Repair Rate"
  RUS: "Скорость ремонта"
  SPA: "Ratio de reparación"
  UKR: "Швидкість ремонту"
 ReactorPowerModifier:
  Id: 6014
- GER: 
+ GER: "Reaktor Energie Multipl."
  ENG: "Reactor Power Modifier"
  RUS: "Модификатор мощности реактора"
  SPA: "Modificador en el poder del (los) reactor(es)"
  UKR: "Модифікатор потужності реактора"
 HullBonus:
  Id: 6015
- GER: 
+ GER: "Hüllen Bonus:"
  ENG: "Hull Bonus: "
  RUS: "Бонус корпуса: "
  SPA: "Bonificación al casco: "
  UKR: "Бонус корпуса: "
 ArmorProtection:
  Id: 6016
- GER: 
+ GER: "Panzerplatten"
  ENG: "Armor Protection"
  RUS: "Сопротивление брони"
  SPA: "Proteccion al blindaje"
  UKR: "Бронезахист"
 SensorRange2:
  Id: 6017
- GER: 
+ GER: "Sensor Reichweite"
  ENG: "Sensor Range"
  RUS: "Дальность сенсоров"
  SPA: "Rango del sensor"
  UKR: "Діапазон сенсорів"
 MaxSpeed:
  Id: 6018
- GER: 
+ GER: "V-Max"
  ENG: "Max Speed"
  RUS: "Максимальная скорость"
  SPA: "Velocidad máxima"
  UKR: "Максимальна швидкість"
 CargoSpace2:
  Id: 6019
- GER: 
+ GER: "Frachtraum"
  ENG: "Cargo Space"
  RUS: "Грузовое пространство"
  SPA: "Capacidad de carga"
  UKR: "Вантажний простір"
 FireRate:
  Id: 6020
- GER: 
+ GER: "Feuerrate"
  ENG: "Fire Rate"
  RUS: "Скорострельность"
  SPA: "Candencia de tiro"
  UKR: "Швидкість вогню"
 CostReduction:
  Id: 6021
- GER: 
+ GER: "Kostenermäßigung"
  ENG: "Cost Reduction"
  RUS: "Снижение цены"
  SPA: "Reduccion del coste"
  UKR: "Зниження витрат"
 PreventAiFederations:
  Id: 6022
- GER: 
+ GER: "Verhindere KI-Föderationen"
  ENG: "Prevent AI Federations"
  RUS: "Предотвратить создание федераций ИИ"
  SPA: "Prevenir federaciones de la IA"
  UKR: "Запобігання федераціям штучного інтелекту"
 Level:
  Id: 6023
- GER: 
+ GER: "Stufe"
  ENG: "Level"
  RUS: "Уровень"
  SPA: "Nivel"
  UKR: "Рівень"
 Recovering:
  Id: 6024
- GER: 
+ GER: "regeneriere"
  ENG: "Recovering"
  RUS: "Восстановление"
  SPA: "Recuperando"
  UKR: "Відновлення"
 HasSuccessfullyCompleteTrainingntheAgents:
  Id: 6025
- GER: 
+ GER: "hat die Schulung erfolgreich abgeschlossen\nDie Leistung des Agenten hat die Erwartungen übertroffen."
  ENG: "has successfully complete training\nThe Agent's performance exceeded expectations."
  RUS: "успешно прошел обучение\nРабота Агента превзошла ожидания."
  SPA: "Ha completado satisfactoriamente el entrenamiento\nEl rendimiento del agente superó las expéctativas."
  UKR: "успішно завершив навчання\nРезультати роботи агента перевершили очікування."
 HasSuccessfullyCompletedTrainingnandHas:
  Id: 6026
- GER: 
+ GER: "hat die Ausbildung erfolgreich abgeschlossen\nund wertvolles Wissen erworben."
  ENG: "has successfully completed training\nand has gained valuable knowledge."
  RUS: "успешно прошел обучение\nи получил ценные знания."
  SPA: "Ha completado satisfactoriamente el entrenamiento\nY a ganado conocimientos de valor."
  UKR: "успішно пройшов навчання\nта отримав цінні знання."
 WasInjuredInATraining:
  Id: 6027
- GER: 
+ GER: "wurde bei einem Trainingsunfall verletzt."
  ENG: "was injured in a training accident."
  RUS: "получил травму в результате несчастного случая на тренировке."
  SPA: "fue herido en un accidente de entrnamiento."
  UKR: "був травмований під час нещасного випадку на тренуванні."
 WasKilledInATraining:
  Id: 6028
- GER: 
+ GER: "kam bei einem Trainingsunfall ums Leben."
  ENG: "was killed in a training accident."
  RUS: "погиб в результате несчастного случая на тренировке."
  SPA: "Falleció en un ejercicio de entenamiento."
  UKR: "загинув під час нещасного випадку на тренуванні."
 HasCompletedTrainingButFailed:
  Id: 6029
- GER: 
+ GER: "hat die Ausbildung abgeschlossen, aber nichts Nützliches gelernt."
  ENG: "has completed training, but failed to learn anything useful."
  RUS: "прошел обучение, но ничего полезного не выучил."
  SPA: "A completado el entrenamiento, pero falló en aprender algo útil."
  UKR: "пройшов навчання, але не дізнався нічого корисного."
 SuccessfullyInfiltratedAColony:
  Id: 6030
- GER: 
+ GER: "erfolgreich eine Kolonie infiltriert:"
  ENG: "successfully infiltrated a colony:"
  RUS: "успешно проник в колонию:"
  SPA: "Se infiltro en una colonia satisfactoriamente:"
  UKR: "успішно проникли в колонію:"
 NtheAgentWasNotDetected:
  Id: 6031
- GER: 
+ GER: "\nDer Agent wurde nicht erkannt."
  ENG: "\nThe Agent was not detected."
  RUS: "\nАгент не обнаружен."
  SPA: "\nEl agente no fue detectado."
  UKR: "\nАгента не виявлено."
 WasUnableToInfiltrateA:
  Id: 6032
- GER: 
+ GER: "war nicht in der Lage, eine Kolonie zu infiltrieren\nund wurde verwundet, als er einer Gefangennahme entging"
  ENG: "was unable to infiltrate a colony\nand was wounded avoiding capture"
  RUS: "не смог проникнуть в колонию\nи был ранен, избежав захвата"
  SPA: "No logró infiltrarse en una colonia\ny fue herido evitando su captura."
  UKR: "не зміг проникнути в колонію\nі був поранений, уникаючи полону"
 AnEnemyAgentWasFoiled:
  Id: 6033
- GER: 
+ GER: "Ein feindlicher Agent wurde beim Versuch, eine Kolonie zu infiltrieren, vereitelt\nDer Agent wurde von geschickt"
  ENG: "An enemy Agent was foiled trying to infiltrate a colony\nThe Agent was sent by"
  RUS: "Вражескому агенту помешали проникнуть в колонию.\nАгент был отправлен"
  SPA: "Se logró fallar los planes de un agente enemigo, se intentó infiltrar en una colonia\n el agente fue enviado desde"
  UKR: "Затримано ворожого агента, який намагався проникнути в колонію\nАгент був засланий"
 WasKilledTryingToInfiltrate:
  Id: 6034
- GER: 
+ GER: "wurde beim Versuch, in eine Kolonie einzudringen, getötet."
  ENG: "was killed trying to infiltrate a colony."
  RUS: "был убит при попытке проникнуть в колонию."
  SPA: "fue asesinado intentado infiltrarse en una colonia."
  UKR: "був убитий при спробі проникнути в колонію."
 AnEnemyAgentWasKilled:
  Id: 6035
- GER: 
+ GER: "Ein feindlicher Agent wurde getötet, als er versuchte, eine unserer Kolonien zu infiltrieren.\nDer Agent wurde von geschickt"
  ENG: "An enemy Agent was killed trying to infiltrate one of our colonies\nThe Agent was sent by"
  RUS: "Вражеский агент был убит при попытке проникнуть в одну из наших колоний.\nАгент был отправлен"
  SPA: "Un ajente fue eliminado mientras se intenaba ifiltrar en una de nuestras colonias\nEl agente fue enviado desde"
  UKR: "Ворожий агент був убитий при спробі проникнення в одну з наших колоній\nАгент був засланий"
 WasUnableToInfiltrateA2:
  Id: 6036
- GER: 
+ GER: "war nicht in der Lage, eine Kolonie zu infiltrieren\nund musste die Mission abbrechen, um einer Gefangennahme zu entgehen"
  ENG: "was unable to infiltrate a colony\nand had to abort the mission to avoid capture"
  RUS: "не смог проникнуть в колонию\nи пришлось прервать миссию, чтобы избежать захвата"
  SPA: "No fue capaz de infiltrarse en una colonia,\ny tuvo que abortar la misión para evitar su captura."
  UKR: "не зміг проникнути в колонію\nі був змушений перервати місію, щоб уникнути захоплення"
 OneOfOurAgentsWas:
  Id: 6037
- GER: 
+ GER: "Einer unserer Agenten wurde ermordet:"
  ENG: "One of our Agents was assassinated:"
  RUS: "Один из наших агентов был убит:"
  SPA: "Uno de nuestros ajentes fue asesinado:"
  UKR: "Одного з наших агентів було вбито:"
 CouldNotAssassinateAnEnemy:
  Id: 6038
- GER: 
+ GER: "konnte einen feindlichen Agenten nicht ermorden, \nda das Zielimperium keine Agenten hat"
  ENG: "could not assassinate an enemy Agent \nbecause target empire has no Agents"
  RUS: "не смог убить вражеского агента \nпотому что у целевой империи нет агентов"
  SPA: "no pudo eliminar un agente enemigo \nDebido a que el imperio no posee agentes"
  UKR: "не може вбити ворожого агента \nтому що цільова імперія не має агентів"
 AssassinatedAnEnemyAgent:
  Id: 6039
- GER: 
+ GER: "hat einen feindlichen Agenten ermordet:"
  ENG: "assassinated an enemy Agent:"
  RUS: "убил вражеского агента:"
  SPA: "eliminó un agente enemigo:"
  UKR: "вбили ворожого агента:"
 NourAgentEscapedUnharmedAnd:
  Id: 6040
- GER: 
+ GER: "\nUnser Agent kam unverletzt und unentdeckt davon."
  ENG: "\nOur agent escaped unharmed and undetected."
  RUS: "\nНаш агент остался невредимым и незамеченным."
  SPA: "\nNuestro agente escapo sin daños ni detectado."
  UKR: "\nНаш агент втік неушкодженим і непоміченим."
 NtheAssassinWasSentBy:
  Id: 6041
- GER: 
+ GER: "\nDer Assassine wurde von geschickt"
  ENG: "\nThe Assassin was sent by"
  RUS: "\nУбийца был отправлен"
  SPA: "\nEl asesino lo envio:"
  UKR: "\nВбивцю прислали"
 NourAgentWasDetectedBut:
  Id: 6042
- GER: 
+ GER: "\nUnser Agent wurde entdeckt, konnte aber entkommen."
  ENG: "\nOur agent was detected but escaped."
  RUS: "\nНаш агент был обнаружен, но сбежал."
  SPA: "\nNuestro agente fué detectado pero logró escapar."
  UKR: "\nНаш агент був виявлений, але втік."
 WeManagedToDetectAn:
  Id: 6043
- GER: 
+ GER: "Es ist uns gelungen, einen feindlichen Assassinen zu entdecken, bevor er zuschlagen konnte.\nDer Assassine wurde vorbeigeschickt"
  ENG: "We managed to detect an enemy Assassin before it could strike\nThe Assassin was sent by"
  RUS: "Нам удалось обнаружить вражеского ассасина до того, как он нанес удар\nУбийца был отправлен"
  SPA: "Hemos sido capaces de detectar un asesino enemigo antes de que pudiera atacar\nEl asesino fue enviado por"
  UKR: "Нам вдалося виявити ворожого ассасина до того, як він встиг завдати удару\nАссасина відправили"
 WasWoundedTryingToAssassinate:
  Id: 6044
- GER: 
+ GER: "wurde bei dem Versuch, einen feindlichen Agenten zu ermorden, verwundet, konnte jedoch fliehen."
  ENG: "was wounded trying to assassinate an enemy agent, but managed to escape."
  RUS: "был ранен при попытке убить вражеского агента, но сумел скрыться."
  SPA: "fue herido intentando eliminar un agente enemigo, pero logró escapar."
  UKR: "був поранений при спробі вбивства ворожого агента, але зміг втекти."
 AnEnemyAgentWasKilled2:
  Id: 6045
- GER: 
+ GER: "Ein feindlicher Agent wurde bei einem Attentat getötet.\nDer Attentäter wurde von geschickt"
  ENG: "An enemy Agent was killed during an assassination attempt\nThe Assassin was sent by"
  RUS: "Вражеский агент был убит при попытке убийства.\nУбийца был отправлен"
  SPA: "Un agente enemigo fue eliminado durante un intento de asesinato\nEl asesino fue enviado por"
  UKR: "Ворожий агент загинув під час замаху\nВбивцю підіслали"
 WasKilledTryingToAssassinate:
  Id: 6046
- GER: 
+ GER: "wurde bei dem Versuch getötet, einen feindlichen Agenten zu ermorden."
  ENG: "was killed trying to assassinate an enemy agent."
  RUS: "был убит при попытке убить вражеского агента."
  SPA: "Fue asesinado mientras intentaba eliminar un agente enemigo"
  UKR: "був убитий при спробі вбивства ворожого агента."
 WasFoiledTryingToAssassinate:
  Id: 6047
- GER: 
+ GER: "Der Versuch, einen feindlichen Agenten zu ermorden, wurde vereitelt, es gelang ihm jedoch zu fliehen."
  ENG: "was foiled trying to assassinate an enemy agent, but managed to escape."
  RUS: "операция была сорвана при попытке убить вражеского агента, наш агент сумел сбежать."
  SPA: "Fue frustrado en sus intentos de eliminar un agente enemigo, pero se las arreglo para escapar."
  UKR: "була зірвана спроба вбивства ворожого агента, але йому вдалося втекти."
 AnEnemyAgentHasSabotaged:
  Id: 6048
- GER: 
+ GER: "Ein feindlicher Agent hat die Produktion sabotiert"
  ENG: "An enemy Agent has sabotaged production on"
  RUS: "Вражеский агент саботировал производство на"
  SPA: "Un agente enemigo logro sabotear la producción en"
  UKR: "Ворожий агент саботував виробництво на"
 NtheAgentWasSentBy:
  Id: 6049
- GER: 
+ GER: "\nDer Agent wurde gesendet von"
  ENG: "\nThe Agent was sent by"
  RUS: "\nАгент был отправлен"
  SPA: "\nEl agente enemigo fue enviado por"
  UKR: "\nАгента прислали"
 WasDetectedWhileAttemptingTo:
  Id: 6050
- GER: 
+ GER: "wurde beim Versuch entdeckt, eine Technologie zu stehlen\nund wurde auf der Flucht verwundet"
  ENG: "was detected while attempting to steal a technology\nand was wounded while escaping"
  RUS: "был обнаружен при попытке украсть технологию\nи был ранен при побеге"
  SPA: "Fue detectado intentado robar teconología\ny fue herido en su escape"
  UKR: "був виявлений при спробі викрасти технологію\nі був поранений під час втечі"
 WeFoiledAnEnemyAgent:
  Id: 6051
- GER: 
+ GER: "Wir haben einen feindlichen Agenten vereitelt, der die Produktion sabotieren wollte"
  ENG: "We foiled an enemy Agent trying to sabotage production on"
  RUS: "Мы помешали вражескому агенту саботировать производство"
  SPA: "Hemos frustrado a un agente enemigo intentado sabotear la producción en"
  UKR: "Ми затримали ворожого агента, який намагався саботувати виробництво на"
 WasWoundedWhileTryingTo:
  Id: 6052
- GER: 
+ GER: "wurde bei einem Sabotageversuch verwundet"
  ENG: "was wounded while trying to sabotage"
  RUS: "был ранен при попытке саботажа"
  SPA: "fue herido en su misión de sabotaje"
  UKR: "був поранений під час спроби диверсії"
 WeKilledAnEnemyAgent:
  Id: 6053
- GER: 
+ GER: "Wir haben einen feindlichen Agenten getötet, der versucht hat, die Produktion zu sabotieren"
  ENG: "We killed an enemy Agent trying to sabotage production on"
  RUS: "Мы убили вражеского агента, пытавшегося саботировать производство"
  SPA: "Hemos eliminado un agente enemigo tratando de sabotear la producción en"
  UKR: "Ми вбили ворожого агента, який намагався саботувати виробництво на"
 WasKilledTryingToSabotage:
  Id: 6054
- GER: 
+ GER: "wurde bei dem Versuch getötet, eine feindliche Kolonie zu sabotieren"
  ENG: "was killed trying to sabotage an enemy colony"
  RUS: "был убит при попытке саботировать вражескую колонию"
  SPA: "fue asesisando tratando de sabotear la producción en"
  UKR: "був убитий при спробі диверсії у ворожій колонії"
 EscapedAfterBeingDetectedWhile:
  Id: 6055
- GER: 
+ GER: "entkam, nachdem er bei einem Sabotageversuch entdeckt wurde"
  ENG: "escaped after being detected while trying to sabotage"
  RUS: "сбежал после того, как был обнаружен при попытке саботажа"
  SPA: "escapó despues de ser detectado intentado sabotear la producción"
  UKR: "втік після того, як його викрили під час спроби саботажу"
 AnEnemySpyStoleSome:
  Id: 6056
- GER: 
+ GER: "Ein feindlicher Spion hat uns Technologie gestohlen, \naber wir wissen nicht, für wen er gearbeitet hat"
  ENG: "An enemy spy stole some technology from us \nbut we don't know who they were working for"
  RUS: "Вражеский шпион украл у нас некоторую технологию \nно мы не знаем, на кого он работал"
  SPA: "Un agente enemigo nos ha robado una tecnología \npero no sabemos para quien estaba trabajando"
  UKR: "Ворожий шпигун викрав у нас технологію, але ми не знаємо, на кого він працював"
 StoleTechnologyDataChipsFor:
  Id: 6057
- GER: 
+ GER: "stahl einige Technologiedaten im Zusammenhang mit:"
  ENG: "stole some technology data related to:"
  RUS: "украл некоторые технологические данные, связанные с:"
  SPA: "robó bases de datos sobre:"
  UKR: "викрали деякі технологічні дані, пов'язані з..:"
 AnEnemyAgentStoleA:
  Id: 6058
- GER: 
+ GER: "Ein feindlicher Agent hat uns eine Technologie gestohlen:"
  ENG: "An enemy Agent stole a technology from us:"
  RUS: "Вражеский агент украл у нас технологию:"
  SPA: "Un agente enemigo nos ha robado datos detecnología:"
  UKR: "Ворожий агент вкрав у нас технологію:"
 WeFoiledAnEnemyPlot:
  Id: 6059
- GER: 
+ GER: "Wir haben einen feindlichen Plan vereitelt, unsere Technologie zu stehlen"
  ENG: "We foiled an enemy plot to steal our technology"
  RUS: "Мы сорвали заговор врага с целью украсть наши технологии"
  SPA: "Hemos frustrado los intentos de un agente enemigo sobre robarnos tecnología"
  UKR: "Ми зірвали ворожу змову з метою викрадення наших технологій"
 AnEnemyAgentWasKilled3:
  Id: 6060
- GER: 
+ GER: "Ein feindlicher Agent wurde getötet, als er versuchte, unsere Technologie zu stehlen"
  ENG: "An enemy Agent was killed trying to steal our technology"
  RUS: "Вражеский агент был убит, пытаясь украсть нашу технологию"
  SPA: "Un agente enemigo ha sido eliminado intentado robarnos nuestra teconología"
  UKR: "Ворожий агент був убитий при спробі викрасти нашу технологію"
 WasKilledTryingToSteal:
  Id: 6061
- GER: 
+ GER: "wurde beim Versuch, Technologie zu stehlen, getötet"
  ENG: "was killed trying to steal technology"
  RUS: "был убит при попытке украсть технологию"
  SPA: "Fue aseinado mientras intentaba robar tecnología"
  UKR: "був убитий при спробі викрасти технологію"
 WasDetectedWhileAttemptingTo2:
  Id: 6062
- GER: 
+ GER: "wurde beim Versuch entdeckt, eine Technologie zu stehlen\n, konnte aber unversehrt entkommen"
  ENG: "was detected while attempting to steal a technology\nbut managed to escape unharmed"
  RUS: "был обнаружен при попытке украсть технологию\nно сумел спастись невредимым"
  SPA: "fue detectado intentando robar tecnología\npero se las arregló para escapar ileso"
  UKR: "був викритий під час спроби викрасти технологію\nbut зумів втекти неушкодженим"
 AbortedTheStealTechnologyMission:
  Id: 6063
- GER: 
+ GER: "hat die Mission „Technologie stehlen“ abgebrochen, weil\nes nichts zu stehlen gibt;"
  ENG: "aborted the Steal Technology mission because\nthere is nothing to steal;"
  RUS: "прервал миссию 'Кража технологии', потому что\nнечего украсть;"
  SPA: "abortó una misión de robo de tecnologia porque\nno habia nada que robar;"
  UKR: "перервали місію вкрасти технологію, тому що \nнемає що красти;"
 CreditsAreThereforeRefunded:
  Id: 6064
- GER: 
+ GER: "Credits werden daher zurückerstattet."
  ENG: "Credits are therefore refunded."
  RUS: "Таким образом, кредиты возвращены"
  SPA: "Por lo tanto los creditos son renbolsados."
  UKR: "Таким чином, кредити повертаються."
 CreditsWereMysteriouslyStolenFrom:
  Id: 6065
- GER: 
+ GER: "Auf mysteriöse Weise wurden Kredite aus unserer Schatzkammer gestohlen.\nWir haben keine Verdächtigen für den Diebstahl"
  ENG: "credits were mysteriously stolen from our treasury.\nWe have no suspects in the theft"
  RUS: "кредиты были таинственным образом украдены из нашей казны.\nУ нас нет подозреваемых в краже"
  SPA: "Creditos fueron misteriosamente robados de nuestro tesoro\nNo tenemos sospechosos en el robo"
  UKR: "кредити були таємниче викрадені з нашої скарбниці.\nУ нас немає підозрюваних у крадіжці"
 CouldNotRob:
  Id: 6066
- GER: 
+ GER: "konnte nicht rauben"
  ENG: "could not rob"
  RUS: "не смог ограбить"
  SPA: "No pudo robar"
  UKR: "не змогли пограбувати"
 NbecauseTheyHaveNoMoney:
  Id: 6067
- GER: 
+ GER: "\nweil ​​sie kein Geld haben"
  ENG: "\nbecause they have no money"
  RUS: "\nпотому что у них нет денег"
  SPA: "\nPorque no tienen dinero"
  UKR: "\nтому що у них немає грошей"
 Stole:
  Id: 6068
- GER: 
+ GER: "stahl"
  ENG: "stole"
  RUS: "украл"
  SPA: "Robó"
  UKR: "таблиця"
 CreditsFrom:
  Id: 6069
- GER: 
+ GER: "Credits von"
  ENG: "credits from"
  RUS: "кредиты от"
  SPA: "creditos de"
  UKR: "кредити від"
 CreditsWereStolenFromOur:
  Id: 6070
- GER: 
+ GER: "Credits wurden von einem feindlichen Agenten aus unserer Schatzkammer gestohlen."
  ENG: "credits were stolen from our treasury by an enemy Agent."
  RUS: "кредиты были украдены из нашей казны вражеским агентом\n"
  SPA: "creditos fueron robados por un agente enemigo."
  UKR: "кредити були викрадені з нашої скарбниці ворожим агентом."
 WeFoiledAnEnemyPlot2:
  Id: 6071
- GER: 
+ GER: "Wir haben einen feindlichen Plan vereitelt, unsere Schatzkammer auszurauben"
  ENG: "We foiled an enemy plot to rob our treasury"
  RUS: "Мы сорвали вражеский заговор с целью ограбить нашу казну"
  SPA: "Frustramos un agente enemigo tratando de robar de nuestro tesoro"
  UKR: "Ми зірвали ворожий план пограбування нашої скарбниці"
 WasUnableToStealAny:
  Id: 6072
- GER: 
+ GER: "konnte keine Credits stehlen\nund wurde auf der Flucht verwundet."
  ENG: "was unable to steal any credits\nand was wounded while escaping."
  RUS: "не смог украсть кредиты\nи был ранен при побеге."
  SPA: "fue incapaz de robar dinero\ny fue herido trantando de escapar."
  UKR: "не зміг викрасти жодного кредиту\nі був поранений під час втечі."
 WeKilledAnEnemyAgent2:
  Id: 6073
- GER: 
+ GER: "Wir haben einen feindlichen Agenten bei einem versuchten Raubüberfall getötet"
  ENG: "We killed an enemy Agent during an attempted robbery"
  RUS: "Мы убили вражеского агента во время попытки ограбления"
  SPA: "Hemos eliminado un agente enemigo tratando de robarnos"
  UKR: "Вбили ворожого агента під час спроби пограбування"
 WasKilledTryingToSteal2:
  Id: 6074
- GER: 
+ GER: "wurde getötet, als er versuchte, Credits zu stehlen"
  ENG: "was killed trying to steal credits from"
  RUS: "был убит при попытке украсть кредиты у"
  SPA: "fue asesinado tratando de robar creditos de"
  UKR: "був убитий при спробі вкрасти кредити у"
 WasUnableToStealAny2:
  Id: 6075
- GER: 
+ GER: "konnte keine Credits stehlen\n, konnte aber unversehrt entkommen."
  ENG: "was unable to steal any credits\nbut managed to escape unharmed."
  RUS: "не смог украсть кредиты\nно сумел сбежать невредимым."
  SPA: "fue incapaz de robar creditos\npero logró escapar ileso."
  UKR: "не зміг вкрасти жодного кредиту, але зумів втекти неушкодженим."
 WeFoiledAnEnemyPlot3:
  Id: 6076
- GER: 
+ GER: "Wir haben einen feindlichen Plan vereitelt, der eine Rebellion anzetteln sollte"
  ENG: "We foiled an enemy plot to incite rebellion on"
  RUS: "Мы сорвали вражеский заговор с целью подстрекать восстание."
  SPA: "Hemos frustrado a un agente enemigo tratando de incitar una rebelión en"
  UKR: "Ми зірвали ворожий план підбурювання до заколоту на"
 IncitedASeriousRebellionOn:
  Id: 6077
- GER: 
+ GER: "löste eine ernsthafte Rebellion aus"
  ENG: "incited a serious rebellion on"
  RUS: "спровоцировал серьезное восстание"
  SPA: "incitó una rebelión bastante seria en"
  UKR: "підбурив серйозний бунт на"
 AnEnemyAgentHasIncited:
  Id: 6078
- GER: 
+ GER: "Ein feindlicher Agent hat eine Rebellion angezettelt"
  ENG: "An enemy Agent has incited rebellion on"
  RUS: "Вражеский агент спровоцировал восстание"
  SPA: "Un agente enemigo incitó una rebelión en"
  UKR: "Ворожий агент підбурює до заколоту на"
 NhoweverTheyKnowWeAre:
  Id: 6079
- GER: 
+ GER: "\nSie wissen jedoch, dass wir dahinter stecken."
  ENG: "\nHowever, they know we are behind it."
  RUS: "\nОднако они знают, что за этим стоим мы."
  SPA: "\nSin embargo, saben que nosotros estamos detras de ello"
  UKR: "\nОднак вони знають, що за цим стоїмо ми."
 WasWoundedWhileTryingTo2:
  Id: 6080
- GER: 
+ GER: "wurde verwundet, als er versuchte, einen Aufstand auszulösen"
  ENG: "was wounded while trying to incite a rebellion on"
  RUS: "был ранен при попытке поднять восстание на"
  SPA: "fue herido mientras intentaba incitar una rebelión en"
  UKR: "був поранений при спробі підбурювання до повстання на"
 WeKilledAnEnemyAgent3:
  Id: 6081
- GER: 
+ GER: "Wir haben einen feindlichen Agenten getötet, der eine Rebellion anzetteln wollte"
  ENG: "We killed an enemy agent trying to incite rebellion on"
  RUS: "Мы убили вражеского агента, пытавшегося спровоцировать восстание."
  SPA: "Hemos eliminado un agente enemigo tratando de incitar una rebelión en"
  UKR: "Ми вбили ворожого агента, який намагався підбурити повстання на"
 WasKilledTryingToIncite:
  Id: 6082
- GER: 
+ GER: "wurde getötet, als er versuchte, eine Rebellion anzuzetteln"
  ENG: "was killed trying to incite rebellion on"
  RUS: "был убит, пытаясь спровоцировать восстание"
  SPA: "fue asesinado tratando de incitar una rebelión en"
  UKR: "був убитий при спробі підбурювання до повстання на"
 EscapedAfterBeingDetectedWhile2:
  Id: 6083
- GER: 
+ GER: "entkam, nachdem er beim Versuch, eine Rebellion auszulösen, entdeckt wurde"
  ENG: "escaped after being detected while trying to incite rebellion on"
  RUS: "сбежал после того, как был обнаружен при попытке поднять восстание на"
  SPA: "escapó despues de ser detectado tratando de incitar una rebelión en"
  UKR: "втік після того, як його викрили під час спроби підбурювання до заколоту на"
 SabotagedProductionFor:
  Id: 6084
- GER: 
+ GER: "sabotierte Produktion für"
  ENG: "sabotaged production for"
  RUS: "саботировал производство для"
  SPA: "saboteó la producción en"
  UKR: "саботували виробництво для"
 Turns3:
  Id: 6085
- GER: 
+ GER: "Runden:"
  ENG: "turns:"
  RUS: "ходов:"
  SPA: "turnos:"
  UKR: "обертається:"
 HasRecoveredFromTheirInjuries:
  Id: 6086
- GER: 
+ GER: "haben sich von ihren Verletzungen erholt."
  ENG: "has recovered from their injuries."
  RUS: "оправился от травм."
  SPA: "se ha recuperado de sus heridas."
  UKR: "оговталися від поранень."
 HasBeenPromotedAndGains:
  Id: 6087
- GER: 
+ GER: "wurde befördert und erhält +1 Level."
  ENG: "has been promoted, and gains +1 Level."
  RUS: "был повышен в должности и получил +1 уровень."
  SPA: "ha sido promovido, y ha ganado un nivel."
