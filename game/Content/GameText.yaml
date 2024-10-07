@@ -10211,14 +10211,14 @@ SelectAnotherEmpireIfYou:
  UKR: "Виберіть іншу імперію, якщо ви хочете відправити цього агента на місію. В іншому випадку агент буде займатися контршпигунством автоматично."
 Defending:
  Id: 2183
- GER: "verteidigend"
+ GER: "Abwehren"
  ENG: "Defending"
  RUS: "Оборона"
  SPA: "Defensa"
  UKR: "Захищати"
 Assassinate:
  Id: 2184
- GER: "ermorden"
+ GER: "ermorde"
  ENG: "Assassinate"
  RUS: "Ликвидация"
  SPA: "Asesinar"
@@ -10232,7 +10232,7 @@ SendThisAgentOnA:
  UKR: "Відправте цього Агента на місію з метою вбивства ворожого Агента з цільової Імперії. Агент буде на завданні протягом вказаної кількості ходів. У разі успіху ворожий агент буде вбитий і вийде з гри."
 InciteRebels:
  Id: 2186
- GER: "Rebellen anstacheln"
+ GER: "Finanziere Rebellion"
  ENG: "Incite Rebels"
  RUS: "Спровоцировать"
  SPA: "Incitar a rebeldes"
@@ -20728,7 +20728,7 @@ AdvancedWarpDescr:
  UKR: "Нові дослідження в галузі квантової механіки відкрили екзотичні езотеричні частинки, які можуть покращити наші двигуни викривлення, зробивши їх ще швидшими, ніж раніше."
 CorvetteDefencetech:
  Id: 10093
- GER: "Korvetten- verteidigung"
+ GER: "Korvetten Abwehr"
  ENG: "Corvette Defence"
  UKR: "Захист корветів"
 CorvetteDefencetechDescr:
@@ -20738,7 +20738,7 @@ CorvetteDefencetechDescr:
  UKR: "Стаціонарні сили з декількох кораблів класу Корвет, готових до розгортання з поверхні планети, коли планетарні сканери зафіксують ворожі сигнали. Запущені кораблі завжди будуть використовувати найкращі проекти з найновішими технологіями, які були досліджені."
 FrigateDefencetech:
  Id: 10095
- GER: "Fregatten- verteidigung"
+ GER: "Fregatten Abwehr"
  ENG: "Frigate Defence"
  UKR: "Захист фрегатів"
 FrigateDefencetechDescr:
@@ -20748,7 +20748,7 @@ FrigateDefencetechDescr:
  UKR: "Стаціонарні сили з декількох кораблів класу Фрегат, готові до розгортання з поверхні планети, коли планетарні сканери зафіксують ворожі сигнатури. Запущені кораблі завжди будуть використовувати найкращі проекти з найновішими технологіями, які були досліджені."
 CorvetteLaunchPad:
  Id: 10097
- GER: "Korvetten- startrampe"
+ GER: "Korvetten Startrampe"
  ENG: "Corvette Launch Pad"
  UKR: "Пусковий майданчик для корветів"
 CorvetteLaunchPadDescrShort:
@@ -20763,7 +20763,7 @@ CorvetteLaunchPadDescr:
  UKR: "Цей об'єкт буде підтримувати крило з 6 корветів, які стрибнуть на захист колонії, коли помітять ворога. Він запускатиме найкращі корвети, доступні у вашій імперії. Ви зможете керувати ними лише в бою. Запуск коштує грошей, але ви отримаєте їх назад, якщо вони повернуться додому."
 FrigateLaunchPad:
  Id: 10100
- GER: "Fregatten- startrampe"
+ GER: "Fregatten Startrampe"
  ENG: "Frigate Launch Pad"
  UKR: "Пусковий майданчик для фрегатів"
 FrigateLaunchPadDescrShort:
@@ -20778,27 +20778,27 @@ FrigateLaunchPadDescr:
  UKR: "Цей об'єкт буде підтримувати ескадру з 4 фрегатів, які стануть на захист колонії, коли помітять ворога. Він буде запускати найкращі фрегати, доступні у вашій імперії. Ви зможете керувати ними лише в бою. Запуск коштує грошей, але ви отримаєте їх назад, якщо вони повернуться додому."
 AntiFighterSystems:
  Id: 10103
- GER: "Antijäger- Systeme"
+ GER: "Antijäger Systeme"
  ENG: "Anti-Fighter Systems"
  UKR: "Системи протидії винищувачам"
 AntiFighterSystemsDescr:
  Id: 10104
- GER: 
+ GER: "Leistungsstarke Waffensysteme, die sehr effektiv gegen kleine Schiffe sind, die nicht über viel Panzerung verfügen und zur Verteidigung hauptsächlich auf Schilde angewiesen sind."
  ENG: "Potent weapon systems thats very effective against small crafts that dont have much armour and rely mostly on shields for defence."
  UKR: "Потужні системи озброєння, які дуже ефективні проти невеликих кораблів, що не мають багато броні і покладаються в основному на щити для захисту."
 MissileTurret:
  Id: 17500
- GER: "Raketenwerfer- Turm"
+ GER: "Raketenwerfer Turm"
  ENG: "Missile Turret"
  UKR: "Ракетна вежа"
 MissileTurrettechDescr:
  Id: 17501
- GER: 
+ GER: "Indem wir einen Raketenwerfer auf einem mechanisierten Drehgelenk platzieren, können wir die Effektivität des Raketeneinsatzes in Nahkampfszenarien dank des größeren Schussfelds erheblich verbessern."
  ENG: "By placing a missile launcher onto a mechanized swivel we can greatly improve the effectiveness of using missiles in close combat scenarios thanks to increased field of fire."
  UKR: "Розмістивши пускову установку на механізованому поворотному механізмі, ми можемо значно підвищити ефективність використання ракет в умовах ближнього бою завдяки збільшенню поля вогню."
 MissileTurretWepDescr:
  Id: 17503
- GER: 
+ GER: "Dieser Turm schießt mit hoher Geschwindigkeit eine sehr manövrierfähige Rakete ab, die dem PD-Feuer ausweichen kann."
  ENG: "This turret shoots out a highly maneuverable missile at high speeds that can evade pd fire."
  UKR: "Ця турель вистрілює високоманевреною ракетою на високій швидкості, яка може ухилятися від вогню зенітних комплексів."
 DualMissileTurret1:
@@ -20808,87 +20808,87 @@ DualMissileTurret1:
  UKR: "Башта Дуал-М"
 DualMissileTurrettechDescr:
  Id: 17505
- GER: 
+ GER: "Raketen funktionieren am besten, wenn sie in Salven abfeuern, um potenziellem PD-Feuer entgegenzuwirken. Aus diesem Grund haben wir einen schweren Turm entwickelt, der zwei etwas größere und verheerendere Raketen schnell hintereinander abfeuern kann, um feindliche PD-Systeme zu überwältigen."
  ENG: "Missiles are working best when are shooting in salvos to counter potential PD fire, for that reason we developed a heavy turret that can shoot two slightly bigger and more devastating missiles in rapid succession to overwhelm enemy PD systems."
  UKR: "Ракети найкраще працюють, коли стріляють залпами, щоб протистояти потенційному вогню зенітних комплексів, тому ми розробили важку башту, яка може вистрілити двома трохи більшими і більш руйнівними ракетами у швидкій послідовності, щоб вивести з ладу ворожі PD-системи."
 DualMissileTurretwep:
  Id: 17506
- GER: "Zwillings- Raketenw.- Turm"
+ GER: "Dualer Raketenw. Turm"
  ENG: "Dual Missile Turret"
  UKR: "Подвійна ракетна башта"
 DualMissileTurretWepDescr:
  Id: 17507
- GER: 
+ GER: "Dieser Turm kann zwei größere, äußerst manövrierfähige Raketen mit hoher Geschwindigkeit abfeuern, die PD-Systemen ausweichen und diese überwältigen können."
  ENG: "This turret can shoot two bigger highly maneuverable missiles at high speeds that can evade and overwhelm PD systems."
  UKR: "Ця турель може стріляти двома більшими високоманевреними ракетами на високих швидкостях, які можуть ухилятися від систем ППО і виводити їх з ладу."
 QuadMissileTurret:
  Id: 17508
- GER: "Vierlings-M Turm"
+ GER: "Vierlings Rak-Turm"
  ENG: "Quad-M Turret"
  UKR: "Башта Квад-М"
 QuadMissileTurrettechDescr:
  Id: 17509
- GER: 
+ GER: "Um PV-Systeme vollständig zu überwältigen, wurde ein massiver, robuster Quad-Raketenturm entwickelt.  Es verfügt über 4 große und hochentwickelte Raketen, die in Salven abgefeuert werden."
  ENG: "To completely overwhelm PD systems a massive robust Quad missile turret was developed. It holds 4 big and highly advanced missiles that are shoot in salvos."
  UKR: "Для повної перемоги над системами ППО була розроблена масивна міцна ракетна вежа Квад. Вона вміщує 4 великі та надсучасні ракети, які випускаються залпами."
 QuadMissileTurretwep:
  Id: 17510
- GER: "Vierlings Raketenw.- Turm"
+ GER: "Vierlings Raketenw.-Turm"
  ENG: "Quad Missile Turret."
  UKR: "Четверна ракетна башта."
 QuadMissileTurretWepDescr:
  Id: 17511
- GER: 
+ GER: "Dieser Turm kann vier fortschrittliche, äußerst manövrierfähige Raketen mit hoher Geschwindigkeit abfeuern, die PD-Systemen ausweichen und diese überwältigen können."
  ENG: "This turret can shoot four advanced highly maneuverable missiles at high speeds that can evade and overwhelm PD systems."
  UKR: "Ця турель може стріляти чотирма сучасними високоманевреними ракетами на високих швидкостях, які можуть ухилятися від систем ППО і виводити їх з ладу."
 DualFusion:
  Id: 17512
- GER: 
+ GER: "Dualer Fusionsstrahlturm"
  ENG: "Dual Fusion Beam Turret"
  UKR: "Башта з подвійним термоядерним променем"
 DualFusionDescr:
  Id: 17513
- GER: 
+ GER: "Zwei Fusion Beam-Emitter auf einem robusten, schweren Turm mit vergrößertem Feuerfeld."
  ENG: "Two Fusion Beam emitters placed on a sturdy heavy turret with increased field of fire."
  UKR: "Два випромінювачі термоядерного променя розміщені на міцній важкій башті зі збільшеним полем вогню."
 HeavyPhasor:
  Id: 17514
- GER: 
+ GER: "Schweres Phasorgeschütz"
  ENG: "Heavy Phasor Array"
  UKR: "Масив важких фазообертачів"
 HeavyPhasorDescr:
  Id: 17515
- GER: 
+ GER: "Vergrößertes Phasorgerät, montiert auf einem stabilen Turm mit erweitertem Feuerbereich."
  ENG: "Enlarged phasor array mounted on a stury robust turret with increased field of fire."
  UKR: "Збільшена фазообертач, встановлений на міцній башті зі збільшеним полем обстрілу."
 DualPhasortTech:
  Id: 17516
- GER: 
+ GER: "Überschwerer Phasor"
  ENG: "Massive Phasors"
  UKR: "Масивні фазообертачі"
 DualPhasorTechDescr:
  Id: 17517
- GER: 
+ GER: "Um diese beiden monströsen Phasorengeschütze auf einem einzigen Turm unterzubringen, mussten unsere Wissenschaftler ein superstabiles Drehgelenk entwickeln, der enormen Temperaturen und elektromagnetischen Spitzen standhält."
  ENG: "To accommodate those two monstrous phasor arrays on a single turrets our scientists had to develop a super sturdy swivel that can withstand enormous temperature and electro-magnetic spikes."
  UKR: "Щоб розмістити ці два монструозні фазові масиви на одній башті, нашим вченим довелося розробити надміцний вертлюг, здатний витримувати величезні температурні та електромагнітні сплески."
 DualPhasort:
  Id: 17518
- GER: 
+ GER: "Überschwerer Doppelphasor"
  ENG: "Dual Massive Phasor Array"
  UKR: "Подвійний масивний фазообертач"
 DualPhasorDescr:
  Id: 17519
- GER: 
+ GER: "Dieses furchteinflößende Geschützmonster, das zwei massive Zeigerstrahlen abfeuert, kann selbst die mächtigste Panzerung mit wenigen Treffern zum Schmelzen bringen. Aber stimmt das auch?"
  ENG: "This terrifying monster of a turret firing two massive phasor beams can melt even the mightiest armor in few hits."
  UKR: "Цей страхітливий монстр з баштою, що стріляє двома масивними фазовими променями, здатний розплавити навіть найміцнішу броню за кілька влучень."
 LaserFocusTech:
  Id: 17520
- GER: 
+ GER: "Gebündelter Strahl I"
  ENG: "Focused Beam I"
  UKR: "Сфокусований промінь I"
 LaserFocusTechDescr:
  Id: 17521
- GER: 
+ GER: "Durch strategisch platzierte Anordnungen von Spulen, Kristallprismen und Linsen in der richtigen Konfiguration konnten unsere Wissenschaftler den Fokus eines Strahls erhöhen und ihm eine beeindruckende Reichweite verleihen.  Diese Art der wirbelsäulenmontierten Konstruktion kann den Strahl über einen längeren Zeitraum halten und verheerenden Schaden anrichten.  Als Rückzugsmöglichkeit ist jedoch eine lange Abkühlung erforderlich.  Die fokussierte Strahltechnologie wurde entwickelt, um den Schaden gegenüber der Panzerung zu verbessern."
  ENG: "By strategically placed arrays of coils, crystal prisms and lenses in right configuration our scientists were able to increase the focus of a beam giving it impressive range. This type of spinal mounted design can keep the beam for longer period of times delivering a devastating damage. But as draw back it requires a long cool down. Focused beam technology was developed to improve damage vs armor."
  UKR: "Завдяки стратегічно розміщеним масивам котушок, кришталевих призм і лінз у правильній конфігурації наші вчені змогли збільшити фокус променя, надавши йому вражаючу дальність дії. Цей тип спинномозкової конструкції може утримувати промінь протягом тривалого періоду часу, завдаючи руйнівної шкоди. Але, як і зворотній бік, він вимагає тривалого охолодження. Технологія сфокусованого променя була розроблена для покращення ураження проти броні."
 LaserFocus:
