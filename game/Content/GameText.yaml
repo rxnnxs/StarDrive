@@ -20893,107 +20893,107 @@ LaserFocusTechDescr:
  UKR: "Завдяки стратегічно розміщеним масивам котушок, кришталевих призм і лінз у правильній конфігурації наші вчені змогли збільшити фокус променя, надавши йому вражаючу дальність дії. Цей тип спинномозкової конструкції може утримувати промінь протягом тривалого періоду часу, завдаючи руйнівної шкоди. Але, як і зворотній бік, він вимагає тривалого охолодження. Технологія сфокусованого променя була розроблена для покращення ураження проти броні."
 LaserFocus:
  Id: 17522
- GER: 
+ GER: "Gebündelter Laserstrahl X-Turm"
  ENG: "Focused Laser Beam Mount"
  UKR: "Сфокусований лазерний промінь"
 LaserFocusdescr:
  Id: 17523
- GER: 
+ GER: "Mit einer größeren Grundfläche als ein normaler Turm verhält sich dieses Waffensystem wie eine kleine Strahlartilleriewaffe, die über große Entfernungen schießen kann."
  ENG: "With bigger footprint than normal turret this weapon system acts like a small scale beam artillery weapon, able to shoot over great distances."
  UKR: "Маючи більшу площу, ніж звичайна башта, ця система озброєння діє як малогабаритна променева артилерія, здатна стріляти на великі відстані."
 FusionFocusTech:
  Id: 17524
- GER: 
+ GER: "Gebündelter Strahl II"
  ENG: "Focused Beam II"
  UKR: "Сфокусований промінь II"
 FusionFocusTechDescr:
  Id: 17525
- GER: 
+ GER: "Indem unser Wissenschaftler zwei schmale Ströme atomarer Teilchen in eine schwere Anordnung von Spulen, Kristallprismen und Linsen lenkte, bündelte er schließlich beide Strahlen zu einem massiven Fusionsstrahl, der seine Reichweite und Strahldauer erheblich erhöhte.  Die fokussierte Strahltechnologie wurde entwickelt, um den Schaden gegenüber der Panzerung zu verbessern."
  ENG: "Directing two narrow streams of atomic particles into heavy array of coils, crystal prisms and lenses our scientist ended up in focusing the both beams into one massive fusion beam greatly increasing its range and beam duration. Focused beam technology was developed to improve damage vs armor."
  UKR: "Спрямувавши два вузькі потоки атомних частинок у важкий масив котушок, кришталевих призм і лінз, наш вчений зрештою сфокусував обидва пучки в один масивний термоядерний промінь, що значно збільшило його дальність і тривалість дії. Технологія сфокусованого променя була розроблена для покращення ураження проти броні."
 FusionFocus:
  Id: 17526
- GER: 
+ GER: "Gebündelter Fusionsstrahl X-Turm"
  ENG: "Focused Fusion Beam Mount"
  UKR: "Кріплення для сфокусованого термоядерного променя"
 FusionFocusdescr:
  Id: 17527
- GER: 
+ GER: "Aufgrund der Beschaffenheit des Fusionsstrahls, der zwei separate Strahlquellen benötigt, ist diese schwere Halterung größer und benötigt mehr Energie."
  ENG: "Due to nature of fusion beam that needs two separate beam streams sources this heavy mount is larger and requires more energy."
  UKR: "Через природу термоядерного променя, який потребує двох окремих джерел променевого потоку, це важке кріплення є більшим і потребує більше енергії."
 HVTurret:
  Id: 17528
- GER: 
+ GER: "Hyper-V Turm"
  ENG: "Hyper Velocity Turret"
  UKR: "Гіпершвидкісна турель"
 HVTurretDescWeapon:
  Id: 17529
- GER: 
+ GER: "Hypergeschwindigkeitskanone, montiert auf einem kleinen Drehgelenk."
  ENG: "Hyper Velocity cannon mounted on a small swivel."
  UKR: "Гіперзвукова гармата встановлена на невеликому вертлюжку."
 MassiveDisruptor:
  Id: 17530
- GER: 
+ GER: "Schwerer Disruptor"
  ENG: "Massive Disruptor"
  UKR: "Масштабний руйнівник"
 MassiveDisruptorTech:
  Id: 17531
- GER: 
+ GER: "Fortschritte in der Schild- und Panzerungstechnologie sowie bei größeren Schiffsrümpfen führten zur Entwicklung dieses monströsen Geschützturms mit einem sehr beeindruckenden Feuerfeld. Er beherbergt zwei massive Disruptorkanonen für deutlich verbesserten Schaden.  Jedes Projektil enthält eine kleine Emp-Ladung!"
  ENG: "Advancments in shield and armor technologies as well of bigger ship hulls lead into developing this monstrous Turret with very impressive field of fire,it houses 2 massive disruptor cannons for greatly improved damage. Each projectile contains small emp charge!"
  UKR: "Досягнення в технологіях створення щитів і броні, а також більших корпусів кораблів призвели до розробки цієї монструозної башти з дуже вражаючим полем вогню, в ній розміщені 2 масивні гармати-руйнівники, що значно покращують пошкодження. Кожен снаряд містить невеликий заряд емпів!"
 MassiveDisruptorDescr:
  Id: 17532
- GER: 
+ GER: "Dieser gewaltige Diruptor-Geschützturm mit zwei Läufen kann extreme Zerstörungsgrade anrichten, hat aber auch einen recht hohen Energiebedarf."
  ENG: "This massive twin barreled Diruptor turret can deliver extreme levels of destruction but it has also quite extreme power demands."
  UKR: "Ця масивна двоствольна башта Diruptor здатна забезпечити екстремальний рівень руйнувань, але вона також має досить високі вимоги до потужності."
 MassivePhoton:
  Id: 17533
- GER: 
+ GER: "Überschwere Photonenkanone"
  ENG: "Massive Photons"
  UKR: "Масивні фотони"
 MassivePhotonTech:
  Id: 17534
- GER: 
+ GER: "Weitere Fortschritte bei der Energieeindämmung führten zur Entwicklung dieses Monster-Photonenturms, der zwei riesige Photonenkanonen aufnehmen kann.  Jedes Projektil enthält eine kleine Emp-Ladung!"
  ENG: "Further advancments in energy contaiment lead into developing this kind of monster Photon Turret that can hold 2 massive Photon cannons. Each projectile contains small emp charge!"
  UKR: "Подальший прогрес у боротьбі за енергію призвів до створення цієї монструозної фотонної вежі, яка може вмістити 2 масивні фотонні гармати. Кожен снаряд містить невеликий заряд ЕМП!"
 MassivePhotonDescr:
  Id: 17535
- GER: 
+ GER: "Dieser massive Photonenturm mit zwei Läufen kann extreme Zerstörungsgrade anrichten, hat aber auch einen recht hohen Energiebedarf."
  ENG: "This massive twin barreled Photon turret can deliver extreme levels of destruction but it has also quite extreme power demands. "
  UKR: "Ця масивна двоствольна башта Фотон здатна забезпечити екстремальний рівень руйнувань, але вона також має екстремальні вимоги до енергоспоживання."
 MassivePolaron:
  Id: 17536
- GER: 
+ GER: "Überschwere Polaronkanone"
  ENG: "Massive Polarons"
  UKR: "Масивні полярони"
 MassivePolaronTech:
  Id: 17537
- GER: 
+ GER: "Wenn es darum geht, enormen Schaden anzurichten, kommt nichts an die beiden riesigen Polaron-Kanonen heran, die auf einem schweren Geschützturm montiert sind.  Jedes Projektil enthält eine kleine Emp-Ladung!"
  ENG: "When it comes to dealing enormous damages nothing come close to those two massive polaron cannons mounted on a heavy turret. Each projectile contains small emp charge!"
  UKR: "Коли справа доходить до нанесення величезних збитків, ніщо не може зрівнятися з цими двома масивними поляронними гарматами, встановленими на важкій башті. Кожен снаряд містить невеликий заряд емпів!"
 MassivePolaronDescr:
  Id: 17538
- GER: 
+ GER: "Dieser massive Polaron-Geschützturm mit zwei Läufen ist die Spitze der Energiekanonen."
  ENG: "This massive twin barreled Polaron turret is pinnacle of energy cannons."
  UKR: "Ця масивна двоствольна башта Polaron є вершиною енергетичних гармат."
 MassivePolaronWeap:
  Id: 17539
- GER: 
+ GER: "Überschwere Polaronkanonenturm"
  ENG: "Massive Polaron Turret"
  UKR: "Масивна поляронна башта"
 MassivePhotonWeap:
  Id: 17540
- GER: 
+ GER: "Überschwere Photonenkanonenturm"
  ENG: "Massive Photon Turret"
  UKR: "Масивна фотонна турель"
 MassiveDisrupWeap:
  Id: 17541
- GER: 
+ GER: "Überschwere Disruptorkanonenturm"
  ENG: "Massive Disruptor Turret"
  UKR: "Вежа масивного руйнівника"
 StorageDeck:
  Id: 17542
- GER: 
+ GER: "Lagerdecks"
  ENG: "Storage Decks"
  UKR: "Палуби для зберігання"
 MassFabricator:
@@ -21003,32 +21003,32 @@ MassFabricator:
  UKR: "Масовий виробник"
 StorageDeckdescr:
  Id: 17544
- GER: 
+ GER: "Anstatt Kampfmittel in separaten Teilen des Schiffes zu lagern, können wir sie jetzt in einem einzigen riesigen Deck lagern, um den Zugang zu erleichtern."
  ENG: "Instead of storing ordnance in separate parts of the ship we can now store them in a one massive deck for easier access."
  UKR: "Замість того, щоб зберігати боєприпаси в окремих частинах корабля, тепер ми можемо зберігати їх на одній масивній палубі для полегшення доступу."
 MassFabricatordecr:
  Id: 17545
- GER: 
+ GER: "Großes Fabrikatorenmodul; von einem Supercomputer gesteuert, um die Rate Munitionsherstellung zu erhöhen."
  ENG: "Large array of fabricators controlled by supercomputer for greater efficiency in creating ordnance."
  UKR: "Великий набір виробників, керованих суперкомп'ютером для більшої ефективності у створенні боєприпасів."
 MediumEngines:
  Id: 17546
- GER: 
+ GER: "Mittlerer Antrieb"
  ENG: "Medium Engines"
  UKR: "Середні двигуни"
 LargeEngines:
  Id: 17547
- GER: 
+ GER: "Großes Antrieb"
  ENG: "Large Engines"
  UKR: "Великі двигуни"
 MassiveEngines:
  Id: 17548
- GER: 
+ GER: "Riesiger Antrieb"
  ENG: "Massive Engines"
  UKR: "Масивні двигуни"
 MediumEnginesDescr:
  Id: 17549
- GER: 
+ GER: "Mit Investitionen in den Fregattenbau können wir mit der Entwicklung mittelgroßer Motoren beginnen, die den gestiegenen Schiffsmasse-zu-Schub-Anforderungen gerecht werden."
  ENG: "With investment into frigate construction, we can begin developing a medium sized engines that can meet the increased ship mass to thrust demands."
  UKR: "Інвестувавши у будівництво фрегата, ми можемо розпочати розробку двигунів середнього розміру, які зможуть задовольнити зростаючі вимоги до маси корабля і тяги."
 LargeEnginesDescr:
@@ -21038,262 +21038,262 @@ LargeEnginesDescr:
  UKR: "Кораблі, більші за фрегати, мають постійно зростаючий попит на більш надійні та ефективні двигуни через збільшення маси судна."
 MassiveEnginesDescr:
  Id: 17551
- GER: 
+ GER: "Bei Schiffen, die größer als Fregatten sind, besteht aufgrund der zunehmenden Schiffsmasse ein immer größerer Bedarf an solideren und leistungsstärkeren Motoren."
  ENG: "Largest and most heavy vessels will need largest engines to be able to move effectively in any situation."
  UKR: "Найбільші та найважчі судна потребують найбільших двигунів, щоб мати змогу ефективно рухатися в будь-якій ситуації."
 Extremefusionrecttech:
  Id: 17552
- GER: 
+ GER: "Extrem Fusion"
  ENG: "Extreme Fusion"
  UKR: "Екстремальний синтез"
 ArmoredShieldtech:
  Id: 17553
- GER: 
+ GER: "Gepanzerte Abschirmung"
  ENG: "Armored Shielding"
  UKR: "Броньований захист"
 ArmoredShieldtechDescr:
  Id: 17554
- GER: 
+ GER: "Dieses Schildmodul wurde in einer speziellen Konstruktion aus schweren und hochleitfähigen Legierungen platziert, die mit Verstärkungstechnologien gefüllt sind, die die Schirmleistung und ihren Radius erhöhen.  Es ist schwerer als frühere Schildmodule, verfügt aber über eine deutlich höhere Widerstandsfähigkeit gegen Beschädigungen."
  ENG: "This Shield module was placed into a special construction made of heavy and highly conductive alloys filled with amplifying technologies enhancing the shield power and its radius. Its heavier than previous shield modules but it has greatly increased resistance to damage."
  UKR: "Цей модуль щита був поміщений у спеціальну конструкцію, виготовлену з важких і високопровідних сплавів, наповнену підсилюючими технологіями, що збільшують потужність щита і його радіус дії. Він важчий за попередні модулі, але має значно підвищену стійкість до пошкоджень."
 ArmoredShield:
  Id: 17555
- GER: 
+ GER: "Klasse V Schild"
  ENG: "Class V Shield"
  UKR: "Щит класу V"
 ArmoredShieldDescr:
  Id: 17556
- GER: 
+ GER: "Gepanzerter Schild, der 22kTP Schutz bietet und gleichzeitig als schwere, widerstandsfähige Panzerung insbesondere gegen Explosionen fungiert."
  ENG: "Armored shield providing 22,000 hp worth of protection as well acts as a heavy resistant armor especially against explosions."
  UKR: "Броньований щит забезпечує захист у 22 000 ОЖ, а також діє як важка стійка броня, особливо проти вибухів."
 RapidFirePDTech:
  Id: 17557
- GER: 
+ GER: "Schnellfeuerkanone PV"
  ENG: "Rapid Fire PD"
  UKR: "Швидка зентіна гармата"
 RapidFirePDTechdescr:
  Id: 17558
- GER: 
+ GER: "Die Punktverteidigungs-Schnellfeuerkanone wurde entwickelt, um schnelle, manövrierfähigen Raketen abzufangen, die normalerweise in Salven abgefeuert werden.  Diese Türme verzichten zwecks hoher Feurrate auf hohen Schaden, wodurch sie weniger effektiv gegen Torpedos sind."
  ENG: "Rapid Fire Point deference was designed to counter fast moving maneuverable missiles that are usually fired in salvos. Those turrets exchange fast reloads over damage thus making them less effective against torpedoes."
  UKR: "Точка швидкого вогню була розроблена для протидії швидким маневреним ракетам, які зазвичай випускаються залпами. Ці башти швидко перезаряджаються через пошкодження, що робить їх менш ефективними проти торпед."
 HeavyPDTech:
  Id: 17559
- GER: 
+ GER: "Schwere PV"
  ENG: "Heavy PD"
  UKR: "Важкі ТЗ"
 HeavyPDTechDescr:
  Id: 17560
- GER: 
+ GER: "Schwere Punktverteidigung wurde speziell entwickelt, um der Bedrohung durch massive Torpedos entgegenzuwirken, die mehreren Treffern von Geschossen kleineren Kalibers standhalten können, obwohl sie aufgrund ihrer Feuerrate durch massivere Projektile weniger effektiv gegen Raketenschwärme sind."
  ENG: "Heavy Point Defense were specially designed to counter the threat of massive torpedoes that can withstand several hits of smaller caliber bullets, all tho with more massive projectiles they suffer in fire rate department making them less effective against swarm of missiles."
  UKR: "Важкі точкові захисні системи були спеціально розроблені для протидії загрозі масивних торпед, які можуть витримати кілька влучень куль меншого калібру, але з більш масивними снарядами вони страждають в скорострільності, що робить їх менш ефективними проти рою снарядів."
 HeavyEnergyPointDefenseTurret:
  Id: 17561
- GER: 
+ GER: "Hochenergie PV"
  ENG: "Heavy Energy Point Defense"
  UKR: "Захист важких енергетичних точок"
 HeavySingleBarreledEnergyPoint:
  Id: 17562
- GER: 
+ GER: "Ein Hochenergie PunktVerteidigungs-Turm.  Entwickelt im Hinblick auf die ständig wachsende Gefahr größerer Torpedos.  Es feuert ein kraftvolles Energieprojektil ab, das den Torpedo-Sprengkopf beim Aufprall sofort zum Schmelzen bringt."
  ENG: "A Single barreled, energy point defense turret. Created in mind of the constantly growing danger of bigger Torpedoes. It shoots a powerful energy projectile to instantly melt torpedo warhead upon impact."
  UKR: "Одноствольна башта для захисту енергетичної точки. Створена з огляду на постійно зростаючу небезпеку великих торпед. Стріляє потужним енергетичним снарядом, який миттєво розплавляє торпедну боєголовку при зіткненні."
 RapidFireEnergyPointDefense:
  Id: 17563
- GER: 
+ GER: "Schnellfeuer Hochenergie PV"
  ENG: "Rapid-Fire Energy Point Defense"
  RUS: "Тяжелая энергоустновка ТЗ"
  UKR: "Швидкострільна оборона енергетичних точок"
 RapidFireEnergyPointDefenseDescript:
  Id: 17564
- GER: 
+ GER: "Energie-PD-Geschützturm mit zwei Läufen und hoher Kadenz zum Abfangen von Raketenschwärmen."
  ENG: "Twin barrel Energy PD Turret designed to intercept missile swarms in hail of bullets."
  UKR: "Двоствольна башта енергетичних зенітних комплексів призначена для перехоплення ракетних роїв у граді куль."
 HevyOrdPDsingle:
  Id: 17565
- GER: 
+ GER: "Schwerer Hochenergie PV Turm"
  ENG: "Heavy Point Defense Turret"
  UKR: "Важка вежа для захисту від точечної атаки"
 HevyOrdPDsingledescr:
  Id: 17566
- GER: 
+ GER: "Ein auf Kampfmitteln basierender schwerer Punktverteidigungsturm, der großkalibrige, hochexplosive Granaten auf ankommende Torpedos abfeuert und diese dabei zerstört."
  ENG: "Ordnance based heavy point defense turret firing large caliber high explosive shells into incoming torpedoes destroying them in the process."
  UKR: "Важка точкова оборонна башта на базі артилерійського озброєння, що стріляє осколково-фугасними снарядами великого калібру по торпедах, що наближаються, знищуючи їх у процесі стрільби."
 SmallWarehousetechDescr:
  Id: 17567
- GER: 
+ GER: "Lagerhäuser dienen dazu, mehr Produktion und Lebensmittel zu lagern und zu transportieren, um die Expansion eines frühen Imperiums zu erleichtern."
  ENG: "Warehouses are made to store and move more production and food for easier expanding an early empire."
  UKR: "Склади призначені для зберігання та переміщення більшої кількості продукції та їжі, щоб легше було розширювати ранню імперію."
 MedWarehousetech:
  Id: 17568
- GER: 
+ GER: "Planetarischer Vorrat II"
  ENG: "Planetary Stockpile II"
  UKR: "Планетарний запас II"
 MedWarehousetechDescr:
  Id: 17569
- GER: 
+ GER: "Der wachsende Bedarf an Nahrungsmitteln und Produktion aufgrund der zunehmenden Bevölkerungszahl und der militärischen Präsenz auf mehreren Planeten machte den Bau größerer und geräumigerer Lagerhäuser erforderlich."
  ENG: "Growing needs for food and production from increased number of population and military presence spanning over multiple planets brought the need to build bigger more spacious Warehouses."
  UKR: "Зростаючі потреби в продуктах харчування та виробництві, зумовлені збільшенням кількості населення та військової присутності на кількох планетах, призвели до необхідності побудови більших і просторіших Сховищ."
 MedWarehouse1:
  Id: 17570
- GER: 
+ GER: "Großes Lager"
  ENG: "Large Warehouse"
  UKR: "Великий склад"
 MedWarehouse1longDescr:
  Id: 17571
- GER: 
+ GER: "Riesiges Lagerhaus, das mehr Lebensmittel- und Produktionslager bietet"
  ENG: "Enormous Warehouse that provides increased food and production storage "
  UKR: "Величезний склад, що забезпечує збільшення обсягів зберігання продуктів харчування та продукції"
 NanoWarehousetech:
  Id: 17573
- GER: 
+ GER: "Planetarischer Vorrat III"
  ENG: "Planetary Stockpile III"
  UKR: "Планетарний запас III"
 NanoWarehousetechDescr:
  Id: 17574
- GER: 
+ GER: "Riesige Imperien, die sich über mehrere Systeme erstrecken, müssen in der Lage sein, große Mengen an Gütern zu lagern, um weniger entwickelte Planeten mit Nahrung und lebenswichtiger Produktion zu versorgen, und müssen außerdem schnell Raumschiffe größerer Klasse bauen."
  ENG: "Huge empires spanning over multiple systems need to be able store massive amount of goods providing less developed planets with food and essential production, as well the need of rapid construction of bigger class star ships."
  UKR: "Величезні імперії, що охоплюють кілька систем, повинні мати можливість зберігати величезну кількість товарів, забезпечуючи менш розвинені планети їжею та необхідним виробництвом, а також потребувати швидкого будівництва зоряних кораблів більшого класу."
 NanoWarehouse1:
  Id: 17575
- GER: 
+ GER: "Nano-Lager"
  ENG: "Nano Warehouse"
  UKR: "Нано-склад"
 NanoWarehouse1longDescr:
  Id: 17576
- GER: 
+ GER: "Hochmoderne Lagereinrichtung"
  ENG: "State of the art storing facility"
  UKR: "Сучасний складський комплекс"
 SmallWarehousetech:
  Id: 17578
- GER: 
+ GER: "Planetarischer Vorrat I"
  ENG: "Planetary Stockpile I"
  UKR: "Планетарний запас I"
 PlanetaryDefenseIItech:
  Id: 17579
- GER: 
+ GER: "Planetarische Abwehr II"
  ENG: "Planetary Defense II"
  UKR: "Планетарна оборона II"
 PlanetaryDefenseIItechdesc:
  Id: 17580
- GER: 
+ GER: "Wütende Kriege zwischen verschiedenen Arten brachten Gefahren für den Planeten und seine Bevölkerung mit sich.  Die Bombardierung von Planeten ist zu einer ernsthaften Bedrohung geworden, die früher als später angegangen werden muss."
  ENG: "Raging wars between different species brought dangers to planets and its population. Planetary bombardment became a serious threat that need to be addressed sooner than later."
  UKR: "Несамовиті війни між різними видами принесли небезпеку планетам та їхньому населенню. Бомбардування планет стало серйозною загрозою, яку потрібно було вирішувати якнайшвидше."
 PlanetShieldheavy:
  Id: 17581
- GER: 
+ GER: "Planetarische Abschirmung"
  ENG: "Planetary Shielding"
  UKR: "Планетарний захист"
 PlanetShieldHeavyDesc:
  Id: 17582
- GER: 
+ GER: "Fortschrittliches Gebäude zur Planetenabschirmung, das erheblichen Schutz vor Orbitalbombardierungen bietet."
  ENG: "Advanced planetary shielding building providing substantial deference against orbital bombardment."
  UKR: "Удосконалена планетарна захисна споруда, що забезпечує значний захист від орбітального бомбардування."
 PlanetShieldHeavyDescShort:
  Id: 17583
- GER: 
+ GER: "Verteidigungsgebäude;  +600 Planetenschilde, 1 Schaden für jede eindringende Truppe"
  ENG: "Defensive Building; +600 Planetary Shields, 1 injuries to each invading troop"
  RUS: "Оборонительное здание; +600 планетарных щитов, 1 ранения каждому вторгающемуся отряду"
  UKR: "Оборонна будівля; +600 планетарних щитів, 1 поранення для кожного війська, що атакує"
 Tech_PlanetFortification_Desc:
  Id: 17584
- GER: 
+ GER: "Eskalierende Kriege führen zu längeren und massiven Belagerungen der Planeten. Zu diesem Zweck müssen wir die notwendigen Schritte unternehmen, um unsere Planeten zu befestigen und unsere Feinde für jeden Planeten, den sie angreifen, teuer bezahlen zu lassen."
  ENG: "Escalating wars are leading into prolonged and massive planetary sieges, for this purpose we need to take necessary steps into fortifying our planets and make our enemies pay dearly for each planet they assault."
  UKR: "Ескалація воєн призводить до тривалих і масованих планетарних облог, для цього нам потрібно вжити необхідних заходів для укріплення наших планет і змусити наших ворогів дорого заплатити за кожну планету, на яку вони напали."
 BB_AeroponicsShortDescr:
  Id: 17585
- GER: 
+ GER: "+1 Nahrung pro Runde"
  ENG: "+1 food per turn"
  RUS: "+1 еды в ход"
  SPA: "+1 comida por turno"
  UKR: "+1 їжа за хід"
 CoreExtracttech:
  Id: 17586
- GER: 
+ GER: "Kern Anzapfung"
  ENG: "Core Siphoning"
  UKR: "Сифонізація ядра"
 CoreExtracttechdesc:
  Id: 17587
- GER: 
+ GER: "Durch die Erschließung des Planetenkerns sind wir in der Lage, große Mengen wertvoller und seltener Elemente, Mineralien und Metalle zu extrahieren. Leider müssen sie anschließend einen komplexen Raffinierungsprozess durchlaufen, der zu starker Umweltverschmutzung führt"
  ENG: "By taping into the planets core we are able to extract huge amounts precious and rare elements, minerals and metals, unfortunately afterwards they need to go over a complex refinement process that creates heavy pollution"
  UKR: "Проникаючи в ядро планет, ми можемо видобувати величезну кількість дорогоцінних і рідкісних елементів, мінералів і металів, але, на жаль, після цього вони повинні пройти складний процес очищення, який створює сильне забруднення навколишнього середовища."
 CoreExtract:
  Id: 17588
- GER: 
+ GER: "Kern Extraktor"
  ENG: "Core Extractor"
  UKR: "Extractor Core Extractor"
 CoreExtractDesc:
  Id: 17589
- GER: 
+ GER: "Fortschrittliches Gebäude zur Gewinnung und Veredelung von Mineralkernen"
  ENG: "Advanced mineral core extraction and refinement building"
  UKR: "Удосконалена будівля для видобутку та збагачення мінеральної сировини"
 EMPDicharger:
  Id: 17590
- GER: 
+ GER: "EMP Werfer"
  ENG: "EMP Discharger"
  UKR: "Розрядник ЕМІ"
 EMPDichargerdescr:
  Id: 17591
- GER: 
+ GER: "EMP-Waffe, die speziell für kleinere Schiffe entwickelt wurde, um ihre Ziele außer Gefecht zu setzen. Diese besondere Waffe hat eine geringe Chance, dass EMP-Projektile den Schild passieren können."
  ENG: "EMP weapon specially designed for smaller crafts to disable their targets, this particular weapon has a small chance that EMP projectile can pass the shield."
  UKR: "ЕМІ-зброя спеціально розроблена для малих кораблів, щоб виводити з ладу їхні цілі, ця зброя має невелику ймовірність того, що ЕМІ-снаряд може пройти крізь щит."
 PhasorFocusTech:
  Id: 17592
- GER: 
+ GER: "Focussierter Strahl III"
  ENG: "Focused Beam III"
  UKR: "Сфокусований промінь III"
 PhasorFocusTechDescr:
  Id: 17593
- GER: 
+ GER: "Die Entwicklung der Strahlenwaffen führte uns zur Entdeckung eines mächtigen Phasors.  Mithilfe bisher bekannter Methoden zur Strahlfokussierung ist es uns gelungen, die meisten alten Schaltpläne mit neuen, fortschrittlichen Komponenten zu kombinieren."
  ENG: "Evolution of beam weapons lead us into discovering a powerful Phasor's. Using previously known methods of focusing beams we managed to apply most of the old schematics with new advanced components. "
  UKR: "Еволюція променевої зброї привела нас до відкриття потужного фазообертача. Використовуючи раніше відомі методи фокусування променів, нам вдалося застосувати більшість старих схем з новими вдосконаленими компонентами."
 LightBeam:
  Id: 17595
- GER: 
+ GER: "Lichtstrahlphalanx"
  ENG: "Light beam array"
  UKR: "Масив світлового променя"
 LightBeamDescr:
  Id: 17596
- GER: 
+ GER: "Leichte und kleine Waffenhalterung, die einen ziemlich starken Energiestrahl erzeugt.  Zum Schießen sind Energiezellen erforderlich."
  ENG: "Light and small weapon mount that produces a quite powerfull beam of energy. Requires Energy Cells to be able to shoot."
  UKR: "Легке і невелике кріплення для зброї, що виробляє досить потужний промінь енергії. Для стрільби потрібні Енергетичні елементи."
 LightEnergycannon:
  Id: 17597
- GER: 
+ GER: "Lichtenergiekanone"
  ENG: "Light energy cannon"
  UKR: "Гармата світлової енергії"
 LightEnerycannonDescr:
  Id: 17598
- GER: 
+ GER: "Leichte und kleine Waffenhalterung, die Energieprojektile verschießt.  Zum Schießen sind Energiezellen erforderlich."
  ENG: "Light and small weapon mount that shoots energy projectiles. Requires Energy Cells to be able to shoot."
  UKR: "Легка та невелика зброя, що стріляє енергетичними снарядами. Для стрільби потрібні Енергетичні елементи."
 LightIonBeam:
  Id: 17599
- GER: 
+ GER: "Leichter ionisierter Strahl"
  ENG: "Light Ionized Beam"
  UKR: "Світловий іонізований промінь"
 LightIonBeamDescr:
  Id: 17600
- GER: 
+ GER: "Leichte und kleine Waffenhalterung, die einen speziellen Strahl erzeugt, der den Schild des Ziels absaugt und nach dem Zusammenbruch des Schildes die Energiereserven des gegnerischen Schiffs verringert."
  ENG: "Light and small weapon mount that produces a special beam that siphons targets shield, after shield colapses it lowers enemy ship energy reserves."
  UKR: "Легка і невелика гармата, яка виробляє спеціальний промінь, що висмоктує щит цілі, а після руйнування щита знижує енергетичні запаси ворожого корабля."
 LightKineticCannon:
  Id: 17601
- GER: 
+ GER: "Leichte kinetische Kanone"
  ENG: "Light Kinetic Cannon"
  UKR: "Легка кінетична гармата"
 LightKineticCannonDescr:
  Id: 17602
- GER: 
+ GER: "Leichte und kleine Waffenhalterung, die kinetische Projektile in schneller Folge abfeuert.  Erfordert eine Verordnung, um schießen zu können."
  ENG: "Light and small weapon mount that shoots kinetic projectles in rapid sucession. Requires Ordinance to be able to shoot."
  UKR: "Легка та невелика зброя, що стріляє кінетичними снарядами з швидкою послідовністю. Для стрільби потрібен Орден."
 Tech_SmallStations_Name:
  Id: 17603
- GER: 
+ GER: "Kleine Stationen"
  ENG: "Small Stations"
  RUS: "Малые станции"
  UKR: "Малі станції"
 Tech_SmallStations_Desc:
  Id: 17604
- GER: 
+ GER: "Um unsere Kolonien vor der wachsenden Gefahr feindlicher Flotten zu schützen, haben wir kürzlich Pläne für den Bau unserer ersten Orbitalstation ausgearbeitet, einer neuen Art von Struktur, die größer ist als unsere kleinen und schweren Plattformen."
  ENG: "In order to defend our colonies from the growing danger of enemy fleets, we have recently devised blueprints to construct our first orbital station, a new type of structure that is larger than our small and heavy platforms."
  UKR: "Щоб захистити наші колонії від зростаючої небезпеки ворожих флотів, ми нещодавно розробили креслення для будівництва нашої першої орбітальної станції, нового типу споруди, більшої за наші маленькі та важкі платформи."
 Tech_Battle_Stations_Name:
@@ -21304,7 +21304,7 @@ Tech_Battle_Stations_Name:
  UKR: "Бойові позиції"
 Tech_Battle_Stations_Desc:
  Id: 17606
- GER: 
+ GER: "Die Notwendigkeit, unsere Kolonien gegen feindliche Invasionen zu verteidigen, wächst ständig.  Unsere Ingenieure haben eine beträchtlich große Kampfstation entworfen, die die Verteidigungsfähigkeit unserer wichtigeren Planeten stärken wird.  Wir haben auch unsere Orbitalraketenwerfer überarbeitet, ein Schritt zur Beseitigung der Bedrohung durch feindliche Langstreckenwaffen."
  ENG: "The need to defend our colonies against enemy invasion grows constantly. Our engineers have designed a substantially large battle station that will bolster the defensive prowess of our more important planets. We have also iterated upon our orbital missile launchers, a step toward nullifying the threat of long range enemy weapons."
  UKR: "Потреба в захисті наших колоній від ворожих вторгнень постійно зростає. Наші інженери розробили досить велику бойову станцію, яка посилить обороноздатність наших найважливіших планет. Ми також вдосконалили наші орбітальні ракетні установки, що є кроком до зведення нанівець загрози ворожої зброї далекого радіусу дії."
 Module_ArmoredMissile:
@@ -21314,7 +21314,7 @@ Module_ArmoredMissile:
  UKR: "Броньована ракетна шахта"
 Module_ArmoredMissile_Desc:
  Id: 17608
- GER: 
+ GER: "Schwer gepanzerter Raketensilo mit extremer Reichweite, aber extremem Gewicht, bestens geeignet für defensive Orbitalstrukturen."
  ENG: "Heavily armored missile silo with extreme range but with extreme weight, best suited for defensive orbital structures."
  UKR: "Важкоброньована ракетна шахта з надзвичайною дальністю польоту, але з надзвичайною вагою, що найкраще підходить для оборонних орбітальних споруд."
 WirelessPowerTech:
@@ -21324,42 +21324,42 @@ WirelessPowerTech:
  UKR: "Бездротове живлення"
 WirelessPowerTechDescr:
  Id: 17610
- GER: 
+ GER: "Bei der Untersuchung von Boson-Teilchen haben unsere Wissenschaftler herausgefunden, dass sie Energie auf begrenztem Gebiet drahtlos übertragen können.  Dieser Durchbruch wird die Ergonomie im Schiffsbau enorm verbessern."
  ENG: "While studing Bosons particles our scientists discovered that they can wirelessly transmit power on limited area. This breakthrough will hugely improve ergonomy in ship designing."
  UKR: "Вивчаючи частинки бозони, наші вчені виявили, що вони можуть бездротово передавати енергію на обмеженій площі. Цей прорив значно покращить ергономіку при проектуванні кораблів."
 BosonModule:
  Id: 17611
- GER: 
+ GER: "Bosonentransmitter"
  ENG: "Boson Transmiter."
  UKR: "Бозонний передавач."
 BosonModuleDescr:
  Id: 17612
- GER: 
+ GER: "Dieses kleine Gerät überträgt drahtlos Strom über einen begrenzten Bereich."
  ENG: "This small device will transmit power across limited area in wireless faction."
  UKR: "Цей невеликий пристрій буде передавати енергію на обмеженій ділянці бездротовим способом."
 SustainedWarfareTech:
  Id: 17613
- GER: 
+ GER: "Nachhaltige Kriegsführung"
  ENG: "Sustained Warfare"
  UKR: "Тривала війна"
 AegisName:
  Id: 17614
- GER: 
+ GER: "Aegis"
  ENG: "Aegis"
  UKR: "Егіда"
 AegisDescr:
  Id: 17615
- GER: 
+ GER: "Massive Strahlkanone, die hauptsächlich als orbitale Verteidigungswaffe zur Massenvernichtung konzipiert ist und in der Lage ist, mehrere Schiffe zu durchdringen, die von diesem mächtigen Strahl gertroffen werden.  Aufgrund seiner sehr hohen Masse ist der Einbau auf Schiffen nicht zu empfehlen"
  ENG: "Massive beam cannon designed mainly as orbital defence weapon of mass destruction capable cutting through several ships that will come across its powerfull beam. Due to its very high mass its not advised to be installed on ships"
  UKR: "Масивна променева гармата розроблена в основному як орбітальна зброя масового ураження, здатна пробити кілька кораблів, які потраплять під її потужний промінь. Через дуже велику масу її не рекомендується встановлювати на кораблях"
 ArmoredTurret:
  Id: 17616
- GER: 
+ GER: "Gepanzerter Turm"
  ENG: "Armored Turret"
  UKR: "Броньована башта"
 ArmoredTurretDescr:
  Id: 17617
- GER: 
+ GER: "Der gepanzerte Turm dient als Verteidigungswaffe mit sehr hohen TP.  Dank der stabilen Montage zeichnet es sich durch eine hervorragende Reichweite und Feuerrate aus.  Sein Hauptnachteil liegt in seiner sehr hohen Masse, die nicht für Schiffe geeignet ist."
  ENG: "Armored Turret serves as defensive weapon with very high HP. Thanks to sturdy mounting it excell in range and rate of fire. Its main drawback is in its very high mass not suited for ships."
  UKR: "Броньована башта слугує оборонною зброєю з дуже високою потужністю. Завдяки міцному кріпленню вона має високу дальність і швидкість стрільби. Її основний недолік полягає в дуже великій масі, що не підходить для кораблів."
 BB_Tech_LaserBeam_Name:
@@ -21369,12 +21369,12 @@ BB_Tech_LaserBeam_Name:
  UKR: "Лазерні промені"
 BB_Tech_LaserBeam_descr:
  Id: 17619
- GER: 
+ GER: "Viele unserer führenden Militärwissenschaftler glauben, dass gerichtete Energiewaffen die Zukunft des Weltraumkampfes sind.  Diese Technologie stellt unsere ersten Schritte in diesem Bereich dar."
  ENG: "Many of our top military scientists believe that directed energy weapons are the future of space combat. This technology represents our first steps into this field."
  UKR: "Багато наших провідних військових науковців вважають, що зброя зі спрямованою енергією - це майбутнє космічних боїв. Ця технологія являє собою наші перші кроки в цій галузі."
 BB_RoverbayDescr:
  Id: 17620
- GER: 
+ GER: "Bemannte und automatisierte Roboter ermöglichen unerlässliche Arbeitseinsparungen für junge Kolonien und erhöhen die Produktion der Kolonie mit einem pauschalen Produktionsbonus von +1, mit zusätzlicher Produktion von +1 pro Planetenreichtum."
  ENG: "Manned and automated rovers provide indispensable labor savings to fledgling colonies, increasing the production of the colony with a flat +1 production bonus, with additional +1 production per planets richness."
  UKR: "Пілотовані та автоматизовані марсоходи забезпечують незамінну економію робочої сили для молодих колоній, збільшуючи виробництво колонії з фіксованим бонусом +1 виробництво, з додатковим +1 виробництвом за багатство планети."
 BB_RemnTroopTech:
@@ -21384,7 +21384,7 @@ BB_RemnTroopTech:
  UKR: "Штурмовий безпілотник"
 BB_RemnTroopDescr:
  Id: 17622
- GER: 
+ GER: "Dank der wiedergefundenen Baupläne und all der Trümmerreste können wir diesen tödlichen Panzer nachbauen, er wird bei der Verteidigung und Invasion von Planeten sehr nützlich sein."
  ENG: "Thanks to retrived schematics and all the remnant wrackage we can recreate this deadly tank, it  will be very usefull in defending and invading planets."
  UKR: "Завдяки віднайденим схемам та залишкам Древніх ми можемо відтворити цей смертоносний танк, який буде дуже корисним в обороні та захопленні планет."
 BB_PrismTech:
@@ -21394,12 +21394,12 @@ BB_PrismTech:
  UKR: "Нанопризми"
 BB_PrismTechDescr:
  Id: 17624
- GER: 
+ GER: "Die Herstellung von Millionen von Nanoskopprismen mithilfe von Strahllinsentechnologien ermöglichte Entladungen mit höherer Spannung, die einen schädlicheren Strahl erzeugten."
  ENG: "Creating millions of nanoscope prisms in beam lensing technologies allowed for higher voltage discharges creating more damaging beam. "
  UKR: "Створення мільйонів призм наноскопів у технологіях лінзування променів дозволило отримати розряди вищої напруги, що створюють більш руйнівний промінь."
 BB_PrismBonus:
  Id: 17625
- GER: 
+ GER: "Die Nanoprismen Technologie verleiht Strahlenwaffen einen Extra-Schaden von 20%."
  ENG: "Nanoprism technology provides a 20% bonus damage to beam weapons."
  UKR: "Технологія нанопризм дає 20% бонус до променевої зброї."
 BB_CombatEngines:
@@ -21409,7 +21409,7 @@ BB_CombatEngines:
  UKR: "Бойові двигуни"
 BB_ComabtEnginesDescr:
  Id: 17627
- GER: 
+ GER: "Kampftriebwerke zeichnen sich dadurch aus, dass sie dank optimierter Schwenkdüsen den Triebwerksschub in alle Richtungen lenken kann, um ihm eine bessere Manövrierfähigkeit zu verleihen, und zwei außermittig ausgerichtete Triebwerke die einen hervorragenden Unterlicht- und Umkehrschub bieten.  Die Leistung dieses Motors eignet sich am besten für Schiffe mit geringerer Masse und geringem Platzbedarf.  In die Motoren sind außerdem Energiezellen in Militärqualität und ein kleiner Generator integriert."
  ENG: "Combat Thrusters excel at providing excellent sub light thrust and turn thrust thanks to 3D vectoring which is able to direct its engine thrust in another direction to give it better maneuverability and two off-center aligned engines. Output of this engine is best suited for ships with lower mass and small footprint. Integraded in the engines are also military grade power cells, and small power generator. "
  UKR: "Combat Thrusters забезпечують чудову тягу на малих швидкостях і тягу при повороті завдяки 3D-векторизації, яка здатна спрямовувати тягу двигуна в інший бік для кращої маневреності, а також двом двигунам, розташованим поза центром. Потужність цього двигуна найкраще підходить для кораблів з меншою масою та невеликими розмірами. У двигуни також інтегровані силові елементи військового класу і невеликий генератор електроенергії."
 BB_AFRepeater:
@@ -21419,7 +21419,7 @@ BB_AFRepeater:
  UKR: "Вежа ретранслятора ЗРК"
 BB_AFRepeaterDescr:
  Id: 17629
- GER: 
+ GER: "Schnell feuernder Anti-Jäger-Energieturm, der für den Kampf gegen flinke und leicht gepanzerte Fahrzeuge aus nächster Nähe entwickelt wurde."
  ENG: "Fast firing anti-fighter energy turret, designed to deal with nimble and lightly armoured crafts at close range. "
  UKR: "Швидкострільна противинищувальна енергетична турель, призначена для боротьби з маневреними та легкоброньованими суднами на близькій відстані."
 BB_OrdnanceDevelopmentTech:
@@ -21429,12 +21429,12 @@ BB_OrdnanceDevelopmentTech:
  UKR: "Стиснення"
 BB_OrdnanceDevelopmentTechDescr:
  Id: 17631
- GER: 
+ GER: "Fortschritte bei Kompressionstechniken zur Erzeugung dichterer Kampfmittel haben die Schadensausbeute kampfmittelbasierter Waffen verbessert.  Kann mehrmals erforscht werden, jedes Mal, wenn die Technologiekosten steigen."
  ENG: "Advancements in compression techniques to create more dense ordnance have improved the damage output of ordnance based weapons. Can be researched multiple times, each time tech costs is increased."
  UKR: "Досягнення в методах стиснення для створення більш щільних боєприпасів покращили потужність ураження зброї на основі боєприпасів. Можна досліджувати кілька разів, щоразу збільшуючи технологічні витрати."
 BB_OrdnanceDevelopmentTechbonus:
  Id: 17632
- GER: 
+ GER: "5% Schadensbonus für kinetische Waffen."
  ENG: "5% damage bonus to kinetic based weapons."
  UKR: "5% бонус до пошкоджень від кінетичної зброї."
 BB_WarheadDevelopmentTech:
@@ -21444,12 +21444,12 @@ BB_WarheadDevelopmentTech:
  UKR: "Боєголовки"
 BB_WarheadDevelopmentTechDescr:
  Id: 17634
- GER: 
+ GER: "Langfristiger Plan zur Weiterentwicklung gelenkter Waffen.  Kann mehrmals erforscht werden, jedes Mal, wenn die Technologiekosten steigen."
  ENG: "Long term plan of advancments of guided weapons. Can be researched multiple times, each time tech costs is increased."
  UKR: "Довгостроковий план розвитку керованої зброї. Може досліджуватися кілька разів, з кожним разом збільшуючи технологічні витрати."
 BB_WarheadDevelopmentTechTechbonus:
  Id: 17635
- GER: 
+ GER: "10% Schadensbonus für Raketen und Torpedos."
  ENG: "10% damage bonus to missiles and torpedoes."
  UKR: "10% бонус до шкоди від ракет і торпед."
 BB_ConherencyTech:
@@ -21459,42 +21459,42 @@ BB_ConherencyTech:
  UKR: "Кристалічна оптика"
 BB_ConherencTechDescr:
  Id: 17637
- GER: 
+ GER: "Verbesserungen in der Beziehung zwischen der Phase der Wellen in einem Strahlungsstrahl einer einzelnen Frequenz, was zu einem stärkeren Strahl führt. Kann mehrmals erforscht werden, jedes Mal, wenn die Technologiekosten steigen."
  ENG: "Improvements in relationship between the phase of waves in a beam of radiation of a single frequency resulting more powerfull beam.Can be researched multiple times, each time tech costs is increased."
  UKR: "Покращення співвідношення між фазами хвиль у пучку випромінювання однієї частоти, що призводить до отримання більш потужного пучка. Може досліджуватися багаторазово, щоразу збільшуючи технічні витрати."
 BB_ConherencTechDescrBonus:
  Id: 17638
- GER: 
+ GER: "5% Schadensbonus für strahlbasierte Waffen."
  ENG: "5% damage bonus to beam based weapons."
  UKR: "5% бонус до променевої зброї."
 BB_EnergizationTech:
  Id: 17639
- GER: 
+ GER: "Energetisierung"
  ENG: "Energization"
  UKR: "Енергізація"
 BB_EnergizationTechDescr:
  Id: 17640
- GER: 
+ GER: "Fortschritte bei dichter und intensiver verpackten Energieprojektilen haben deren Schadensausstoß verbessert.  Kann mehrmals erforscht werden, jedes Mal, wenn die Technologiekosten steigen."
  ENG: "Advancements in more tightly and intensely packaged energy projectiles have improved their damage output. Can be researched multiple times, each time tech costs is increased."
  UKR: "Удосконалення більш щільно та інтенсивно упакованих енергетичних снарядів покращило їхню потужність ураження. Можна досліджувати кілька разів, щоразу збільшуючи технічні витрати."
 BB_EnergizationTechDescrBonus:
  Id: 17641
- GER: 
+ GER: "5% Schadensbonus für Waffen, die auf Energieprojektilen basieren."
  ENG: "5% damage bonus to energy projectile based weapons."
  UKR: "5% бонус до шкоди від зброї, що базується на енергетичних снарядах."
 BB_DispersionTech:
  Id: 17642
- GER: 
+ GER: "Verteiler"
  ENG: "Dispersion"
  UKR: "Дисперсія"
 BB_DispersionTechDescr:
  Id: 17643
- GER: 
+ GER: "Fortschritte bei den in unseren Schilden verwendeten Energieverteilungsmethoden haben zu einem besseren Schutz und einer effektiven Erhöhung der Trefferpunkte unserer Schilde geführt. Kann mehrmals erforscht werden, jedes Mal, wenn die Technologiekosten steigen."
  ENG: "Advancements in the energy dispersion methods used in our shields have led to a better protection and an effective hitpoints increase of our shields.Can be researched multiple times, each time tech costs is increased."
  UKR: "Досягнення в методах розсіювання енергії, що використовуються в наших щитах, призвели до кращого захисту і ефективного збільшення хітпоінтів наших щитів. Можна досліджувати кілька разів, з кожним разом збільшуючи технологічні витрати."
 BB_DispersionTechDescrBonus:
  Id: 17644
- GER: 
+ GER: "14% Erhöhung der Schildstärke."
  ENG: "14% shield power increase."
  UKR: "14% збільшення потужності щита."
 BB_DurabilityTech:
@@ -21504,27 +21504,27 @@ BB_DurabilityTech:
  UKR: "Довговічність"
 BB_DurabilityTechDescr:
  Id: 17646
- GER: 
+ GER: "Fortschritte in der atomaren Struktur unserer Materialien haben die Trefferpunkte aller unserer Module einschließlich der Panzerung erhöht.  Kann mehrmals erforscht werden, jedes Mal, wenn die Technologiekosten steigen."
  ENG: "Advancement in the atomic structure of our materials have increase the hitpoints of all our modules including armour. Can be researched multiple times, each time tech costs is increased."
  UKR: "Удосконалення атомної структури наших матеріалів збільшило хітпоінти всіх наших модулів, включно з бронею. Можна досліджувати кілька разів, щоразу збільшуючи витрати на дослідження."
 BB_Nano-structureTecDescrBonus:
  Id: 17647
- GER: 
+ GER: "10 % TP-Erhöhung für alle Module."
  ENG: "10% hp increase to all modules."
  UKR: "Приріст 10% хп до всіх модулів."
 BB_CrystalPlant:
  Id: 17648
- GER: 
+ GER: "Kristallzucht Fabrik"
  ENG: "Crystal Growing Plant"
  UKR: "Завод з вирощування кристалів"
 BB_CrystalPlantDescr:
  Id: 17649
- GER: 
+ GER: "Dieses wunderbare Gebäude ist in der Lage, sehr wertvolle Kristalle zu züchten, die mit sehr hohem Gewinn verkauft werden können."
  ENG: "This marvelous building is able to grow a very valuable crystals that can be sold at very high profit."
  UKR: "Ця дивовижна будівля здатна вирощувати дуже цінні кристали, які можна продати з дуже високим прибутком."
 BB_CrystalPlantDescrBonus:
  Id: 17650
- GER: 
+ GER: "Erzeugt +8 Credits pro Spielzug"
  ENG: "Generates +8 credits per turn"
  UKR: "Генерує +8 кредитів за хід"
 BB_Hellstorm:
@@ -21534,7 +21534,7 @@ BB_Hellstorm:
  UKR: "Пекельний шторм"
 BB_HellstormDescr:
  Id: 17652
- GER: 
+ GER: "Schon mal von Gundam gehört?"
  ENG: "Ever heard of Gundam?"
  UKR: "Чули коли-небудь про Гундама?"
 BB_ClusterMissile:
@@ -21544,7 +21544,7 @@ BB_ClusterMissile:
  UKR: "ClusterMissile"
 BB_ClusterMissileDescr:
  Id: 17654
- GER: 
+ GER: "Mit Mehrfachsprengköpfen ausgestattetes Raketensystem"
  ENG: "Missile system equiped with cluster warheads"
  UKR: "Ракетний комплекс, оснащений касетними боєголовками"
 BB_SpaceportTech:
@@ -21554,7 +21554,7 @@ BB_SpaceportTech:
  UKR: "Космічний порт"
 BB_SpaceportTechDescr:
  Id: 17656
- GER: 
+ GER: "Die Platzierung einer Anlage in einer niedrigen Umlaufbahn eines neu kolonisierten Planeten ermöglicht den Bau von Schiffen in der Schwerelosigkeit unter Verwendung von Materialien, die von dem Planeten bereitgestellt werden, den sie umkreist.  Dank der Lage in der Schwerelosigkeitsumgebung können wir ohne Einschränkungen Schiffe in allen Formen und Größen bauen."
  ENG: "Placing a facility in low orbit of a newly colonized planet will alllow building of ships in zero gravity using materials provided from planet it orbits. Thanks to locating it in zero gravity environment we can build ships in all shapes and sizes without any constraints."
  UKR: "Розміщення об'єкта на низькій орбіті нещодавно колонізованої планети дозволить будувати кораблі в умовах невагомості з матеріалів, отриманих з планети, на якій він обертається. Завдяки розташуванню в умовах невагомості ми зможемо будувати кораблі будь-яких форм і розмірів без будь-яких обмежень."
 BB_Bunker:
@@ -21564,12 +21564,12 @@ BB_Bunker:
  UKR: "Бункер"
 BB_BunkerDescr:
  Id: 17658
- GER: 
+ GER: "Stark befestigtes Gebäude, das früher zur Verteidigungslinie diente und einem längeren Bombardierungszeitraum standhalten konnte, dem es jedoch an Feuerkraft mangelte."
  ENG: "Highly fortifed building used to hold defensive lines, capable of withstanding a longer peroid of bombarding, but lacks in firepower."
  UKR: "Високоукріплена споруда, що використовувалася для утримання оборонних ліній, здатна витримати довший період бомбардування, але не має достатньої вогневої потужності."
 BB_BunkerDescrShort:
  Id: 17659
- GER: 
+ GER: "Hochsicherheitsgebäude"
  ENG: "Highly defensive building"
  UKR: "Високообороноздатна будівля"
 Tech_AncientArmor_Name:
@@ -21598,13 +21598,13 @@ LargeAncientArmor:
  UKR: "Велика Броня Древніх"
 Tech_AncientArmor_Desc:
  Id: 17957
- GER: 
+ GER: "Ein sehr langlebiges Stück uralter Rüstung.  Kann sowohl als Innenschott als auch als Außenpanzerung verwendet werden."
  ENG: "A very durable piece of Ancient Armor. Can be used both as an internal bulkhead, or as external armor."
  RUS: "Очень прочный кусок древней брони. Может использоваться как внутренняя переборка или как внешняя броня."
  UKR: "Дуже міцний елемент Броні Древніх. Може використовуватися як внутрішня перегородка, або як зовнішня броня."
 AncientArmorIsCoveredIn:
  Id: 17958
- GER: 
+ GER: "Uralte Panzerungen sind mit einer goldähnlichen Beschichtung überzogen.  Jedes Panzerungsmodul besteht aus kleineren Teilen, die bei einem Aufprall abreißen"
  ENG: "Ancient armor is covered in a gold-like coating. Each armor module is made of smaller pieces that tear off when struck."
  RUS: "Древняя броня покрыта золотым напылением. Каждый модуль брони состоит из более мелких частей, которые отрываются при ударе."
  UKR: "Броня Древніх вкрита покриттям, схожим на золото. Кожен модуль броні зроблений з маленьких шматочків, які відриваються при ударі."
@@ -21616,7 +21616,7 @@ Structure:
  UKR: "Структура"
 ThisSimpleStructureIsUsed:
  Id: 18049
- GER: 
+ GER: "Diese einfache Struktur wird als Füllstoff für Schiffe verwendet, die keine weitere Modulfunktionalität benötigen"
  ENG: "This simple structure is used as a \"filler\" for ships which do not require more module functionality"
  RUS: "Эта простая структура используется в качестве \"наполнителя\" для кораблей, которым не требуется дополнительная функциональность модуля."
  UKR: "Ця проста структура використовується як \"наповнювач\" для кораблів, які не потребують більшої функціональності модуля"
@@ -21627,7 +21627,7 @@ Tech_Terraforming_Name:
  UKR: "Тераформування I"
 Tech_Terraforming_Desc:
  Id: 18280
- GER: 
+ GER: "Das Terraforming von Planeten ist ein langsamer Prozess, der jedoch zu hervorragenden Ergebnissen führen kann.  Wenn es erforscht würde, wären wir in der Lage, Terraformer zu bauen;  Riesige Maschinen, die selbst den tödlichsten Vulkan in einen schönen, harmlosen Hügel verwandeln können."
  ENG: "Terraforming planets is a slow process but it can produce excellent results. If researched, we would be able to construct Terraformers; Vast machines which can transform even the most deadly Volcano into a nice, harmless hill."
  UKR: "Тераформування планет - це повільний процес, але він може дати чудові результати. Якщо його дослідити, ми зможемо побудувати тераформери - величезні машини, здатні перетворити навіть найсмертоносніший вулкан на милий, нешкідливий пагорб."
 Tech_Terraforming2_Name:
@@ -21637,7 +21637,7 @@ Tech_Terraforming2_Name:
  UKR: "Тераформування II"
 Tech_Terraforming2_Desc:
  Id: 18282
- GER: 
+ GER: "Durch die Fortsetzung der Terraforming-Forschung werden wir in der Lage sein, Terraformer noch effektiver zu machen.  Terraformer werden in der Lage sein, unbewohnbare Teile des Planeten in vollständig bewohnbare Gebiete umzuwandeln und so die Bevölkerungskapazität zu erhöhen."
  ENG: "Continuing the line of Terraforming research, we will be able to make Terraformers even more effective. Terraformers will be able to transform unhabitable sections of the planet into fully habitable lands, increasing population capacity."
  UKR: "Продовжуючи напрямок досліджень у сфері тераформування, ми зможемо зробити тераформери ще ефективнішими. Вони зможуть перетворювати непридатні для життя ділянки планети на цілком придатні для життя землі, збільшуючи кількість населення."
 Tech_Terraforming3_Name:
@@ -21647,7 +21647,7 @@ Tech_Terraforming3_Name:
  UKR: "Тераформування III"
 Tech_Terraforming3_Desc:
  Id: 18284
- GER: 
+ GER: "Die fortschrittlichste Technologie, die für Terraformer verfügbar ist.  Sie werden in der Lage sein, jeden bewohnbaren Planeten in die Planetenumgebung zu verwandeln, die unsere Bevölkerung bevorzugt.  Das ist ein wahres technologisches Wunderwerk!"
  ENG: "The most advanced technology avaialble for Terraformers. They will be able to transform any habitable planet to the planet environment type our population prefers. This is a true technological marvel!"
  UKR: "Найсучасніша технологія, доступна для тераформерів. Вони зможуть перетворити будь-яку придатну для життя планету на той тип планетарного середовища, якому надає перевагу наше населення. Це справжнє технологічне диво!"
 # DO NOT USE 18K index for bb+  - use empty spaces between 4000-5000
