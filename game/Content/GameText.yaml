@@ -254,7 +254,8 @@ Fertile:
  UKR: "Плодовиті"
 PromiscuousNaturesShortGestationPeriods:
  Id: 37
- ENG: "Promiscuous natures, short gestation periods, and large litter sizes increase a race's rate of reproduction significantly. Minimum population growth is 0.05 (5 Million) per turn. "
+ GER: "Hohe Fruchtbarkeit, kurze Tragzeit und große Wurfgrößen erhöhen die Fortpflanzungsrate einer Rasse erheblich. Mindestwachstum der Bevölkerung beträgt 0.05 (5 Million) pro Runde."
+ ENG: "Promiscuous natures, short gestation periods, and large litter sizes increase a race's rate of reproduction significantly. Minimum population growth is 0.05 (5 Million) per turn."
  RUS: "Склонность к беспорядочным связям, короткие сроки беременности и большое количество детенышей в приплоде очень благоприятно влияют на скорость воспроизводства этой расы естественным путем. Минимальный естественный прирост населения - .005 в ход."
  SPA: "La promiscuidad, los periodos de gestación breves y las grandes camadas incrementan considerablemente la tasa de reproducción de una raza. El crecimiento demográfico mínimo es de 0,005 por turno. "
  UKR: "Безладне статеве життя, короткий період вагітності та велика кількість дітей значно підвищують швидкість відтворення раси. Мінімальний приріст населення становить 0,05 (5 мільйонів) за хід."
@@ -475,7 +476,8 @@ Wasteful:
  UKR: "Марнотратні"
 WastefulRacesLeadLivesOf:
  Id: 69
- ENG: "Wasteful races lead lives of excess and care little for concepts like recycling or austerity.  Ship and building maintenance costs 25% more"
+ GER: "Verschwenderische Rassen führen ein Leben im Übermaß und kümmern sich wenig um Konzepte wie Recycling oder Sparmaßnahmen. Die Instandhaltung von Schiffen und Gebäuden kostet 25% mehr"
+ ENG: "Wasteful races lead lives of excess and care little for concepts like recycling or austerity. Ship and building maintenance costs 25% more"
  RUS: "Расточительные расы живут в свое удовольствие; такие понятия, как умеренность и переработка отходов, им совершенно чужды. Содержание кораблей и построек обходится на 25% дороже обычного."
  SPA: "Las razas derrochadoras llevan una vida de exceso y se preocupan poco por conceptos como reciclaje o austeridad.  El mantenimiento de naves y edificios les cuesta un 25% más"
  UKR: "Марнотратні раси ведуть надмірне життя і мало піклуються про такі поняття, як переробка чи жорстка економія. Утримання кораблів і будівель коштує на 25% більше"
@@ -502,7 +504,8 @@ Corrupt:
  UKR: "Корумповані"
 RacesWithAStrongTradition:
  Id: 73
- ENG: "Races with a strong tradition of political corruption have a 25% corruption penalty to tax income "
+ GER: "Rassen mit einer starken Tradition politischer Korruption haben einen Korruptionsabzug von 25% auf das Steuereinkommen"
+ ENG: "Races with a strong tradition of political corruption have a 25% corruption penalty to tax income"
  RUS: "Расы, склонные к коррупции в государственном аппарате, получают 25% штраф к собираемым налогам."
  SPA: "Las razas con una sólida tradición de corrupción política sufren una penalización del 25% al recaudar impuestos "
  UKR: "Раси з сильною традицією політичної корупції мають 25% корупційний штраф для прибутку з податків"
@@ -1703,7 +1706,8 @@ ThisIndicatesHowMuchA:
  UKR: "Це показує, наскільки раса вам довіряє. Довіра визначає, наскільки раса готова мати з вами справу. Ви можете заслужити довіру різними способами, зокрема, даруючи подарунки, дотримуючись домовленостей і загалом поводячись гідно."
 ThisIndicatesHowAngryA:
  Id: 246
- ENG: "This indicates how angry a race is with you. They will become angry if you attack them or make unreasonable demands of them. They may also be angry for befriending their enemies or just because they simply are an angry race. "
+ GER: "Dies zeigt an, wie wütend eine Rasse auf Sie ist.  Sie werden wütend, wenn Sie sie angreifen oder unangemessene Forderungen an sie stellen. \nMöglicherweise sind sie auch wütend, weil sie sich mit ihren Feinden angefreundet haben, oder einfach nur, weil sie eine wütende Rasse sind."
+ ENG: "This indicates how angry a race is with you. They will become angry if you attack them or make unreasonable demands of them. They may also be angry for befriending their enemies or just because they simply are an angry race."
  RUS: "Указывает, насколько раса недовольна вами. Недовольство расы вами будет возрастать, если вы нападете на нее или будете выдвигать им необоснованные требования. Также недовольство расы может быть вызвано тем, что вы являетесь союзниками их врагов, ну или просто потому, что постоянное недовольство всеми и вся у этой расы в крови."
  SPA: "Esto indica el nivel de enojo de una raza hacia ti. Se enfadarán si los atacas o les haces demandas poco razonables. También pueden enfadarse si haces amistad con sus enemigos o simplemente porque son una raza enojadiza. "
  UKR: "Це вказує на те, наскільки раса розлючена на вас. Вони розлютяться, якщо ви нападете на них або висунете необґрунтовані вимоги. Вони також можуть злитися за те, що ви подружилися з їхніми ворогами, або просто тому, що вони - злісна раса. "
@@ -2544,7 +2548,8 @@ CapitalCity:
  UKR: "Столиця"
 TheCapitalCityIsA:
  Id: 410
- ENG: "The Capital City is a unique building that provides research while improving industrial and agricultural capacity. Capital Cities also provide excellent self defense and can withstand a sustained siege by determined opponents. Finally, Capital cities allow you to recruit basic infantry units. "
+ GER: "Die Hauptstadt ist ein einzigartiges Gebäude, das Forschung ermöglicht und gleichzeitig die industrielle und landwirtschaftliche Kapazität verbessert. \nHauptstädte bieten auch eine hervorragende Selbstverteidigung und können einer anhaltenden Belagerung durch entschlossene Gegner standhalten. \nSchließlich können Sie in Hauptstädten einfache Infanterieeinheiten rekrutieren."
+ ENG: "The Capital City is a unique building that provides research while improving industrial and agricultural capacity. Capital Cities also provide excellent self defense and can withstand a sustained siege by determined opponents. Finally, Capital cities allow you to recruit basic infantry units."
  RUS: "Столица - это уникальное строение, генерирующее научные исследования и одновременно улучшающее промышленный и сельскохозяйственный потенциал планеты. Столица также предоставляет мощный оборонительный потенциал и способна выдержать серьезную осаду. Кроме того, столица позволяет набирать базовые пехотные отряды."
  SPA: "La Capital urbana es un edificio único que proporciona investigación al tiempo que mejora la capacidad industrial y agrícola. Las Capitales urbanas también ofrecen una autodefensa excelente y pueden soportar asedios prolongados ante determinados rivales. Por último, las capitales te permiten reclutar unidades de infantería básicas. "
  UKR: "Столиця - це унікальна будівля, яка забезпечує дослідження, одночасно покращуючи промислові та сільськогосподарські потужності. Столиці також забезпечують відмінну самооборону і можуть витримати тривалу облогу рішуче налаштованих супротивників. Нарешті, столиці дозволяють вам набирати базові піхотні підрозділи."
@@ -2990,7 +2995,8 @@ BB_Tech_AntiMatter_Name:
  UKR: "Реактор антиматерії"
 BB_Tech_AntiMatter_Desc:
  Id: 514
- ENG: "By stabilizing a matter / anti-matter reaction, we can harness the energy output for a massive increase to our power levels. For now, we require a large reaction chamber, but future advances may miniaturize this process. "
+ GER: "Durch die Stabilisierung einer Materie-/Antimaterie-Reaktion können wir die Energieabgabe für eine massive Steigerung unseres Leistungsniveaus nutzen. \nDerzeit benötigen wir eine große Reaktionskammer, aber zukünftige Fortschritte könnten diesen Prozess effizienter gestalten."
+ ENG: "By stabilizing a matter / anti-matter reaction, we can harness the energy output for a massive increase to our power levels. For now, we require a large reaction chamber, but future advances may miniaturize this process."
  RUS: "Стабилизировав реакцию материи и антиматерии, мы сможем вырабатывать огромное количество энергии для всех наших нужд. Пока что для этого требуется осень большая реакционная камера, но впоследствии процесс, возможно, удастся миниатюризировать."
  SPA: "Al estabilizar una reacción de materia/antimateria, se puede aprovechar mejor la energía y aumentar mucho los niveles de potencia. Por el momento, hace falta una cámara de reacción grande, pero con avances futuros serán mucho más pequeñas. "
  UKR: "Стабілізувавши реакцію матерії та антиматерії, ми зможемо використати вихідну енергію для значного підвищення рівня нашої потужності. Наразі нам потрібна велика реакційна камера, але майбутні досягнення можуть мініатюризувати цей процес."
@@ -3003,7 +3009,8 @@ BB_Tech_ArmorTheory_Name:
  UKR: "Теорія броні"
 BB_Tech_ArmorTheory_Desc:
  Id: 516
- ENG: "The benefits of armoring our spaceships are self-evident. The use of steel is already common in our planetary industries, and so it is quite inexpensive to adapt this technology for use in space. "
+ GER: "Die Vorteile der Panzerung unserer Raumschiffe liegen auf der Hand.  Die Verwendung von Stahl ist in der Industrie unseres Planeten bereits üblich und daher ist es recht kostengünstig, diese Technologie für den Einsatz im Weltraum anzupassen."
+ ENG: "The benefits of armoring our spaceships are self-evident. The use of steel is already common in our planetary industries, and so it is quite inexpensive to adapt this technology for use in space."
  RUS: "То, что космические корабли должны быть защищены броней, не подлежит сомнению. Сталь уже активно применяется почти во всех отраслях промышленности, так что адаптировать уже существующие планетарные технологии для использования в космосе будет достаточно легко."
  SPA: "Las ventajas de blindar las naves espaciales es evidente. El uso de acero ya es habitual en nuestras industrias planetarias, por lo que no cuesta mucho adaptar esta tecnología para usarla en el espacio. "
  UKR: "Переваги бронювання наших космічних кораблів очевидні. Використання сталі вже є звичним для нашої планетарної промисловості, тож адаптувати цю технологію для використання в космосі зовсім недорого."
@@ -3016,7 +3023,8 @@ BB_Tech_Assimilation_Name:
  UKR: "Асиміляція"
 BB_Tech_Assimilation_Desc:
  Id: 518
- ENG: "We have reached our maximum genetic potential and require new genetic sources to continue growth. "
+ GER: "Wir haben unser maximales genetisches Potenzial erreicht und benötigen neue genetische Quellen, um weiter zu wachsen."
+ ENG: "We have reached our maximum genetic potential and require new genetic sources to continue growth."
  RUS: "Мы достигли максимума своего генетического потенциала, и для продолжения развития нам нужны новые гены."
  SPA: "Hemos alcanzado nuestro máximo potencial genético y necesitamos nuevas fuentes genéticas para seguir creciendo. "
  UKR: "Ми досягли свого максимального генетичного потенціалу і потребуємо нових генетичних джерел для продовження зростання."
@@ -3064,7 +3072,8 @@ BB_Tech_Biospheres_Name:
  UKR: "Біосфери"
 BB_Tech_Biospheres_Desc:
  Id: 525
- ENG: "Biospheres are large geodesic dome structures capable of supporting many colonists in an artificial environment. For a barren planet to house a large population, biospheres are absolutely necessary. Build biospheres on uninhabitable land to make that land habitable. "
+ GER: "Biosphären sind große geodätische Kuppelstrukturen, die viele Kolonisten beherbergen können. Damit auf einem kargen Planeten eine große Bevölkerung leben kann, sind Biosphären unbedingt erforderlich. Bauen Sie Biosphären auf unbewohnbarem Land, um es bewohnbar zu machen."
+ ENG: "Biospheres are large geodesic dome structures capable of supporting many colonists in an artificial environment. For a barren planet to house a large population, biospheres are absolutely necessary. Build biospheres on uninhabitable land to make that land habitable."
  RUS: "Биосферы - это большие куполообразные сооружения для поддержания жизнедеятельности колонистов в искусственно созданной среде. В бесплодных мирах биосферы абсолютно необходимы - иначе планета не сможет вместить много населения. Стройте биосферы на непригодной для жизни территории, чтобы потом заселить ее."
  SPA: "Las biosferas son estructuras en forma de cúpula geodésica capaces de albergar muchos colonos en un entorno artificial. Las biosferas son absolutamente necesarias para que un planeta árido pueda ser habitado. Constrúyelas en zonas inhabitables para crear asentamientos de población. "
  UKR: "Біосфери - це великі геодезичні купольні структури, здатні підтримувати багато колоністів у штучному середовищі. Для того, щоб безплідна планета могла вмістити велике населення, біосфери абсолютно необхідні. Будуйте біосфери на непридатних для життя землях, щоб зробити їх придатними."
@@ -3098,7 +3107,8 @@ BB_Tech_Colonization_Name:
  UKR: "Колонізація"
 BB_Tech_Colonization_Desc:
  Id: 531
- ENG: "Boldly going to strange new worlds is just the first step. What to do when we get there is quite a bit more important. This technology branch explores various scientific, industrial, and military enhancements we can make to our colonies. "
+ GER: "Sich mutig in fremde neue Welten zu begeben, ist nur der erste Schritt. \nWas zu tun ist, wenn wir dort ankommen, ist um einiges wichtiger. \nDieser Technologiezweig erforscht verschiedene wissenschaftliche, industrielle und militärische Verbesserungen, die wir in unseren Kolonien vornehmen können."
+ ENG: "Boldly going to strange new worlds is just the first step. What to do when we get there is quite a bit more important. This technology branch explores various scientific, industrial, and military enhancements we can make to our colonies."
  RUS: "Смело отправиться вперед к новым мирам - лишь первый шаг. Что делать потом, когда мы прибудем туда - намного более важный вопрос. Эта область технологий охватывает различные научные, промышленные и военные улучшения для наших колоний."
  SPA: "Atreverse a viajar hacia mundos desconocidos es solo el principio. ;lo que se hace una vez llegados allí es más importante. Esta rama de la tecnología explora varias mejoras científicas, industriales y militares para nuestras colonias. "
  UKR: "Сміливо вирушати в незнайомі нові світи - це лише перший крок. Що робити, коли ми туди потрапимо, набагато важливіше. Ця технологічна гілка досліджує різні наукові, промислові та військові вдосконалення, які ми можемо зробити для наших колоній."
@@ -4141,10 +4151,10 @@ BB_Tech_TachyonScanning_SensorRangeBonus_Bonus:
 BB_Tech_Terraforming_Name:
  Id: 683
  GER: "Terraformung"
- ENG: "Terraform"
- RUS: "Терраформировать"
- SPA: "Terraformar"
- UKR: "Тераформувати"
+ ENG: "Terraforming"
+ RUS: "Терраформинг"
+ SPA: "Terraformación"
+ UKR: "Тераформування"
 BB_Tech_ThalaronBlaster_Name:
  Id: 685
  GER: "Thalaron-Blaster"
@@ -5385,7 +5395,8 @@ AssaultShuttleBay:
  UKR: "Штурмовий відсік шатлів"
 ThisHangarBayWillLaunch:
  Id: 1073
- ENG: "This hangar bay will launch an assault shuttle capable of performing a ship-to-ship boarding action. A ship that launches an assault shuttle will have its Boarding Defense lowered by the power of the troops leaving the ship for the assault. Only one shuttle per bay may be launched at a time.  "
+ GER: "In dieser Hangarbucht wird ein Angriffsshuttle starten, das eine Enteraktion von Schiff zu Schiff durchführen kann. Die Enterverteidigung eines Schiffes, das ein Angriffsshuttle startet, wird durch die Kraft der Truppen verringert, die das Schiff zum Angriff verlassen. Es darf jeweils nur ein Shuttle pro Hangar gestartet werden."
+ ENG: "This hangar bay will launch an assault shuttle capable of performing a ship-to-ship boarding action. A ship that launches an assault shuttle will have its Boarding Defense lowered by the power of the troops leaving the ship for the assault. Only one shuttle per bay may be launched at a time."
  RUS: "Из этого отсека можно запустить штурмовой шаттл с морпехами на борту, которые попытаются взять вражеский корабль на абордаж. При запуске шаттла показатель защиты корабля от абордажа снизится на количество морпехов, отправленных в шаттле. Единовременно из одного отсека может быть выпущен только один шаттл."
  SPA: "Desde este muelle de hangar puede zarpar una lanzadera de salto capaz de realizar abordajes de nave a nave. La nave que lance el asalto habrá de tener las defensas contra abordaje desactivadas para que puedan salir sus tropas. Solo puede desplegarse una lanzadera por muelle al mismo tiempo.  "
  UKR: "З цього ангарного відсіку можна запустити штурмовий шаттл, здатний виконувати абордажні дії з корабля на корабель. Корабель, який запускає штурмовий шаттл, має знижений абордажний захист на потужність військ, що покидають корабель для штурму. Одночасно може бути запущений лише один шаттл з однієї бухти.  "
@@ -5405,7 +5416,8 @@ SmallWarpEngine:
  UKR: "Малий двигун викривлення."
 ThisWarpEngineProvidesTwice:
  Id: 1077
- ENG: "This warp engine provides twice the benefit of a normal engine for warp purposes, but only half the thrust of a normal engine at sublight speeds. "
+ GER: "Dieses Warp-Triebwerk bietet den doppelten Nutzen eines normalen Triebwerks für Warp-Zwecke, aber nur die Hälfte des Schubs eines normalen Triebwerks bei Unterlichtgeschwindigkeit."
+ ENG: "This warp engine provides twice the benefit of a normal engine for warp purposes, but only half the thrust of a normal engine at sublight speeds."
  RUS: "Этот варп-двигатель вдвое производительнее обычного двигателя при перемещении в варпе, но развивает только половинную тягу обычного двигателя на субсветовых скоростях."
  SPA: "Respecto a un motor normal, rinde el doble a velocidad estelar supraluminal, pero a velocidades inferiores a la de la luz su propulsión queda reducida a la mitad. "
  UKR: "Цей двигун викривлення забезпечує вдвічі більше переваг, ніж звичайний, але лише половину тяги звичайного двигуна на досвітлових швидкостях."
@@ -5460,7 +5472,8 @@ WarpInhibitor:
  UKR: "Інгібітор викривлення"
 SupplyTransporter:
  Id: 1086
- ENG: "Supply Transporter"
+ GER: "Nachschubbeamer"
+ ENG: "Nachschubbeamer"
  RUS: "Транспортер боеприпасов"
  SPA: "Transportador de suministro"
  UKR: "Транспортер постачання"
@@ -6439,7 +6452,8 @@ Uninhabitable:
  UKR: "Непридатна для життя"
 Unexplored:
  Id: 1429
- ENG: "Unexplored "
+ GER: "Unerforscht"
+ ENG: "Unexplored"
  RUS: "Неисследованная"
  SPA: "Sin explorar "
  UKR: "Недосліджена "
@@ -8056,7 +8070,8 @@ RemnantTitanEngine:
  UKR: "Двигун Титану Древніх"
 RemnantCapitalEngine:
  Id: 1847
- ENG: "Remnant Capital Engine"
+ GER: "Remnant"
+ ENG: "Remnant Großkampfschiff"
  RUS: "Двигатели Столицы Предтечь"
  UKR: "Двигун капіталу Древніх"
 RemnantMediumEngine:
@@ -9618,7 +9633,8 @@ RepairDroneLauncher:
  UKR: "Модуль ремонтних дронів"
 ThisModuleLaunchesRepairDrones:
  Id: 2101
- ENG: "This module launches repair drones equipped with nano-repair modules. These drones will automatically target and heal nearby vessels, but they WONT heal ship that lanuched them. When their nanite supply is exhausted, the drones will deactivate. It is recommended to pair these modules with ordnance fabricators."
+ GER: "Dieses Modul startet Reparaturdrohnen, die mit Nano-Reparaturmodulen ausgestattet sind. Diese Drohnen zielen automatisch auf Schiffe in der Nähe ab und heilen sie, aber sie heilen NICHT das Schiff, das sie gestartet hat. Wenn ihr Nanitvorrat erschöpft ist, werden die Drohnen deaktiviert. Es wird empfohlen, diese Drohnen mit Nachschubherstellermodulen zu koppeln."
+ ENG: "This module launches repair drones equipped with nano-repair modules. These drones will automatically target and heal nearby vessels, but they WONT heal ship that launched them. When their nanite supply is exhausted, the drones will deactivate. It is recommended to pair these modules with ordnance fabricators."
  RUS: "Этот модель выпускает в пространство специальные зонды, оснащенные ремонтными наномодулями. Эти зонды будут автоматически искать поврежденные корабли и ремонтировать их. После выработки ресурса зонды будут деактивированы. Рекомендуется использовать их в паре с изготовителями боеприпасов."
  SPA: "Este módulo lanza drones de reparación equipados con módulos de nanorreparación. Estos drones tratarán de reparar automáticamente las naves cercanas. Cuando sus reservas de nanobots se agotan, los drones se desactivan. Se recomienda dotar estos módulos con fabricadores de munición."
  UKR: "Цей модуль запускає ремонтні дрони, оснащені наноремонтними модулями. Ці дрони автоматично націлюватимуться на сусідні судна і ремонтуватимуть їх, але вони НЕ будуть ремонтувати кораблі, які їх висадили. Коли запас нанітів вичерпається, дрони деактивуються. Рекомендується використовувати ці модулі в парі з виробниками боєприпасів."
@@ -9669,7 +9685,7 @@ ClickToContinue:
  GER: "Klicke zum Fortsetzen"
  ENG: "Click to Continue!"
  RUS: "Нажмите для продолжения!"
- SPA: "¡Haz clic para continuar!"
+ SPA: "¡Haz clic p ara continuar!"
  UKR: "Натисніть кнопку Продовжити!"
 IndicatesHowManyUnitsOf:
  Id: 2109
@@ -9883,7 +9899,8 @@ IndicatesThisTroopsExperienceLevel:
  UKR: "Показує рівень досвіду цього війська. За кожен рівень досвіду військо отримує 10% бонус до статистики атак та ухилення від планетарного бомбардування."
 Difficulty:
  Id: 2139
- ENG: "Difficulty"
+ GER: ""
+ ENG: "Schwierigkeit"
  RUS: "Сложность"
  SPA: "Dificultad"
  UKR: "Складність"
@@ -14569,7 +14586,8 @@ ProdPerTurn:
  UKR: "Виробництво за один оборот"
 MaxStorage:
  Id: 4377
- ENG: "Max Storage"    
+ GER: "Lagerkapazität"
+ ENG: "Max. Storage"    
  UKR: "Максимальний обсяг пам'яті"
 PlusFlatPop:
  Id: 4378
@@ -14871,7 +14889,8 @@ AllowPlayerInterTradeTip:
  UKR: "Дозволяє вашим фрахтувальникам, що простоюють, перевозити товари в імперії, з якими у вас є торгові договори, якщо внутрішній попит задоволений. Ви все ще можете вимкнути цю можливість для певних кораблів. Передача товарів в інші імперії приносить великий кредитний бонус у розмірі 2 кредитів за кожен товар, а також інші прибутки від звичайної торгівлі"
 LavaPoolTerraformable:
   Id: 4438
-  ENG: "Hot Lava surrounds this tile, making habitation impossible. This natural pool can be Terraformed when we have the right technology."
+  GER: "Heiße Lava umgibt dieses Feld und macht eine Besiedlung unmöglich.  Dieser natürliche Pool kann terraformiert werden, wenn wir über die richtige Technologie verfügen."
+ ENG: "Hot Lava surrounds this tile, making habitation impossible. This natural pool can be Terraformed when we have the right technology."
   UKR: "Гаряча лава оточує цю плитку, роблячи її непридатною для проживання. Цей природний басейн може бути тераформований, якщо ми матимемо відповідну технологію."
 RandomGameMode:
  Id: 4439
@@ -15309,33 +15328,6 @@ DisableScreenPanningOptionTip:
  Id: 4525
  GER: "Der Mauszeiger kann nicht zum Bewegen des Bildschirmrands verwendet werden, sondern nur WASD-Tasten.  Nützlich für Spieler mit mehreren Bildschirmen, wenn sich ihre Karten weiter bewegen, wenn sie sich auf einen anderen Bildschirm konzentrieren."
  ENG: "Mouse pointer cannot be used for edge screen movement, only WASD keys. Useful for players with multiple screens if their maps keeps moving when they focus on another screen."   
-BB_Tech_DysonSwarm1_Name: 
- Id: 4909
- ENG: "Dyson Swarm 1"   
-BB_Tech_DysonSwarm1_Desc: 
- Id: 4910
- ENG: "We can research a way to tap to the energy of a star by buildings millions of Solar Satellites which will collect energy from the star, and direct it to Swarm Controllers. The Controllers will distribute the energy to friendly Colonies in that system and gain massive production boost. After completing the research, check the Planet Array to see which Suns are applicable."    
-BB_Tech_DysonSwarm1_Bonus: 
- Id: 4911
- ENG: "Allow mapping known stable stars that can support Dyson Swarm Type 1 Project which will grant 100 Flat production bonus to friendly colonies in the system. This bonus will not affect Mineral Decay."     
-BB_Tech_DysonSwarmOverclock_Name: 
- Id: 4912
- ENG: "Swarm Overclock"   
-BB_Tech_DysonSwarmOverclock_Desc: 
- Id: 4913
- ENG: "Enable overclocking Dyson swarm controllers, which will give additional production per friendly colony. The overclocked production will, however, affect Mineral Decay of the planets."    
-BB_Tech_DysonOverclock_Bonus: 
- Id: 4914
- ENG: "Overclock production by 50 for friendly colonies in a system with a Dyson Swarm project we own."      
-BB_Tech_DysonSwarm2_Name: 
- Id: 4915
- ENG: "Dyson Swarm 2"   
-BB_Tech_DysonSwarm2_Desc: 
- Id: 4916
- ENG: "Type 2 Dyson Swarms, which are harder to build, but will enable is to get additional Dyson Swarms."    
-BB_Tech_DysonSwarm2_Bonus: 
- Id: 4917
- ENG: "Enable Dyson Swarm Type 2 and Map Stars which support it. It is possible that no Star in our Galaxy can support Type 2 Dyson Swarm."      
 PrioritizedPort:
  Id: 4918
  GER: "Raumhafen bevorzugen"
@@ -18320,45 +18312,6 @@ RemnantHelpersGiftStep3Plus:
  Id: 6350
  GER: "Die nächste 'Remnant'-Flotte hat uns die Kontrolle überlassen.\nWir gehen davon aus, dass sie dies tun, da wir im Gegensatz zu anderen Imperien schwach sind."
  ENG: "Another fleet of remnant ships gave away control to us.\nWe estimate they do it since we are weak compared to other empires."
-DysonSwarm: 
- Id: 6351
- ENG: "Dyson Swarm"  
-DysonSwarmType1: 
- Id: 6352
- ENG: "Dyson Swarm Type 1"   
-DysonSwarmType2: 
- Id: 6353
- ENG: "Dyson Swarm Type 2"    
-BuildDysonSwarm: 
- Id: 6354
- ENG: "Build Dyson Swarm"     
-BuildDysonSwarmTip: 
- Id: 6355
- ENG: "Start constrcution of A Dyson Swarm around the Star in this Solar System. This might take a long time to complete and your colonies in this system will participate in the construction unless they have very low population and less than 50% of production in storage."      
-KillDysonSwarm: 
- Id: 6356
- ENG: "Kill Dyson Swarm"      
-KillDysonSwarmTip: 
- Id: 6357
- ENG: "Order complete destruction of the Dyson Swarm in this system. This is irreversible and you will need to start new construction all over again."       
-DysonSwarmControllerProgressTip: 
- Id: 6358
- ENG: "This is the progress of the built Swarm Controllers in this system. The maximum production boost each colony can get is limited by the Controllers' completion as well as the Swarm Satellites' completion."       
-DysonSwarmProgressTip: 
- Id: 6359
- ENG: "This is the progress of the built Swarm satellites in this system. The maximum production boost each colony can get is limited by the Satellites' completion as well as the Swarm Controllers' completion. However, swarm controllers can be destroyed by enemy fire while Swarm Satellites are too numerous to be affected."        
-DysonSwarmDeploymentCompleted: 
- Id: 6360
- ENG: "Deployment Completed"
-DysonSwarmProductionBoostTip: 
- Id: 6361
- ENG: "Indicates how much production boost this colony is getting from the Dyson Swarm. The Maximum cna change if Overclock is enabled." 
-DysonSwarmOverClockSwarm: 
- Id: 6362
- ENG: "Overclock Swarm"  
-DysonSwarmOverClockSwarmTip: 
- Id: 6363
- ENG: "Enable Swarm overclocking which will increase the production boost of the Dyson Swarm. The overclocked production will, however, speed up the Mineral Richness Decay of the Planets."
 IndicatesTheChanceOfEcm:
  Id: 7001
  GER: "Gibt die prozentuale Wahrscheinlichkeit einer EGM-Störung gegen ankommende Lenkwaffen an, bevor der EGM-Widerstand der Waffe abgezogen wird.  Eine erfolgreiche EGM-Unterbrechung blockiert das Ziel und verhindert, dass die Munition einschlägt."
