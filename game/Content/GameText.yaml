@@ -15331,30 +15331,39 @@ DisableScreenPanningOptionTip:
  ENG: "Mouse pointer cannot be used for edge screen movement, only WASD keys. Useful for players with multiple screens if their maps keeps moving when they focus on another screen."   
 BB_Tech_DysonSwarm1_Name: 
  Id: 4909
+ GER: "Dyson Schwarm 1"
  ENG: "Dyson Swarm 1"   
 BB_Tech_DysonSwarm1_Desc: 
  Id: 4910
+ GER: "Wir können einen Weg erforschen, die Energie eines Sterns zu nutzen, indem wir Millionen von Solarsatelliten bauen, die Energie vom Stern sammeln und an Schwarmkontrolleure weiterleiten. Die Kontrolleure werden die Energie an befreundete Kolonien in diesem System verteilen und.“  Erhalten Sie einen massiven Produktionsschub. Überprüfen Sie nach Abschluss der Forschung die Planetenreihe, um zu sehen, welche Sonnen anwendbar sind."
  ENG: "We can research a way to tap to the energy of a star by buildings millions of Solar Satellites which will collect energy from the star, and direct it to Swarm Controllers. The Controllers will distribute the energy to friendly Colonies in that system and gain massive production boost. After completing the research, check the Planet Array to see which Suns are applicable."    
 BB_Tech_DysonSwarm1_Bonus: 
  Id: 4911
+ GER: "Ermöglicht die Kartierung bekannter stabiler Sterne, die das Dyson Schwarm Typ 1-Projekt unterstützen können, das befreundeten Kolonien im System einen Produktionsbonus von 100 Punkten gewährt.  Dieser Bonus hat keinen Einfluss auf den Mineralzerfall."
  ENG: "Allow mapping known stable stars that can support Dyson Swarm Type 1 Project which will grant 100 Flat production bonus to friendly colonies in the system. This bonus will not affect Mineral Decay."     
 BB_Tech_DysonSwarmOverclock_Name: 
  Id: 4912
+ GER: "Schwarm übertakten"
  ENG: "Swarm Overclock"   
 BB_Tech_DysonSwarmOverclock_Desc: 
  Id: 4913
+ GER: "Aktivieren Sie die Übertaktung der Dyson-Schwarm-Kontroller, was zu zusätzlicher Produktion pro befreundeter Kolonie führt. Die übertaktete Produktion wird sich jedoch auf den Mineralzerfall der Planeten auswirken.“"
  ENG: "Enable overclocking Dyson swarm controllers, which will give additional production per friendly colony. The overclocked production will, however, affect Mineral Decay of the planets."    
 BB_Tech_DysonOverclock_Bonus: 
  Id: 4914
+ GER: "Übertakten Sie die Produktion befreundeter Kolonien in einem System mit einem Dyson Schwarm-Projekt, das wir besitzen, um 50."
  ENG: "Overclock production by 50 for friendly colonies in a system with a Dyson Swarm project we own."      
 BB_Tech_DysonSwarm2_Name: 
  Id: 4915
+ GER: "Dyson Schwarm 2"
  ENG: "Dyson Swarm 2"   
 BB_Tech_DysonSwarm2_Desc: 
  Id: 4916
+ GER: "Dyson-Schwärme vom Typ 2, die schwieriger zu bauen sind, aber den Erhalt zusätzlicher Dyson-Schwärme ermöglichen."
  ENG: "Type 2 Dyson Swarms, which are harder to build, but will enable is to get additional Dyson Swarms."    
 BB_Tech_DysonSwarm2_Bonus: 
  Id: 4917
+ GER: "Aktivieren Sie Dyson Swarm Type 2 und markiere Sterne, die dies unterstützen.  Es ist möglich, dass kein Stern in unserer Galaxie den Typ-2-Dyson-Schwarm unterstützen kann."
  ENG: "Enable Dyson Swarm Type 2 and Map Stars which support it. It is possible that no Star in our Galaxy can support Type 2 Dyson Swarm."      
 PrioritizedPort:
  Id: 4918
@@ -18342,42 +18351,55 @@ RemnantHelpersGiftStep3Plus:
  ENG: "Another fleet of remnant ships gave away control to us.\nWe estimate they do it since we are weak compared to other empires."
 DysonSwarm: 
  Id: 6351
+ GER: "Dyson Schwarm"
  ENG: "Dyson Swarm"  
 DysonSwarmType1: 
  Id: 6352
+ GER: "Dyson Schwarm Typ 1"
  ENG: "Dyson Swarm Type 1"   
 DysonSwarmType2: 
  Id: 6353
+ GER: "Dyson Schwarm Typ 2"
  ENG: "Dyson Swarm Type 2"    
 BuildDysonSwarm: 
  Id: 6354
+ GER: "Baue Dyson Schwarm"
  ENG: "Build Dyson Swarm"     
 BuildDysonSwarmTip: 
  Id: 6355
+ GER: "Beginnen Sie mit dem Aufbau eines Dyson-Schwarms um den Stern in diesem Sonnensystem.  Dies kann lange dauern und Ihre Kolonien in diesem System werden am Aufbau beteiligt sein, es sei denn, sie haben eine sehr geringe Bevölkerung und weniger als 50 % der Produktion sind im Lager."
  ENG: "Start constrcution of A Dyson Swarm around the Star in this Solar System. This might take a long time to complete and your colonies in this system will participate in the construction unless they have very low population and less than 50% of production in storage."      
 KillDysonSwarm: 
  Id: 6356
+ GER: "Zerstöre Dyson Schwarm"
  ENG: "Kill Dyson Swarm"      
 KillDysonSwarmTip: 
  Id: 6357
+ GER: "Befehlen Sie die vollständige Zerstörung des Dyson-Schwarms in diesem System.  Dies ist irreversibel und Sie müssen mit dem Neubau von vorne beginnen."
  ENG: "Order complete destruction of the Dyson Swarm in this system. This is irreversible and you will need to start new construction all over again."       
 DysonSwarmControllerProgressTip: 
  Id: 6358
+ GER: "Dies ist der Fortschritt der in diesem System eingebauten Schwarmcontroller.  Der maximale Produktionsschub, den jede Kolonie erhalten kann, wird durch die Fertigstellung der Controller sowie der Schwarmsatelliten begrenzt."
  ENG: "This is the progress of the built Swarm Controllers in this system. The maximum production boost each colony can get is limited by the Controllers' completion as well as the Swarm Satellites' completion."       
 DysonSwarmProgressTip: 
  Id: 6359
+ GER: "Dies ist der Fortschritt der in diesem System gebauten Schwarm-Satelliten.  Der maximale Produktionsschub, den jede Kolonie erhalten kann, wird durch die Fertigstellung der Satelliten und der Schwarmkontrolleure begrenzt.  Allerdings können Schwarmcontroller durch feindliches Feuer zerstört werden, während die Anzahl der Schwarmsatelliten zu groß ist, um betroffen zu sein."
  ENG: "This is the progress of the built Swarm satellites in this system. The maximum production boost each colony can get is limited by the Satellites' completion as well as the Swarm Controllers' completion. However, swarm controllers can be destroyed by enemy fire while Swarm Satellites are too numerous to be affected."        
 DysonSwarmDeploymentCompleted: 
  Id: 6360
+ GER: "Bereitstellung abgeschlossen"
  ENG: "Deployment Completed"
 DysonSwarmProductionBoostTip: 
  Id: 6361
+ GER: "Zeigt an, wie viel Produktionsschub diese Kolonie durch den Dyson-Schwarm erhält.  Die maximale CNA-Änderung, wenn Overclock aktiviert ist."
  ENG: "Indicates how much production boost this colony is getting from the Dyson Swarm. The Maximum cna change if Overclock is enabled." 
 DysonSwarmOverClockSwarm: 
  Id: 6362
+ GER: "Übertakte Schwarm"
  ENG: "Overclock Swarm"  
 DysonSwarmOverClockSwarmTip: 
  Id: 6363
+ GER: "Aktivieren Sie die Schwarmübertaktung, um die Produktionssteigerung des Dyson-Schwarms zu erhöhen.  Die übertaktete Produktion wird jedoch den Abbau des Mineralienreichtums auf den Planeten beschleunigen."
  ENG: "Enable Swarm overclocking which will increase the production boost of the Dyson Swarm. The overclocked production will, however, speed up the Mineral Richness Decay of the Planets."
 IndicatesTheChanceOfEcm:
  Id: 7001
@@ -18802,140 +18824,140 @@ IndicatesResistanceToTorpedoWeapon:
  UKR: "Показує стійкість до пошкоджень від торпедної зброї, де 100% - повний імунітет. Від'ємні відсотки означають, що модуль отримує додаткову шкоду від цього джерела."
 IndicatesResistanceToCannonWeapon:
  Id: 7061
- GER: 
+ GER: "Zeigt Widerstand gegen Kanonenwaffenschaden an, wobei 100 % vollständige Immunität bedeutet.  Negative Prozentsätze bedeuten, dass dieses Modul zusätzlichen Schaden aus dieser Quelle erleidet."
  ENG: "Indicates resistance to cannon weapon damage, where 100% is total immunity. Negative percentages mean this module takes extra damage from that source."
  RUS: "Указывает на устойчивость к урону пушечного оружия, где 100% - это общий иммунитет. Отрицательный процент означает, что этот модуль получает дополнительный урон от этого источника."
  SPA: "Indica la resistencia al daño de un cañon, donde un 100% es inmunidad total. Un valor negativo significa que este módulo recibe daño extra de ese tipo de daño."
  UKR: "Показує стійкість до пошкоджень від гарматної зброї, де 100% - повний імунітет. Від'ємні відсотки означають, що модуль отримує додаткову шкоду від цього джерела."
 IndicatesResistanceToSubspaceWeapon:
  Id: 7062
- GER: 
+ GER: "Zeigt Widerstand gegen Schaden durch Subraumwaffen an, wobei 100 % vollständige Immunität bedeutet.  Negative Prozentsätze bedeuten, dass dieses Modul zusätzlichen Schaden aus dieser Quelle erleidet."
  ENG: "Indicates resistance to subspace weapon damage, where 100% is total immunity. Negative percentages mean this module takes extra damage from that source."
  RUS: "Указывает на устойчивость к урону подпространственного оружия, где 100% - это общий иммунитет. Отрицательный процент означает, что этот модуль получает дополнительный урон от этого источника."
  SPA: "Indica la resistencia al daño de armas subespaciales, donde un 100% es inmunidad total. Un valor negativo significa que este módulo recibe daño extra de ese tipo de daño."
  UKR: "Показує стійкість до пошкоджень від підпросторової зброї, де 100% - повний імунітет. Від'ємні відсотки означають, що модуль отримує додаткову шкоду від цього джерела."
 IndicatesResistanceToPdWeapon:
  Id: 7063
- GER: 
+ GER: "Zeigt den Widerstand gegen PD-Waffenschaden an, wobei 100 % vollständige Immunität bedeutet.  Negative Prozentsätze bedeuten, dass dieses Modul zusätzlichen Schaden aus dieser Quelle erleidet."
  ENG: "Indicates resistance to PD weapon damage, where 100% is total immunity. Negative percentages mean this module takes extra damage from that source."
  RUS: "Указывает на устойчивость к урону ТЗ-оружия, где 100% - это общий иммунитет. Отрицательный процент означает, что этот модуль получает дополнительный урон от этого источника."
  SPA: "Indica la resistencia al daño de armas de defensa puntual, donde un 100% es inmunidad total. Un valor negativo significa que este módulo recibe daño extra de ese tipo de daño."
  UKR: "Показує стійкість до пошкоджень від зенітних комплексів, де 100% - повний імунітет. Від'ємні відсотки означають, що модуль отримує додаткову шкоду від цього джерела."
 IndicatesResistanceToFlakWeapon:
  Id: 7064
- GER: 
+ GER: "Zeigt Widerstand gegen Flakwaffenschaden an, wobei 100 % vollständige Immunität bedeutet.  Negative Prozentsätze bedeuten, dass dieses Modul zusätzlichen Schaden aus dieser Quelle erleidet."
  ENG: "Indicates resistance to flak weapon damage, where 100% is total immunity. Negative percentages mean this module takes extra damage from that source."
  RUS: "Указывает на устойчивость к урону зенитного оружия, где 100% - это общий иммунитет. Отрицательный процент означает, что этот модуль получает дополнительный урон от этого источника."
  SPA: "IIndica la resistencia al daño FlaK, donde un 100% es inmunidad total. Un valor negativo significa que este módulo recibe daño extra de ese tipo de daño."
  UKR: "Вказує на стійкість до пошкоджень від бронебійної зброї, де 100% - це повний імунітет. Від'ємні відсотки означають, що модуль отримує додаткову шкоду від цього джерела."
 IndicatesResistanceToArmourPiercing:
  Id: 7065
- GER: 
+ GER: "Zeigt Widerstand gegen panzerbrechende Effekte an – jeder Punkt AP-Widerstand macht 1 Punkt panzerbrechender Wirkung bei feindlichen Projektilen zunichte."
  ENG: "Indicates resistance to Armor Piercing effects - each point of AP resistance negates 1 point of Armor Piercing on enemy projectiles."
  RUS: "Указывает на устойчивость к эффектам пробивания брони - каждая единица сопротивления AP(Пробоя) отменяет 1 единицу пробивания брони на снарядах противника."
  SPA: "Indica la resistencia a los efectos de pentracion de blindaje, donde cada punto de resistencia significa -1 de pentetración a los proyeciles enemigos."
  UKR: "Вказує на стійкість до бронебійних ефектів - кожен пункт стійкості до бронебійних ефектів зменшує на 1 пункт бронебійність ворожих снарядів."
 IndicatesShieldBubblesResistanceTo:
  Id: 7066
- GER: 
+ GER: "Zeigt den Widerstand der Schildblase gegen kinetischen Waffenschaden an, wobei 100 % vollständige Immunität bedeutet.  Negative Prozentsätze bedeuten, dass der Schild durch diese Quelle zusätzlichen Schaden erleidet.  Beachten Sie, dass der Widerstand gegen explosive Schilde diesen Schildwiderstand übertrifft."
  ENG: "Indicates shield bubble's resistance to kinetic weapon damage, where 100% is total immunity. Negative percentages mean the shield takes extra damage from that source. Note that Explosive Shield Resistance supercedes this shield resistance."
  RUS: "Указывает на устойчивость пузыря щита к кинетическому урону оружия, где 100% - это общий иммунитет. Отрицательный процент означает, что щит получает дополнительный урон от этого источника. Обратите внимание, что сопротивление взрывному щиту превосходит это сопротивление щита."
  SPA: "Indica la resistencia de la burbuja del escudo al daño kinetico. Un valor negativo significa que este módulo recibe daño extra de ese tipo de daño. Tenga en cuenta que la resistencia del escudo explosivo reemplaza esta resistencia del escudo."
  UKR: "Показує стійкість бульбашки щита до пошкоджень від кінетичної зброї, де 100% - повний імунітет. Від'ємні відсотки означають, що щит отримує додаткову шкоду від цього джерела. Зверніть увагу, що опір вибухового щита переважає цей опір щита."
 IndicatesShieldBubblesResistanceTo2:
  Id: 7067
- GER: 
+ GER: "Zeigt den Widerstand der Schildblase gegen Energiewaffenschaden an, wobei 100 % vollständige Immunität bedeutet.  Negative Prozentsätze bedeuten, dass der Schild durch diese Quelle zusätzlichen Schaden erleidet.  Beachten Sie, dass der Widerstand gegen explosive Schilde diesen Schildwiderstand übertrifft."
  ENG: "Indicates shield bubble's resistance to energy weapon damage, where 100% is total immunity. Negative percentages mean the shield takes extra damage from that source. Note that Explosive Shield Resistance supercedes this shield resistance."
  RUS: "Указывает на устойчивость пузыря щита к урону энергетическим оружием, где 100% - это общий иммунитет. Отрицательный процент означает, что щит получает дополнительный урон от этого источника. Обратите внимание, что сопротивление взрывному щиту превосходит это сопротивление щита."
  SPA: "Indica la resistencia de la burbuja del escudo al daño de energia. Un valor negativo significa que este módulo recibe daño extra de ese tipo de daño. Tenga en cuenta que la resistencia del escudo explosivo reemplaza esta resistencia del escudo."
  UKR: "Показує стійкість бульбашки щита до пошкоджень від енергетичної зброї, де 100% - повний імунітет. Від'ємні відсотки означають, що щит отримує додаткову шкоду від цього джерела. Зверніть увагу, що опір вибухового щита перевищує цей опір щита."
 IndicatesShieldBubblesResistanceTo3:
  Id: 7068
- GER: 
+ GER: "Zeigt den Widerstand der Schildblase gegen Explosionsschaden an, wobei 100% vollständige Immunität bedeutet.  Negative Prozentsätze bedeuten, dass der Schild durch diese Quelle zusätzlichen Schaden erleidet.  Beachten Sie, dass dieser Schildwiderstand jeden anderen Schildwiderstand übertrifft."
  ENG: "Indicates shield bubble's resistance to explosive damage, where 100% is total immunity. Negative percentages mean the shield takes extra damage from that source. Note that this Shield Resistance superecedes any other Shield Resistance."
  RUS: "Указывает на устойчивость пузыря щита к взрывному урону, где 100% - это общий иммунитет. Отрицательный процент означает, что щит получает дополнительный урон от этого источника. Обратите внимание, что это сопротивление щита превосходит любое другое сопротивление щита."
  SPA: "Indica la resistencia de la burbuja del escudo al daño explosiva. Un valor negativo significa que este módulo recibe daño extra de ese tipo de daño. Tenga en cuenta que esta Resistencia de Escudo reemplaza cualquier otra Resistencia de Escudo."
  UKR: "Показує стійкість бульбашки щита до вибухових пошкоджень, де 100% - повний імунітет. Від'ємні відсотки означають, що щит отримує додаткову шкоду від цього джерела. Зверніть увагу, що ця стійкість щита переважає над будь-якою іншою стійкістю щита."
 IndicatesShieldBubblesResistanceTo4:
  Id: 7069
- GER: 
+ GER: "Zeigt den Widerstand der Schildblase gegen Raketenwaffenschaden an, wobei 100 % vollständige Immunität bedeutet.  Negative Prozentsätze bedeuten, dass der Schild durch diese Quelle zusätzlichen Schaden erleidet."
  ENG: "Indicates shield bubble's resistance to missile weapon damage, where 100% is total immunity. Negative percentages mean the shield takes extra damage from that source."
  RUS: "Указывает на устойчивость пузыря щита к урону от ракетного оружия, где 100% - это общий иммунитет. Отрицательный процент означает, что щит получает дополнительный урон от этого источника."
  SPA: "Indica la resistencia de la burbuja del escudo al daño de los misiles. Un valor negativo significa que este módulo recibe daño extra de ese tipo de daño."
  UKR: "Показує стійкість бульбашки щита до пошкоджень від ракетної зброї, де 100% - повний імунітет. Від'ємні відсотки означають, що щит отримує додаткову шкоду від цього джерела."
 IndicatesShieldBubblesResistanceTo5:
  Id: 7070
- GER: 
+ GER: "Zeigt den Widerstand der Schildblase gegen Flakwaffenschaden an, wobei 100 % vollständige Immunität bedeutet.  Negative Prozentsätze bedeuten, dass der Schild durch diese Quelle zusätzlichen Schaden erleidet."
  ENG: "Indicates shield bubble's resistance to flak weapon damage, where 100% is total immunity. Negative percentages mean the shield takes extra damage from that source."
  RUS: "Указывает на сопротивление пузыря щита урону зенитного оружия, где 100% - это общий иммунитет. Отрицательный процент означает, что щит получает дополнительный урон от этого источника."
  SPA: "Indica la resistencia de la burbuja del escudo al daño Flak. Un valor negativo significa que este módulo recibe daño extra de ese tipo de daño."
  UKR: "Показує стійкість бульбашки щита до ушкоджень, що наносяться від стрілецької зброї, де 100% - це повний імунітет. Від'ємні відсотки означають, що щит отримує додаткову шкоду від цього джерела."
 IndicatesShieldBubblesResistanceTo6:
  Id: 7071
- GER: 
+ GER: "Zeigt den Widerstand der Schildblase gegen Plasmawaffenschaden an, wobei 100% vollständige Immunität bedeutet.  Negative Prozentsätze bedeuten, dass der Schild durch diese Quelle zusätzlichen Schaden erleidet.  Beachten Sie, dass der Widerstand gegen explosive Schilde diesen Schildwiderstand übertrifft."
  ENG: "Indicates shield bubble's resistance to Plasma weapon damage, where 100% is total immunity. Negative percentages mean the shield takes extra damage from that source. Note that Explosive Shield Resistance supercedes this shield resistance."
  RUS: "Указывает на сопротивление пузыря щита урону плазменного оружия, где 100% - это общий иммунитет. Отрицательный процент означает, что щит получает дополнительный урон от этого источника. Обратите внимание, что сопротивление взрывному щиту превосходит это сопротивление щита."
  SPA: "Indica la resistencia de la burbuja de escudo al daño del arma de plasma, donde el 100% es inmunidad total. Los porcentajes negativos significan que el escudo recibe daño adicional de esa fuente. Tenga en cuenta que la resistencia del escudo explosivo reemplaza esta resistencia del escudo."
  UKR: "Показує стійкість бульбашки щита до пошкоджень від плазмової зброї, де 100% - повний імунітет. Від'ємні відсотки означають, що щит отримує додаткову шкоду від цього джерела. Зверніть увагу, що опір вибухового щита перевищує цей опір щита."
 IndicatesShieldBubblesResistanceTo7:
  Id: 7072
- GER: 
+ GER: "Zeigt den Widerstand der Schildblase gegen Railgun-Waffenschaden an, wobei 100% vollständige Immunität bedeutet.  Negative Prozentsätze bedeuten, dass der Schild durch diese Quelle zusätzlichen Schaden erleidet."
  ENG: "Indicates shield bubble's resistance to railgun weapon damage, where 100% is total immunity. Negative percentages mean the shield takes extra damage from that source."
  RUS: "Указывает на устойчивость пузыря щита к урону от рельсотрона, где 100% - это общий иммунитет. Отрицательный процент означает, что щит получает дополнительный урон от этого источника."
  SPA: "Indica la resistencia de la burbuja del escudo al daño de rail. Un valor negativo significa que este módulo recibe daño extra de ese tipo de daño."
  UKR: "Показує стійкість бульбашки щита до пошкоджень від рейкової зброї, де 100% - повний імунітет. Від'ємні відсотки означають, що щит отримує додаткову шкоду від цього джерела."
 IndicatesShieldBubblesResistanceTo8:
  Id: 7073
- GER: 
+ GER: "Zeigt den Widerstand der Schildblase gegen Subraumwaffenschaden an, wobei 100 % vollständige Immunität bedeutet.  Negative Prozentsätze bedeuten, dass der Schild durch diese Quelle zusätzlichen Schaden erleidet."
  ENG: "Indicates shield bubble's resistance to subspace weapon damage, where 100% is total immunity. Negative percentages mean the shield takes extra damage from that source."
  RUS: "Указывает на сопротивление пузыря щита урону подпространственного оружия, где 100% - это общий иммунитет. Отрицательный процент означает, что щит получает дополнительный урон от этого источника."
  SPA: "Indica la resistencia de la burbuja del escudo al daño de armas subespaciales. Un valor negativo significa que este módulo recibe daño extra de ese tipo de daño."
  UKR: "Показує стійкість бульбашки щита до пошкоджень від підпросторової зброї, де 100% - повний імунітет. Від'ємні відсотки означають, що щит отримує додаткову шкоду від цього джерела."
 IndicatesShieldBubblesResistanceTo9:
  Id: 7074
- GER: 
+ GER: "Zeigt den Widerstand der Schildblase gegen Warpwaffenschaden an, wobei 100 % vollständige Immunität bedeutet.  Negative Prozentsätze bedeuten, dass der Schild durch diese Quelle zusätzlichen Schaden erleidet."
  ENG: "Indicates shield bubble's resistance to warp weapon damage, where 100% is total immunity. Negative percentages mean the shield takes extra damage from that source."
  RUS: "Указывает на устойчивость пузыря щита к урону от варп-оружия, где 100% - это общий иммунитет. Отрицательный процент означает, что щит получает дополнительный урон от этого источника."
  SPA: "Indica la resistencia de la burbuja del escudo al daño de armas de desformación. Un valor negativo significa que este módulo recibe daño extra de ese tipo de daño."
  UKR: "Показує стійкість бульбашки щита до пошкоджень від зброї викривлення, де 100% - повний імунітет. Від'ємні відсотки означають, що щит отримує додаткову шкоду від цього джерела."
 IndicatesShieldBubblesResistanceTo10:
  Id: 7075
- GER: 
+ GER: "Gibt den Widerstand der Schildblase gegen Strahlwaffenschaden an, wobei 100% vollständige Immunität bedeutet. Negative Prozentwerte bedeuten, dass der Schild zusätzlichen Schaden von dieser Quelle erleidet. Beachten Sie, dass der Widerstand gegen explosive Schilde diesen Schildwiderstand übertrifft."
  ENG: "Indicates shield bubble's resistance to beam weapon damage, where 100% is total immunity. Negative percentages mean the shield takes extra damage from that source. Note that Explosive Shield Resistance supercedes this shield resistance."
  RUS: "Указывает на сопротивление пузыря щита урону лучевого оружия, где 100% - это общий иммунитет. Отрицательный процент означает, что щит получает дополнительный урон от этого источника. Обратите внимание, что сопротивление взрывному щиту превосходит это сопротивление щита."
  SPA: "Indica la resistencia de la burbuja del escudo al daño de haz. Un valor negativo significa que este módulo recibe daño extra de ese tipo de daño. Tenga en cuenta que la resistencia del escudo explosivo reemplaza esta resistencia del escudo."
  UKR: "Показує стійкість бульбашки щита до пошкоджень від променевої зброї, де 100% - повний імунітет. Від'ємні відсотки означають, що щит отримує додаткову шкоду від цього джерела. Зверніть увагу, що опір вибухового щита перевищує цей опір щита."
 IndicatesTheAmountOfEmp2:
  Id: 7076
- GER: 
+ GER: "Gibt den Umfang des EMP-Schutzes an, den dieses Modul dem Schiff hinzufügt."
  ENG: "Indicates the amount of EMP protection that this module adds to the vessel."
  RUS: "Указывает степень защиты от ЭМИ, которую этот модуль добавляет к судну."
  SPA: "Indica la cantidad de proteción EMP este módulo agrega a la nave."
  UKR: "Вказує на рівень захисту від електромагнітного випромінювання, який цей модуль додає до судна."
 TT_EmpProtection:
  Id: 7077
- GER: 
+ GER: "Der vollständige EMP-Schutz dieses Designs."
  ENG: "The total EMP protection of this design."
  RUS: "Полная защита от ЭМИ этой конструкции."
  SPA: "La cantidad de protecíon EMP total de este diseño."
  UKR: "Повний захист від електромагнітного випромінювання цієї конструкції."
 WeaponsWhichDoLessDamage:
  Id: 7078
- GER: 
+ GER: "Waffen, die weniger Schaden als diesen Wert anrichten, werden aufgrund ihrer Dicke einfach von dieser Rüstung abgelenkt.  Strahlen sind aufgrund ihrer Tunnelungsfähigkeit davon nicht betroffen.  Ablenkung hat eine Effizienz von 10% gegenüber EMP-Schaden."
  ENG: "Weapons which do less damage than this value will simply be deflected by this Armor due to it's thickness. Beams are not affected by this due to their tunneling ability. Deflection has 10% efficiency vs. EMP Damage."
  RUS: "Оружие, наносящее меньше урона, чем это значение, просто будет отражено этой броней из-за ее толщины. Это не влияет на лучи из-за их туннельной способности. Отклонение имеет эффективность 10% против урона ЭМИ."
  SPA: "Las armas que hacen menos daño (o daño EMP) que este valor seran deflectadas por este blindaje debido a su grosor. los haces no son afectador por esto debido a su habilidad de tunelear."
  UKR: "Зброя, яка завдає менше шкоди, ніж це значення, буде просто відбиватися від цієї броні через її товщину. На промені це не впливає, оскільки вони здатні тунелювати. Відхилення має 10% ефективності проти шкоди від ЕМІ."
 WeaponsWhichDoLessDamage2:
  Id: 7079
- GER: 
+ GER: "Waffen, die weniger Schaden als diesen Wert anrichten, werden von diesem Schild aufgrund seiner Intensität einfach abgelenkt.  Strahlen sind aufgrund ihrer Tunnelungsfähigkeit davon nicht betroffen."
  ENG: "Weapons which do less damage than this value will simply be deflected by this Shield due to it's intensity. Beams are not affected by this due to their tunneling ability."
  RUS: "Оружие, наносящее меньше урона, чем это значение, просто будет отражено этим щитом из-за его силы. Это не влияет на лучи из-за их туннельной способности."
  SPA: "Las armas que hacen menos daño que este valor seran deflectadas por este escudo debido a su intensidad. Los haces no son afectados `por esto debido a su habilidad tuneladora"
  UKR: "Зброя, яка завдає менше шкоди, ніж це значення, буде просто відбиватися цим щитом через його інтенсивність. На промені це не впливає через їхню тунельну здатність."
 AssignsVesselToSystemDefence:
  Id: 7080
- GER: 
+ GER: "Weist dem Schiff Systemverteidigungsaufgaben zu"
  ENG: "Assigns vessel to system defense duties"
  RUS: "Назначает судно обязанностями по защите системы"
  SPA: "Asigna a una nave a deberes de defensa planetarea"
