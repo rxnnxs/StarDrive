@@ -18151,7 +18151,7 @@ InfiltrationCounterEspionageMiserableFailVictim:
 InfiltrationSabotageSuccessMessage:
  Id: 6301
  GER: "Unsere Agenten sabotierten"
- ENG: "Our Agents saboraged"                  
+ ENG: "Our Agents sabotaged"                  
 InfiltrationSabotageSuccessMessageVictim:
  Id: 6302
  GER: "wurde von unbekannten Agenten sabotiert"
@@ -18267,7 +18267,7 @@ EspioangeOpsDisruptProjection:
 EspioangeOpsDisruptProjectionTip:
  Id: 6330
  GER: "Hacken Sie ihr Subraumprojektionsnetzwerk und deaktivieren Sie es für einen Zeitraum, in dem es flackert, bis es ihnen gelingt, es zu stabilisieren."
- ENG: "Hack their Subspace Projection network and disatabilize it for a period of time where it will flicker until they manage to stabilize it."        
+ ENG: "Hack their Subspace Projection network and destabilize it for a period of time where it will flicker until they manage to stabilize it."        
 EspioangeBudgetMuliplier:
  Id: 6331
  GER: "Haushaltsmodifikator"
