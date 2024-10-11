@@ -2549,7 +2549,7 @@ CapitalCity:
 TheCapitalCityIsA:
  Id: 410
  GER: "Die Hauptstadt ist ein einzigartiges Gebäude, das Forschung ermöglicht und gleichzeitig die industrielle und landwirtschaftliche Kapazität verbessert. \nHauptstädte bieten auch eine hervorragende Selbstverteidigung und können einer anhaltenden Belagerung durch entschlossene Gegner standhalten. \nSchließlich können Sie in Hauptstädten einfache Infanterieeinheiten rekrutieren."
- ENG: "The Capital City is a unique building that provides research while improving industrial and agricultural capacity. Capital Cities also provide excellent self defense and can withstand a sustained siege by determined opponents. Finally, Capital cities allow you to recruit basic infantry units."
+ ENG: "The Capital City is a unique building that provides research while improving industrial and agricultural capacity. Capital Cities also provide excellent self defense and can withstand a sustained siege by determined opponents. Finally, Capital cities allow you to recruit basic infantry units. "
  RUS: "Столица - это уникальное строение, генерирующее научные исследования и одновременно улучшающее промышленный и сельскохозяйственный потенциал планеты. Столица также предоставляет мощный оборонительный потенциал и способна выдержать серьезную осаду. Кроме того, столица позволяет набирать базовые пехотные отряды."
  SPA: "La Capital urbana es un edificio único que proporciona investigación al tiempo que mejora la capacidad industrial y agrícola. Las Capitales urbanas también ofrecen una autodefensa excelente y pueden soportar asedios prolongados ante determinados rivales. Por último, las capitales te permiten reclutar unidades de infantería básicas. "
  UKR: "Столиця - це унікальна будівля, яка забезпечує дослідження, одночасно покращуючи промислові та сільськогосподарські потужності. Столиці також забезпечують відмінну самооборону і можуть витримати тривалу облогу рішуче налаштованих супротивників. Нарешті, столиці дозволяють вам набирати базові піхотні підрозділи."
@@ -3002,7 +3002,7 @@ BB_Tech_AntiMatter_Desc:
  UKR: "Стабілізувавши реакцію матерії та антиматерії, ми зможемо використати вихідну енергію для значного підвищення рівня нашої потужності. Наразі нам потрібна велика реакційна камера, але майбутні досягнення можуть мініатюризувати цей процес."
 BB_Tech_ArmorTheory_Name:
  Id: 515
- GER: "Rüstungstheorie"
+ GER: "Rüstung"
  ENG: "Armor Theory"
  RUS: "Теория брони"
  SPA: "Teoría del blindaje"
@@ -3128,7 +3128,7 @@ UnlocksTheMilitaryTransportA:
  UKR: "Відкриває військовий транспорт, готовий до бою корпус, який може виконувати кілька ролей."
 BB_Tech_CombatReadiness_Name:
  Id: 534
- GER: "Kampfwertsteigerung"
+ GER: "Gepanzerte Komponenten"
  ENG: "Combat Readiness"
  RUS: "Боевая готовность"
  SPA: "Disposición para el combate"
@@ -3177,7 +3177,7 @@ BB_Tech_Cryogenics_PassengerModifier_Bonus:
  UKR: "Подвоює кількість колоністів, що перевозяться пасажирськими кораблями в межах вашої імперії"
 BB_Tech_DeepCoreMining_Name:
  Id: 541
- GER: "Tiefkernbergbau"
+ GER: "Tiefer Bergbau"
  ENG: "Deep Core Mining"
  RUS: "Сверхглубокие шахты"
  SPA: "Minería de núcleo profundo"
@@ -3310,7 +3310,7 @@ BB_Tech_Energy_Desc:
  UKR: "Технологічна галузь досліджує створення енергії та енергетичні галузі, що мають як промислове, так і військове застосування."
 BB_Tech_EnergyShielding_Name:
  Id: 560
- GER: "Energieabschirmung"
+ GER: "Energie Abschirmung"
  ENG: "Energy Shielding"
  RUS: "Энергетические щиты"
  SPA: "Escudos de energía"
@@ -3401,7 +3401,7 @@ BB_Tech_FuelCell1_FuelCellBonus_Bonus:
  UKR: "Отримайте бонус 15% до кількості енергії, що зберігається в спеціальних енергетичних комірках в масштабах всієї імперії"
 BB_Tech_FuelCell2_Name:
  Id: 573
- GER: "Iridium-Energiezellen"
+ GER: "Iridium Energiezellen"
  ENG: "Iridium Power Cells"
  RUS: "Иридиевые энергоблоки"
  SPA: "Celdas de energía de iridio"
@@ -3723,7 +3723,7 @@ BB_Tech_MissileTheory_Desc:
  UKR: "Адаптувати ракетні технології до суворих умов космічних подорожей не так вже й складно. Ми можемо продовжувати вдосконалювати ракетні двигуни, корисне навантаження і міцність."
 BB_Tech_NanoweaveMetallurgy_Name:
  Id: 620
- GER: "Nanogewebe-Metallurgie"
+ GER: "Nanogewebe Metallurgie"
  ENG: "Nanoweave Metallurgy"
  RUS: "Нано металлургия"
  SPA: "Metalurgia de nanotextura"
@@ -3807,7 +3807,7 @@ BB_Tech_Physics_Bonus:
  UKR: "Отримайте можливість будувати підпросторові проекторні платформи у відкритому космосі."
 BB_Tech_PlanetaryDefenseI_Name:
  Id: 632
- GER: "Planetare Vertdg. I"
+ GER: "Planetare Abwehr I"
  ENG: "Planetary Defense I"
  RUS: "Планетарная оборона"
  SPA: "Defensa planetaria"
@@ -3835,7 +3835,7 @@ BB_Tech_PlanetaryShielding_Desc:
  UKR: "Дивно, але захистити цілу планету легше, ніж цілий корабель, тому що нам не потрібно турбуватися про обмеження маси, розміру і потужності, коли ми будуємо на твердій землі. В результаті ми отримуємо масивний і потужний щит, який забезпечує захист від бомбардувань."
 BB_Tech_PlasmaThrowers_Name:
  Id: 636
- GER: "Plasma-Vektorisierung"
+ GER: "Plasma Vektorisierung"
  ENG: "Plasma Vectoring"
  RUS: "Плазменная векторизация"
  SPA: "Vectores de plasma"
@@ -3877,7 +3877,7 @@ BB_Tech_Privatization_Bonus:
  UKR: "Обслуговування платформ і вантажних суден знижено на 50%"
 BB_Tech_PulseCapacitors_Name:
  Id: 643
- GER: "Impulskondensatoren"
+ GER: "Impuls Kondensatoren"
  ENG: "Pulse Capacitors"
  RUS: "Импульсные конденсаторы"
  SPA: "Condensadores de pulsos"
@@ -3968,7 +3968,7 @@ BB_Tech_ShipboardAssault_Desc:
  UKR: "Харчування, розміщення та екіпірування морських піхотинців у глибокому космосі вимагає точного логістичного планування. Морські піхотинці можуть здійснювати штурми ворожих кораблів, якщо їхній корабель обладнаний відсіком для штурмових шатлів.  "
 BB_Tech_SiphonBeam_Name:
  Id: 656
- GER: "Energie-Siphon-Strahl"
+ GER: "Energie Saugstrahl"
  ENG: "Energy Siphon Beam"
  RUS: "Энерго высасывающий луч"
  SPA: "Rayo de absorción de energía"
@@ -4157,7 +4157,7 @@ BB_Tech_Terraforming_Name:
  UKR: "Тераформувати"
 BB_Tech_ThalaronBlaster_Name:
  Id: 685
- GER: "Thalaron-Blaster"
+ GER: "Thalaron Blaster"
  ENG: "Thalaron Blaster"
  RUS: "Таларонский бластер"
  SPA: "Descargas Thalaron"
@@ -4926,7 +4926,7 @@ TacticalNuclearBombBay:
  UKR: "Тактичний відсік для ядерних бомб"
 ABombBayThatAllows:
  Id: 1001
- GER: "Ein Bombenschacht, der es einem Schiff ermöglicht, einen Planeten mit taktischen Atombomben geringer Sprengkraft anzugreifen.  Der Zielplanet wird vorübergehend auf sein Fruchtbarkeitsniveau reduziert.  Ständige Bombenangriffe könnten die Fruchtbarkeit dauerhaft verringern und sogar das Pflanzenklima für immer verändern."
+ GER: "Ein Bombe mit der ein Planet mit taktischen Atombomben mit geringer Sprengkraft angegriffen werden kann.  Der Zielplanet wird vorübergehend auf sein Fruchtbarkeitsniveau reduziert.  Ständige Bombenangriffe könnten die Fruchtbarkeit dauerhaft verringern und sogar das Pflanzenklima für immer verändern."
  ENG: "A bomb bay that allows a ship to strike a planet with low-yield tactical nuclear bombs. The Target planet will suffer temporary reduction to its Fertility level. Constant bombing might permanently reduce fertility and even change the plant climate forever."
  RUS: "Бомбовой отсек для бомбардировки планеты маломощными тактическими ядерными бомбами."
  SPA: "Compartimento de bombas que permite a una nave atacar con bombas nucleares tácticas de baja potencia."
@@ -6004,7 +6004,7 @@ AndItsCitizensAreRelatively:
  UKR: ", а її громадяни відносно розумно ставляться до розподілу ресурсів."
 While:
  Id: 1349
- GER: "Während "
+ GER: "Bei den "
  ENG: "While "
  RUS: "В то время как "
  SPA: "Aunque "
@@ -6032,7 +6032,7 @@ ThisCorruptionPalesInComparison:
  UKR: ", ця корупція блідне в порівнянні з нерозсудливістю такого марнотратного, орієнтованого на споживача суспільства."
 AreNeverthelessAPracticalRace:
  Id: 1353
- GER: " sind eine bodenständige Rasse, wenn es um Ressourcenverteilung geht."
+ GER: " sind eine bodenständige Rasse, wenn es um Ressourcenverteilung geht. "
  ENG: " are nevertheless a practical race when it comes to resource allocation. "
  RUS: " являются достаточно практичной расой в плане использования ресурсов. "
  SPA: " son, sin embargo, una raza práctica en lo que respecta a la asignación de recursos. "
@@ -6067,7 +6067,7 @@ AlsoTendToBeA:
  UKR: " також схильні до марнотратства і недбало ставляться до своїх інвестицій."
 WorkEthicIsStrong:
  Id: 1358
- GER: " starke Arbeitsmoral"
+ GER: " haben eine starke Arbeitsmoral "
  ENG: " work ethic is strong "
  RUS: " выработали устойчивую трудовую этику, "
  SPA: " tienen una gran ética del trabajo "
@@ -6165,14 +6165,14 @@ HomeworldOf:
  UKR: " Батьківщина"
 IsVeryLargeForA:
  Id: 1372
- GER: " ist für einen erdähnlichen Planeten sehr groß."
+ GER: " ist für einen erdähnlichen Planeten sehr groß. "
  ENG: " is very large for a terran planet. "
  RUS: ", для планеты земного типа слишком велика. "
  SPA: " es muy grande para tratarse de un planeta terrícola. "
  UKR: " дуже велика для земної планети."
 ThePlanetIsExtremelyPolluted:
  Id: 1373
- GER: "Der Planet ist durch jahrhundertelange Umweltvergehen extrem verschmutzt."
+ GER: "Der Planet ist durch jahrhundertelange Umweltvergehen extrem verschmutzt. "
  ENG: "The planet is extremely polluted from centuries of environmental abuses. "
  RUS: "За столетия непродуманной индустриализации планета стала исключительно загрязненной. "
  SPA: "El planeta está sumamente contaminado a causa de siglos de abusos medioambientales. "
@@ -6186,21 +6186,21 @@ IsVerySmallForA:
  UKR: " дуже мала для земної планети."
 IsOfAnAverageSize:
  Id: 1375
- GER: " ist von durchschnittlicher Größe für einen erdähnlichen Planeten."
+ GER: " ist von durchschnittlicher Größe für einen erdähnlichen Planeten. "
  ENG: " is of an average size for a terran planet. "
  RUS: ", имеет типичный для планеты земного типа размер. "
  SPA: " tiene un tamaño normal para tratarse de un planeta terrícola. "
  UKR: " має середній розмір для земної планети."
 HistoricallyThisRaceHasLooked:
  Id: 1376
- GER: "Historisch gesehen hat diese Rasse viele Jahrhunderte lang zu den Sternen geschaut."
+ GER: "Historisch gesehen hat diese Rasse viele Jahrhunderte lang zu den Sternen geschaut. "
  ENG: "Historically, this race has looked to the stars for many centuries. "
  RUS: "Исторически сложилось так, что эта раса уже много столетий назад обратила свой взор к звездам. "
  SPA: "Históricamente, esta raza lleva estudiando las estrellas muchos siglos. "
  UKR: "Історично склалося так, що ця раса протягом багатьох століть дивилася на зірки."
 AStrongHistoryOfMilitary:
  Id: 1377
- GER: "Eine lange Geschichte militärischer Konflikte hat das Militär zu einem zentralen Bestandteil der Kultur dieser Rasse gemacht."
+ GER: "Eine lange Geschichte militärischer Konflikte hat das Militär zu einem zentralen Bestandteil der Kultur dieser Rasse gemacht. "
  ENG: "A strong history of military conflict has made the military a central part of this race's culture. "
  RUS: "Многочисленные военные конфликты привели к тому, что военные традиции теперь составляют основу культуры этой расы. "
  SPA: "Una historia plagada de conflictos militares ha hecho que el eje de la cultura de esta raza sea el ejército. "
@@ -6214,35 +6214,35 @@ Furthermore2:
  UKR: "Більше того,"
 NavalTraditionIsVeryStrong:
  Id: 1379
- GER: " in der Marinetradition  sehr stark und es ist zu erwarten, dass diese Rasse in der gesamten Galaxie eine starke Flottenpräsenz haben wird."
+ GER: " in der Marinetradition sehr stark und es ist zu erwarten, dass diese Rasse in der gesamten Galaxie eine starke Flottenpräsenz haben wird. "
  ENG: " naval tradition is very strong, and it can be expected that this race will have a strong fleet presence throughout the galaxy. "
  RUS: " известны своими сильными флотскими традициями, поэтому можно предположить, что эта раса будет наращивать в галактике свое военное присутствие. "
  SPA: " tienen una gran tradición naval, por lo que cabe esperar que sus tropas tengan una amplia presencia en toda la galaxia. "
  UKR: " військово-морські традиції дуже сильні, і можна очікувати, що ця раса матиме потужний флот по всій галактиці."
 AreNaturalSailorsAndShipwrights:
  Id: 1380
- GER: " geborene Segler und Schiffbauer und haben eine lange und bewegte Geschichte in der Erforschung der Ozeane ihrer Heimatwelt."
+ GER: " geborene Segler und Schiffbauer und haben eine lange und bewegte Geschichte in der Erforschung der Ozeane ihrer Heimatwelt. "
  ENG: " are natural sailors and shipwrights, having a long and colorful history of exploring their homeworld's oceans. "
  RUS: " прирожденные моряки и кораблестроители, на протяжении многих столетий бороздившие просторы океанов своего родного мира. "
  SPA: " son constructores navales y marinos natos y tienen una rica historia en exploración oceánica de su mundo natal. "
  UKR: " є природженими моряками та корабельниками, які мають довгу та яскраву історію дослідження океанів рідної планети."
 PossessASomewhatDuplicitousNature:
  Id: 1381
- GER: " etwas doppelzüngiger Natur und als Ergebnis ausgezeichnete Spione."
+ GER: " etwas doppelzüngiger Natur und als Ergebnis ausgezeichnete Spione. "
  ENG: " possess a somewhat duplicitous nature and as a result make excellent spies. "
  RUS: " отличаются исключительной двуличностью, вследствие чего из них выходят отличные шпионы. "
  SPA: " poseen una naturaleza algo embaucadora, por lo que son excelentes espías. "
  UKR: " мають дещо двоїстий характер і, як наслідок, є чудовими шпигунами."
 LiveVeryOpenAndHonest:
  Id: 1382
- GER: " sehr offen und führen ein ehrliches Leben und haben daher ein geringes Verständnis für das Konzept der Spionage."
+ GER: " sehr offen und führen ein ehrliches Leben und haben daher ein geringes Verständnis für das Konzept der Spionage. "
  ENG: " live very open and honest lives, and as a result have a poor understanding of the concept of espionage. "
  RUS: " стараются жить честно и открыта, поэтому сама концепция шпионажа является для них совершенно чуждой. "
  SPA: " llevan vidas muy abiertas y honestas y, como resultado, no tienen bien asimilado el concepto de espionaje. "
  UKR: " живуть дуже відкритим і чесним життям і, як наслідок, погано розуміють поняття шпигунства."
 FinallyTheyAreADeeply:
  Id: 1383
- GER: "Zu guter Letzt sind sie ein zutiefst spirituelles Volk welches ein rituelles Leben führt, das seiner Religion gewidmet ist."
+ GER: "Zu guter Letzt sind sie ein zutiefst spirituelles Volk welches ein rituelles Leben führt, das seiner Religion gewidmet ist.  "
  ENG: "Finally, they are a deeply spiritual people, leading ritualistic lives devoted to their religion.  "
  RUS: "И, наконец, это глубоко духовная раса, и ее представители очень религиозны. "
  SPA: "Por último, son un pueblo profundamente espiritual: son devotos de su religión y basan sus vidas en los rituales.  "
@@ -6453,7 +6453,7 @@ Uninhabitable:
 Unexplored:
  Id: 1429
  GER: "Unerforscht"
- ENG: "Unexplored"
+ ENG: "Unexplored "
  RUS: "Неисследованная"
  SPA: "Sin explorar "
  UKR: "Недосліджена "
@@ -6672,7 +6672,7 @@ ImproveTracking:
  UKR: "Покращіть відстеження цілей, додавши більше систем з функцією відстеження цілей СКВ, наприклад, системи керування, або спробуйте згрупувати зброю так, щоб вона була спрямована у схожих напрямках."
 OrbitalTracking:
  Id: 1461
- GER: "Auch im Orbit platzierte Verteidgungsstationen nutzen das Planeten-FCS."
+ GER: "Auch im Orbit platzierte Verteidigungsstationen nutzen das Planeten-FCS."
  ENG: "Bases placed in orbit also use planet FCS."
  RUS: "Базы, выведенные на орбиту, также используют планетарную Сис.наведения огня."
  UKR: "Бази, розміщені на орбіті використовують планетарну Систему Керування Вогню."
@@ -9634,7 +9634,7 @@ RepairDroneLauncher:
 ThisModuleLaunchesRepairDrones:
  Id: 2101
  GER: "Dieses Modul startet Reparaturdrohnen, die mit Nano-Reparaturmodulen ausgestattet sind. Diese Drohnen zielen automatisch auf Schiffe in der Nähe ab und heilen sie, aber sie heilen NICHT das Schiff, das sie gestartet hat. Wenn ihr Nanitvorrat erschöpft ist, werden die Drohnen deaktiviert. Es wird empfohlen, diese Drohnen mit Nachschubherstellermodulen zu koppeln."
- ENG: "This module launches repair drones equipped with nano-repair modules. These drones will automatically target and heal nearby vessels, but they WONT heal ship that lanuched them. When their nanite supply is exhausted, the drones will deactivate. It is recommended to pair these modules with ordnance fabricators."
+ ENG: "This module launches repair drones equipped with nano-repair modules. These drones will automatically target and heal nearby vessels, but they WONT heal ship that launched them. When their nanite supply is exhausted, the drones will deactivate. It is recommended to pair these modules with ordnance fabricators."
  RUS: "Этот модель выпускает в пространство специальные зонды, оснащенные ремонтными наномодулями. Эти зонды будут автоматически искать поврежденные корабли и ремонтировать их. После выработки ресурса зонды будут деактивированы. Рекомендуется использовать их в паре с изготовителями боеприпасов."
  SPA: "Este módulo lanza drones de reparación equipados con módulos de nanorreparación. Estos drones tratarán de reparar automáticamente las naves cercanas. Cuando sus reservas de nanobots se agotan, los drones se desactivan. Se recomienda dotar estos módulos con fabricadores de munición."
  UKR: "Цей модуль запускає ремонтні дрони, оснащені наноремонтними модулями. Ці дрони автоматично націлюватимуться на сусідні судна і ремонтуватимуть їх, але вони НЕ будуть ремонтувати кораблі, які їх висадили. Коли запас нанітів вичерпається, дрони деактивуються. Рекомендується використовувати ці модулі в парі з виробниками боєприпасів."
@@ -10690,7 +10690,7 @@ IndicatesAnyBonusOrPenalty:
  UKR: "Вказує на будь-які бонуси або штрафи, що застосовуються до пошкоджень цієї зброї при атаці броньових модулів"
 BB_Tech_PointDefense_Name:
  Id: 2253
- GER: "PunktVerteidigung"
+ GER: "Punkt Verteidigung"
  ENG: "Point Defense"
  RUS: "Точечная защита"
  SPA: "Defensa puntual"
@@ -12091,7 +12091,7 @@ AlthoughUselessAgainstShieldedTargets:
  ENG: "Although almost useless against shielded targets, this weapon will strip a starship's boarding defenses by killing troops and crew, having an approximately 3 point of defense stripped per second. The effect on Mechanical Boarding Defense is only 10%"
 ABombBaySpeciallyEquipped:
  Id: 929
- GER: "Ein Bombenschacht, der speziell dafür ausgestattet ist, tödliche Sporenkampfmittel auf Prionenbasis auf Planetenoberflächen zu befördern.  Gegen gepanzerte Ziele ist diese Waffe unwirksam, gegen Bodentruppen und die Planetenbevölkerung jedoch sehr effektiv.  Der Zielplanet erleidet vorübergehend Mali auf seiner Fruchtbarkeitsstufe.  Ständige Bombenangriffe können die Fruchtbarkeit dauerhaft verringern und sogar das Flora für immer verändern."
+ GER: "Ein Bombene welche speziell dafür ausgestattet ist, tödliche Sporen auf Prionenbasis auf Planeten zu befördern.  Gegen gepanzerte Ziele ist diese Waffe unwirksam, gegen Bodentruppen und die Planetenbevölkerung jedoch sehr effektiv.  Der Zielplanet erleidet vorübergehend Mali auf seiner Fruchtbarkeitsstufe.  Ständige Bombenangriffe können die Fruchtbarkeit dauerhaft verringern und sogar das Flora für immer verändern."
  ENG: "A bomb bay specially equipped to deliver prion-based death spore ordnance to planetary surfaces. This weapon is ineffective against hard targets but very effective against ground troops and planetary population. The Target planet will suffer temporary reduction to its Fertility level. Constant bombing might permanently reduce fertility and even change the plant climate forever."
  RUS: "Бомбовой отсек, сконструированный специально для прионных биологических бомб. Это оружие бесполезно против защищенных целей, но очень эффективно уничтожает наземные войска и население планеты."
  SPA: "Compartimento de bombas especialmente equipado para bombardear superficies planetarias con esporas letales basadas en priones. Esta arma no hace nada a los objetivos fuertes, pero es muy eficaz contra tropas terrestres y la población."
@@ -15390,7 +15390,7 @@ rioritizeProjectorTip:
  ENG: "Whenever a Subspace Projector is placed in a planet's construction queue, manually or automatically, it would be placed at the top of the list."  
 BB_MiningSpeedTech:
  Id: 4924
- GER: "Abbaurate Bergbauschiffe"
+ GER: "Verbesserte Bergbauschiffe"
  ENG: "Mining Ships Speed"
  UKR: "Швидкість вид. кораблів"
 BB_MiningSpeedTechDescr:
@@ -15400,7 +15400,7 @@ BB_MiningSpeedTechDescr:
  UKR: "Збільште швидкість видобутку на наших шахтарських кораблях"
 BB_MiningSpeedTechDescrBonus:
  Id: 4926
- GER: "20% Steigerung der Abbau-Geschwindigkeit im Reich"
+ GER: "20% Steigerung der Abbau-Geschwindigkeit im gesamten Imperium"
  ENG: "20% Empire-wide increase in mining speeds" 
  UKR: "20% збільшення швидкості видобутку по всій імперії"
 BB_RefiningEfficiencyTech:
@@ -15410,12 +15410,12 @@ BB_RefiningEfficiencyTech:
  UKR: "Ефективність переробки"
 BB_RefiningEfficiencyTechDescr:
  Id: 4928
- GER: "Steigern Sie die Effizienz unserer Raffinierung exotischer Ressourcen"
+ GER: "Steigern Sie die Effizienz der Raffinierung exotischer Ressourcen"
  ENG: "Increase our Exotic Resources Refining Efficiency"
  UKR: "Підвищення ефективності переробки екзотичних ресурсів"
 BB_RefiningEfficiencyTechDescrBonus:
  Id: 4929
- GER: "20% Steigerung der Abbau-Effizienz im Reich"
+ GER: "20% Steigerung der Abbau-Effizienz im gesamten Reich"
  ENG: "20% Empire-wide increase in Refining Efficiency"  
  UKR: "20% підвищення ефективності нафтопереробки по всій імперії"
 BB_ExoticStorageTech:
@@ -15616,7 +15616,7 @@ TraitCompensationName:
 TraitCompensationDesc:
  Id: 4969
  GER: "Ihr Imperium entschädigt die Familien der Gefallenen mit 1 Credit pro 20 Schiffsfeldern, welche von Feinden zerstört wurden."
- ENG: "Your empire will compansate the families of battle casualties at a rate of 1 credit per 20 slots of ships killed by enemies."         
+ ENG: "Your empire will compensate the families of battle casualties at a rate of 1 credit per 20 slots of ships killed by enemies."         
  UKR: "Ваша імперія виплатить компенсацію сім'ям загиблих у бою з розрахунку 1 кредит за 20 слотів кораблів, вбитих ворогами."
 TraitTerranHomeworldName:
  Id: 4970
@@ -20125,7 +20125,7 @@ InformationInWarIsMost:
  UKR: "Інформація на війні має вирішальне значення, саме з цією метою були розроблені сенсори дальнього радіусу дії. Оснащення корабля сенсорним модулем значно збільшує дальність його виявлення."
 Tech_CompositeAlloys_Name:
  Id: 6569
- GER: "Verbundwerkstoff"
+ GER: "Verbund Werkstoff"
  ENG: "Composite Alloys"
  RUS: "Композитные сплавы"
  UKR: "Композитні сплави"
@@ -20154,7 +20154,7 @@ CompositeAlloysLarge:
  UKR: "Композитні сплави великі"
 Tech_CrystalArmor_Name:
  Id: 6574
- GER: "Kristalle gehören zu den härtesten bekannten Materialien, sind aber sehr spröde.  Durch Experimente mit Verbundlegierungen wurde eine Verbindung entdeckt, die geschmolzenen Kristallen zugesetzt werden kann, um sie zu einem äußerst widerstandsfähigen Material zu machen"
+ GER: "Kristall Panzer"
  ENG: "Crystal Armor"
  RUS: "Кристальная броня"
  UKR: "Кришталева броня"
@@ -20432,7 +20432,7 @@ FiresAutoCannonShellsInto:
  UKR: "Випускає на орбіту снаряди автоматичної гармати"
 Tech_PlanetDefenseIII_Name:
  Id: 8177
- GER: "Planetare Verteidgung III"
+ GER: "Planetare Abwehr III"
  ENG: "Planet Defense III"
  RUS: "Планетарная фортификация"
  UKR: "Захист планети III"
@@ -21131,7 +21131,7 @@ MassiveEnginesDescr:
  UKR: "Найбільші та найважчі судна потребують найбільших двигунів, щоб мати змогу ефективно рухатися в будь-якій ситуації."
 Extremefusionrecttech:
  Id: 17552
- GER: "Extrem Fusion"
+ GER: "Extreme Fusion"
  ENG: "Extreme Fusion"
  UKR: "Екстремальний синтез"
 ArmoredShieldtech:
@@ -21156,13 +21156,13 @@ ArmoredShieldDescr:
  UKR: "Броньований щит забезпечує захист у 22 000 ОЖ, а також діє як важка стійка броня, особливо проти вибухів."
 RapidFirePDTech:
  Id: 17557
- GER: "Schnellfeuerkanone PV"
+ GER: "Schnellfeuer Kanone PV"
  ENG: "Rapid Fire PD"
  UKR: "Швидка зентіна гармата"
 RapidFirePDTechdescr:
  Id: 17558
  GER: "Die Punktverteidigungs-Schnellfeuerkanone wurde entwickelt, um schnelle, manövrierfähigen Raketen abzufangen, die normalerweise in Salven abgefeuert werden.  Diese Türme verzichten zwecks hoher Feurrate auf hohen Schaden, wodurch sie weniger effektiv gegen Torpedos sind."
- ENG: "Rapid Fire Point deference was designed to counter fast moving maneuverable missiles that are usually fired in salvos. Those turrets exchange fast reloads over damage thus making them less effective against torpedoes."
+ ENG: "Rapid Fire Point Defense was designed to counter fast moving maneuverable missiles that are usually fired in salvos. Those turrets exchange fast reloads over damage thus making them less effective against torpedoes."
  UKR: "Точка швидкого вогню була розроблена для протидії швидким маневреним ракетам, які зазвичай випускаються залпами. Ці башти швидко перезаряджаються через пошкодження, що робить їх менш ефективними проти торпед."
 HeavyPDTech:
  Id: 17559
@@ -21301,7 +21301,7 @@ CoreExtracttech:
 CoreExtracttechdesc:
  Id: 17587
  GER: "Durch die Erschließung des Planetenkerns sind wir in der Lage, große Mengen wertvoller und seltener Elemente, Mineralien und Metalle zu extrahieren. Leider müssen sie anschließend einen komplexen Raffinierungsprozess durchlaufen, der zu starker Umweltverschmutzung führt"
- ENG: "By taping into the planets core we are able to extract huge amounts precious and rare elements, minerals and metals, unfortunately afterwards they need to go over a complex refinement process that creates heavy pollution"
+ ENG: "By tapping into the planets core we are able to extract huge amounts precious and rare elements, minerals and metals, unfortunately afterwards they need to go over a complex refinement process that creates heavy pollution"
  UKR: "Проникаючи в ядро планет, ми можемо видобувати величезну кількість дорогоцінних і рідкісних елементів, мінералів і металів, але, на жаль, після цього вони повинні пройти складний процес очищення, який створює сильне забруднення навколишнього середовища."
 CoreExtract:
  Id: 17588
@@ -21407,7 +21407,7 @@ Module_ArmoredMissile_Desc:
  UKR: "Важкоброньована ракетна шахта з надзвичайною дальністю польоту, але з надзвичайною вагою, що найкраще підходить для оборонних орбітальних споруд."
 WirelessPowerTech:
  Id: 17609
- GER: "Drahtlose Energieübertragung"
+ GER: "Drahtlose Energieübertr."
  ENG: "Wireless Power"
  UKR: "Бездротове живлення"
 WirelessPowerTechDescr:
@@ -21710,27 +21710,27 @@ ThisSimpleStructureIsUsed:
  UKR: "Ця проста структура використовується як \"наповнювач\" для кораблів, які не потребують більшої функціональності модуля"
 Tech_Terraforming_Name:
  Id: 18279
- GER: "Planetenwandl. Stufe I"
+ GER: "Terraformen I"
  ENG: "Terraforming I"
  UKR: "Тераформування I"
 Tech_Terraforming_Desc:
  Id: 18280
- GER: "Das Terraforming von Planeten ist ein langsamer Prozess, der jedoch zu hervorragenden Ergebnissen führen kann.  Wenn es erforscht würde, wären wir in der Lage, Terraformer zu bauen;  Riesige Maschinen, die selbst den tödlichsten Vulkan in einen schönen, harmlosen Hügel verwandeln können."
+ GER: "Das Terraformen von Planeten ist ein langsamer Prozess, der jedoch zu hervorragenden Ergebnissen führen kann.  Wenn es erforscht würde, wären wir in der Lage, Terraformer zu bauen;  Riesige Maschinen, die selbst den tödlichsten Vulkan in einen schönen, harmlosen Hügel verwandeln können."
  ENG: "Terraforming planets is a slow process but it can produce excellent results. If researched, we would be able to construct Terraformers; Vast machines which can transform even the most deadly Volcano into a nice, harmless hill."
  UKR: "Тераформування планет - це повільний процес, але він може дати чудові результати. Якщо його дослідити, ми зможемо побудувати тераформери - величезні машини, здатні перетворити навіть найсмертоносніший вулкан на милий, нешкідливий пагорб."
 Tech_Terraforming2_Name:
  Id: 18281
- GER: "Planetenwandl. Stufe II"
+ GER: "Terraformen  II"
  ENG: "Terraforming II"
  UKR: "Тераформування II"
 Tech_Terraforming2_Desc:
  Id: 18282
- GER: "Durch die Fortsetzung der Terraforming-Forschung werden wir in der Lage sein, Terraformer noch effektiver zu machen.  Terraformer werden in der Lage sein, unbewohnbare Teile des Planeten in vollständig bewohnbare Gebiete umzuwandeln und so die Bevölkerungskapazität zu erhöhen."
+ GER: "Durch die Fortsetzung der Terraformung-Forschung werden wir in der Lage sein, Terraformer noch effektiver zu machen.  Terraformer werden in der Lage sein, unbewohnbare Teile des Planeten in vollständig bewohnbare Gebiete umzuwandeln und so die Bevölkerungskapazität zu erhöhen."
  ENG: "Continuing the line of Terraforming research, we will be able to make Terraformers even more effective. Terraformers will be able to transform unhabitable sections of the planet into fully habitable lands, increasing population capacity."
  UKR: "Продовжуючи напрямок досліджень у сфері тераформування, ми зможемо зробити тераформери ще ефективнішими. Вони зможуть перетворювати непридатні для життя ділянки планети на цілком придатні для життя землі, збільшуючи кількість населення."
 Tech_Terraforming3_Name:
  Id: 18283
- GER: "Planetenwandl. Stufe III"
+ GER: "Terraformen III"
  ENG: "Terraforming III"
  UKR: "Тераформування III"
 Tech_Terraforming3_Desc:
