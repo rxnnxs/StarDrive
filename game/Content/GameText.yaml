@@ -574,7 +574,7 @@ NavalTradition:
  UKR: "Корабельні традиції"
 RacesWithStrongNavalTraditions:
  Id: 83
- GER: "„Rassen mit starken Marinetraditionen profitieren von einer Reduzierung der Schiffbaukosten um 35%, da sie über gut entwickelte Wirtschaftspraktiken im Schiffbau verfügen"
+ GER: "Rassen mit starken Marinetraditionen profitieren von einer Reduzierung der Schiffbaukosten um 35%, da sie über gut entwickelte Wirtschaftspraktiken im Schiffbau verfügen"
  ENG: "Races with strong naval traditions gain a 35% reduction to ship building costs due to having well developed economic practices concerning ship construction"
  RUS: "Расы с сильными флотскими традициями получают 35% скидку к стоимости производства кораблей вследствие адаптации экономики под их строительство."
  SPA: "A las razas con una sólida tradición naval les cuesta un 35% menos la fabricación de naves porque disponen de prácticas económicas muy desarrolladas en lo que a la construcción naval se refiere"
@@ -1594,7 +1594,7 @@ IndicatesThisShipsCurrentDefense:
  UKR: "Показує поточну оборону цього корабля проти абордажних дій. Якщо цей корабель абордує ворожа піхота і це число зменшиться до нуля, то корабель буде втрачено"
 IndicatesThisColonysTotalStrength:
  Id: 229
- GER: "Zeigt die Gesamtstärke dieser Kolonie im Vergleich zu Bodeninvasionen an.  Die Stärke wird durch die Anzahl der hier stationierten Truppen sowie durch etwaige Verteidigungsgebäude am Boden bestimmt.  Wenn dieser Planet angegriffen wird und die Verteidigungsstärke auf 0 reduziert wird, werden die Eindringlinge diese Kolonie erobern"
+ GER: "Zeigt die Verteidigungsstärke dieser Kolonie gegen Bodeninvasionen an.  Die Stärke wird durch die Anzahl der hier stationierten Truppen sowie durch etwaige Verteidigungsgebäude am Boden bestimmt.  Wenn dieser Planet angegriffen wird und die Verteidigungsstärke auf 0 reduziert wird, werden die Eindringlinge diese Kolonie erobern"
  ENG: "Indicates this colony's total strength versus ground invasions. Strength is determined by the number of troops garrisoned here as well as by any defensive buildings on the ground. If this planet is invaded and the defensive strength is reduced to 0, then the invaders will capture this colony"
  RUS: "Указывает текущую степень защиты колонии против наземного вторжения. Этот параметр определяется количеством гарнизонных войск и наличием соответствующих оборонительных сооружений. Если противник вторгнется на планету и показатель защиты снизится до нуля, колония будет захвачена"
  SPA: "Indica la fortaleza total de la colonia frente a invasiones terrestres. La fortaleza la determinan el número de tropas acuarteladas y los edificios defensivos que haya sobre el terreno. Si el planeta es invadido y la fortaleza defensiva queda reducida a cero, los invasores capturarán la colonia"
@@ -2284,7 +2284,7 @@ CombatStrength:
  UKR: "Бойова сила"
 CreditsPerTurnInMaintenance:
  Id: 365
- GER: "Credits/Runde Instanthaltung"
+ GER: "Credits/Runde Instandhaltung"
  ENG: "credits per turn in maintenance"
  RUS: "кредитов за ход на содержание"
  SPA: "créditos por turno en mantenimiento"
@@ -3912,7 +3912,7 @@ BB_Tech_RapidCloning_Name:
  UKR: "Швидке клонування"
 BB_Tech_RapidCloning_Desc:
  Id: 648
- GER: "„Wir sind schon lange in der Lage, Dinge zu klonen, aber bisher konnten wir die Reiferate nicht steigern. Mit dieser Technologie können wir einen Klon in Wochen statt in Jahren zur Erwachsenenreife heranziehen.“"
+ GER: "Wir sind schon lange in der Lage, Dinge zu klonen, aber bisher konnten wir die Reiferate nicht steigern. Mit dieser Technologie können wir einen Klon in Wochen statt in Jahren zur Erwachsenenreife heranziehen."
  ENG: "We have been able to clone things for a long time but we have not been able to increase the maturation rate until now. With this technology we can raise a clone to adult maturity in weeks rather than years. "
  RUS: "Мы давно уже отладили процесс клонирования, но до недавнего времени нам никак не удавалось ускорить процесс роста клонов. С этой технологией клоны будут достигать зрелости за считанные недели, а не годы."
  SPA: "Llevamos mucho tiempo clonando, pero hasta ahora no hemos podido incrementar el ritmo de maduración. Con esta tecnología, podemos lograr que un clon alcance la madurez en cuestión de semanas y no de años. "
@@ -6903,7 +6903,7 @@ Unlocked:
  UKR: " розблоковано"
 DiplomaticOverview:
  Id: 1600
- GER: "Diplomatie Übersicht"
+ GER: "D i p l o m a t i e"
  ENG: "Diplomatic Overview"
  RUS: "Обзор дипломатии"
  SPA: "Vista diplomática"
@@ -8518,7 +8518,7 @@ ProsperInTerranWorldsAnd:
  UKR: "Кількість колоністів (у мільйонах), яку можна завантажити. Зазвичай актуально для корабельного модуля колонізації."
 PopulationInBillionsVsMax:
  Id: 1929
- GER: "Bevölkerung (in Milliarden) vs. maximale Bevölkerung, die für Ihr Imperium verfügbar ist.  Der Prozentsatz gibt an, wie voll die Kolonie ist.  Eine niedrigere Maximalbevölkerung als die aktuelle Bevölkerung bedeutet, dass die aktuelle Rasse, die diesen Planeten bewohnt, besser für die Umgebung geeignet ist als Ihr Imperium."
+ GER: "Bevölkerung (in Milliarden) / maximale Bevölkerung, die für Ihr Imperium verfügbar ist.  Der Prozentsatz gibt an, wie voll die Kolonie ist.  Eine niedrigere Maximalbevölkerung als die aktuelle Bevölkerung bedeutet, dass die aktuelle Rasse, die diesen Planeten bewohnt, besser für die Umgebung geeignet ist als Ihr Imperium."
  ENG: "Population (in Billions) vs. Max Population available for your Empire. Percentage indicates how full the colony is. Lower Max Population than the current population means that the current Race occupying this planet is better suited to the environment than your Empire."
  RUS: "Население (в миллиардах) против максимального количества населения, доступного для вашей Империи. Процент показывает, насколько заполнена колония. Меньшее максимальное население, чем текущее, означает, что текущая раса, населяющая эту планету, лучше подходит для окружающей среды, чем ваша Империя."
  UKR: "Населення (у мільярдах) проти максимального населення, доступного для вашої імперії. Відсоток показує, наскільки заповнена колонія. Менша максимальна кількість населення, ніж поточна, означає, що поточна раса, яка населяє цю планету, краще пристосована до навколишнього середовища, ніж ваша імперія."
@@ -8860,13 +8860,13 @@ TT_BurstWpnPwerDrain:
  UKR: "Це вказує на те, що існує чистий відтік енергії з резервів корабля (з урахуванням перезарядки), коли вся енергетична зброя корабля, разом з променями на повній потужності, постійно веде вогонь по цілях, виходячи з потужності зброї в секунду при стрільбі."
 TT_ExcessWpnPwrDrain:
  Id: 1989
- GER: "„Dies deutet darauf hin, dass die Reserven des Schiffes (nach Berücksichtigung der Energieaufladung) netto an Energie verlieren, wenn alle Energiewaffen des Schiffes ständig auf Ziele schießen, basierend auf der Energie pro Sekunde der Waffen beim Abfeuern.“"
+ GER: "Dies deutet darauf hin, dass die Reserven des Schiffes (nach Berücksichtigung der Energieaufladung) netto an Energie verlieren, wenn alle Energiewaffen des Schiffes ständig auf Ziele schießen, basierend auf der Energie pro Sekunde der Waffen beim Abfeuern."
  ENG: "This indicates that there is a net power drain from the ship's reserves (after considering power recharge) when all the ship's energy weapons are persistently firing on targets, based on the weapons' power per second upon firing"
  RUS: "Указывает на чистую утечку энергии из резервов корабля (с учетом перезарядки энергии), когда все энергетическое оружие корабля постоянно стреляет по целям, в зависимости от мощности оружия в секунду при стрельбе."
  UKR: "Це вказує на те, що існує чистий відтік енергії з резервів корабля (з урахуванням перезарядки), коли вся енергетична зброя корабля постійно веде вогонь по цілях, виходячи з потужності зброї в секунду під час стрільби."
 ThisWeaponFiresMoreThan:
  Id: 1990
- GER: "„Diese Waffe feuert mehr als ein Projektil pro Schuss ab. Sie feuert auch mehrere Projektile pro Salve ab, wenn sie über Salvenfeuer verfügt. Eine Waffe mit einer Projektilzahl von 2 und einer Salve von 3 feuert beispielsweise 6 Projektile pro Salve ab"
+ GER: "Diese Waffe feuert mehr als ein Projektil pro Schuss ab. Sie feuert auch mehrere Projektile pro Salve ab, wenn sie über Salvenfeuer verfügt. Eine Waffe mit einer Projektilzahl von 2 und einer Salve von 3 feuert beispielsweise 6 Projektile pro Salve ab"
  ENG: "This weapon fires more than one projectile per shot. It will also fire this multiple projectiles per Salvo, if it has Salvo fire. A weapon with projectile count of 2 and salvo of 3, for instance, will fire 6 projectiles per salvo"
  RUS: "Это оружие выпускает более одного снаряда за выстрел. Он также будет стрелять этими несколькими снарядами за залп, если у него есть залповый огонь. Например, оружие с числом снарядов 2 и залпом 3 будет выпускать 6 снарядов за залп"
  UKR: "Ця зброя вистрілює більше одного снаряда за постріл. Вона також вистрілить цю кількість снарядів за залп, якщо у неї є залповий вогонь. Наприклад, зброя з кількістю снарядів 2 і залпом 3 вистрілить 6 снарядів за залп"
@@ -9969,7 +9969,7 @@ RemnantDetectionArray:
  UKR: "Масив виявлення Древніх"
 OurScientistsBelieveThatThis:
  Id: 2149
- GER: "„Unsere Wissenschaftler glauben, dass dieses Gebäude es uns ermöglichen wird, alle 'Remnant'-Flotten zu entdecken, die auf ein System abzielen, wenn dieses Gebäude auf einem seiner Planeten gebaut wurde. Es wird auch eine voraussichtliche Ankunftszeit ermitteln können.“"
+ GER: "Unsere Wissenschaftler glauben, dass dieses Gebäude es uns ermöglichen wird, alle 'Remnant'-Flotten zu entdecken, die auf ein System abzielen, wenn dieses Gebäude auf einem seiner Planeten gebaut wurde. Es wird auch eine voraussichtliche Ankunftszeit ermitteln können."
  ENG: "Our scientists believe that this building will allow us to detect any remnant fleet targeting a system if this building in built on any of it's planets. it will also have an ETA."
  RUS: "Ученые считают, что это здание позволит нам обнаружить любой флот Предтечей, нацеленный на систему, если это здание построено на любой из ее планет."
  SPA: "Nuestros científicos creen que este edificio nos permitirá detectar el origen de la señal que controla los drones Remanentes en nuestra galaxia. "
@@ -10550,7 +10550,7 @@ Defense:
  UKR: "Оборона"
 IndicatesTheCombatStrengthAdded:
  Id: 2232
- GER: "Zeigt die Kampfstärke an, die diesem Schiff im Vergleich zu Enteraktionen hinzugefügt wurde.  beinhaltet den Bonus, der von allen Truppen bereitgestellt wird, die dieses Modul möglicherweise bereitstellt"
+ GER: "Zeigt die Kampfstärke an, die diesem Schiff gegen Enteraktionen hinzugefügt wurde.  beinhaltet den Bonus, der von allen Truppen bereitgestellt wird, die dieses Modul möglicherweise bereitstellt"
  ENG: "Indicates the combat strength added to this ship versus boarding actions; does include the bonus provided by any troops this module may provide"
  RUS: "Указывает дополнительную боевую мощь корабля при обороне от абордажа; также включает бонус от войск, предоставляемых этим модулем"
  SPA: "Indica la fortaleza de combate añadida a esta nave frente a intentos de abordaje; incluye la bonificación que aporten las tropas destacadas en el módulo"
@@ -11508,7 +11508,7 @@ FurthermoreWeRequestATreaty:
  UKR: "Крім того, ми просимо укласти договір, який дозволить приватним особам наших імперій вільно торгувати між собою."
 WeProposeATreatyAllowing:
  Id: 3009
- GER: "„Wir schlagen einen Vertrag vor, der den Privatbürgern unserer Reiche die Freiheit gibt, miteinander Handel zu treiben."
+ GER: "Wir schlagen einen Vertrag vor, der den Privatbürgern unserer Reiche die Freiheit gibt, miteinander Handel zu treiben."
  ENG: "We propose a treaty allowing the private citizens of our empires the freedom to trade with one another. "
  RUS: "Мы предлагаем заключить торговый договор, чтобы граждане наших империй могли свободно торговать друг с другом. "
  SPA: "Proponemos un tratado por el que las personas físicas de nuestros respectivos imperios tengan libertad para comerciar entre sí. "
@@ -13160,13 +13160,13 @@ SecondsPerTurn:
  UKR: "Секунди за хід"
 TimeInSecondsPerTurn:
  Id: 4126
- GER: "„Zeit in Sekunden pro Spielzug. Produktions-, Nahrungs-, Forschungs- und Finanzberechnungen werden pro Spielzug durchgeführt."
+ GER: "Zeit in Sekunden pro Spielzug. Produktions-, Nahrungs-, Forschungs- und Finanzberechnungen werden pro Spielzug durchgeführt."
  ENG: "Time in seconds per turn. Production, Food, Research and Treasury calculations are performed per turn."
  RUS: "Время хода (сек). Расчеты производства продукции, производства пищи, научно-исследовательских работ и финансов (казначейские расчеты) которые выполняются за один ход."
  UKR: "Час у секундах на хід. Розрахунки виробництва, їжі, досліджень і скарбниці виконуються за хід."
 MaintenanceMultiplier:
  Id: 4127
- GER: "Instanthaltungsmultiplikator"
+ GER: "Instandhaltungsmultiplikator"
  ENG: "Maintenance Multiplier"
  RUS: "Множитель содержания"
  UKR: "Мультиплікатор обслуговування"
@@ -13190,7 +13190,7 @@ AutomaticErrorReport:
  UKR: "Автоматичний звіт про помилки"
 SendAutomaticErrorReportsTo:
  Id: 4131
- GER: "Senden Sie automatische Fehlerberichte an Blackbox-Entwickler."
+ GER: "Senden Sie automatische Fehlerberichte an die Blackbox-Entwickler."
  ENG: "Send automatic error reports to Blackbox developers."
  RUS: "Отправьте автоматический отчет об ошибках разработчикам Blackbox."
  UKR: "Надсилайте автоматичні звіти про помилки розробникам Blackbox."
@@ -14084,7 +14084,7 @@ AMeteorHasCrashedOn:
  UKR: "Метеор впав на поверхню! \nНа місці падіння знайдено загадкову речовину."
 AMeteorHasCrashedOn2:
  Id: 4281
- GER: "„Ein Meteor ist auf der Oberfläche abgestürzt!\nEdelmetalle wurden rund um die Absturzstelle gefunden."
+ GER: "Ein Meteor ist auf der Oberfläche abgestürzt!\nEdelmetalle wurden rund um die Absturzstelle gefunden."
  ENG: "A Meteor has crashed on the surface!\nPrecious metals were found around the crash site."
  RUS: "Метеор упал на поверхность!\nВокруг места крушения были обнаружены драгоценные металлы."
  UKR: "Метеор впав на поверхню! \nНа місці падіння знайдено дорогоцінні метали."
@@ -15177,7 +15177,7 @@ ExoticResourceMaxRefineTip:
  UKR: "Максимальна швидкість переробки екзотичного ресурсу за хід. Коли додається більше шахт, максимальна швидкість збільшується."
 ExoticResourceOpsTip: 
  Id: 4495
- GER: "Aktive Bergbaustationen im Vergleich zur Gesamtzahl der Bergbaustationen im Vergleich zu im Bau befindlichen Bergbaustationen bzw. auf dem Weg zur Bereitstellung.  Bergbaustationen werden inaktiv, wenn es keine Nahrung für die Bergleute gibt oder wenn noch keine Rohstoffe von den Bergbauschiffen zur Station gebracht wurden."
+ GER: "Aktive Bergbaustationen / Gesamtzahl der Bergbaustationen / im Bau befindlichen Bergbaustationen bzw. auf dem Weg zur Bereitstellung.  Bergbaustationen werden inaktiv, wenn es keine Nahrung für die Bergleute gibt oder wenn noch keine Rohstoffe von den Bergbauschiffen zur Station gebracht wurden."
  ENG: "Active Mining stations vs. total Mining stations vs. Mining stations being under construction / enroute to deployement. Mining Stations become inactive if there is no food for the miners or if no raw resource is yet brought by the mining ships to the station."         
  UKR: "Активні шахтарські станції відносно загальної кількості шахтарських станцій відносно шахтарських станцій, що будуються/на шляху до розгортання. Шахтарські станції стають неактивними, якщо немає їжі для шахтарів або якщо сировина ще не доставлена на станцію кораблями, що її видобувають."
 ExoticResourceStorageTip: 
@@ -15346,7 +15346,7 @@ BB_Tech_DysonSwarmOverclock_Name:
  ENG: "Swarm Overclock"   
 BB_Tech_DysonSwarmOverclock_Desc: 
  Id: 4913
- GER: "Aktivieren Sie die Übertaktung der Dyson-Schwarm-Kontroller, was zu zusätzlicher Produktion pro befreundeter Kolonie führt. Die übertaktete Produktion wird sich jedoch auf den Mineralzerfall der Planeten auswirken.“"
+ GER: "Aktivieren Sie die Übertaktung der Dyson-Schwarm-Kontroller, was zu zusätzlicher Produktion pro befreundeter Kolonie führt. Die übertaktete Produktion wird sich jedoch auf den Mineralzerfall der Planeten auswirken."
  ENG: "Enable overclocking Dyson swarm controllers, which will give additional production per friendly colony. The overclocked production will, however, affect Mineral Decay of the planets."    
 BB_Tech_DysonOverclock_Bonus: 
  Id: 4914
@@ -17003,7 +17003,7 @@ Espionage2:
  UKR: "Шпигунство."
 EspionageOverview:
  Id: 6089
- GER: "Übersicht Spionage"
+ GER: "S p i o n a g e"
  ENG: "Espionage Overview"
  RUS: "Обзор шпионажа"
  SPA: "Visión general del espionage"
@@ -17351,7 +17351,7 @@ AutoTaxes:
  UKR: "Податок на авто"
 InsystemEnemyFtlSpeedModifier:
  Id: 6139
- GER: "In-System Gegmer UL-Modifikator"
+ GER: "In-System Gegner UL-Modifikator"
  ENG: "In-System Enemy FTL Speed Modifier"
  RUS: "Внутрисис.модификатор скорости FLT врага"
  SPA: "Modificador de la velocidad supraluminal en territorio enemigo "
@@ -17742,7 +17742,7 @@ ExclusiveBlueprints:
  ENG: "Exclusive Blueprints"   
 ExclusiveBlueprintsTip:
  Id: 6197
- GER: "„Wenn exklusive Blaupausen geladen sind, wird der Gouverneur nur die genauen Gebäude dieser Blaupausen bauen und alle anderen Gebäude, einschließlich der vom Spieler gebauten, verwerfen. Bei nicht exklusiven Blaupausen wird der Gouverneur den Rest des Planeten entsprechend seiner Logik mit Gebäuden füllen  und nutzte auch seine Build-Logik, wenn die geladenen Blueprints noch nicht abgeschlossen werden konnten."
+ GER: "Wenn exklusive Blaupausen geladen sind, wird der Gouverneur nur die genauen Gebäude dieser Blaupausen bauen und alle anderen Gebäude, einschließlich der vom Spieler gebauten, verwerfen. Bei nicht exklusiven Blaupausen wird der Gouverneur den Rest des Planeten entsprechend seiner Logik mit Gebäuden füllen  und nutzte auch seine Build-Logik, wenn die geladenen Blueprints noch nicht abgeschlossen werden konnten."
  ENG: "When Exclusive Blueprints are loaded, the Governor will only build the exact buildings of these Blueprints and will scrap all other buildings, including player built ones. In non exclusive Blueprints, the governor will fill the rest of the planet with buildings according to its logic and also used its build logic if it cannot yet complete the Blueprints loaded."  
 Completion:
  Id: 6198
@@ -18034,7 +18034,7 @@ CounterEspioangeOpsFailedWipeout:
  ENG: "Our Counter-Espioange was a disaster.\n Our agents were detected our Infiltration Level was reduced.\Moreover, it is possible they gained Infiltration Level."         
 CounterEspioangeOpsFailedWipeoutVictim:
  Id: 6272
- GER: "„Es ist uns gelungen, eine Spionageabwehroperation aufzudecken und einige ihrer Agenten in Doppelagenten umzuwandeln.\n"
+ GER: "Es ist uns gelungen, eine Spionageabwehroperation aufzudecken und einige ihrer Agenten in Doppelagenten umzuwandeln.\n"
  ENG: "We managed to uncover a Counter-Espionage operation and turn some of their agent to double agents.\n"          
 EliminatedMole:
  Id: 6273
@@ -19075,7 +19075,7 @@ ExpEvent_BuiltRDA_Outcome1_Descr:
  ENG: "Your quest to discover the secrets of The Remnant continues. It appears that your scientists' theories are correct: upon activating the Remnant Detection Array, they immediately identified an anomalous subspace data stream that is, so far as they can tell, coming from everywhere at once and no where in particular. With this omnipresent quality, the data stream bears a remarkable similarity to the universal background radation detectable with normal radio telescopes - the signal strength is equal in all directions and extremely faint. Nothing in the known Remnant ships would be capable of detecting this signal.\n\nHowever, the Array has detected a second, more conventional subspace signal. Analysis suggests that it is an amplified version of the fainter signal and that it is originating inside our galaxy! \n \n The location of the Remnant signal is now revealed. If we wish to learn more then we will need to find it and see what secrets it holds!"
  UKR: "Ваші пошуки таємниць Древніх тривають. Виявляється, теорії ваших вчених правильні: після активації масиву виявлення Древніх вони одразу ж виявили аномальний підпросторовий потік даних, який, наскільки вони можуть судити, надходить звідусіль одночасно і нізвідки конкретно. Завдяки своїй всюдисущності потік даних має дивовижну схожість з універсальним фоновим випромінюванням, яке можна виявити за допомогою звичайних радіотелескопів - потужність сигналу однакова в усіх напрямках і надзвичайно слабка. Жоден з відомих кораблів Древніх не здатен виявити цей сигнал.\n\nОднак, Масив виявив другий, більш звичайний підпросторовий сигнал. Аналіз показує, що це посилена версія слабшого сигналу, і що він походить з нашої галактики! \n \n Тепер ми знаємо, звідки походить залишковий сигнал. Якщо ми хочемо дізнатися більше, нам потрібно знайти його і дізнатися, які таємниці він приховує!"
 StartTypingToFindTechs:
- GER: "Beginnen Sie mit der Eingabe, um Techniker zu finden"
+ GER: "Suchbegriff eingeben, um Forschungsfeld zu finden"
  ENG: "Start Typing to Find Techs"
  UKR: "Почніть вводити, щоб знайти технологію"
 DesignName:
