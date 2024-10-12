@@ -739,7 +739,7 @@ Saving:
  UKR: "Збереження..."
 ToggleOverlay:
  Id: 106
- GER: "Wechsle Ansicht"
+ GER: "Schiff/Module"
  ENG: "Toggle Overlay"
  RUS: "Переключить"
  SPA: "Alternar sobreimpresión"
@@ -942,7 +942,7 @@ Recharge:
  UKR: "Перезарядка"
 Repair:
  Id: 135
- GER: "Reparieren"
+ GER: "Rep."
  ENG: "Repair"
  RUS: "Ремонт"
  SPA: "Reparar"
@@ -1843,7 +1843,7 @@ TogglesWhetherThisShipsAssault:
  UKR: "Лівий клік - перемикає, чи повинні штурмові шатли цього корабля запускатися і супроводжувати військовий корабель або повертатися в ангари\nПравий клік - перемикач, що дозволяє військам брати на абордаж кораблі з цього десантного корабля."
 Save:
  Id: 300
- GER: "Spiel speichern"
+ GER: "Speichern"
  ENG: "Save"
  RUS: "Сохранить"
  SPA: "Guardar"
@@ -6557,7 +6557,7 @@ Rich:
  UKR: "Багата"
 Average:
  Id: 1444
- GER: "Durchschnitt"
+ GER: "Normal"
  ENG: "Average"
  RUS: "Средняя"
  SPA: "Normal"
@@ -6578,7 +6578,7 @@ UltraPoor:
  UKR: "Надзвичайно бідна"
 Terran:
  Id: 1447
- GER: "Erdähnlich –"
+ GER: "Erdähnl. –"
  ENG: "Terran"
  RUS: "Земная"
  SPA: "Terrícola"
@@ -6910,7 +6910,7 @@ DiplomaticOverview:
  UKR: "Дипломатичний огляд"
 You:
  Id: 1601
- GER: "Sie"
+ GER: "Unser Imperium"
  ENG: "You"
  RUS: "Вы"
  SPA: "Tú"
@@ -8836,13 +8836,13 @@ YouCanSwitchFromNormal:
  UKR: "Ви можете переключитися з режиму Звичайний дизайн на режим Симетричний дизайн, в якому модулі будуть встановлені симетрично (ліворуч і праворуч) на кораблі, якщо це можливо. Вони також будуть видалятися разом, а їхні вогняні дуги будуть симетрично змінені, якщо ви їх зміните"
 SymmetricDesign:
  Id: 1985
- GER: "Symmetrie I/O"
+ GER: "Spiegeln"
  ENG: "Toggle Symmetry"
  RUS: "Симметрия"
  UKR: "Симетрія"
 NormalDesign:
  Id: 1986
- GER: "Schiff leeren"
+ GER: "Module entf."
  ENG: "Strip Ship"
  RUS: "Демонтаж"
  UKR: "Розібрати"
@@ -11146,13 +11146,13 @@ AddWarpCapableModulesUsually:
  UKR: "Додайте модулі з підтримкою викривлення (як правило, двигуни викривлення) та увімкніть їх, щоб увімкнути можливості викривлення."
 SlowWarpSpeed:
  Id: 2525
- GER: "Niedrige Sprunggeschwindigkeit"
+ GER: "Niedrige Sprung- Geschwindigkeit"
  ENG: "Slow Warp Speed"
  RUS: "Медленная скорость при варпе"
  UKR: "Повільна швидкість викривлення"
 TheShipsWarpSpeedBelow:
  Id: 2526
- GER: "Die Warpgeschwindigkeit des Schiffs liegt unter der durchschnittlichen Warpgeschwindigkeit der Schiffe, die Ihrem Imperium zur Verfügung steht. Da Flotten mit der Geschwindigkeit des langsamsten Schiffs reisen, verzögert dieses Schiff die Bewewglichkeit der Flotte, wenn es zugewiesen wird."
+ GER: "Die Warpgeschwindigkeit des Schiffs liegt unter der durchschnittlichen Warpgeschwindigkeit der Schiffe, die Ihrem Imperium zur Verfügung steht. Da Flotten mit der Geschwindigkeit des langsamsten Schiffs reisen, verzögert dieses Schiff die Beweglichkeit der Flotte, wenn es zugewiesen wird."
  ENG: "The ship's Warp Speed below the average Ships' Warp speed available to your empire. Since fleets travel at the speed of the slowest ship, this ship will delay the fleet's speed capabilities if assigned to one."
  RUS: "Скорость варпа корабля ниже средней скорости варпа кораблей, доступных в вашей империи. Поскольку флот движется со скоростью самого медленного корабля, этот корабль будет задерживать скоростные возможности флота, если он выделен вместе с другими более быстрыми кораблями."
  UKR: "Швидкість викривлення корабля нижче середньої швидкості викривлення кораблів, доступної для вашої імперії. Оскільки флотилії рухаються зі швидкістю найповільнішого корабля, цей корабель затримує швидкісні можливості флотилії, якщо його призначено одному з них."
@@ -11296,7 +11296,7 @@ AddReactorsOrEnergyStorage:
  UKR: "Додайте Реактори або Сховище енергії, щоб збільшити час роботи в режимі сплеску енергії."
 NoAmmoResupplyInCombat:
  Id: 2550
- GER: "Kein Munitionsnachschub im Kampf"
+ GER: "Kein Munitions- nachschub im Kampf"
  ENG: "No Ammo Resupply in Combat"
  RUS: "Без пополнения боезапаса в бою"
  UKR: "Без поповнення боєприпасів у бою"
@@ -12112,7 +12112,7 @@ ScatterFlakTurret:
  UKR: "Розсіювальна зенітна турель"
 FlakTurretsAreMountedOn:
  Id: 953
- GER: "Kinetische Geschütztürme sind auf drehbaren Plattformen montiert und bieten ein 90-Grad-Feuerfeld.  Sie feuern Sprenggranaten in schneller Folge mit einem mäßigen Schadensradius ab, aber die Projektile sind etwas langsam und für die Verfolgung schneller Ziele ungeeignet.  Darüber hinaus benötigt diese Waffe Kampfmittel, um abgefeuert zu werden."
+ GER: "Kinetische Geschütztürme sind auf drehbaren Plattformen montiert und bieten ein 90-Grad-Feuerfeld.  Sie feuern Sprenggranaten in schneller Folge mit einem mäßigen Schadensradius ab, aber die Projektile sind etwas langsam und für die Verfolgung schneller Ziele ungeeignet.  Die Waffe benötigt Munition."
  ENG: "Kinetic Turrets are mounted on swivel platforms for a 90 degree field of fire. They fire explosive shells in rapid sucession with a moderate damaging radius, but the projectiles are somewhat slow and ill-suited for tracking swift targets. Furthermore, this weapon requires ordnance to fire."
  RUS: "Зенитные турели монтируются на поворотной платформе и имеют 90-градусный сектор обстрела. Ведут огонь разрывными снарядами со средним радиусом поражения, но их скорость полета недостаточно высока, поэтому они не очень хорошо подходят для стрельбы по быстродвижущимся целям. Кроме того, для стрельбы требуются боеприпасы."
  SPA: "Las torretas antiaéreas van montadas sobre plataformas giratorias para cubrir un campo de fuego de 90 grados. Disparan proyectiles explosivos con un radio de daño moderado, pero los proyectiles son algo lentos y no son adecuados para rastrear blancos rápidos. Además, esta arma necesita munición para disparar."
@@ -12418,161 +12418,161 @@ ClearActive:
  UKR: "Очистити активний"
 PopulationGrowthModifier:
  Id: 4017
- GER: "Ändere Bev.-Wachstum"
+ GER: "Bev.-Wachstum"
  ENG: "Population Growth Modifier"
  RUS: "Модификатор роста населения"
  SPA: "Modificador del crecimiento de la población"
  UKR: "Модифікатор зростання населення"
 ProductionModifier:
  Id: 4018
- GER: "Ändere Produktionsrate"
+ GER: "Produktionsrate"
  ENG: "Production Modifier"
  RUS: "Модификатор продукции"
  SPA: "Modificador de la producción"
  UKR: "Виробничий модифікатор"
 ResearchModifier:
  Id: 4019
- GER: "Ändere Forschungsrate"
+ GER: "Forschungsrate"
  ENG: "Research Modifier"
  RUS: "Модификато исследований"
  SPA: "Modificador de la investigación"
  UKR: "Дослідницький модифікатор"
 DiplomacyModifier:
  Id: 4020
- GER: "Ändere Diplomatierate"
+ GER: "Diplomatierate"
  ENG: "Diplomacy Modifier"
  RUS: "Модификатор дипломатии"
  SPA: "Modificador de la diplomacia"
  UKR: "Модифікатор дипломатії"
 TroopStrengthModifier:
  Id: 4021
- GER: "Ändere Truppenstärke"
+ GER: "Truppenstärke"
  ENG: "Troop Strength Modifier"
  RUS: "Модификатор силы отрядов"
  SPA: "Modificador de la fortaleza de las tropas"
  UKR: "Модифікатор сили війська"
 ShipCostModifier:
  Id: 4022
- GER: "Ändere Schiffskosten"
+ GER: "Schiffskosten"
  ENG: "Ship Cost Modifier"
  RUS: "Модификатор стоимости корабля"
  SPA: "Modificador del coste de las naves"
  UKR: "Модифікатор вартості судна"
 ShipHitpointsModifier:
  Id: 4023
- GER: "Ändere Trefferpunkte"
+ GER: "Trefferpunkte"
  ENG: "Ship Hitpoints Modifier"
  RUS: "Модификатор ОП корабля"
  SPA: "Modificador de los puntos de vida de las naves"
  UKR: "Модифікатор хітпоінтів корабля"
 TaxIncomeModifier:
  Id: 4024
- GER: "Ändere Steuereinkommen"
+ GER: "Steuereinkommen"
  ENG: "Tax Income Modifier"
  RUS: "Модификатор налогового дохода"
  SPA: "Modificador de los ingresos por impuestos"
  UKR: "Модифікатор податкового доходу"
 InbordersFtlBonus:
  Id: 4025
- GER: "Ändere Sprungbonus im Reich"
+ GER: "Sprungbonus im Reich"
  ENG: "In-borders FTL Bonus"
  RUS: "Бонус FLT в империи"
  SPA: "Bonificación de velocidad supraluminal dentro del imperio"
  UKR: "Бонус за швидкісний переліт у межах країни"
 FtlSpeedMultiplier:
  Id: 4026
- GER: "Ändere Sprunggeschwindigkeit"
+ GER: "Sprunggeschwindigkeit"
  ENG: "FTL Speed Multiplier"
  RUS: "Множитель скорости FTL"
  SPA: "Multiplicador de la velocidad supraluminal"
  UKR: "Мультиплікатор надсвітлової швидкості"
 FtlPowerDrainModifier:
  Id: 4027
- GER: "Ändere Spung-Energieverbrauch"
+ GER: "Spung-Energieverbrauch"
  ENG: "FTL Power Drain Modifier"
  RUS: "Модификатор расхода энергии FTL"
  SPA: "Modificador del consumo de energía a velocidad supraluminal"
  UKR: "Модифікатор розсіювання енергії FTL"
 SublightSpeedBonus:
  Id: 4028
- GER: "Ändere Unterlicht Geschw."
+ GER: "Unterlicht Geschw."
  ENG: "Sublight Speed Bonus"
  RUS: "Бонус сверхсветовой скорости"
  SPA: "Bonificación de velocidad subluminal"
  UKR: "Бонусна досвітлова швидкість"
 SensorRangeModifier:
  Id: 4029
- GER: "Ändere Sensor Reichweite"
+ GER: "Sensor Reichweite"
  ENG: "Sensor Range Modifier"
  RUS: "Модификатор дальности сенсоров"
  SPA: "Modificador del alcance sensorial"
  UKR: "Модифікатор діапазону датчика"
 SpyEffectivenessModifier:
  Id: 4030
- GER: "Ändere Spionageeffizienz"
+ GER: "Spionageeffizienz"
  ENG: "Spy Effectiveness Modifier"
  RUS: "Модификатор эфективности шпионов"
  SPA: "Modificador de la eficacia de los espías"
  UKR: "Модифікатор шпигунської ефективності"
 ArtifactBonusModifier:
  Id: 4031
- GER: "Ändere Artefaktbonus"
+ GER: "Artefaktbonus"
  ENG: "Artifact Bonus Modifier"
  RUS: "Модификатор бонуса артефактов"
  SPA: "Modificador de la bonificación de los artefactos"
  UKR: "Модифікатор артефактного бонусу"
 CannonAccuracyModifier:
  Id: 4032
- GER: "Ändere Zielgenauigkeit"
+ GER: "Zielgenauigkeit"
  ENG: "Cannon Accuracy Modifier"
  RUS: "Модификатор точности орудий"
  SPA: "Modificador del daño de los cañones"
  UKR: "Модифікатор точності гармати"
 OrdnanceDamageradiusModifier:
  Id: 4033
- GER: "Ändere Munition Expl.-Radius"
+ GER: "Munition Expl.-Radius"
  ENG: "Ordnance Damage/Radius Modifier"
  RUS: "Модификатор радиуса взрыва/урона боеприпасов"
  SPA: "Modificador del radio/daño de la munición"
  UKR: "Модифікатор пошкодження боєприпасів / модифікатор радіусу дії"
 MissileHitpointsBonus:
  Id: 4034
- GER: "Ändere Raketen HP Bonus"
+ GER: "Raketen HP Bonus"
  ENG: "Missile Hitpoints Bonus"
  RUS: "Бонус ОП ракет"
  SPA: "Bonificación de puntos de vida de los misiles"
  UKR: "Бонус до хітпоінтів від ракет"
 MissileDodgeChance:
  Id: 4035
- GER: "Ändere Raketenausweichchance"
+ GER: "Raketenausweichchance"
  ENG: "Missile Dodge Chance"
  RUS: "Шанс уклонения ракет"
  SPA: "Probabilidad de esquivar misiles"
  UKR: "Шанс ухилення від ракети"
 ShipMassModifier:
  Id: 4036
- GER: "Ändere Schiffsträgheit"
+ GER: "Schiffsträgheit"
  ENG: "Ship Mass Modifier"
  RUS: "Модификатор массы корабля"
  SPA: "Modificador de la masa de las naves"
  UKR: "Модифікатор маси корабля"
 MaintenanceModifier:
  Id: 4037
- GER: "Ändere Gebäudeinstandh.-Kosten"
+ GER: "Gebäudeinstandh.-Kosten"
  ENG: "Buildings Maintenance Modifier"
  RUS: "Модификатор технического обслуживания зданий"
  SPA: "Modificador de mantenimiento de edificios"
  UKR: "Модифікатор обслуговування будівель"
 InsystemFtlSpeed:
  Id: 4038
- GER: "Ändere Inn.-Syst. ÜL-Geschw."
+ GER: "Inn.-Syst. ÜL-Geschw."
  ENG: "In-system FTL speed"
  RUS: "Скорость FLT в системе"
  SPA: "Velocidad supraluminal dentro del sistema"
  UKR: "Внутрішньосистемна надсвітлова швидкість"
 FuelCellModifier:
  Id: 4039
- GER: "Ändere Brennstoffz. Effizienz"
+ GER: "Brennstoffz. Effizienz"
  ENG: "Fuel Cell Modifier"
  RUS: "Модификатор энергоячеек"
  SPA: "Modificador de las celdas de combustible"
@@ -13069,7 +13069,7 @@ Destroyer:
  UKR: "Есмінець"
 Bomber:
  Id: 4111
- GER: "Bomber"
+ GER: "Zerstörer"
  ENG: "Bomber"
  RUS: "Бомбардировщик"
  SPA: "Bombardero"
@@ -13508,7 +13508,7 @@ HaveAFlagshipnlurkingSomewhereIn:
  UKR: "мають флагманський корабель,\n що ховається десь у галактиці."
 OmitOldModules:
  Id: 4185
- GER: "Blende alte Module aus"
+ GER: "Alte Module I/O"
  ENG: "Omit Old Modules"
  RUS: "Старые модули"
  UKR: "Опустити старі модулі"
@@ -14436,7 +14436,7 @@ TerraformersUnknownOrigin:
  UKR: "Невідоме походження"
 NonaggressionPact3:
  Id: 4347
- GER: "Nicht Angriffspakt"
+ GER: "Nichtangriffspakt"
  ENG: "Non Aggression"
  UKR: "Неагресивність"
 OpenBordersTreaty2:
@@ -14556,7 +14556,7 @@ SaveShipDesignDesc:
  UKR: "Зберігає дизайн корабля. Якщо корабель не завершено, його буде збережено як незавершене будівництво."
 SaveWIP:
  Id: 4371
- GER: "Speichere Entwurf"
+ GER: "Entw. speichern"
  ENG: "Save WIP" 
  UKR: "Зберегти WIP"
 BuildingCreatedFromLava:
@@ -14992,7 +14992,7 @@ MiningPlanRefining:
  UKR: "Переробка екзотичного ресурсу"
 DeployMiningStation:
  Id: 4458 
- GER: "Erbaue Minenstation"
+ GER: "Mine konstruieren"
  ENG: "Deploy Mining Station"
  UKR: "Розгорнути гірничу станцію"
 DeployMiningStationTip:
@@ -15122,12 +15122,12 @@ ExoticNumOps:
  UKR: "станцій"
 EmpireExoticStorage:
  Id: 4484
- GER: "Ändere Lagerkapazität Exot. Güter"
+ GER: "Lagerkapazität Exot. Güter"
  ENG: "Empire Exotic Storage Modifier"
  UKR: "Модифікатор зберігання екзотичних ресурсів"
 EmpireMiningSpeed:
  Id: 4485
- GER: "Ändere Abbaugescwhindigkeit"
+ GER: "Abbaugescwhindigkeit"
  ENG: "Mining Speed Modifier"
  UKR: "Модифікатор швидкості видобутку"
 EmpireRefiningEfficiency:
@@ -17708,7 +17708,7 @@ ShipOffense:
  UKR: "Злочин на кораблі"
 PowerCell:
  Id: 6191
- GER: "Energiezelle"
+ GER: "Speicher"
  ENG: "Power Cell"
  RUS: "Энерго-ячейка"
  UKR: "Елемент живлення"
@@ -18270,7 +18270,7 @@ EspioangeOpsDisruptProjectionTip:
  ENG: "Hack their Subspace Projection network and destabilize it for a period of time where it will flicker until they manage to stabilize it."        
 EspioangeBudgetMuliplier:
  Id: 6331
- GER: "Haushaltsmodifikator"
+ GER: "Spionageausgaben"
  ENG: "Budget Multiplier"         
 EspioangeBudgetMuliplierTip:
  Id: 6332
@@ -18286,11 +18286,11 @@ EspioangeHomeworldMoleTip:
  ENG: "Planet a Mole at the target's homeworld, allowing us to see their colony details and sensors. This mole cannot be removed by their counter-espionage."  
 EspioangeDefenseWeight:
  Id: 6335
- GER: "Verteidigungsgewichtung"
+ GER: "Verteidigung"
  ENG: "Defense Weight"            
 EspioangeInfiltrationWeight:
  Id: 6336
- GER: "Infiltrationsgewichtung"
+ GER: "Infiltration"
  ENG: "Infiltration Weight"             
 EspioangeDefenseWeightTip:
  Id: 6337
