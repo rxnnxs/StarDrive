@@ -2833,12 +2833,12 @@ Terraformer:
  UKR: "Тераформер"
 TheseMachinesWhileExpensiveTo:
  Id: 462
- GER: "Diese Maschinen sind zwar teuer in der Wartung, verwandeln aber unermüdlich karge Felsbrocken in lebenswerte Welten mit atmungsaktiver Atmosphäre.  Die Terraform-Stufe eines Imperiums kann zwischen 1 und 3 liegen. Jede Stufe erhöht die Effektivität von Terraforming-Operationen, bis sie in der Lage sind, einen kargen Planeten in einen Himmel für Ihr Volk zu verwandeln."
+ GER: "Teuer in der Wartung, verwandeln sie aber unaufhörlich karge Felsbrocken in Welten mit benötigter Atmosphäre.  Die Stufe reicht von I bis III. Jede Stufe erhöht die Effektivität der Maschine, bis sie in der Lage sind, einen kargen Planeten in ein Paradies für unser Volk zu verwandeln."
  ENG: "These machines, while expensive to maintain, will tirelessly transform barren hunks of rock into livable worlds with breathable atmospheres. Terraform Level of an empire can be 1 to 3. Each level increases the effectiveness of terraforming operations until they are able to terraform a barren planet into a heaven for your people."
  UKR: "Ці машини, хоч і дорогі в обслуговуванні, невтомно перетворюватимуть безплідні шматки скелі на придатні для життя світи з придатною для дихання атмосферою. Рівень тераформування імперії може бути від 1 до 3. Кожен рівень підвищує ефективність операцій тераформування, поки вони не зможуть перетворити пустельну планету на рай для ваших людей."
 TerraformsThePlanetToYour:
  Id: 463
- GER: "Terraformiert den Planeten basierend auf der Terraforming-Stufe des Imperiums"
+ GER: "Formt den Planeten basierend auf der erforschten Terraform-Stufe"
  ENG: "Terraforms the planet based on the Empire's Terraforming Level"
  UKR: "Тераформує планету на основі рівня тераформування Імперії"
 TrackingStation:
