@@ -2410,7 +2410,7 @@ YouAreManagingThisColony:
  UKR: "Ви керуєте цією колонією вручну."
 EmpireManagement:
  Id: 383
- GER: "R e i c h v e r w a l t u n g"
+ GER: "K o l o n i e v e r w a l t u n g"
  ENG: "Empire Management"
  RUS: "Управление империей"
  SPA: "Gestión del imperio"
@@ -4430,14 +4430,14 @@ ThisMassiveEngineWillProvide:
  UKR: "Цей масивний двигун забезпечить приголомшливу тягу при приголомшливому енергоспоживанні.  "
 CombatInformationCenter:
  Id: 920
- GER: "Kampfinformationszentrum"
+ GER: "Gefechtsstand"
  ENG: "Combat Information Center"
  RUS: "Командно-информационный центр"
  SPA: "Centro de información de combate"
  UKR: "Бойовий інформаційний центр"
 TheCombatInformationCenterConsolidates:
  Id: 921
- GER: "Das Gefechtsinformationszentrum fasst alle Befehls- und Kontrollfunktionen in einem einzigen Modul zusammen. Von hier aus kann die Besatzung Sensordaten koordinieren, Schadensbegrenzungsteams verwalten, Verteidigungsmaßnahmen an Bord organisieren und vieles mehr."
+ GER: "Das Gefechtsstand fasst alle Befehls- und Kontrollfunktionen in einem einzigen Modul zusammen. Von hier aus kann die Besatzung Sensordaten koordinieren, Schadensbegrenzungsteams verwalten, Verteidigungsmaßnahmen an Bord organisieren und vieles mehr."
  ENG: "The combat information center consolidates all command and control functions into a single module. From here the crew can coordinate sensor data, manage damage control teams, organize shipboard defensive actions, and more. "
  RUS: "Командно-информационный центр представляет собой модуль, в котором объединены все функции командования и управления. С его помощью команда может координировать данные со сканеров, управлять ремонтными бригадами, организовывать оборону и т.п."
  SPA: "El centro de información de combate integra todas las funciones de mando y control en un mismo módulo. Desde él, la tripulación puede coordinar los datos de los sensores, gestionar los equipos de control de daños, organizar las acciones defensivas a bordo y mucho más. "
@@ -16443,7 +16443,7 @@ Boarding:
  UKR: "Абордаж"
 Station:
  Id: 6009
- GER: "Station"
+ GER: "Raumstation"
  ENG: "Station"
  RUS: "Станция"
  SPA: "Estaciones"
@@ -21375,7 +21375,7 @@ LightKineticCannonDescr:
  UKR: "Легка та невелика зброя, що стріляє кінетичними снарядами з швидкою послідовністю. Для стрільби потрібен Орден."
 Tech_SmallStations_Name:
  Id: 17603
- GER: "Kleine Stationen"
+ GER: "Raumstation"
  ENG: "Small Stations"
  RUS: "Малые станции"
  UKR: "Малі станції"
@@ -21386,7 +21386,7 @@ Tech_SmallStations_Desc:
  UKR: "Щоб захистити наші колонії від зростаючої небезпеки ворожих флотів, ми нещодавно розробили креслення для будівництва нашої першої орбітальної станції, нового типу споруди, більшої за наші маленькі та важкі платформи."
 Tech_Battle_Stations_Name:
  Id: 17605
- GER: "Kampfstationen"
+ GER: "Schwere Raumstation"
  ENG: "Battle Stations"
  RUS: "Боевые станции"
  UKR: "Бойові позиції"
