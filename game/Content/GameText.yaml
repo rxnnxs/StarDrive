@@ -4437,7 +4437,7 @@ CombatInformationCenter:
  UKR: "Бойовий інформаційний центр"
 TheCombatInformationCenterConsolidates:
  Id: 921
- GER: "Das Gefechtsstand fasst alle Befehls- und Kontrollfunktionen in einem einzigen Modul zusammen. Von hier aus kann die Besatzung Sensordaten koordinieren, Schadensbegrenzungsteams verwalten, Verteidigungsmaßnahmen an Bord organisieren und vieles mehr."
+ GER: "Der Gefechtsstand fasst alle Befehls- und Kontrollfunktionen in einem einzigen Modul zusammen. Von hier aus kann die Besatzung Sensordaten koordinieren, Schadensbegrenzungsteams verwalten, Verteidigungsmaßnahmen an Bord organisieren und vieles mehr."
  ENG: "The combat information center consolidates all command and control functions into a single module. From here the crew can coordinate sensor data, manage damage control teams, organize shipboard defensive actions, and more. "
  RUS: "Командно-информационный центр представляет собой модуль, в котором объединены все функции командования и управления. С его помощью команда может координировать данные со сканеров, управлять ремонтными бригадами, организовывать оборону и т.п."
  SPA: "El centro de información de combate integra todas las funciones de mando y control en un mismo módulo. Desde él, la tripulación puede coordinar los datos de los sensores, gestionar los equipos de control de daños, organizar las acciones defensivas a bordo y mucho más. "
@@ -10456,7 +10456,7 @@ ThisLaserEmploysAClever:
  UKR: "Цей лазер використовує розумне двостороннє магнітне поле для спрямування енергії в астероїд, де він розщеплює руди всередині; потім руди рухаються за допомогою енергії лазерного вибуху назад до гірничодобувного корабля, використовуючи друге магнітне поле, щоб утримувати і спрямовувати руди до відповідного вантажного відсіку."
 HardAttack:
  Id: 2218
- GER: "Gepanzerte Ziele"
+ GER: "Harte Ziele"
  ENG: "Hard Attack"
  RUS: "Атака ЗЦ"
  SPA: "Ataque fuerte"
@@ -20688,7 +20688,7 @@ Tech_ImperialCustoms_Desc:
  UKR: "Торгівля між планетами повинна регулюватися, щоб захистити місцеві економіки, уникнути забруднення навколишнього середовища і, перш за все, забезпечити отримання державою своєї частки від усіх доходів."
 Tech_PlanetaryStockTrade_Name:
  Id: 10065
- GER: "Planetarischer Aktienhandel"
+ GER: "Planetarer Aktienhandel"
  ENG: "Planetary Stock Trade"
  RUS: "Планетарные акции"
  UKR: "Планетарна біржова торгівля"
@@ -21212,7 +21212,7 @@ SmallWarehousetechDescr:
  UKR: "Склади призначені для зберігання та переміщення більшої кількості продукції та їжі, щоб легше було розширювати ранню імперію."
 MedWarehousetech:
  Id: 17568
- GER: "Planetarischer Vorrat II"
+ GER: "Planetarer Vorrat II"
  ENG: "Planetary Stockpile II"
  UKR: "Планетарний запас II"
 MedWarehousetechDescr:
@@ -21232,7 +21232,7 @@ MedWarehouse1longDescr:
  UKR: "Величезний склад, що забезпечує збільшення обсягів зберігання продуктів харчування та продукції"
 NanoWarehousetech:
  Id: 17573
- GER: "Planetarischer Vorrat III"
+ GER: "Planetarer Vorrat III"
  ENG: "Planetary Stockpile III"
  UKR: "Планетарний запас III"
 NanoWarehousetechDescr:
@@ -21252,12 +21252,12 @@ NanoWarehouse1longDescr:
  UKR: "Сучасний складський комплекс"
 SmallWarehousetech:
  Id: 17578
- GER: "Planetarischer Vorrat I"
+ GER: "Planetarer Vorrat I"
  ENG: "Planetary Stockpile I"
  UKR: "Планетарний запас I"
 PlanetaryDefenseIItech:
  Id: 17579
- GER: "Planetarische Abwehr II"
+ GER: "Planetare Abwehr II"
  ENG: "Planetary Defense II"
  UKR: "Планетарна оборона II"
 PlanetaryDefenseIItechdesc:
@@ -21267,7 +21267,7 @@ PlanetaryDefenseIItechdesc:
  UKR: "Несамовиті війни між різними видами принесли небезпеку планетам та їхньому населенню. Бомбардування планет стало серйозною загрозою, яку потрібно було вирішувати якнайшвидше."
 PlanetShieldheavy:
  Id: 17581
- GER: "Planetarische Abschirmung"
+ GER: "Planetare Abschirmung"
  ENG: "Planetary Shielding"
  UKR: "Планетарний захист"
 PlanetShieldHeavyDesc:
