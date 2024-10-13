@@ -233,7 +233,7 @@ RacesWithHighlyEfficientMetabolisms:
  UKR: "Раси з високоефективним метаболізмом потребують на 15% менше їжі кожного ходу"
 Gluttonous:
  Id: 34
- GER: "Gefräßg"
+ GER: "Gefräßig"
  ENG: "Gluttonous"
  RUS: "Прожорливые"
  SPA: "Glotona"
@@ -1414,7 +1414,7 @@ AvailableDesigns:
  UKR: "Доступні дизайни"
 ChooseAShipToLoad:
  Id: 199
- GER: "Wähle ein Schiff zum beladen"
+ GER: "Wähle einen Entwurf"
  ENG: "Choose a Ship to Load"
  RUS: "Выберите корабль для загрузки"
  SPA: "Elegir una nave para cargar"
@@ -5661,7 +5661,7 @@ TheyHave:
  UKR: "У них є"
 IsAnEmpireComprisedOf:
  Id: 1300
- GER: " ist ein Imperium bestehend aus "
+ GER: " sind/ist ein Imperium bestehend aus "
  ENG: " is an empire comprised of "
  RUS: " - империя "
  SPA: " es un imperio compuesto por "
@@ -9255,7 +9255,7 @@ OrdnanceFabricator:
  UKR: "Виготовлювач боєприпасів"
 ThisDevicePerformsAVery:
  Id: 2047
- GER: "Dieses Gerät führt eine sehr teure Energie-in-Materie-Umwandlung durch und erzeugt pro Sekunde 2 Kampfmittel für das ausgerüstete Schiff."
+ GER: "Dieses Gerät führt eine sehr teure Energie-in-Materie Umwandlung durch und erzeugt pro Sekunde 2 Kampfmittel für das ausgerüstete Schiff."
  ENG: "This device performs a very expensive energy-to-matter conversion, creating 2 ordnance per second for the equipped ship."
  RUS: "Устройство осуществляет преобразование энергии в материю, создавая 2 ед. боеприпасов в секунду для корабля. Этот дорогостоящий процес требует много энергии.  "
  SPA: "Este dispositivo realiza una conversión muy costosa de energía a materia que crea 2 unidades de munición por segundo para la nave que lo tenga."
@@ -12999,7 +12999,7 @@ TheDelayBetweenAutoSaves:
  UKR: "Затримка між автозбереженнями. Вимірюється у секундах без паузи, відносно гри.\n--Загальні тривалості--\n60 = 1 хвилина\n300 = 5 хвилин (за замовчуванням)\n600 = 10 хвилин"
 RemnantPresence:
  Id: 4101
- GER: "'Ur-Alten' Lebenszeichen"
+ GER: "Remnantpräsenz"
  ENG: "Remnant Presence"
  RUS: "Присутствие Предтечь"
  SPA: "Precencia de remanentes"
