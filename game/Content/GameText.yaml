@@ -1141,7 +1141,7 @@ EnRouteTo:
  UKR: "На шляху до"
 PickingUp:
  Id: 160
- GER: "Hole ab"
+ GER: "Hole:"
  ENG: "Picking up"
  RUS: "Подбор"
  SPA: "Recogiendo"
@@ -1169,7 +1169,7 @@ Delivering:
  UKR: "Доставка"
 TradingGoods:
  Id: 164
- GER: "Handele Waren"
+ GER: "Handl Waren"
  ENG: "Trading Goods"
  RUS: "Торговля"
  SPA: "Negociando bienes"
@@ -1358,14 +1358,14 @@ ShipArray:
  UKR: "Список кораблів"
 PlayerDesignsOnly:
  Id: 191
- GER: "Nur eigene Entwürfe"
+ GER: "Sondermodell"
  ENG: "Player Designs Only"
  RUS: "Скрыть платформы"
  SPA: "Ocultar plataformas"
  UKR: "Лише дизайни гравця"
 System:
  Id: 192
- GER: "Sonnensystem"
+ GER: "System"
  ENG: "System"
  RUS: "Система"
  SPA: "Sistema"
@@ -1955,14 +1955,14 @@ Expenditure:
  UKR: "Витрати"
 BuildingMaint:
  Id: 316
- GER: "Instandh. Gebäude"
+ GER: "Gebäude"
  ENG: "Building Maint."
  RUS: "Содерж. зданий"
  SPA: "Mant. edificios"
  UKR: "Обслугов. будівель"
 ShipMaint:
  Id: 317
- GER: "Instandh. Flotte"
+ GER: "Flotte"
  ENG: "Ship Maint."
  RUS: "Содерж. кораблей"
  SPA: "Mant. naves"
@@ -2221,21 +2221,21 @@ TheLandscapeHereIsNot:
  UKR: "Ландшафт тут не придатний для проживання без будівництва сучасних житлових модулів. Побудова біосфери зробить цю територію придатною"
 FoodPerTurn:
  Id: 354
- GER: "Nahrung pro Runde"
+ GER: "Nahrung/Runde"
  ENG: "Food Per Turn"
  RUS: "еды в ход"
  SPA: "de alimentos por turno"
  UKR: "Їжа за хід"
 ProductionPerTurn:
  Id: 355
- GER: "Produktion pro Runde"
+ GER: "Produktion/Runde"
  ENG: "production per turn"
  RUS: "продукции в ход"
  SPA: "de producción por turno"
  UKR: "виробництво за хід"
 ResearchPerTurn:
  Id: 357
- GER: "Forschung pro Runde"
+ GER: "Forschung/Runde"
  ENG: "Research Per Turn"
  RUS: "исследований в ход"
  SPA: "de investigación por turno"
@@ -2263,14 +2263,14 @@ PlanetaryShieldStrengthAdded:
  UKR: "Додана міцність планетарного щита"
 CreditsAddedPerColonist:
  Id: 362
- GER: "Einkünfte pro Kolonist"
+ GER: "Einkünfte/Kolonist"
  ENG: "Credits Added Per Colonist"
  RUS: "кредитов за колониста"
  SPA: "Créditos añadidos por colono"
  UKR: "Кредитів за колоніста"
 ProductionPerRichness:
  Id: 363
- GER: "Produktion pro Reichtum"
+ GER: "Prod./Mineral.-Reicht."
  ENG: "Production Per Richness"
  RUS: "производство за богатство"
  SPA: "Producción por riqueza"
@@ -2361,7 +2361,7 @@ ResearchWorld:
  UKR: "Дослідницький світ"
 CustomColony:
  Id: 376
- GER: "Benutzerdef. Kolonie"
+ GER: "Manuell"
  ENG: "Custom Colony"
  RUS: "Без Губернатора"
  SPA: "Colonia personalizada"
@@ -2403,7 +2403,7 @@ GovernorWillBuildADedicated:
  UKR: "Губернатор побудує спеціальну дослідницьку колонію, покладаючись на імпорт продуктів харчування та виробництва."
 YouAreManagingThisColony:
  Id: 382
- GER: "Sie verwalten diese Kolonie manuell."
+ GER: "Sie verwalten\ndiese Kolonie."
  ENG: "You are managing this colony manually."
  RUS: "Вы управляете этой колонией вручную."
  SPA: "Esta colonia la gestionas tú directamente."
@@ -3947,7 +3947,7 @@ BB_Tech_ScientificFoundations_Name:
  UKR: "Наукові основи"
 BB_Tech_ScientificFoundations_Desc:
  Id: 653
- GER: "Jede neue Kolonie bietet eine neue Gelegenheit für wissenschaftliche Entdeckungen, sei es biologischer, geologischer, archäologischer oder anderer Art.   Grundlegende wissenschaftliche Einrichtungen sind entscheidend für das Verständnis unserer neuen Heimat und die Erweiterung unseres Wissens über das Universum"
+ GER: "Jede neue Kolonie bietet eine neue Gelegenheit für wissenschaftl. Entdeckungen, sei es biologischer, geologischer, archäologischer oder anderer Natur. Grundlegende wissenschaftl. Einrichtungen sind entscheidend für das Verständnis unserer neuen Heimat und die Erweiterung unseres Wissens über das Universum"
  ENG: "Each new colony presents a fresh opportunity for scientific discovery, be it biological, geological, archeological, or otherwise.  Basic scientific facilities are critical to understanding our new homes and increasing our knowledge of the universe."
  RUS: "Каждая новая колония - это новая возможность для совершения научных открытий в самых разных сферах - биологии, геологии, археологии и т.п. Для понимания того, как устроены наши новые дома, и расширения наших знаний о Вселенной требуются как минимум базовые научные учреждения."
  SPA: "Cada nueva colonia es una flamante oportunidad de realizar descubrimientos científicos, ya sean biológicos, geológicos, arqueológicos o de otro tipo.  Las instalaciones científicas básicas son fundamentales para entender los nuevos mundos y aumentar nuestro conocimiento del universo."
@@ -5507,14 +5507,14 @@ DeclareWar:
  UKR: "Оголосити війну"
 Discuss:
  Id: 1201
- GER: "Diskutieren"
+ GER: "Unterhalten"
  ENG: "Discuss"
  RUS: "Обсудить"
  SPA: "Debatir"
  UKR: "Обговорити"
 Negotiate:
  Id: 1202
- GER: "Verhandeln"
+ GER: "Handeln"
  ENG: "Negotiate"
  RUS: "Переговоры"
  SPA: "Negociar"
@@ -6368,7 +6368,7 @@ GoExploring:
  UKR: "Вирушай досліджувати"
 Other:
  Id: 1417
- GER: "Sonstiges..."
+ GER: "Sonstige"
  ENG: "Other..."
  RUS: "Другое..."
  SPA: "Otra..."
@@ -6452,14 +6452,14 @@ Uninhabitable:
  UKR: "Непридатна для життя"
 Unexplored:
  Id: 1429
- GER: "Unerforscht"
+ GER: "Unerforscht – "
  ENG: "Unexplored "
  RUS: "Неисследованная"
  SPA: "Sin explorar "
  UKR: "Недосліджена "
 SendAShipToThis:
  Id: 1430
- GER: "Schicken Sie ein Schiff zu diesem Planeten, um seine Eigenschaften zu enthüllen"
+ GER: "Schicken Sie ein Schiff zu diesem Planeten,\num seine Eigenschaften zu enthüllen"
  ENG: "Send a ship to this planet to reveal its properties"
  RUS: "Подлетите к этой планете ближе,чтобы узнать больше."
  SPA: "Enviar una nave a este planeta para revelar sus propiedades"
@@ -7902,13 +7902,13 @@ ThisWeaponHasMirvMeaning:
  UKR: "Ця зброя має MIRV, що означає, що вона викидає кілька боєголовок близько до цілі, в основному для того, щоб деякі боєголовки уникнули перехоплення. Пошкодження та будь-які модифікатори, які ви побачите, вказані для кожної боєголовки."
 ProductionFees:
  Id: 1819
- GER: "Produktionsgebühren"
+ GER: "Fertigung"
  ENG: "Production Fees"
  RUS: "Сборы за произ."
  UKR: "Виробничі податки"
 WaitingForRefitShip:
  Id: 1820
- GER: "Warte auf das umgerüstete Schiff"
+ GER: "Warte auf Umrüstung"
  ENG: "Waiting for Refit Ship"
  RUS: "Ожидание переоснащения корабля"
  UKR: "Очікує переобладннання корабля"
@@ -7932,7 +7932,7 @@ MaximumImprecisionAngleInDegrees:
  UKR: "Максимальний кут неточності (в градусах), який має ця зброя. Використовується в таких видах зброї, як вулканічні гармати та плазмомети. Надає зброї розсіювання пострілів."
 RushAllConstruction:
  Id: 1824
- GER: "Massenproduktion"
+ GER: "Blitzfertigung"
  ENG: "Continuous Rush"
  RUS: "Ускоренное произв."
  UKR: "Безперервний поспіх"
@@ -8482,7 +8482,7 @@ TT_RelativeStrength:
  UKR: "Це сила корабля, поділена на кількість слотів. Це може дати вам оцінку ефективності корабля."
 GovernorBudget:
  Id: 1916
- GER: "Gouverneurshaushalt"
+ GER: "Gouverneurshaush."
  ENG: "Governor Budget"
  RUS: "Губерн.бюджет"
  UKR: "Губернат. бюджет"
@@ -11900,7 +11900,7 @@ ClickToRushProductionFrom:
  UKR: "Натисніть, щоб прискорити виробництво зі сховища цієї колонії.\n \nОдин клік додасть 10 одиниць продукції зі сховища до поточного виробництва.\n \nCTRL-клацніть, щоб додати стільки продукції, скільки доступно в даний момент.\n \nShift-клацніть, щоб спробувати прискорити цей елемент до завершення, виснажуючи при цьому вашу скарбницю.\n \nКількість продукції, яку буде прискорено, також буде вирахувано зі скарбниці вашої імперії.\n \nБудівництво не може бути прискорено, якщо у вашій колонії є наземні загарбники або ваша імперія має менше 1000 кредитів плюс вартість прискореного будівництва."
 ManualTradeOrdersThisFreighter2:
  Id: 215
- GER: "Manueller Handel: Befiehlt diesem Frachter, Lebensmittel zu transportieren.  Dieses Schiff wird Lebensmittel von exportierenden Planeten zu importierenden Pflanzen transportieren.  Klicken Sie mit der rechten Maustaste, um dies zu deaktivieren."
+ GER: "Manueller Handel: Befiehlt diesem Frachter, Lebensmittel zu transportieren.  Dieses Schiff wird Lebensmittel von exportierenden zu importierenden Planeten transportieren.  Klicken Sie mit der rechten Maustaste, um dies zu deaktivieren."
  ENG: "Manual Trade: Orders this freighter to transport food. This ship will transport food from exporting planets to importing plants. Right click to turn this off."
  RUS: "Приказывает кораблю осуществлять перевозку товаров. Щелкните ПКМ чтобы указать, будет ли этот корабль перевозить еду при получении приказа \"Перевозить товары\"."
  SPA: "Ordena a esta nave transportar mercancías. Haz clic con el botón derecho para que esta nave comercie con alimentos una vez dada la orden de \"Transportar mercancías\"."
@@ -13484,7 +13484,7 @@ HadToEvacuateSincen:
  UKR: "довелося евакуюватися, оскільки"
 OwnsThePlanetNow:
  Id: 4181
- GER: "ist nun Besitzer des Planeten"
+ GER: "ist neuer Besitzer des Planeten"
  ENG: "owns the planet now"
  RUS: "теперь владеет планетой"
  UKR: "тепер володіє планетою."
@@ -13496,7 +13496,7 @@ ForeignTroopsEvacuatedFrom:
  UKR: "Іноземні війська евакуйовані з"
 NumberOfBasesWasReducednto:
  Id: 4183
- GER: "Anzahl der Bases wurden reduziert auf"
+ GER: "Anzahl der Basen wurden reduziert auf"
  ENG: "number of bases was reduced\nto around"
  RUS: "количество баз уменьшено\nвокруг"
  UKR: "кількість баз було зменшено\n до приблизно"
@@ -13538,7 +13538,7 @@ MarkThisModuleAsObsolete:
  UKR: "Позначте цей модуль як застарілий. Ви не побачите його наступного разу, коли будете переглядати категорії модулів. Вибір застарілого модуля в існуючому дизайні можливий. Повторне натискання цієї кнопки зніме позначку застарілого модуля з цього модуля."
 ShowPlayerDesignsOnly:
  Id: 4190
- GER: "Zeige nur Spielerentwürfe"
+ GER: "Zeige nur eigene Entwürfe"
  ENG: "Show Player Designs Only"
  RUS: "Показывать только конструкции игрока"
  UKR: "Показувати тільки дизайни гравців"
@@ -13556,7 +13556,7 @@ ShowOnlyShipsWhichAre:
  UKR: "Показувати тільки ті кораблі, які приписані до флотів"
 NotInFleets:
  Id: 4193
- GER: "in keiner Flotte"
+ GER: "Einzelgänger"
  ENG: "Not In Fleets"
  RUS: "Не во флоте"
  UKR: "Не у флоті"
@@ -14396,7 +14396,7 @@ MeteorShowerWarning:
  UKR: ": Через систему проходить метеорний потік.\nЗа нашими оцінками, частина метеорів впаде на планету!"
 BudgetLimitReached:
  Id: 4339
- GER: "Die Grenze des zivilen Budgets ist erreicht!"
+ GER: "Zivilbudgetgrenze erreicht!"
  ENG: "Civilian Budget Limit Reached!"
  UKR: "Ліміт цивільного бюджету досягнуто!"
 BB_Tech_SubspatialDynamics_CounterEnemyPlanetInhibitionBonus_Bonus:
@@ -15755,7 +15755,7 @@ OnSurfaceAndInSpace:
  UKR: "на поверхні та в космосі"
 FoodConsumptionPerTurnFor:
  Id: 4996
- GER: "Nahrungsverbrauch pro Runde für Truppen"
+ GER: "Nahrung für Truppen / Runde"
  ENG: "Food consumption per turn for Troops"
  RUS: "Еда за ход для войск"
  UKR: "Споживання їжі за хід для військ"
@@ -15773,7 +15773,7 @@ CreditsPerTurnForTroop:
  UKR: "Кредити за хід на утримання війська"
 TroopMaint:
  Id: 4999
- GER: "Truppen-Inst."
+ GER: "Sold"
  ENG: "Troop Maint."
  RUS: "Содерж. войск"
  UKR: "Забезпечення військ."
@@ -16611,7 +16611,7 @@ WasUnableToInfiltrateA:
  UKR: "не зміг проникнути в колонію\nі був поранений, уникаючи полону"
 AnEnemyAgentWasFoiled:
  Id: 6033
- GER: "Ein feindlicher Agent wurde beim Versuch, eine Kolonie zu infiltrieren, vereitelt\nDer Agent wurde von geschickt"
+ GER: "Ein feindlicher Agent wurde beim Versuch, eine Kolonie zu infiltrieren, ertappt.\nDer Agent wurde geschickt von"
  ENG: "An enemy Agent was foiled trying to infiltrate a colony\nThe Agent was sent by"
  RUS: "Вражескому агенту помешали проникнуть в колонию.\nАгент был отправлен"
  SPA: "Se logró fallar los planes de un agente enemigo, se intentó infiltrar en una colonia\n el agente fue enviado desde"
@@ -16625,7 +16625,7 @@ WasKilledTryingToInfiltrate:
  UKR: "був убитий при спробі проникнути в колонію."
 AnEnemyAgentWasKilled:
  Id: 6035
- GER: "Ein feindlicher Agent wurde getötet, als er versuchte, eine unserer Kolonien zu infiltrieren.\nDer Agent wurde von geschickt"
+ GER: "Ein feindlicher Agent wurde getötet, als er versuchte, eine unserer Kolonien zu infiltrieren.\nDer Agent wurde geschickt von"
  ENG: "An enemy Agent was killed trying to infiltrate one of our colonies\nThe Agent was sent by"
  RUS: "Вражеский агент был убит при попытке проникнуть в одну из наших колоний.\nАгент был отправлен"
  SPA: "Un ajente fue eliminado mientras se intenaba ifiltrar en una de nuestras colonias\nEl agente fue enviado desde"
@@ -16667,7 +16667,7 @@ NourAgentEscapedUnharmedAnd:
  UKR: "\nНаш агент втік неушкодженим і непоміченим."
 NtheAssassinWasSentBy:
  Id: 6041
- GER: "\nDer Assassine wurde von geschickt"
+ GER: "\nDer Assassine wurde geschickt von"
  ENG: "\nThe Assassin was sent by"
  RUS: "\nУбийца был отправлен"
  SPA: "\nEl asesino lo envio:"
@@ -16681,7 +16681,7 @@ NourAgentWasDetectedBut:
  UKR: "\nНаш агент був виявлений, але втік."
 WeManagedToDetectAn:
  Id: 6043
- GER: "Es ist uns gelungen, einen feindlichen Assassinen zu entdecken, bevor er zuschlagen konnte.\nDer Assassine wurde vorbeigeschickt"
+ GER: "Es ist uns gelungen, einen feindlichen Assassinen zu entdecken, bevor er zuschlagen konnte.\nDer Assassine wurde geschickt von"
  ENG: "We managed to detect an enemy Assassin before it could strike\nThe Assassin was sent by"
  RUS: "Нам удалось обнаружить вражеского ассасина до того, как он нанес удар\nУбийца был отправлен"
  SPA: "Hemos sido capaces de detectar un asesino enemigo antes de que pudiera atacar\nEl asesino fue enviado por"
@@ -16695,7 +16695,7 @@ WasWoundedTryingToAssassinate:
  UKR: "був поранений при спробі вбивства ворожого агента, але зміг втекти."
 AnEnemyAgentWasKilled2:
  Id: 6045
- GER: "Ein feindlicher Agent wurde bei einem Attentat getötet.\nDer Attentäter wurde von geschickt"
+ GER: "Ein feindlicher Agent wurde bei einem Attentat getötet.\nDer Attentäter wurde geschickt von"
  ENG: "An enemy Agent was killed during an assassination attempt\nThe Assassin was sent by"
  RUS: "Вражеский агент был убит при попытке убийства.\nУбийца был отправлен"
  SPA: "Un agente enemigo fue eliminado durante un intento de asesinato\nEl asesino fue enviado por"
@@ -16709,7 +16709,7 @@ WasKilledTryingToAssassinate:
  UKR: "був убитий при спробі вбивства ворожого агента."
 WasFoiledTryingToAssassinate:
  Id: 6047
- GER: "Der Versuch, einen feindlichen Agenten zu ermorden, wurde vereitelt, es gelang ihm jedoch zu fliehen."
+ GER: "Der Versuch, einen feindlichen Agenten zu ermorden, wurde vereitelt; es gelang ihm jedoch zu fliehen."
  ENG: "was foiled trying to assassinate an enemy agent, but managed to escape."
  RUS: "операция была сорвана при попытке убить вражеского агента, наш агент сумел сбежать."
  SPA: "Fue frustrado en sus intentos de eliminar un agente enemigo, pero se las arreglo para escapar."
@@ -16737,7 +16737,7 @@ WasDetectedWhileAttemptingTo:
  UKR: "був виявлений при спробі викрасти технологію\nі був поранений під час втечі"
 WeFoiledAnEnemyAgent:
  Id: 6051
- GER: "Wir haben einen feindlichen Agenten vereitelt, der die Produktion sabotieren wollte"
+ GER: "Ein feindlichet Agenten wurde daran gehindert folgende Produktion zu sabotieren:"
  ENG: "We foiled an enemy Agent trying to sabotage production on"
  RUS: "Мы помешали вражескому агенту саботировать производство"
  SPA: "Hemos frustrado a un agente enemigo intentado sabotear la producción en"
@@ -17010,7 +17010,7 @@ EspionageOverview:
  UKR: "Огляд шпигунства"
 EspionageAgents:
  Id: 6090
- GER: "Agenten"
+ GER: "Spione"
  ENG: "Espionage Agents"
  RUS: "Агенты шпионажа"
  SPA: "Agentes de espionaje"
@@ -17031,14 +17031,14 @@ AgentDossier:
  UKR: "Файл агента"
 CapitalElimination:
  Id: 6093
- GER: "Zerstöre Heimatwelt"
+ GER: "Zerstöre Heimat"
  ENG: "Capital Elimination"
  RUS: "Уничтожение"
  SPA: "Eliminacion capital"
  UKR: "Ліквідація капіталу"
 HomeWorld:
  Id: 6094
- GER: "Heimatwelt:"
+ GER: "Heimat:"
  ENG: "Home World: "
  RUS: "Родной мир: "
  SPA: "Mundo natal: "
@@ -17822,7 +17822,7 @@ BlueprintsSnapshotTip:
  ENG: "Create Blueprints from the current applicable buildings on this planet. It wont work if non of the current buildings can be inserted into Blueprints."                  
 BluePrintsOverView:
  Id: 6217
- GER: "Koloniepläne sind hauptsächlich Listen von Gebäuden, die geladen werden können, damit der Gouverneur sie verfolgen kann. Der Gouverneur wird diesen Gebäuden nach Möglichkeit Priorität einräumen, und falls die Baupläne exklusiv sind, wird der Gouverneur nur die in den hochgeladenen Bauplänen angegebenen Gebäude bauen. Baupläne können auch mit anderen Bauplänen verknüpft werden, sodass nach Abschluss neue Baupläne hochgeladen werden."
+ GER: "Koloniepläne sind eine Auflistung von Gebäuden,\n die der Gouverneur bauen soll.\nDer Gouverneur wird diese Gebäuden nach Möglichkeit priorisieren;\n wenn Pläne 'exklusiv' sind, baut er nur angegebene Gebäude.\nBaupläne können verknüpft werden, sodass nach Abschluss\n der nächste Plan verfolgt wird."
  ENG: "Colony Blueprints are mainly lists of buildings which can be uploaded for the Governor to follow. The Governor will prioritize these building if possible, and in case the Blueprints are Exclusive, the Governor will build only the specified buildings in the uploaded Blueprints. Blueprints can also be linked to other Blueprints so when they finished, new Blueprints are uploaded."                   
 BluePrintsEnableGovernorToLoad:
  Id: 6218
