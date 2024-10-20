@@ -1927,7 +1927,7 @@ TaxRate:
  UKR: "Податкова ставка"
 Income:
  Id: 312
- GER: "Erträge"
+ GER: "Einnahmen"
  ENG: "Income"
  RUS: "Доходы"
  SPA: "Ingresos"
@@ -2109,7 +2109,7 @@ ConstructionQueue:
  UKR: "Черга будівництва"
 TroopClass:
  Id: 338
- GER: "Truppengattung"
+ GER: "Rüstungsklasse"
  ENG: "Troop Class"
  RUS: "Класс войск"
  SPA: "Clase de tropa"
@@ -2172,7 +2172,7 @@ ThisPlanetIsManuallyImporting:
  UKR: "Ця планета імпортує виробництво вручну. Будь-яке доступне сховище, а також будь-яка продукція, вироблена тут, буде автоматично використана в черзі будівництва"
 ThisPlanetIsManuallyStoring:
  Id: 347
- GER: "Dieser Planet speichert die Produktion manuell. \nNur 50% der Nettoproduktionskapazität werden der Build-Warteschlange zugewiesen, der Rest wird gespeichert, bis der Speicher voll ist."
+ GER: "Die Verwaltung der Produktion erfolgt manuell. \nNur 50% der Nettoproduktionskapazität werden der Bau-Warteschlange zugewiesen, der Rest wird gespeichert, bis der Speicher voll ist."
  ENG: "This planet is manually storing production. Only 50% of net production capacity will be allocated to the build queue, the rest will be stored, until the storage is full."
  RUS: "Эта планета не импортирует и не экспортирует производство. Если в очереди строительства нет кораблей, зданий или войск, эта продукция будет складироваться для использования в дальнейшем."
  SPA: "Este planeta ni importa ni exporta producción. Si no hay naves, edificios o tropas en la cola de construcción, la producción se almacenará para usarse más tarde."
@@ -7645,7 +7645,7 @@ LacksSignificantVeinsOfValuable:
  UKR: " не має значних запасів цінних мінералів, що робить її поганою планетою для видобутку корисних копалин."
 ASolitaryOutpostHasTaken:
  Id: 1763
- GER: "Ein einsamer Außenposten Fuß gefasst hat hier."
+ GER: "Ein einsamer Außenposten hat hier Fuß gefasst. "
  ENG: "A solitary outpost has taken root here. "
  RUS: "Здесь обосновался одинокий аванпост. "
  SPA: "Aquí ha echado raíces un solitario puesto avanzado. "
@@ -8602,25 +8602,25 @@ ManualTradeAllowSelectedFreighters:
  UKR: "Ручна торгівля: Дозволити вибраним вантажним кораблям торгувати з іншими імперіями. Клацніть правою кнопкою миші, щоб вимкнути цю опцію. Примітка: Колоністами не можна торгувати між імперіями."
 BuildAPlatformTheStrongest:
  Id: 1946
- GER: "Bauen Sie eine Plattform (die stärkste, die Ihr Imperium zur Verfügung hat), die diesen Planeten umkreist.  Die Zahl in Klammern gibt die Anzahl der Plattformen an, die dieser Planet bereits im Orbit hat."
+ GER: "Bauen Sie eine Orbitalplattform (die stärkste, die Ihr Imperium zur Verfügung hat).  Die Zahl in Klammern gibt die Anzahl der Plattformen an, die den Planeten bereits umkreisen."
  ENG: "Build a Platform (the strongest your empire has available) orbiting this planet. The number in parentheses is the number of Platforms this planet already has in orbit."
  RUS: "Постройте на орбите этой планеты платформу, самую мощную из имеющихся в Империи. Число в скобках - это количество платформ, которые эта планета уже имеет на орбите."
  UKR: "Побудуйте Платформу (найсильнішу з наявних у вашій імперії) на орбіті цієї планети. Число в дужках - це кількість Платформ, які вже є на орбіті цієї планети."
 BuildAStationTheStrongest:
  Id: 1947
- GER: "Bauen Sie eine Station (die stärkste, die Ihr Imperium zur Verfügung hat), die diesen Planeten umkreist. Die Zahl in Klammern gibt die Anzahl der Stationen an, die dieser Planet bereits im Orbit hat."
+ GER: "Bauen Sie eine orbitale Raumstation (die stärkste, die Ihr Imperium zur Verfügung hat). Die Zahl in Klammern gibt die Anzahl der Stationen an, die diesen Planet bereits umkreisen."
  ENG: "Build a Station (the strongest your empire has available) orbiting this planet. The number in parentheses is the number of Stations this planet already has in orbit."
  RUS: "Постройте на орбите этой планеты станцию, самую мощную из имеющихся в Империи. Число в скобках - это количество станций, которые эта планета уже имеет на орбите."
  UKR: "Побудуйте станцію (найсильнішу з наявних у вашій імперії) на орбіті цієї планети. Число в дужках - це кількість станцій, які вже є на орбіті цієї планети."
 BuildAShipyardOrbitingThis:
  Id: 1948
- GER: "Baue eine Werft, die diesen Planeten umkreist.  Die Zahl in Klammern gibt die Anzahl der Schiffswerften an, die dieser Planet bereits im Orbit hat."
+ GER: "Baue eine Orbital-Werft.  Die Zahl in Klammern gibt die Anzahl der Schiffswerften an, die diesen Planeten bereits umkreisen."
  ENG: "Build a Shipyard orbiting this planet. The number in parentheses is the number of Shipyards this planet already has in orbit."
  RUS: "Постройте верфь на орбите этой планеты. Число в скобках - это количество верфей, которое эта планета уже имеет на орбите."
  UKR: "Побудуйте верф на орбіті цієї планети. Число в дужках - це кількість верфей, які вже є на орбіті цієї планети."
 RebaseASingleTroopFrom:
  Id: 1949
- GER: "Verlege einen einzelnen Trupp von einem anderen Planeten oder ein anderes freies Truppenschiff auf diesen Planeten.  Auf diese Weise können Sie, sofern verfügbar, mehrere Truppen entsenden."
+ GER: "Verlege einen einzelnen Trupp von einem anderen Planeten oder einem anderen freien Truppenschiff auf diesen Planeten.  Auf diese Weise können Sie, sofern verfügbar, mehrere Truppen rufen."
  ENG: "Rebase a single troop from another planet or another free troop ship to this planet. You can send multiple troops, if available, that way."
  RUS: "Перебазируйте на эту планету отряд с другой планеты или другой свободный боевой шатл. Таким образом вы можете отправить несколько войск, если они есть."
  UKR: "Перебазуйте на цю планету одне військо з іншої планети або інший вільний військовий корабель. Ви можете відправити туди кілька кораблів, якщо вони доступні."
@@ -9108,21 +9108,21 @@ ThisColonyIsSetTo:
  UKR: "Ця колонія має намір експортувати надлишки їжі, що зберігаються на її продовольчих складах."
 ThisColonyIsSetTo2:
  Id: 2026
- GER: "Diese Kolonie soll Nahrungsmittel aus anderen Kolonien importieren und wird von Frachtern mit der Mission „Waren transportieren“ angegriffen."
+ GER: "Diese Kolonie soll Nahrungsmittel aus anderen Kolonien importieren und wird von Frachtern mit der Mission „Waren transportieren“ angeflogen."
  ENG: "This colony is set to import food from other colonies and will be targeted by freighters with the Transport Goods mission."
  RUS: "Эта колония импортирует еду из других колоний. Сюда ее будет доставлять транспорты, которым назначена миссия \"Перевозить товары\"."
  SPA: "Esta colonia está configurada para importar comida de otras colonias mediante cargueros con la misión Transportar mercancías."
  UKR: "Ця колонія імпортуватиме їжу з інших колоній, і її будуть відвідувати вантажні кораблі з місією Транспортування товарів."
 ThisPlanetIsNeitherImporting:
  Id: 2027
- GER: "Dieser Planet importiert oder exportiert weder Nahrungsmittel.  Überschüssige Lebensmittel, die hier entstehen, werden für die spätere Verwendung gelagert."
+ GER: "Dieser Planet weder importiert noch exportiert Nahrungsmittel. Überschüssige Lebensmittel, die hier entstehen, werden für die spätere Verwendung gelagert."
  ENG: "This planet is neither importing nor exporting food. Any excess food created here will be stored for later use."
  RUS: "Эта планета не импортирует и не экспортирует еду. Вся избыточная еда, произведенная здесь, будет складироваться для использования в дальнейшем."
  SPA: "Este planeta ni importa ni exporta comida. El excedente de comida quedará almacenado para su uso futuro."
  UKR: "Ця планета не імпортує і не експортує їжу. Будь-який надлишок їжі, створений тут, буде зберігатися для подальшого використання."
 TheOccupantsOfThisPlanet:
  Id: 2028
- GER: "Die Bewohner dieses Planeten sind kybernetisch und brauchen keine Nahrung."
+ GER: "Die Bewohner dieses Planeten sind Kyberneten und brauchen keine Nahrung."
  ENG: "The occupants of this planet are cybernetic and have no need of food."
  RUS: "Обитатели этой планеты являются киборгами и не потребляют еду."
  SPA: "Los residentes de este planeta son cibernéticos y no necesitan comida."
@@ -13676,13 +13676,13 @@ ManualLimit:
  UKR: "Ручний ліміт"
 LaunchAllTroops:
  Id: 4213
- GER: "Alle Truppen in den Orbit"
+ GER: "Alle in den Orbit"
  ENG: "Launch All Troops"
  RUS: "Запуск всех войск"
  UKR: "Запустити всі війська"
 LaunchOneTroop:
  Id: 4214
- GER: "Einen Trupp in den Orbit"
+ GER: "Einen Trupp ins All"
  ENG: "Launch One Troop"
  RUS: "Запуск одного отряда"
  UKR: "Запустити один загін"
@@ -17822,7 +17822,7 @@ BlueprintsSnapshotTip:
  ENG: "Create Blueprints from the current applicable buildings on this planet. It wont work if non of the current buildings can be inserted into Blueprints."                  
 BluePrintsOverView:
  Id: 6217
- GER: "Koloniepläne sind eine Auflistung von Gebäuden,\n die der Gouverneur bauen soll.\nDer Gouverneur wird diese Gebäuden nach Möglichkeit priorisieren;\n wenn Pläne 'exklusiv' sind, baut er nur angegebene Gebäude.\nBaupläne können verknüpft werden, sodass nach Abschluss\n der nächste Plan verfolgt wird."
+ GER: "Koloniepläne sind eine Auflistung von Gebäuden,\n die der Gouverneur bauen soll.\nDer Gouverneur wird diese Gebäuden nach Möglichkeit priorisieren;\n wenn Pläne 'exklusiv' sind, baut er nur vorgegebene Gebäude.\nBaupläne können verknüpft werden, sodass nach Abschluss\n der nächste Plan verfolgt wird."
  ENG: "Colony Blueprints are mainly lists of buildings which can be uploaded for the Governor to follow. The Governor will prioritize these building if possible, and in case the Blueprints are Exclusive, the Governor will build only the specified buildings in the uploaded Blueprints. Blueprints can also be linked to other Blueprints so when they finished, new Blueprints are uploaded."                   
 BluePrintsEnableGovernorToLoad:
  Id: 6218
@@ -20378,7 +20378,7 @@ Tech_MegaCities_Desc:
  UKR: "Мега-міста спроектовані для комфортного проживання якомога більшої кількості населення, оснащені автоматизованими технологіями для підтримки оптимальних умов життя. Це будівлі, що здіймаються високо в небо, та мости, що з'єднують їх між собою. Через масивні розміри споруди, а також ресурси, виділені на будівництво, з навколишнього ґрунту доводиться вилучати велику кількість матеріалу, що дещо знижує родючість на планеті."
 PlanetaryCustomsStation:
  Id: 10005
- GER: "planetare Zollstation"
+ GER: "Planetare Zollstation"
  ENG: "Planetary Customs Station"
  RUS: "Планетарный таможенный пост"
  UKR: "Планетарна митна станція"
@@ -20976,7 +20976,7 @@ LaserFocusTech:
  UKR: "Сфокусований промінь I"
 LaserFocusTechDescr:
  Id: 17521
- GER: "Durch strategisch platzierte Anordnungen von Spulen, Kristallprismen und Linsen in der richtigen Konfiguration konnten unsere Wissenschaftler den Fokus eines Strahls erhöhen und ihm eine beeindruckende Reichweite verleihen.  Diese Art der wirbelsäulenmontierten Konstruktion kann den Strahl über einen längeren Zeitraum halten und verheerenden Schaden anrichten.  Als Rückzugsmöglichkeit ist jedoch eine lange Abkühlung erforderlich.  Die fokussierte Strahltechnologie wurde entwickelt, um den Schaden gegenüber der Panzerung zu verbessern."
+ GER: "Durch eine bestimmte Anordnung von Spulen, Kristallprismen und Linsen konnten unsere Wissenschaftler einen Laser bündeln und beeindruckende Reichweite erzielen.  Die starre Frontalausrichtung ermöglicht einen länger andauernden und sehr verheerenden Strahl. Nachteil ist die hohe Abkühlzeit.  Die fokussierte Strahltechnologie wurde entwickelt um Panzerung größeren Schaden zuzufügen."
  ENG: "By strategically placed arrays of coils, crystal prisms and lenses in right configuration our scientists were able to increase the focus of a beam giving it impressive range. This type of spinal mounted design can keep the beam for longer period of times delivering a devastating damage. But as draw back it requires a long cool down. Focused beam technology was developed to improve damage vs armor."
  UKR: "Завдяки стратегічно розміщеним масивам котушок, кришталевих призм і лінз у правильній конфігурації наші вчені змогли збільшити фокус променя, надавши йому вражаючу дальність дії. Цей тип спинномозкової конструкції може утримувати промінь протягом тривалого періоду часу, завдаючи руйнівної шкоди. Але, як і зворотній бік, він вимагає тривалого охолодження. Технологія сфокусованого променя була розроблена для покращення ураження проти броні."
 LaserFocus:
@@ -21325,7 +21325,7 @@ EMPDichargerdescr:
  UKR: "ЕМІ-зброя спеціально розроблена для малих кораблів, щоб виводити з ладу їхні цілі, ця зброя має невелику ймовірність того, що ЕМІ-снаряд може пройти крізь щит."
 PhasorFocusTech:
  Id: 17592
- GER: "Focussierter Strahl III"
+ GER: "Fokussierter Strahl III"
  ENG: "Focused Beam III"
  UKR: "Сфокусований промінь III"
 PhasorFocusTechDescr:
