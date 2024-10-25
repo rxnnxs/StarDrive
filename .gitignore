@@ -121,3 +121,4 @@ game/Release.DeleteFiles.txt
 Deploy/Release/Release.DeleteFiles.txt
 Deploy/Release/Release.NewOrChanged.txt
 Deploy/Release/Vanilla.NewFiles.txt
+game/Content/GameText.7z
