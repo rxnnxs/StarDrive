@@ -679,7 +679,7 @@ RacesPossessingAPioneeringSpirit:
  UKR: "Раси з новаторським духом вірять, що їхня доля лежить серед зірок. У результаті ваші пасажирські транспорти перевозять на нові планети втричі більше колоністів"
 Shipyard:
  Id: 98
- GER: "Werft"
+ GER: "Schiffs-Editor"
  ENG: "Shipyard"
  RUS: "Верфь"
  SPA: "Astillero"
@@ -714,14 +714,14 @@ Choose:
  UKR: "Обрати"
 Fleets:
  Id: 103
- GER: "Flottenmanager"
+ GER: "Flotten-Editor"
  ENG: "Fleets"
  RUS: "Флоты"
  SPA: "Flotas"
  UKR: "Флоти"
 ShipsArray:
  Id: 104
- GER: "Schiffliste"
+ GER: "Übersicht der Schiffe"
  ENG: "Ships Array"
  RUS: "Список кораблей"
  SPA: "Lista de naves"
@@ -746,7 +746,7 @@ ToggleOverlay:
  UKR: "Перемкнути накладання"
 SelectHull:
  Id: 107
- GER: "Wähle Schifftyp"
+ GER: "Wähle Korpus"
  ENG: "Select Hull"
  RUS: "Выбрать корпус"
  SPA: "Seleccionar casco"
@@ -1351,7 +1351,7 @@ DeepSpaceNear:
  UKR: "Глибокий космос поруч"
 ShipArray:
  Id: 190
- GER: "S c h i f f s v e r w a l t u n g"
+ GER: "L i s t e   a l l e r   S c h i f f e"
  ENG: "Ship Array"
  RUS: "Список кораблей"
  SPA: "Lista de naves"
@@ -1802,14 +1802,14 @@ OpenTheGroundAssaultView:
  UKR: "Відкрийте вид наземного штурму для цієї планети, де ви можете висаджувати війська і наказати провести бомбардування"
 ClickToMoveUpIn:
  Id: 261
- GER: "Klicken Sie, um in der Warteschlange nach oben zu gelangen. \nKlicken Sie bei gedrückter Strg-Taste, um nach oben zu gelangen"
+ GER: "Linksklick schiebt Projekt eine Zeile hoch. \nGanz nach oben: L-Klick+Strg-Taste."
  ENG: "Click to move up in the queue. Control-Click to move to the top"
  RUS: "Щелкните для перемещения на одну позицию вверх в очереди. Ctrl+ЛКМ - перемещение в начало очереди"
  SPA: "Haz clic para subir en la cola. Pulsa Ctrl+clic para ponerlo en el primer puesto"
  UKR: "Натисніть, щоб перемістити вгору в черзі. Control-Клікніть, щоб перемістити на початок черги"
 ClickToMoveDownIn:
  Id: 262
- GER: "Klicken Sie, um in der Warteschlange nach unten zu gelangen. \nKlicken Sie bei gedrückter Strg-Taste, um nach unten zu gelangen"
+ GER: "Linksklick schiebt Projekt eine Zeile runter. \nGanz nach unten: L-Klick+Strg-Taste."
  ENG: "Click to move down in the queue. Control-Click to move to the bottom"
  RUS: "Щелкните для перемещения на одну позицию вниз в очереди. Ctrl+ЛКМ - перемещение в конец очереди"
  SPA: "Haz clic para bajar en la cola. Pulsa Ctrl+clic para ponerlo en el último puesto"
@@ -1878,14 +1878,14 @@ Automation:
  UKR: "Автоматизація"
 Autoexplore:
  Id: 305
- GER: "Autoerkundung"
+ GER: "Erkundung"
  ENG: "Autoexplore"
  RUS: "Автоисследование"
  SPA: "Exploración automática"
  UKR: "Автодослідження"
 Autocolonize:
  Id: 306
- GER: "Autokolonisierung"
+ GER: "Kolonisierung"
  ENG: "Autocolonize"
  RUS: "Автоколонизация"
  SPA: "Colonización automática"
@@ -1899,7 +1899,7 @@ Autobuild:
  UKR: "Автобудування"
 AutomaticTrade:
  Id: 308
- GER: "Automatischer Handel"
+ GER: "Handel"
  ENG: "Automatic Trade"
  RUS: "Автомат. транспорты"
  SPA: "Cargueros automáticos"
@@ -2109,7 +2109,7 @@ ConstructionQueue:
  UKR: "Черга будівництва"
 TroopClass:
  Id: 338
- GER: "Rüstungsklasse"
+ GER: "Rüstungsart"
  ENG: "Troop Class"
  RUS: "Класс войск"
  SPA: "Clase de tropa"
@@ -2158,21 +2158,21 @@ ThisPlanetsPopulationIsShrinking:
  UKR: "Населення планети скорочується через голод!"
 ThisPlanetIsManuallyExporting:
  Id: 345
- GER: "Dieser Planet exportiert manuell Produktion. \nEs wird der Bauwarteschlange nur dann einen gewissen Prozentsatz seiner Nettoproduktion zuweisen, wenn Frachter Produktion von diesem Planeten exportieren. \nWenn keine Nachfrage besteht, wird der Speicherplatz ebenfalls der Gebäudewarteschlange zugewiesen."
+ GER: "Dieser Planet exportiert seine Produktion. \nFalls Frachter Produktion exportieren, wird der Konstruktion nur ein gewisser Prozentsatz der Überschussproduktion zugewiesen. \nWenn keine Nachfrage besteht, wird der Speicher ebenfalls der Konstruktion zugewiesen."
  ENG: "This planet is manually exporting production. It will only allocate some percentage of it's net production to the build queue if freighters are exporting production from this planet. If there is no demand, it will allocate it's storage to the building queue as well."
  RUS: "Поскольку эта планета занята экспортом производства. 25% ее промышленности складируется, а не идет в счет очереди строительства. Оставшаяся часть промышленности планеты идет на очередь строительства."
  SPA: "Este planeta exporta producción, así que el 25% de su producción neta se almacena en vez de destinarse a la cola de construcción y solo el resto se usa para construir."
  UKR: "Ця планета експортує продукцію вручну. Вона виділить певний відсоток свого чистого виробництва в чергу на будівництво, тільки якщо вантажні кораблі експортують продукцію з цієї планети. Якщо попит відсутній, вона також виділить свої запаси в чергу на будівництво."
 ThisPlanetIsManuallyImporting:
  Id: 346
- GER: "Dieser Planet importiert manuell Produktion. \nJeder verfügbare Lagerraum sowie jede hier produzierte Produktion werden automatisch in die Bauwarteschlange übernommen"
+ GER: "Dieser Planet wurde angewiesen Produktion zu importieren. \nJede gespeicherte und erzeugte Produktion wird in die Konstruktion geleitet."
  ENG: "This planet is manually importing production. Any storage available as well as any production produced here will be automatically applied to the construction queue"
  RUS: "Эта планета импортирует производство. Все производство на этой планете автоматически идет в очередь строительства, а сохраненная продукция может быть распределена вручную для ускорения строительства."
  SPA: "Este planeta importa producción. Lo que se produzca aquí se destinará automáticamente a la cola de construcción, mientras que la producción almacenada deberá seleccionarse manualmente para acelerar la producción."
  UKR: "Ця планета імпортує виробництво вручну. Будь-яке доступне сховище, а також будь-яка продукція, вироблена тут, буде автоматично використана в черзі будівництва"
 ThisPlanetIsManuallyStoring:
  Id: 347
- GER: "Die Verwaltung der Produktion erfolgt manuell. \nNur 50% der Nettoproduktionskapazität werden der Bau-Warteschlange zugewiesen, der Rest wird gespeichert, bis der Speicher voll ist."
+ GER: "Die Verwaltung der Produktion erfolgt manuell. \nNur 50% der Überschussproduktion werden der Konstruktion zugewiesen; der Rest wird gespeichert, bis der Speicher voll ist."
  ENG: "This planet is manually storing production. Only 50% of net production capacity will be allocated to the build queue, the rest will be stored, until the storage is full."
  RUS: "Эта планета не импортирует и не экспортирует производство. Если в очереди строительства нет кораблей, зданий или войск, эта продукция будет складироваться для использования в дальнейшем."
  SPA: "Este planeta ni importa ni exporta producción. Si no hay naves, edificios o tropas en la cola de construcción, la producción se almacenará para usarse más tarde."
@@ -2347,7 +2347,7 @@ IndustrialWorld:
  UKR: "Промисловий світ"
 MilitaryOutpost:
  Id: 374
- GER: "Militärischer Außenposten"
+ GER: "Außenposten"
  ENG: "Military Outpost"
  RUS: "Военная"
  SPA: "Base militar"
@@ -2382,7 +2382,7 @@ GovernorWillBuildABalanced:
  UKR: "Губернатор побудує збалансований світ, який стане основою вашої імперії."
 GovernorWillFocusEntirelyOn:
  Id: 379
- GER: "Der Gouverneur wird sich ausschließlich auf die Maximierung der Produktion, den Import von Nahrungsmitteln und den Export der Produktion konzentrieren. \nDie Arbeit konzentrierte sich ausschließlich auf die Industrie."
+ GER: "Der Gouverneur wird sich ausschließlich auf die Maximierung der Produktion, den Import von Nahrungsmitteln und den Export der Produktion konzentrieren. \nDie Arbeit konzentriert sich ausschließlich auf die Industrie."
  ENG: "Governor will focus entirely on maximizing production, importing food and exporting production. Labor focused entirely on industry."
  RUS: "Губернатор будет строить промышленные объекты, импортировать еду и экспортировать производство. Весь труд будет сосредоточен в промышленном секторе."
  SPA: "El gobernador tratará por todos los medios de aumentar la producción al máximo, importando comida y exportando producción. El trabajo se centra por entero en la industria."
@@ -2630,7 +2630,7 @@ DefensiveBuildingInjuresLandingTroops:
  UKR: "Оборонна споруда; завдає поранення десанту"
 ImperialBank:
  Id: 427
- GER: "Das Gebäude der Reichsbank erhöht die Effizienz Ihrer planetaren Steueroperationen um 60%."
+ GER: "Reichsbank"
  ENG: "Imperial Bank"
  RUS: "Имперский банк"
  SPA: "Banco imperial"
@@ -2672,14 +2672,14 @@ FiresDisablingIonBlastsInto:
  UKR: "Вистрілює іонні заряжи на орбіту"
 MilitaryOutpost2:
  Id: 436
- GER: "Militärischer Außenposten"
+ GER: "Stützpunkt"
  ENG: "Military Outpost"
  RUS: "Военный аванпост"
  SPA: "Base militar"
  UKR: "Військова застава"
 ThisBasicFacilityProvidesA:
  Id: 437
- GER: "Diese Grundeinrichtung umfasst eine Kaserne, eine Waffenkammer, eine Kantine, einen Schießplatz und andere Einrichtungen, die zur Ausbildung und Ausrüstung der Infanterie für den Bodenkampf erforderlich sind."
+ GER: "Diese Grundeinrichtung umfasst eine Kaserne, eine Waffenkammer, eine Kantine, einen Schießstand und andere Einrichtungen, die zur Ausbildung und Ausrüstung der Infanterie für den Bodenkampf erforderlich sind."
  ENG: "This basic facility provides a barracks, armory, mess, firing range, and other facilities needed to train and equip infantry for ground combat."
  RUS: "Это базовое военное сооружение включает в себя казармы, арсенал, столовую, стрельбище и все необходимое для формирования пехотных частей для наземного боя."
  SPA: "Esta instalación básica cuenta con cuartel, arsenal, comedores, campo de tiro y otras dependencias necesarias para adiestrar y equipar a la infantería para el combate."
@@ -3324,7 +3324,7 @@ BB_Tech_EnergyShielding_Desc:
  UKR: "Енергетичні щити - обов'язкова вимога для будь-якого капітана, який планує брати участь у бойових діях.  Ці пристрої поширюють поглинаюче енергетичне поле на снаряди, що потрапляють у сферу їхнього захисту. Щити \"перезаряджаються\", віддаючи захоплену енергію. Щити відрізняються за міцністю, швидкістю перезарядки та радіусом захисту"
 BB_Tech_FighterShields_Name:
  Id: 562
- GER: "Jäger Schilde"
+ GER: "Jägerschil"
  ENG: "Fighter Shields"
  RUS: "Щиты истребителей"
  SPA: "Escudos de cazas"
@@ -3723,7 +3723,7 @@ BB_Tech_MissileTheory_Desc:
  UKR: "Адаптувати ракетні технології до суворих умов космічних подорожей не так вже й складно. Ми можемо продовжувати вдосконалювати ракетні двигуни, корисне навантаження і міцність."
 BB_Tech_NanoweaveMetallurgy_Name:
  Id: 620
- GER: "Nanogewebe Metallurgie"
+ GER: "Nanogewebe Metallurgie I"
  ENG: "Nanoweave Metallurgy"
  RUS: "Нано металлургия"
  SPA: "Metalurgia de nanotextura"
@@ -5605,7 +5605,7 @@ NonaggressionPact:
  UKR: "Пакт про ненапад"
 TradeTreaty:
  Id: 1215
- GER: "Handelsabkommen"
+ GER: "Warenhandel"
  ENG: "Trade Treaty"
  RUS: "Торговый договор"
  SPA: "Tratado comercial"
@@ -6263,7 +6263,7 @@ StardriveHelp:
  UKR: "Довідка StarDrive"
 PlanetArray:
  Id: 1402
- GER: "Planetenliste"
+ GER: "P l a n e t e n l i s t e"
  ENG: "Planet Array"
  RUS: "Список планет"
  SPA: "Lista de planetas"
@@ -6543,42 +6543,42 @@ SpiritualRacesAreRitualisticAnd:
  UKR: "Духовні раси - ритуальні та релігійні. Вони отримують 50% бонус до всіх ефектів, отриманих від артефактів."
 UltraRich:
  Id: 1442
- GER: "Sehr Reich"
+ GER: "sehr reich"
  ENG: "Ultra Rich"
  RUS: "Очень богатая"
  SPA: "Riquísimo"
  UKR: "Надзвичайно багата"
 Rich:
  Id: 1443
- GER: "Reich"
+ GER: "reich"
  ENG: "Rich"
  RUS: "Богатая"
  SPA: "Rico"
  UKR: "Багата"
 Average:
  Id: 1444
- GER: "Normal"
+ GER: "normal"
  ENG: "Average"
  RUS: "Средняя"
  SPA: "Normal"
  UKR: "Середня"
 Poor:
  Id: 1445
- GER: "Arm"
+ GER: "arm"
  ENG: "Poor"
  RUS: "Бедная"
  SPA: "Pobre"
  UKR: "Бідна"
 UltraPoor:
  Id: 1446
- GER: "Sehr Arm"
+ GER: "sehr arm"
  ENG: "Ultra Poor"
  RUS: "Очень бедная"
  SPA: "Paupérrimo"
  UKR: "Надзвичайно бідна"
 Terran:
  Id: 1447
- GER: "Erdähnl. –"
+ GER: "erdähnl. –"
  ENG: "Terran"
  RUS: "Земная"
  SPA: "Terrícola"
@@ -6826,7 +6826,7 @@ Captured:
  UKR: " Захоплено"
 From:
  Id: 1504
- GER: "von"
+ GER: "von "
  ENG: "from "
  RUS: "у "
  SPA: "a "
@@ -7526,7 +7526,7 @@ ItsAtmosphereIsComprisedLargely:
  UKR: "Її атмосфера складається здебільшого з водню та гелію, з незначними домішками метану.  Перегріта рідка мантія цієї планети робить її непридатною для колонізації.  "
 WithNoAtmosphereToSpeak:
  Id: 1746
- GER: "Da es keine nennenswerte Atmosphäre gibt und die Temperatur nur wenige Grad über dem absoluten Nullpunkt liegt, ist dieser Planet für fortgeschrittene Lebensformen außerordentlich tückisch.   Teiche aus flüssigem Helium und riesige Felsbrocken aus gefrorenem Wasserstoff prägen die Landschaft.  Flächenlandwirtschaft wäre hier völlig unmöglich."
+ GER: "Da es keine nennenswerte Atmosphäre gibt und die Temperatur nur wenige Grad über dem absoluten Nullpunkt liegt, ist dieser Planet für fortgeschrittene Lebensformen außerordentlich tückisch.   Teiche aus flüssigem Helium und riesige Felsbrocken aus gefrorenem Wasserstoff prägen die Landschaft.  Flächenlandwirtschaft wäre hier völlig unmöglich. \n"
  ENG: "With no atmosphere to speak of and a temperature only a few degrees above absolute zero, this planet is extraordinarily treacherous to advanced life-forms.  Pools of liquid helium and massive boulders of frozen hydrogren mark the landscape. Surface agriculture would be totally impossible here. "
  RUS: "Здесь практически нет атмосферы как таковой, а температура превышает абсолютный ноль всего на несколько градусов. Высокоорганизованные формы жизни здесь просто не выживут. Ландшафт состоит из луж жидкого гелия и глыб замерзшего водорода. Естественное земледелие здесь невозможно в принципе. "
  SPA: "Sin una atmósfera propiamente dicha y temperaturas apenas unos grados por encima del cero absoluto, este planeta es tremendamente traicionero para las formas de vida avanzadas.  El paisaje está caracterizado por bolsas de helio líquido y enormes rocas de hidrógeno. La agricultura en la superficie sería totalmente imposible. "
@@ -7729,7 +7729,7 @@ WithAVibrantEconomyAnd:
  UKR: "З динамічною економікою та величезним населенням ця планета вийшла за рамки статусу колонії і тепер вважається рідною домівкою для багатьох мільярдів громадян."
 ThisDenselyPopulatedPlanetIs:
  Id: 1775
- GER: "Dieser dicht besiedelte Planet ist von einem Ende der Welt bis zum anderen mit Megastädten und Vororten bedeckt.  Es ist eine blühende Welt der Wissenschaft und Industrie, obwohl die einst majestätische Wildnis im Zuge der Entwicklung teilweise verschwunden ist."
+ GER: "Dieser dicht besiedelte Planet ist über den ganzen Globus mit Megastädten und Vororten bedeckt. Es ist eine blühende Welt der Wissenschaft und Industrie, obwohl die einst majestätische Wildnis im Zuge der Entwicklung teilweise verschwunden ist."
  ENG: "This densely populated planet is covered with megacities and suburbs from one end of the globe to the other. It is a flourishing world of science and industry, though its once-majestic wilderness has all bit disappeared in the wake of development. "
  RUS: "Эта густонаселенная планета полностью покрыта целой сетью мегаполисов и более мелких городков. Когда-то дикая и неосвоенная планета - теперь же процветающий мир промышленности и науки."
  SPA: "Este planeta densamente poblado está cubierto de una punta a otra de megaciudades y zonas residenciales. Es un mundo donde florecen la industria y la ciencia, aunque haya perdido parte de su espléndida fauna y flora de antaño en aras del desarrollo. "
@@ -7986,7 +7986,7 @@ TheRadiusOfTheProjectiles:
  UKR: "Радіус вибуху снаряда. Число вказано в слотах. Отже, 3 означає, що вибух може зачепити 3 слоти в кожному напрямку."
 AutomaticRequisition:
  Id: 1833
- GER: "Autom. Reihen füllen"
+ GER: "Fehlende Schiffe ersetzen"
  ENG: "Automatic Requisition"
  RUS: "Автомат. заявка"
  UKR: "Автоматичнний запит"
@@ -8237,7 +8237,7 @@ ProductionInfrastructure:
  UKR: "Виробнича інфраструктура"
 MaximumProductionToQueuePer:
  Id: 1873
- GER: "Maximale in die Warteschlange gestellte Produktion pro Runde"
+ GER: "Maximal in die Warteschlange gestellte Produktion/Runde"
  ENG: "Maximum Production To Queue Per Turn"
  RUS: "Максимальное производство в очереди за ход"
  UKR: "Максимальна кількість продукції в черзі за один хід"
@@ -8674,7 +8674,7 @@ TheGovernorWillCreateA:
  UKR: "Створіть гарнізон для планети на основі встановленого вами розміру гарнізону. Це дозволить виводити війська, чисельність яких менша за чисельність гарнізону, і тренувати нові війська для їх заміни. Він також автоматично побудує найдешевшу будівлю, в якій може бути піхота, якщо це можливо."
 AutoPickFreighter:
  Id: 1958
- GER: "Auto Frachterwahl"
+ GER: "Frachterwahl"
  ENG: "Auto Pick Freighter"
  RUS: "Авто выбор груз. судна"
  UKR: "Автопідбір транспорту"
@@ -8812,7 +8812,7 @@ EveryTroopInvadingThisPlanet:
  UKR: "Кожне військо, що вторгається на цю планету, зазнає вказаної тут шкоди при висадці. Це може знищити слабкі війська при вході в атмосферу планети."
 ThisShowsTheHangarStatus:
  Id: 1981
- GER: "Hier wird der Hangarstatus des Schiffes angezeigt. Grün ist die Anzahl der derzeit vom Stapel gelassenen Schiffe, Weiß die Anzahl der zum Stapellauf bereiten Schiffe und Rot die Anzahl der Schiffe, die neu ausgerüstet, repariert oder umgebaut werden."
+ GER: " Hier wird der Hangarstatus des Schiffes angezeigt.\n-Grün ist die Anzahl der derzeit vom Stapel gelassenen Schiffe, \n-weiß die Anzahl der zum Stapellauf bereiten Schiffe und \n-rot die Anzahl der Schiffe, die neu ausgerüstet, repariert oder umgebaut werden."
  ENG: "This shows the hangar status of the ship. Green is the number of ships currently launched, White is the number of ships ready to launch and Red is the number of ships being rearmed, repaired or rebuit."
  RUS: "Показывает статус ангара корабля. Зеленый - количество выпущеных кораблей, белый - количество кораблей, готовых к запуску, а красный - количество перевооруженных, отремонтированных или переоборудованных кораблей."
  UKR: "Показує стан корабля в ангарі. Зеленим кольором позначено кількість кораблів, що знаходяться на стадії запуску, білим - кількість кораблів, готових до запуску, а червоним - кількість кораблів, що перебувають на переозброєнні, ремонті або переобладнанні."
@@ -8982,7 +8982,7 @@ BB_Tech_PhasedOrdnance_Name:
  UKR: "Фазовані боєприпаси"
 BB_Tech_PhasedOrdnance_Desc:
  Id: 2008
- GER: "Wenn wir unsere Projektile mithilfe eines Subraumfelds beschleunigen, glauben wir, dass es möglich ist, eine Subraum-Phasenschleife einzuleiten, bei der die Energiesignatur des Projektils in den realen Raum hinein und aus ihm heraus rotiert.  Wenn das Projektil in den Subraum gelangt, während es einen Schild berühren würde, ignoriert der Schild es, da er seine Energiesignatur nicht erkennen kann."
+ GER: "Wenn wir unsere Projektile mithilfe eines Subraumfelds beschleunigen, sollte es möglich sein eine Subraum-Phasenschleife einzuleiten, bei der die Energiesignatur des Projektils in den realen Raum hinein und aus ihm heraus rotiert.  Wenn das Projektil in den Subraum gelangt, während es einen Schild berühren würde, ignoriert der Schild es, da er seine Energiesignatur nicht erkennen kann."
  ENG: "When we accelerate our projectiles using a subspace field, we believe it is possible to initiate a subspace phase loop where the projectile's energy signature will rotate in and out of real space. If the projectile is phased into subspace when it would contact a shield, then the shield will ignore it because it cannot detect its energy signature."
  RUS: "Когда мы разгоняем наши снаряды при помощи субпространственного поля, мы рассчитываем, что есть возможность инициировать возникновение субпространственной фазовой петли, в которой энергетическая сигнатура снаряда будет перемещаться в реальное пространство и из него. Если эта петля возникнет в момент контакта снаряда со щитом, тот не задержит его, потому что не сможет распознать его сигнатуру. Фактически мы \"проталкиваем\" наши снаряды прямо сквозь щиты."
  SPA: "Si aceleramos nuestros proyectiles mediante un campo subespacial, creemos que es posible iniciar un bucle de fase subespacial en el que la energía característica del proyectil entrará y saldrá del espacio real. Si el proyectil se mueve por fases en el subespacio al entrar en contacto con un escudo, este último lo ignorará porque no podrá detectar su energía característica. Básicamente, estamos usando artillería que atravesará sus escudos a velocidad supraluminal. "
@@ -9003,14 +9003,14 @@ IndicatesAShipsExperienceLevel:
  UKR: "Показує рівень досвіду корабля, максимум до 5 зірок. За кожен рівень досвіду корабель отримує бонус 5% до швидкості ремонту, швидкості повороту і пошкоджень від зброї."
 BB_Tech_AceTraining_Name:
  Id: 2011
- GER: "FliegerAs Training"
+ GER: "Flieger-As Training"
  ENG: "Ace Training"
  RUS: "Обучение асов"
  SPA: "Adiestramiento de ases"
  UKR: "Ace Training"
 BB_Tech_AceTraining_Desc:
  Id: 2012
- GER: "Unsere Kampfpiloten sollten die Besten der Besten sein.  Indem wir in eine strenge Kandidatenauswahl und intensive Pilotenschulungsprotokolle investieren, können wir unsere Piloten zu den Besten der Galaxis machen."
+ GER: "Unsere Kampfpiloten werden die Könige der Lüfte. Indem wir nur die wohlversprechendsten Kandidaten intensivst Ausbilden, machen wir unsere Piloten zu den Besten der Galaxis."
  ENG: "Our fighter pilots should be the best of the best. By investing in rigorous candidate screening and intense pilot training protocols, we can make our pilots the top guns in the galaxy. "
  RUS: "Наши пилоты должны быть лучшими из лучших. Вкладывая усилия в отбор только самых лучших кандидатов и их интенсивное обучение, мы сделаем своих пилотов лучшими асами в галактике. "
  SPA: "Nuestros pilotos de cazas deben ser lo mejor de lo mejor. Al invertir en una selección rigurosa de los candidatos e intensificar los protocolos de adiestramiento, podemos conseguir que los pilotos sean nuestras mejores armas en la galaxia. "
@@ -9101,7 +9101,7 @@ OpensColonyOverviewScreen:
  UKR: "Відкриває екран огляду колонії"
 ThisColonyIsSetTo:
  Id: 2025
- GER: "Diese Kolonie wird, um überschüssige Nahrung in seinem Naturkostläden statt zu exportieren."
+ GER: "Diese Kolonie exportiert überschüssige Nahrung anstatt sie zu lagern."
  ENG: "This colony is set to export any excess food held in its food stores."
  RUS: "Эта колония экспортирует всю избыточную еду, хранящуюся на складах."
  SPA: "Esta colonia está configurada para exportar los excedentes de comida de sus almacenes."
@@ -9115,7 +9115,7 @@ ThisColonyIsSetTo2:
  UKR: "Ця колонія імпортуватиме їжу з інших колоній, і її будуть відвідувати вантажні кораблі з місією Транспортування товарів."
 ThisPlanetIsNeitherImporting:
  Id: 2027
- GER: "Dieser Planet weder importiert noch exportiert Nahrungsmittel. Überschüssige Lebensmittel, die hier entstehen, werden für die spätere Verwendung gelagert."
+ GER: "Dieser Planet weder im- noch exportiert Nahrungsmittel. Überschüssige Lebensmittel, die hier entstehen, werden für die spätere Verwendung gelagert."
  ENG: "This planet is neither importing nor exporting food. Any excess food created here will be stored for later use."
  RUS: "Эта планета не импортирует и не экспортирует еду. Вся избыточная еда, произведенная здесь, будет складироваться для использования в дальнейшем."
  SPA: "Este planeta ni importa ni exporta comida. El excedente de comida quedará almacenado para su uso futuro."
@@ -11272,7 +11272,7 @@ AddEnergyStorageToIncrease:
  UKR: "Додайте накопичувач енергії, щоб збільшити час використання енергії. Не обов'язково, щоб час використання зброї був нескінченним, оскільки часто корабель не використовує всю свою зброю, особливо якщо він має кілька дуг зброї"
 StatesAnyDesignIssuesThe:
  Id: 2546
- GER: "Gibt alle Designprobleme an, die das aktuelle Schiff hat.  Es wird angezeigt, nachdem Sie 75 % des Designs fertiggestellt haben.  Die Farbe des Problems gibt seinen Schweregrad an (Grün für Informativ bis Rot für Kritisch).  Klicken Sie auf den Text, um sie anzuzeigen."
+ GER: " Gibt alle Designprobleme an, die das aktuelle Schiff hat.\nEs wird angezeigt, nachdem Sie 75 % des Designs fertiggestellt haben. \nDie Farbe des Problems gibt seinen Schweregrad an (Grün für Informativ bis rot für Kritisch). \nKlicken Sie auf den Text, um sie anzuzeigen."
  ENG: "States any design issues the current ship has. It is displayed after you completed 75% of the design. The color of the issue indicates it's severity (Green for Informative up to Red for Critical). Click on the text to view them."
  RUS: "Указывает на любые конструктивные проблемы текущего корабля. Он отображается после того, как вы выполнили 75% корпуса. Цвет проблемы указывает на ее серьезность (от зеленого информативного до красного критического).Нажмите на текст, чтобы просмотреть их."
  UKR: "Вказує на будь-які проблеми з дизайном, які має поточний корабель. З'являється після того, як ви завершили 75% проектування. Колір проблеми вказує на її серйозність (від зеленого для інформативних до червоного для критичних). Натисніть на текст, щоб переглянути їх."
@@ -11893,7 +11893,7 @@ WeRequireThatYouTake:
  UKR: "Ми вимагаємо, щоб ви взяли під контроль наступні колонії:"
 ClickToRushProductionFrom:
  Id: 248
- GER: "Klicken Sie, um die Produktion aus dem Lager dieser Kolonie zu beschleunigen.\n \nMit einem einzigen Klick werden 10 Produktionen aus dem Lager auf die aktuelle Produktion angewendet.\n \nStrg+Klicken, um so viel Produktion hinzuzufügen, wie derzeit verfügbar.\n \nUmschalt+Klicken wird versuchen, dies zu beschleunigen  Gegenstand, bis er abgeschlossen ist, während deine Schatzkammer geleert wird.\nDie Menge der beschleunigten Produktion wird auch von der Schatzkammer deines Imperiums abgezogen.\n \nDer Bau kann nicht beschleunigt werden, wenn sich Bodeneindringlinge in deiner Kolonie befinden oder dein Imperium über weniger als 1000 Credits plus den Ladungsbetrag verfügt  des Ansturms."
+ GER: "Klicken Sie, um die Produktion aus dem Lager dieser Kolonie zu beschleunigen.\n \nMit einem Klick werden 10 Produktionseinheiten aus dem Lager für die aktuelle Produktion ausgegeben.\n \nStrg + Klick fügt so viel Produktion hinzu wie derzeit verfügbar ist.\n \nUmschalt + Klick wird das Projekt zusätzlich mit finanziellen Mitteln beschleunigen bis es abgeschlossen ist, während die Schatzkammer belastet wird.\nDie beschleunigten Produktion wird die Schatzkammer des Imperiums belasten.\n \nDer Bau kann nicht beschleunigt werden, wenn sich Eindringlinge in der Kolonie befinden oder das Imperium über weniger als 1000 Krediteinheiten zzgl. der Kosten der angekurbelten Herstellung verfügt."
  ENG: "Click to rush production from this colony's storage.\n \nA single click will apply 10 production from storage to current production.\n \nCTRL-Click to add as much production currently available.\n \nShift-Click will try to rush this item until completed while draining your Treasury.\nThe amount of production rushed will be also deducted from your Empire's Treasury.\n \nConstruction cannot be rushed if there are ground invaders on your colony or your empire has less then 1000 credits plus the charge amount of the rush."
  RUS: "Щелкните здесь, чтобы ускорить производство за счет резервов колонии.\n \nОдиночный щелчок перемещает 10 ед. производства со склада на строительство текущего объекта.\n \nCTRL+ЛКМ перемещает все запасенное производство.\n \nShift+Мышь чтобы попытаться ускорить этот предмет, пока он не будет завершен,или не опустеет казна.\nКоличество произведенной продукции также будет вычтено из казны вашей Империи.\n \nСтроительство нельзя форсировать, если в вашей колонии есть наземные захватчики или у вашей империи меньше 1000 кредитов плюс сумма заряда спешки."
  SPA: "Haz clic para acelerar la producción de las reservas de esta colonia. Acelerar la producción cuesta créditos que equivalen a la cantidad de producción acelerada. Dicho coste puede reducirse o eliminarse con diversos medios tecnológicos. \n \n Si haces clic una vez, destinarás 10 de producción de las reservas a lo que se esté produciendo. Pulsa Ctrl+clic para añadir cuanta producción haya disponible. \n \nLa construcción no se puede acelerar si hay invasores terrestres en su colonia o si su imperio tiene menos de 1000 créditos más el monto del cargo de la carrera."
@@ -12017,7 +12017,7 @@ ThisShieldProvidesHpOf:
  UKR: "Цей щит забезпечує 25 000 ОЖ захисту в радіусі 400 метрів. Він має надзвичайну вартість енергії."
 DeepCoreMinesAreExtremely:
  Id: 419
- GER: "Tiefkernminen sind äußerst effektiv bei der schnellen Gewinnung von Mineralien aus den Tiefen des Planetenkerns, sie sind jedoch katastrophal für die Umwelt.  Fügt eine Pauschalproduktion hinzu, die dem Fünffachen des Mineralienreichtums eines Planeten entspricht, verringert jedoch dauerhaft die Fruchtbarkeit eines Planeten um 0,6."
+ GER: "Tiefkernminen schürfen äußerst effektiv Mineralien, sind jedoch katastrophal für die Umwelt. Fügt eine Pauschalproduktion hinzu, die dem Fünffachen des Mineralienreichtums eines Planeten entspricht, verringert jedoch dauerhaft die Fruchtbarkeit des Planeten um 0,6."
  ENG: "Deep Core Mines are extremely effective at rapidly extracting minerals from deep within a planet's core, but are environmentally disastrous. Adds flat rate production equal to 5 times a planet's mineral richness but permanently decreases a planet's fertility by 0.6."
  RUS: "Сверхглубокие шахты очень эффективны для быстрого извлечения минералов и руд из прилегающих к ядру слове планетарной коры, но при этом они оказывают колоссальный негативный эффект на экосистему планеты. Добавляет фиксированный бонус производства в количестве 4х богатства планеты минералами и перманентно снижает ее индекс плодородия на 0.6."
  SPA: "Las minas de núcleo profundo son sumamente eficaces a la hora de extraer minerales de las profundidades de un planeta, pero son devastadoras para el medio ambiente. Añade una producción a un ritmo constante igual a cuatro veces la riqueza mineral del planeta, pero reduce permanentemente su fertilidad en 0.6."
@@ -12600,7 +12600,7 @@ UnlocksANewHullType:
  UKR: "Відкриває новий тип корпусу:"
 AddShipDesignsToThis:
  Id: 4043
- GER: "Füge der Flotte Schiffe hinzu.\nUmschalt-T.+L.M.-Klick erlaubt es einem, das gewählte Schiff mehrmals zu platzieren. Wähle Schaltfläche 'Requisition...', um nach aktiven Schiffen zu  suchen, die in die Flotte aufgenommen werden können.\nWenn nicht genug Schiffe existieren, werden sie auf einem geeigneten Planeten in die Bauliste aufgenommen."
+ GER: "\n Füge der Flotte nach Bedarf Schiffe hinzu.\nUmschalt + L-Klick platziert das Schiff mehrmals.\n\n Wähle Schaltfläche \"Requisition...\", um nach aktiven Schiffen zu  suchen, die in die Flotte aufgenommen werden können.\n Existieren nicht genug Schiffe, werden sie auf einem geeigneten Planeten gebaut."
  ENG: "\n        Add ship designs to this fleet from the panel on the right. Use 'Shift' key to place multiple ships of the same type. When you are done, you can press the 'Requisition' button, which will search your empire for ships that can fill your fleet. If you do not have the ships, it will order that they are built at a suitable planet.\n\nReturn here at any time to requisition replacements for any ships that are lost in combat.\n      "
  RUS: "Добавьте дизайны кораблей к этому флоту с панели справа. Используйте клавишу 'Shift', чтобы разместить несколько кораблей одного типа. Когда вы закончите, вы можете нажать кнопку 'Запрос',она будет искать в вашей империи корабли, которые могут заполнить ваш флот. Если у вас нет кораблей,то они построятся на подходящей плнете.Вернитесь сюда в любое время, чтобы запросить замену любых кораблей, потерянных в бою.\n     "
  SPA: "\n        Añade diseños de naves a esta flota desde el panel de la derecha. Cuando hayas terminado, pulsa el botón \"Solicitar\" y se iniciará una búsqueda en tu imperio de naves que puedan conformar tu flota. Si no dispones de esas naves, se enviará la orden de que sean construidas en un planeta adecuado.\n\nVuelve aquí cuando quieras solicitar reemplazos para las naves perdidas en combate.\n      "
@@ -12887,7 +12887,7 @@ Slipstreams:
  UKR: "Сліп-стріми"
 OrdnanceEffectiveness:
  Id: 4085
- GER: "Kampfstoff Effektivitätssteigerung"
+ GER: "Verbesserte Munition"
  ENG: "Ordnance Effectiveness"
  RUS: "Эффективность боеприпасов"
  SPA: "Eficacia de la munición"
@@ -12901,7 +12901,7 @@ EcmBonus:
  UKR: "РЕП Бонус"
 MissileArmor2:
  Id: 4087
- GER: "Raketenpanzerung"
+ GER: "Gepanzerte Raketen"
  ENG: "Missile Armor"
  RUS: "Броня ракет"
  SPA: "Blindaje contra misiles"
@@ -12915,7 +12915,7 @@ TopGuns:
  UKR: "Найкращі стрільці"
 ReactiveArmor:
  Id: 4089
- GER: "Reaktivpanzerung"
+ GER: "Reaktivpanzer"
  ENG: "Reactive Armor"
  RUS: "Реактивная броня"
  SPA: "Blindaje reactivo "
@@ -12943,7 +12943,7 @@ ArmorPiercing2:
  UKR: "Бронебійний"
 ArmorPhasing2:
  Id: 4093
- GER: "Phasenpanzerung"
+ GER: "Phasenpanzer"
  ENG: "Armor Phasing"
  RUS: "Фазирование брони"
  SPA: "Antiblindaje fásico"
@@ -13922,7 +13922,7 @@ MoltenRockFlatProduction:
  UKR: "Розплавлена порода, +0.5 видобуток"
 DisableVolcanoAlerts:
  Id: 4254
- GER: "Vulkanwarnungen deaktivieren"
+ GER: "Vulkanwarnungen"
  ENG: "Disable Volcano Alerts"
  RUS: "Отключить оповещения о вулканах"
  UKR: "Вимкнути сповіщення про виверження вулканів"
@@ -14446,12 +14446,12 @@ OpenBordersTreaty2:
  UKR: "Відкриті кордони"
 EmpireRelationships:
  Id: 4349
- GER: "Netzwerk der Reiche untereinander"
+ GER: "Netzwerk der Beziehungen"
  ENG: "Empire Relationships Cross Reference"
  UKR: "Перехресні посилання на імперські відносини"
 ViewWarsOrAlliancesName:
  Id: 4350
- GER: "Zeige Kriege und Allianzen"
+ GER: "Kriege/Allianzen"
  ENG: "View Wars or Alliances"
  UKR: "Переглянути війни або альянси"
 ViewWarsOrAlliancesTip:
@@ -14461,7 +14461,7 @@ ViewWarsOrAlliancesTip:
  UKR: "Відфільтровує посилання, що не стосуються війни або альянсів"
 ViewTradeTreatiesName:
  Id: 4352
- GER: "Zeige Handelsverträge"
+ GER: "Handelsverträge"
  ENG: "View Trade Treaties"
  UKR: "Переглянути торгові договори"
 ViewTradeTreatiesTip:
@@ -14626,7 +14626,7 @@ FlatIncomePerTurn:
  UKR: "Фіксований дохід за оборот"
 AutoBuildTerraformers:
  Id: 4385
- GER: "Auto-Terraform"
+ GER: "Terraformen"
  ENG: "Auto Terraform"  
  UKR: "Авто Терраформ"
 AutoBuildTerraformersTip:
@@ -14691,7 +14691,7 @@ BB_RushRefitTip:
  UKR: "Поспішний ремонт надає пріоритет цьому ремонту і прискорює його. Використовуйте з обережністю, якщо ви ремонтуєте багато кораблів, оскільки це витрачає гроші на поспіх."
 BB_EnableStarvationWarning:
  Id: 4398
- GER: "Aktivieren Sie Hungersnotwarnungen"
+ GER: "Hungersnotwarnungen"
  ENG: "Enable Starvation Warnings"    
  UKR: "Увімкнути попередження про голод"
 BB_EnableStarvationWarningTip:
@@ -14745,7 +14745,7 @@ CancelDeployResearchStationTip:
  UKR: "Скасувати поточну місію розгортання дослідницької станції на орбіті цієї планети."
 AutoBuildResearchStation:
  Id: 4409 
- GER: "Auto-Bau der Forschungsstationen"
+ GER: "Baue Forschungsstationen"
  ENG: "Auto Build Research Stations"
  UKR: "Автоматичні дослідн. станції"          
 AutoBuildResearchStationTip:
@@ -14755,7 +14755,7 @@ AutoBuildResearchStationTip:
  UKR: "Це автоматично створить для вас дослідницькі станції навколо відповідних планет або зірок. Воно буде використовувати будь-яку дослідницьку станцію, яку ви виберете у випадаючому списку нижче (відображається, якщо ваша імперія має доступ до технології дослідницьких станцій). Це також покращить вже існуючі станції до нової станції, яку ви вибрали"
 AutoPickResearchStation:
  Id: 4411 
- GER: "Auto-Wahl der Forschungsstation"
+ GER: "Wahl der Forschungsstation"
  ENG: "Auto Pick Research Station"
  UKR: "Автопідбір дослідн. станції"          
 AutoPickResearchStationTip:
@@ -14879,7 +14879,7 @@ ResearchStationBuiltSystemNotify:
  UKR: "(Дослідницька станція) була\nрозгорнута в системі"      
 AllowPlayerInterTradeTitle:
  Id: 4436
- GER: "Erlaube den Imperialen Handel"
+ GER: "Erlaube Imperialen Handel"
  ENG: "Allow Empire Inter Trade"      
  UKR: "Дозволити міждержавну торгівлю"
 AllowPlayerInterTradeTip:
@@ -14923,7 +14923,7 @@ ConstructionProgressTip:
  UKR: "Кількість завершеного будівництва. Будівельник додає будівництво кожного ходу, і якщо структура знаходиться в дружній системі, колонії запускають кораблі будівельників, щоб допомогти в будівництві. Кораблі-будівельники не потребують додаткового виробництва."
 AutoPickConstructorsName:
  Id: 4444
- GER: "Autowahl der Bauschiffe"
+ GER: "Wahl der Bauschiffe"
  ENG: "Auto Pick Constructors"  
  UKR: "Автоматичні конструктори підбору"
 AutoPickConstructorsTip:
@@ -15032,7 +15032,7 @@ DesignIssueLowRefiningTimeNotGood:
  UKR: "Зверніть увагу, що якщо ви вирішили автоматизувати вибір станцій видобутку, ця станція не буде використовуватися. Вона занадто неефективна."
 AutoBuildMiningStation:
  Id: 4466 
- GER: "Autobau der Orbitalminen"
+ GER: "Bau von Orbitalminen"
  ENG: "Auto Build Mining Stations"
  UKR: "Автоматичне будівництво видобувних станцій"
 AutoBuildMiningStationTip:
@@ -15042,7 +15042,7 @@ AutoBuildMiningStationTip:
  UKR: "Автоматично побудує для вас гірничодобувні станції навколо відповідних планет. При цьому буде використовуватися будь-яка видобувна станція, яку ви виберете у випадаючому списку нижче (відображається, якщо ваша імперія має доступ до технології видобувних станцій). Також буде покращено вже існуючі станції до вибраної вами нової станції."
 AutoPickMiningStation:
  Id: 4468 
- GER: "Autowahl der Orbitalminen"
+ GER: "Wahl der Orbitalminen"
  ENG: "Auto Pick Mining Stations"
  UKR: "Автоматичний вибір видобувної станції"
 AutoPickMiningStationTip:
@@ -15282,7 +15282,7 @@ BuildFrieghter:
  UKR: "Збудувати транспорт"
 ResearchQueuePositionOptions:
  Id: 4516 
- GER: "Rechtsklick zum Erweitern\nStrg-Linksklick zum Verschieben oder Einfügen an die höchstmögliche Stelle in der Warteschlange.\n\n"
+ GER: " R-Klick: Details\n\n Strg + L-Klick plant Projekt an höchstmöglicher Stelle der Forschung ein.\n– – – – – – – – – – – – – – – – – – \n"
  ENG: "Right Click to Expand\nCtrl Left Click to move or insert at topmost possible place in queue.\n\n" 
  UKR: "Клацніть правою кнопкою миші, щоб розгорнути\nCtrl Лівою кнопкою миші, щоб перемістити або вставити в найвище місце в черзі.\n\n"
 ResearchMultiLevelTech:
@@ -15302,12 +15302,12 @@ RemnantsDefeatedFleetsMayAttack:
  UKR: "Проте, залишки флотів у цьому секторі можуть становити активну загрозу доти, доки їх не буде знищено."
 PLanetInfoNumberOfDefenseShips:
  Id: 4520
- GER: "Anzahl der Verteidigungsschiffe auf Luftwaffenstützpunkten auf diesem Planeten."
+ GER: "Verteidigungsschiffe auf Stützpunkten dieses Planeten."
  ENG: "Number of Defense ships in Air Bases on this planet." 
  UKR: "Кількість кораблів оборони на авіабазах на цій планеті."
 ThisTileCanBeTerraformedHarder:
  Id: 4521
- GER: "Dieses Feld kann im Rahmen von Terraforming-Vorgängen nutzbar gemacht werden.  Der Prozess wird aufgrund der Komplexität von Biosphären-Terraformung mehr Zeit in Anspruch nehmen."
+ GER: "Dieses Feld kann durch Terraforming nutzbar gemacht werden. Der Prozess wird aufgrund der Komplexität von Biosphären-Terraformung mehr Zeit in Anspruch nehmen."
  ENG: "This tile can be terraformed as part of terraforming operations. The process will take more time due to Biosphere Terraforming complexity." 
  UKR: "Ця плитка може бути терраформована в рамках операцій терраформування. Процес займе більше часу через складність тераформування біосфери."
 BioshperesAreBuiltHere:
@@ -15317,7 +15317,7 @@ BioshperesAreBuiltHere:
  UKR: "Тут побудовані біосфери. Клацніть правою кнопкою миші, якщо ви бажаєте скасувати ці Bioshperes." 
 ThisTileCanBeTerraformed:
  Id: 4523
- GER: "Dieses Feld kann im Rahmen von Terraforming-Vorgängen bewohnbar gemacht werden"
+ GER: "Dieses Feld kann durch Terraformung bewohnbar gemacht werden"
  ENG: "This tile can be terraformed as part of terraforming operations.
  UKR: "Ця плитка може бути терраформована в рамках операцій терраформування." 
 DisableScreenPanningOption:
@@ -15326,7 +15326,7 @@ DisableScreenPanningOption:
  ENG: "Disable Mouse Screen Panning" 
 DisableScreenPanningOptionTip:
  Id: 4525
- GER: "Der Mauszeiger kann nicht zum Bewegen des Bildschirmrands verwendet werden, sondern nur WASD-Tasten.  Nützlich für Spieler mit mehreren Bildschirmen, wenn sich ihre Karten weiter bewegen, wenn sie sich auf einen anderen Bildschirm konzentrieren."
+ GER: "Der Mauszeiger wird nicht mehr zum Bewegen des Bildschirmrands verwendet, nur durch WASD-Tasten.  Nützlich für Spieler mit mehreren Bildschirmen, da sich ihr Ausschnitt sonst weiter bewegt, wenn sie mit dem Mauszeiger zu einen anderen Bildschirm gehen."
  ENG: "Mouse pointer cannot be used for edge screen movement, only WASD keys. Useful for players with multiple screens if their maps keeps moving when they focus on another screen."   
 BB_Tech_DysonSwarm1_Name: 
  Id: 4909
@@ -15370,15 +15370,15 @@ PrioritizedPort:
  ENG: "Prioritzed Port"   
 PrioritizedPortTip:
  Id: 4919
- GER: "Wenn dies festgelegt ist, werden alle Schiffskonstruktionen auf diesem Planeten in die Warteschlange gestellt, sofern er über einen Raumhafen verfügt.  Wenn mehrere Planeten als priorisierte Häfen festgelegt sind, wird anhand ihrer Produktionskapazität entschieden, welcher Planet für den Bau geeignet ist.  Wenn kein Hafen in Ihrem Imperium priorisiert ist, wird die Auswahl der Produktionskapazitätslogik auf alle Planeten angewendet."
+ GER: "Es wird jegliche Schiffskonstruktion zu der Werft dieses Planeten geleitet. Werden mehrere Planeten gesetzt, wird anhand ihrer Kapazität entschieden, welcher Planet am Besten für den Bau geeignet ist.  Wenn kein Planet in Ihrem Imperium priorisiert ist, beücksichtigt die Logik alle Planeten."
  ENG: "When set, all ship construction will be queued on this planet, providing that it has a Space Port. If several planets are set as Prioritzed Ports, the suitable planet for consturction will be decided based on production their capacity. If no port in your Empire is prioritized, production capacity logic selection will be applied to all planets.    "    
 SpecializedTradeHub:
  Id: 4920
- GER: "Gesteuertes Handelszentrum"
+ GER: "Gesteuerter Handel"
  ENG: "Specialized Trade-Hub"  
 SpecializedTradeHubTip:
  Id: 4921
- GER: "Das Spezialisierte (gesteuerte) Handelszentrum ermöglicht der Gouverneursverwaltung Import-/Exportpräferenzen anzuwenden, welche auf den Gouverneurstyp (der auch die Arbeitsschieberegler steuert) zutreffen.  Es werden weder Gebäude gebaut noch abgewrackt."
+ GER: "Der Gouverneur verwaltet Import-/Exportpräferenzen nach seinen Vorlieben. Es werden weder Gebäude gebaut noch abgewrackt."
  ENG: "Specialized Trade-hub will enable the Governor management for Import/Export preferences based on the Governor Type and for the automation of Labor sliders, again, based on the Governor type. It will not build or scrap buildings." 
 PrioritizeProjector:
  Id: 4922
@@ -15749,13 +15749,13 @@ InSpace:
  UKR: "у просторі"
 OnSurfaceAndInSpace:
  Id: 4995
- GER: "Boden und All"
+ GER: "Boden/Weltraum"
  ENG: "on surface and in space"
  RUS: "на поверхности и в космосе"
  UKR: "на поверхні та в космосі"
 FoodConsumptionPerTurnFor:
  Id: 4996
- GER: "Nahrung für Truppen / Runde"
+ GER: "Nahrung für Truppen pro Runde"
  ENG: "Food consumption per turn for Troops"
  RUS: "Еда за ход для войск"
  UKR: "Споживання їжі за хід для військ"
@@ -15767,7 +15767,7 @@ ProductionConsumptionPerTurnFor:
  UKR: "Витрати виробництва за хід для військ"
 CreditsPerTurnForTroop:
  Id: 4998
- GER: "Credits pro Spielzug für die Truppenwartung"
+ GER: "Ausgaben pro Runde für Wartung"
  ENG: "Credits per turn for Troop maintenance"
  RUS: "Кредиты за ход на содержание войск"
  UKR: "Кредити за хід на утримання війська"
@@ -15926,7 +15926,7 @@ ThisEngineProvidesExcellentCombat:
  UKR: "Цей двигун забезпечує відмінне бойове маневрування і тягу, але не має можливості форсажу. Він менш ефективний, ніж інші двигуни"
 AdvancedRocketry:
  Id: 5021
- GER: "Verb. Raketentechnik"
+ GER: "Verbesserte Raketentechnik"
  ENG: "Advanced Rocketry"
  RUS: "Продвинутая ракетная техника"
  SPA: "Coheteria avanazada"
@@ -17038,7 +17038,7 @@ CapitalElimination:
  UKR: "Ліквідація капіталу"
 HomeWorld:
  Id: 6094
- GER: "Heimat:"
+ GER: "Heimat: "
  ENG: "Home World: "
  RUS: "Родной мир: "
  SPA: "Mundo natal: "
@@ -17087,7 +17087,7 @@ Population2:
  UKR: "Населення:"
 Billion:
  Id: 6101
- GER: "Milliarde"
+ GER: "Milliarden"
  ENG: "billion"
  RUS: "миллиард"
  SPA: "Miles de millones"
@@ -17332,19 +17332,19 @@ Assault:
  UKR: "Напад"
 AutoResearch:
  Id: 6136
- GER: "Autoforschung"
+ GER: "Forschung"
  ENG: "Auto Research"
  RUS: "Авто наука"
  SPA: "Investigación automática"
  UKR: "Автодослідження"
 ShipRepair:
  Id: 6137
- GER: "Schiffsreparatur/s"
+ GER: "Schiffreparatur"
  ENG: "Ship Repair Per Second"
  UKR: "Судноремонт за секунду"
 AutoTaxes:
  Id: 6138
- GER: "Auto-Steuern"
+ GER: "Steuern"
  ENG: "Auto Taxes"
  RUS: "Авто налоги"
  SPA: "Impuestos automáticos"
@@ -17720,7 +17720,7 @@ RightClickToRemove:
  UKR: "Клацніть правою кнопкою миші, щоб видалити цю будівлю з поточних креслень." 
 ColonyBlueprintsTitle:
  Id: 6193
- GER: "Kolonieplan"
+ GER: "K o l o n i e - P l a n e r"
  ENG: "Colony Blueprints" 
  RUS: "Чертежи колоний"
  UKR: "Чертежі колонії"  
@@ -18318,7 +18318,7 @@ EspionageLevelLimitTip:
  ENG: "Left click to increase by 1\nright click to decrease by 1\nWhen limiting Infiltration Level, we progress up to the level limit specified. If our Infiltration Level is above the limit level, all relevant operations and passive effects will be paused, and if our infiltration level is discovered, they will only see our limited level."                 
 DisableCrashSiteAlerts:
  Id: 6343
- GER: "Schiffsabsturzwarnungen deaktivieren"
+ GER: "Schiffsabsturzwarnungen"
  ENG: "Disable Ship Crash Alerts"                 
 DisableCrashSiteAlertsTip:
  Id: 6344
@@ -19752,7 +19752,7 @@ ATantalizingDeepDarkCave:
  UKR: "Спокуслива, глибока темна печера. Які таємниці вона може приховувати?"
 AdvMetalurgy:
  Id: 1090
- GER: "Nanogewebe Metallurgie II"
+ GER: "Nanogewebe Metallurgie II"
  ENG: "Nanoweave Metallurgy II"
  UKR: "Нанохвильова металургія II"
 AdvMetalurgydescr:
@@ -20623,7 +20623,7 @@ Tech_SlipStreams_Desc:
  UKR: "Використовуючи навігаційні Древніх дані, наші вчені відкрили спосіб отримати доступ до підпросторового тунелю між нашими підпросторовими проекторами"
 Tech_SlipStreams_Bonus:
  Id: 18272
- GER: "Schiffe, die innerhalb der Grenzen Ihres eigenen Imperiums fahren, erhalten einen Bonus von 30% auf ihre FTL-Geschwindigkeit."
+ GER: "Schiffe, die innerhalb der Grenzen Ihres eigenen Imperiums reisen, erhalten einen Bonus von 30% auf ihre FTL-Geschwindigkeit."
  ENG: "Ships traveling within your own empire's borders gain 30% bonus to their FTL speeds."
  UKR: "Кораблі, що подорожують в межах кордонів вашої імперії, отримують 30% бонус до своєї надсвітлової швидкості."
 Tech_RemnantNuker_Name:
@@ -20801,7 +20801,7 @@ TaxOffice:
  UKR: "Податкова інспекція"
 TaxOfficeDescr:
  Id: 10089
- GER: "Regierungsbehörde, die für die Einnahme staatlicher Einnahmen verantwortlich ist, einschließlich Steuern und manchmal auch nichtsteuerlicher Einnahmen."
+ GER: "Regierungsbehörde, verantwortlich für die Erhebung staatlicher Einnahmen, einschließlich Steuern und anderer Erträge."
  ENG: "Government agency responsible for the intake of government revenue, including taxes and sometimes non-tax revenue."
  UKR: "Державна установа, відповідальна за отримання державних доходів, включаючи податки та іноді неподаткові надходження."
 AdvancedWarp:
